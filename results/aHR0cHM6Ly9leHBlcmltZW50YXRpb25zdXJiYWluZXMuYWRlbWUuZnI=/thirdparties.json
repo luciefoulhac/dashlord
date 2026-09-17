@@ -1,0 +1,193 @@
+{
+  "trackers": [
+    {
+      "type": "cloudflare",
+      "url": "https://challenges.cloudflare.com/turnstile/v0/g/330e41bb475c/api.js?onload=khCN8&render=explicit",
+      "details": {
+        "id": "cloudflare",
+        "message": "Host files locally"
+      }
+    },
+    {
+      "type": "cloudflare",
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/av0/rch/fas6g/0x4AAAAAAADnPIDROrmt1Wwj/light/fbE/new/normal?lang=auto",
+      "details": {
+        "id": "cloudflare",
+        "message": "Host files locally"
+      }
+    },
+    {
+      "type": "cloudflare",
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/fo/3693338698:1789635913:1uoIplbQ2w18VXgi8V3eDtE44Q9gW-0zYU9LgCxAzgQ/a3c7634129c5a606/TM9Ne4YpSNcPwkzlgw9tGGnHckrC6rS7lZneg6gnDmo-1789640524-1.2.1.1-5RdfJOONt1uvCsCw5OAvUXFcQGO3vaMsW1D.4r16BX58lQuu_w60_yOkxXk8VQDr",
+      "details": {
+        "id": "cloudflare",
+        "message": "Host files locally"
+      }
+    },
+    {
+      "type": "cloudflare",
+      "url": "https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/i/a3c7634129c5a606/TM9Ne4YpSNcPwkzlgw9tGGnHckrC6rS7lZneg6gnDmo-1789640524-1.2.1.1-5RdfJOONt1uvCsCw5OAvUXFcQGO3vaMsW1D.4r16BX58lQuu_w60_yOkxXk8VQDr",
+      "details": {
+        "id": "cloudflare",
+        "message": "Host files locally"
+      }
+    },
+    {
+      "type": "cloudflare",
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/a3c7634129c5a606/1789640525262/40dd236828ed075ea2072e99ffa398435361721e9010abf8d1e228923cf71c67/KpnNlNkRg6CXCE_420lNmLsqQTtfR0K2o1s1aeQTyJc-1789640525-1.3.1.1-_.OCkxcyhZAw8lEb9nA6Zk6g4MksjNx7bhA6E6pqczGfTSH6wTVJrG_kBOO8TBpBl.i5m8rmQ5YTHjhD7SdkNNmv5qLeHgmHXomEm33OtzTKv3QUjyi3bvyO3QozaXUwYU6DHElF9gxQB5uF.biJxI06bv9y5z4Y9h226l1o08PrA7gBj4SjD8bYbR5munBBSJI4wXbJwgNPjbWgrIi6Zg8NZGzxUOQxK6DWH6X5jBBS6oDapx5C4TYk.364nDhGPpam_OLrKuJtL1pYVDSh96gGFkkQQaF7y4vNwKlGNH8d4147Yy4yN_Eum5MR2UTBHnLDNJJB7MlytMkZXRIsaM1J7iBIn85KmZ8z27iikITV3Mj43NeX2MgMnOUM8KnlXwQ7cX.V6fI7cbD9RCKUUrM9Byx5OcbKAaaAyqS.rMkFbbA8eoom8.ec1ijkA6fid7xFUZH9UNQsQrecaDKzdZaKB9J7qozuKzkeX.6zeZNeFrd2CsIqRjh0vmroCmOW4jIIPmitck06A98CmHLJASKfJ3wvOfwUzsItsH69HqJo9BFRX33kkz9JBwXA9ufjfN1YFTzGx4al6lBDIDl8q0IMEGCg5UD_zPc5Qf4Q3odd5wuE_QfsspfdMXx6KH3.VT1UzKFeMzoMZVaWmfhCAyuGGU6syicq1GMzjF._EDsNoT6J1vWW_iCni7eMEphSk.Eg7VpwzeXDZ3rgmtlVDRO200Czxq4Vh3mCAvqEu0R0uGCMpJlC42hsnmec1NRNUrnqldyZBYAqod3eET1OV6DDfRSKtxov_T3lzZrjhLitJzP5ue845iAwndT.s0jT",
+      "details": {
+        "id": "cloudflare",
+        "message": "Host files locally"
+      }
+    },
+    {
+      "type": "cloudflare",
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/ci/a3c7634129c5a606/1789640525266/oJBP6K86fhbG.DXG691jfrTrhOoPza2nt2AylQrMuTA-1789640525-1.3.1.1-tzC3zYBLNnVVkbmHD5KuYD1i5u1FKV9LHKFIL5F0ABlVHXafm81C2QtMuNpm6e.lBjYtUB7W90nfGKMdRh0aOTUdFzGnP.qcaR577bjS0PFlxIQM4Khvrr.3ivyvvKLJHM69sDx2rr9U9NFymgVGfSHZgcqeizGbzjNV1Pp0FX9DpkN_Wwvwsybo2ckdY4iuaxs6NnwBeC1a6jvX_UTnp7JbnIH0xnlGF28eP2pbabnJJo8eYCfzvG96txq8vW_SyWj29ACTgkjQ9Q2sSLb_POJMrDmgahVz7ID5L21a4m_ZFChPriLDB.JwkdIaepYrDf7uGZujV8PDxrhy0h4MclatPvNC6ZX65UxWjS07fTIn3NlQcwefIe2toww7pACol0fN7dhaYcHEHEW0T.lr0_usymA5LE30o_4TZosLl5EDUWuZxIt4L1GZLBIBIA2t7481jQzQ.Pa9JUdh8Qq.ylLD0a2ioAR8f0ZQEXTmVpYGLF90j_xbvYvG91UM55E95s0f1HAipd_2KHXrEC68ALpFYyZi0eP9LFjr.mrJajpUje8luFUDkUV31JL0eiFBwETt9CP4DZwLsSHFTuT2DH88POG5AkzaWY5AXxbm3fVVSOHni28530hPb5KmkX6uaUgI7XHh_6DuGvosOX2o.gSAzMERbKMhxwd4aCJSlmKXkEUIZvtM5uVyC1kaFMfsU.pDpp3udLNy0fdsVjhsWo1gbvZDtEq8XzIhpaPf9QM",
+      "details": {
+        "id": "cloudflare",
+        "message": "Host files locally"
+      }
+    },
+    {
+      "type": "cloudflare",
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/fo/3693338698:1789635913:1uoIplbQ2w18VXgi8V3eDtE44Q9gW-0zYU9LgCxAzgQ/a3c7634129c5a606/TM9Ne4YpSNcPwkzlgw9tGGnHckrC6rS7lZneg6gnDmo-1789640524-1.2.1.1-5RdfJOONt1uvCsCw5OAvUXFcQGO3vaMsW1D.4r16BX58lQuu_w60_yOkxXk8VQDr",
+      "details": {
+        "id": "cloudflare",
+        "message": "Host files locally"
+      }
+    }
+  ],
+  "cookies": [
+    {
+      "name": "__cf_bm",
+      "value": "hcGR8J6K8DNFqccQMyifdZTUcgalzZJOKI.G.FP08oc-1789640524.711868-1.0.1.1-xw81.DxA1ZT12DdyJujIfWfeQjUa7z29Jufyo9MxqpmmJFMLgC3.3c5_UEZHESheu2KsEYxhUpDo8KLr2cYUOJnE._ZSJGNsZcReDJQ0LLMZvpIcJXseqV7HFFGeAKlJ",
+      "domain": ".ademe.fr",
+      "path": "/",
+      "expires": 1789642324.719913,
+      "size": 205,
+      "httpOnly": true,
+      "secure": true,
+      "session": false,
+      "sameSite": "None",
+      "priority": "Medium",
+      "sourceScheme": "Secure",
+      "sameParty": false
+    }
+  ],
+  "headers": {
+    "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+    "cf-mitigated": "challenge",
+    "cf-ray": "a3c7633f1b87386e-IAD",
+    "content-encoding": "gzip",
+    "content-security-policy": "default-src 'none'; script-src 'nonce-2QnXcX354fEXuFeixRxpIM' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+    "content-type": "text/html; charset=UTF-8",
+    "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+    "cross-origin-embedder-policy": "require-corp",
+    "cross-origin-opener-policy": "same-origin",
+    "cross-origin-resource-policy": "same-origin",
+    "date": "Thu, 17 Sep 2026 10:22:04 GMT",
+    "origin-agent-cluster": "?1",
+    "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
+    "referrer-policy": "same-origin",
+    "server": "cloudflare",
+    "server-timing": "chlray;desc=\"a3c7633f1b87386e\"",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN"
+  },
+  "endpoints": [
+    {
+      "hostname": "experimentationsurbaines.ademe.fr",
+      "ip": "104.18.0.202",
+      "geoip": {
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
+    },
+    {
+      "hostname": "challenges.cloudflare.com",
+      "ip": "104.18.95.41",
+      "geoip": {
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
+    },
+    {
+      "hostname": "brunhild.challenges.cloudflare.com",
+      "ip": "2606:4700::6812:1092",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
+    }
+  ]
+}

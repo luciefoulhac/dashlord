@@ -1,0 +1,913 @@
+{
+	"@programName": "ZAP",
+	"@version": "2.17.0",
+	"@generated": "Thu, 17 Sept 2026 10:24:11",
+	"created": "2026-09-17T10:24:11.828347298Z",
+	"insights":[
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://experimentationsurbaines.ademe.fr",
+			"key": "insight.code.4xx",
+			"description": "Percentage of responses with status code 4xx",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://experimentationsurbaines.ademe.fr",
+			"key": "insight.endpoint.ctype.text/html",
+			"description": "Percentage of endpoints with content type text/html",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://experimentationsurbaines.ademe.fr",
+			"key": "insight.endpoint.method.GET",
+			"description": "Percentage of endpoints with method GET",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://experimentationsurbaines.ademe.fr",
+			"key": "insight.endpoint.total",
+			"description": "Count of total endpoints",
+			"statistic": "2"
+		}
+	],
+	"site":[ 
+		{
+			"@name": "https://experimentationsurbaines.ademe.fr",
+			"@host": "experimentationsurbaines.ademe.fr",
+			"@port": "443",
+			"@ssl": "true",
+			"alerts": [ 
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-13",
+					"alert": "CSP: Failure to Define Directive with No Fallback",
+					"name": "CSP: Failure to Define Directive with No Fallback",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>The Content Security Policy fails to define one of the directives that has no fallback. Missing/excluding them is the same as allowing anything.</p>",
+					"instances":[ 
+						{
+							"id": "3",
+							"uri": "https://experimentationsurbaines.ademe.fr",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-9BNxSH4WFMWfhPdT63qW2j' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src."
+						},
+						{
+							"id": "25",
+							"uri": "https://experimentationsurbaines.ademe.fr",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr",
+							"method": "GET",
+							"param": "content-security-policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-pbrHnQuvA9R25Vvb6kjN7N' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "The directive(s): form-action is/are among the directives that do not fallback to default-src."
+						},
+						{
+							"id": "2",
+							"uri": "https://experimentationsurbaines.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-eOyJuml0QNysNHUbKzDxvi' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src."
+						},
+						{
+							"id": "0",
+							"uri": "https://experimentationsurbaines.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-SlEAUPhc68OfPYOkDMjBQh' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src."
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src.</p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "8"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-10",
+					"alert": "CSP: script-src unsafe-eval",
+					"name": "CSP: script-src unsafe-eval",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"id": "7",
+							"uri": "https://experimentationsurbaines.ademe.fr",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-9BNxSH4WFMWfhPdT63qW2j' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "script-src includes unsafe-eval."
+						},
+						{
+							"id": "12",
+							"uri": "https://experimentationsurbaines.ademe.fr",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-pbrHnQuvA9R25Vvb6kjN7N' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "script-src includes unsafe-eval."
+						},
+						{
+							"id": "10",
+							"uri": "https://experimentationsurbaines.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-eOyJuml0QNysNHUbKzDxvi' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "script-src includes unsafe-eval."
+						},
+						{
+							"id": "15",
+							"uri": "https://experimentationsurbaines.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-SlEAUPhc68OfPYOkDMjBQh' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "script-src includes unsafe-eval."
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>script-src includes unsafe-eval.</p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "8"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-6",
+					"alert": "CSP: style-src unsafe-inline",
+					"name": "CSP: style-src unsafe-inline",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"id": "6",
+							"uri": "https://experimentationsurbaines.ademe.fr",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-9BNxSH4WFMWfhPdT63qW2j' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"id": "4",
+							"uri": "https://experimentationsurbaines.ademe.fr",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-pbrHnQuvA9R25Vvb6kjN7N' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"id": "5",
+							"uri": "https://experimentationsurbaines.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-eOyJuml0QNysNHUbKzDxvi' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"id": "9",
+							"uri": "https://experimentationsurbaines.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-SlEAUPhc68OfPYOkDMjBQh' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "style-src includes unsafe-inline."
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>style-src includes unsafe-inline.</p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "8"
+				},
+				{
+					"pluginid": "10054",
+					"alertRef": "10054-2",
+					"alert": "Cookie with SameSite Attribute None",
+					"name": "Cookie with SameSite Attribute None",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set with its SameSite attribute set to \"none\", which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
+					"instances":[ 
+						{
+							"id": "46",
+							"uri": "https://experimentationsurbaines.ademe.fr",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</p>",
+					"cweid": "1275",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10054",
+					"alertRef": "10054-1",
+					"alert": "Cookie without SameSite Attribute",
+					"name": "Cookie without SameSite Attribute",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
+					"instances":[ 
+						{
+							"id": "38",
+							"uri": "https://experimentationsurbaines.ademe.fr",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						},
+						{
+							"id": "39",
+							"uri": "https://experimentationsurbaines.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						},
+						{
+							"id": "47",
+							"uri": "https://experimentationsurbaines.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</p>",
+					"cweid": "1275",
+					"wascid": "13",
+					"sourceid": "8"
+				},
+				{
+					"pluginid": "10035",
+					"alertRef": "10035-1",
+					"alert": "Strict-Transport-Security Header Not Set",
+					"name": "Strict-Transport-Security Header Not Set",
+					"riskcode": "1",
+					"confidence": "3",
+					"riskdesc": "Low (High)",
+					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
+					"instances":[ 
+						{
+							"id": "54",
+							"uri": "https://experimentationsurbaines.ademe.fr",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "52",
+							"uri": "https://experimentationsurbaines.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "55",
+							"uri": "https://experimentationsurbaines.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
+					"cweid": "319",
+					"wascid": "15",
+					"sourceid": "8"
+				},
+				{
+					"pluginid": "10096",
+					"alertRef": "10096",
+					"alert": "Timestamp Disclosure - Unix",
+					"name": "Timestamp Disclosure - Unix",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>A timestamp was disclosed by the application/web server. - Unix</p>",
+					"instances":[ 
+						{
+							"id": "58",
+							"uri": "https://experimentationsurbaines.ademe.fr",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1789640649",
+							"otherinfo": "1789640649, which evaluates to: 2026-09-17 10:24:09."
+						},
+						{
+							"id": "56",
+							"uri": "https://experimentationsurbaines.ademe.fr",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789640649",
+							"otherinfo": "1789640649, which evaluates to: 2026-09-17 10:24:09."
+						},
+						{
+							"id": "60",
+							"uri": "https://experimentationsurbaines.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1789640649",
+							"otherinfo": "1789640649, which evaluates to: 2026-09-17 10:24:09."
+						},
+						{
+							"id": "57",
+							"uri": "https://experimentationsurbaines.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789640649",
+							"otherinfo": "1789640649, which evaluates to: 2026-09-17 10:24:09."
+						},
+						{
+							"id": "63",
+							"uri": "https://experimentationsurbaines.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789640649",
+							"otherinfo": "1789640649, which evaluates to: 2026-09-17 10:24:09."
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
+					"otherinfo": "<p>1789640649, which evaluates to: 2026-09-17 10:24:09.</p>",
+					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
+					"cweid": "497",
+					"wascid": "13",
+					"sourceid": "8"
+				},
+				{
+					"pluginid": "10094",
+					"alertRef": "10094-3",
+					"alert": "Base64 Disclosure",
+					"name": "Base64 Disclosure",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
+					"instances":[ 
+						{
+							"id": "92",
+							"uri": "https://experimentationsurbaines.ademe.fr",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "PHwdvFG7lr_ROrUhoqesMjTxtDxJaLrQnA",
+							"otherinfo": "<|\\x001d\uFFFDQ\uFFFD\uFFFD\uFFFD\uFFFD:\uFFFD!\uFFFD\uFFFD\uFFFD24\uFFFD<Ih\uFFFD\u041C"
+						},
+						{
+							"id": "89",
+							"uri": "https://experimentationsurbaines.ademe.fr",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "ylC4_2ZY3szuR_ZGZDM4klmT09uclPSc6nRs93ISPMQ-1789640649",
+							"otherinfo": "\uFFFDP\uFFFD\uFFFDfX\uFFFD\uFFFD\uFFFDG\uFFFDFd38\uFFFDY\uFFFD\uFFFD\u06DC\uFFFD\uFFFD\uFFFD\uFFFDtl\uFFFDr\\x0012<\uFFFD>\u05FF=\uFFFD:\uFFFD"
+						},
+						{
+							"id": "88",
+							"uri": "https://experimentationsurbaines.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "fUhHy1OFQLwtyKahhLzQWvqjjR18-1789640649",
+							"otherinfo": "}HG\uFFFDS\uFFFD@\uFFFD-\u0226\uFFFD\uFFFD\uFFFD\uFFFDZ\uFFFD\uFFFD\uFFFD\\x001d|\uFFFD^\uFFFD\uFFFD\uFFFD4\uFFFD"
+						},
+						{
+							"id": "109",
+							"uri": "https://experimentationsurbaines.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "qdKVqTKQNlPXiEd1_1HQhXDB96n1pNTruoOiwHwDiUU-1789640649",
+							"otherinfo": "\uFFFD\u0495\uFFFD2\uFFFD6S\u05C8Gu\uFFFDQ\u0405p\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uBE83\uFFFD\uFFFD|\\x0003\uFFFDE>\u05FF=\uFFFD:\uFFFD"
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
+					"otherinfo": "<p><|\\x001d\uFFFDQ\uFFFD\uFFFD\uFFFD\uFFFD:\uFFFD!\uFFFD\uFFFD\uFFFD24\uFFFD<Ih\uFFFD\u041C</p>",
+					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "319",
+					"wascid": "13",
+					"sourceid": "8"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-12",
+					"alert": "CSP: Header & Meta",
+					"name": "CSP: Header & Meta",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>The message contained both CSP specified via header and via Meta tag. It was not possible to union these policies in order to perform an analysis. Therefore, they have been evaluated individually.</p>",
+					"instances":[ 
+						{
+							"id": "8",
+							"uri": "https://experimentationsurbaines.ademe.fr",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "13",
+							"uri": "https://experimentationsurbaines.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "21",
+							"uri": "https://experimentationsurbaines.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "8"
+				},
+				{
+					"pluginid": "90033",
+					"alertRef": "90033",
+					"alert": "Loosely Scoped Cookie",
+					"name": "Loosely Scoped Cookie",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>Cookies can be scoped by domain or path. This check is only concerned with domain scope.The domain scope applied to a cookie determines which domains can access it. For example, a cookie can be scoped strictly to a subdomain e.g. www.nottrusted.com, or loosely scoped to a parent domain e.g. nottrusted.com. In the latter case, any subdomain of nottrusted.com can access the cookie. Loosely scoped cookies are common in mega-applications like google.com and live.com. Cookies set from a subdomain like app.foo.bar are transmitted only to that domain by the browser. However, cookies scoped to a parent-level domain may be transmitted to the parent, or any subdomain of the parent.</p>",
+					"instances":[ 
+						{
+							"id": "34",
+							"uri": "https://experimentationsurbaines.ademe.fr",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Domain=ademe.fr",
+							"otherinfo": "The origin domain used for comparison was:\nexperimentationsurbaines.ademe.fr\nCookie name: __cf_bm\n"
+						},
+						{
+							"id": "35",
+							"uri": "https://experimentationsurbaines.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Domain=ademe.fr",
+							"otherinfo": "The origin domain used for comparison was:\nexperimentationsurbaines.ademe.fr\nCookie name: __cf_bm\n"
+						},
+						{
+							"id": "45",
+							"uri": "https://experimentationsurbaines.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Domain=ademe.fr",
+							"otherinfo": "The origin domain used for comparison was:\nexperimentationsurbaines.ademe.fr\nCookie name: __cf_bm\n"
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Always scope cookies to a FQDN (Fully Qualified Domain Name).</p>",
+					"otherinfo": "<p>The origin domain used for comparison was:</p><p>experimentationsurbaines.ademe.fr</p><p>Cookie name: __cf_bm</p><p></p>",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc6265#section-4.1</p><p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p><p>https://code.google.com/archive/p/browsersec/wikis/Part2.wiki</p>",
+					"cweid": "565",
+					"wascid": "15",
+					"sourceid": "8"
+				},
+				{
+					"pluginid": "10109",
+					"alertRef": "10109",
+					"alert": "Modern Web Application",
+					"name": "Modern Web Application",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Client Spider may well be more effective than the standard one.</p>",
+					"instances":[ 
+						{
+							"id": "49",
+							"uri": "https://experimentationsurbaines.ademe.fr",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script nonce=\"9BNxSH4WFMWfhPdT63qW2j\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'ya2b_4TGRQ5.2I4EEJAoWYQ107WOGBv5QtlLkWxa058-1789640649-1.2.1.1-HeF6ssfpVdEFzwMtiwZ8FBB9QX2iDsZFdz8nTvRskfCKEfY..RHCgOCcf3vm31kL',cITimeS: '1789640649',cN: '9BNxSH4WFMWfhPdT63qW2j',cRay: 'a3c76649899f319e',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:\"/?__cf_chl_tk=3sQmsoH2QIKTpuWpzuFB0GbAFBnfmcqjsudmR.1c280-1789640649-1.0.1.1-Oa8Z0qb._J5hO98_0b_wert8T_pILU.2XNotOLlHsEk\",cvId: '3',cZone: 'experimentationsurbaines.ademe.fr',fa:\"/?__cf_chl_f_tk=3sQmsoH2QIKTpuWpzuFB0GbAFBnfmcqjsudmR.1c280-1789640649-1.0.1.1-Oa8Z0qb._J5hO98_0b_wert8T_pILU.2XNotOLlHsEk\",md: 'U5B.qFakCjrqp5WG6dkWTlhREjEKhYqsyrUHX9Z9aj0-1789640649-1.2.1.1-OsB2GpEAfZlIXU4mdmgWSuUgJ3LOg.7IQeEPPeceg5QiwViqk6NEnSatsdlVQcyxRsMBChHLM5f4GqBANYTvjk9bhfddiU5L4QtR9KCfToYgDqaQNsK9Qs2ToAbIZLfgB7hErHQGEXOvfQGgapEdrwbQLSAUtW9Pw8gCBuGtLu3VrmeSVi9VJZ.qEkY1zbJg.RoX5UjH6jGc23rM_REGMAA7xe16EEn.xgv4xUE9puWzrfsfGSJuPmV4wYKzUICd511PeuH_988wBDs8goIMKB__judrowL7nGnyXlP.MYIfY2PeqntmcbwFsZW5sEH68eavvH4a37kvtVR0DbBgGQIzyiryABGcv0Z7Cz4WpYon6dx1JHkjvWCLpLO4dI9Qx._XZCd6Ah5T._KjRVSkMUBy5z0sYc5feNDIURIbfyXYMG1_4HzR5cmsR8bH5.YpGl8v2FoVFIS6S0qiIL71SA1OuP7R9NBRilJEB8e_bCINlqaHqbjj7OLQoAHs80_ILDBuf3SyyzDzqUvj0H_HJWdIiUUjVkVqMKyR66BjI1dTWe0Ka1KHqm5KlE9gmOTXfo.xzffsUbbgUyk0DUO2Cvuj6evB7KJMj07R8vaKgN1tegEDgvGNnjX.BI0I7Za9uYe42uoBJPShXyB8qHQLa0KoF6YmYYi9M88kcj6CZyXeL9iTUrchYSEo3Z5RwU1eAtOGbxyFA69wxeYyuabw.DJ6hVzc4YPSM1jFKPy8OXs32HZhBsXbWdhZvWPwcRNS237NtHFW7cxQJ.9eJZv7_4q0aBV0J.YDDCxbsM2chzrY.E8veFYM8gDhZgT7pMV5roAwsVmqjGiyLkenVJiAeDgivc_sT29z.I0v8g9b57lEeMtuE_SP.QEOEpr_vO_b6jf3Ox1BSJKOzqvlURb1rZnOLmb0GUb7YO.s_.q.zbH8.mwbHDbm5r6BNGLETU1U6f4JQNpnlRCoGrjdlG2sSAbcf7tA2ToMVyr2Y5QERzx7iR0elVXJJDZ2oixkbzRRocOoCHrDnBxA3aXyXM0MfEnrYoIIpTiNiTwozrAkMPs',mdrd: 'V2OXdfiXfMSBcUfHQRcPhpA3H1YYYYLRI63CpuM22r8-1789640649-1.2.1.1-BBQPL7yuDhnZSFylltWBgDQ9nEhVIvlbQV1WHKtMiZkFgm0vmKRqhu5DSjSBwUR1oIOtgbl5rgyU80WyzW07i1QrJMOADbipU8k1BwTead_7SDUmh3BDgPJK19P48cijWc5sZuDw01qB2VbWaZ6mUUph.vRl4Bk2qKQ3DnBe6xMnpVFdTJZWWLBgjtZNB.DATZwHH5bQWzMRTH3OvyFbSg',};var a = document.createElement('script');a.nonce = '9BNxSH4WFMWfhPdT63qW2j';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a3c76649899f319e';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/?__cf_chl_rt_tk=3sQmsoH2QIKTpuWpzuFB0GbAFBnfmcqjsudmR.1c280-1789640649-1.0.1.1-Oa8Z0qb._J5hO98_0b_wert8T_pILU.2XNotOLlHsEk\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "51",
+							"uri": "https://experimentationsurbaines.ademe.fr",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script nonce=\"pbrHnQuvA9R25Vvb6kjN7N\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: '8Y0p8j6xX3k7XnFQNMz5THZIgXRbioHy15zHx6v1lvQ-1789640649-1.2.1.1-ttWQJvnfIc0PC4d9rCFuuFH2ESoQsXXwY3W3obaXBdusHza66M8Uh6qP.M9iJbp8',cITimeS: '1789640649',cN: 'pbrHnQuvA9R25Vvb6kjN7N',cRay: 'a3c766492ec5386e',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:\"/?__cf_chl_tk=Bb3BsB4ER0JrodS2PzuUmjrTOZb2a7F8VjUd4MWIf7Y-1789640649-1.0.1.1-muUkgDPyOSQmJsq9bUzUA3XlvTijoAuvt.xFddrDWQU\",cvId: '3',cZone: 'experimentationsurbaines.ademe.fr',fa:\"/?__cf_chl_f_tk=Bb3BsB4ER0JrodS2PzuUmjrTOZb2a7F8VjUd4MWIf7Y-1789640649-1.0.1.1-muUkgDPyOSQmJsq9bUzUA3XlvTijoAuvt.xFddrDWQU\",md: 'U346X2eJ0Xx.pc47kM_nD4hW3Toh8iMGaFR1UXhaE70-1789640649-1.2.1.1-2WJVjdUDZvrb09Vusfddadkci7xoItM4wOr3dlQ2uIzhVXujDLoKM9Tne7Mmo_WEwKRX6DQ4xy5tz_yvoD78CiQywjaiRYAV47iXInyXoMDgkWDSJO7D6hxLXStRcFX444eUb0awzTwo40JAZmZeE1o4cuo9xkgEcpritRNZ0uphwf8uMSOvN0R20H5lKb43IU9q.yZqMK_FLHBJAOEIWIrLX51bd_GiB7i1m9FaFrI6Dkshbrz6KufcVLvaIdvQwkJ6AZrP7RxHJ3MVbUgXznGT__Lz26ZfFKhNr1S7L2CTmFLZmdzygRuG0j4Z7eJwvIMqLaRBf3AdMhQhTXGy.YjO4FI3KRgJI1N5wS_iV1XR5F5rKDB2mLynwBDuZcr74GmxGwW98ot8L1bWZ1XonLSdn355RePmXJoLO.N3Dib6xDZmRwF_HtL9zXunxW56_i2ObONUAiYiZe1koAojkj4xseehuIv.S5Af4Y7F4kxb.5dejf5xQLfI.EnI9PTxpSte74uCAZGe4E9oLAqYkArLjF1EVeIPb3wvVg73K0QI98rwMHsSAbMlj3wcKdBUuPSq2G52R.SAfUqmn7nT2.KxyoFlYrXcRt01XNMLshsOruMM4qmwX5tDyARwWtuLRbnivKJ0uthHKEGhtT4D1ElNFGMiFMjVEOoQORN7qnCiJbLj8D0HphAN.RuE0PvVl0IqISX.hbjCNRDrs2gUHM.374pYpBwh5ucpe57TY43Vf8vVnTlzsGfp__NWMwau0083eQ7FG2ibLUxTjVj0EMYDx1ztnllUSf0t6aLgdf1Y1zjzmdXN.6sgTCkTw.aSxXGv6pxlE4O0dUk6kcAfQCIHdUXjB_dMgHXDJ0ii051iYxD9YsoRy11h5JNfUbagfjasfPRSLVIX.TPmdrkQuV4IO82ZKks5TmYmwr4.K.eApQK6dXKC4.phxc57Xd0R6oE653r.Te6IJVecV5NyJWamMVWKD8dLWOWlhyhsLwyPW9G4msQSiR.Pn9af5VbGQ6jmFfMGnrRxHDsWfB3820OMWI8JJgYkErij153.2WlNsdFt9ALkEZ0C8fUVWpSCI7zW7S0nH1qBbfu8Bm10E9flkS_HME3L.ifiwlJJlZ6v4VRalv4ge9zpS4Ug7mYEGTA.tDsgygbLqFJ51c4AjqsdnzkQELtHqANsAoWZIwCSprE58bMBJPGBfEw2PgqU',mdrd: 'agDBodKsp.NOnVA7ie8OhaZJ_vPtHuNMLDdH0XdaVpA-1789640649-1.2.1.1-hnuTZD0HwPyZCIwM3ddGKgEs205OLvstRGz2kbZxuMiFxgRuf58eyhaPNxG73I3ko7_NcMmvoBoaaR_tFHz1RHQMoVzzDE09gcuW_Vno8ujG_u1vVUXk3tzegVTz.d4WoCll2XKXR.CBmJ4MJSY8SFhBgbJ1Q0Q._7puOMn.0I__Iz8C1uXltfp.dDwpjN_sZ4nP1zJdL09PtQwrTJaBfOOlDzwlTvtRTUTpWIZ0nT_DNfNKktB1Q7XYHZ81OCqwIjW0Kn6wt3TMP6BPsUyv3uFohyze6m.P7nGhtlf51YyZlB8mdQYLT_rFO_1QZAGOB8.9WmgHlpnNlijGqeRghw',};var a = document.createElement('script');a.nonce = 'pbrHnQuvA9R25Vvb6kjN7N';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a3c766492ec5386e';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/?__cf_chl_rt_tk=Bb3BsB4ER0JrodS2PzuUmjrTOZb2a7F8VjUd4MWIf7Y-1789640649-1.0.1.1-muUkgDPyOSQmJsq9bUzUA3XlvTijoAuvt.xFddrDWQU\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "50",
+							"uri": "https://experimentationsurbaines.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script nonce=\"eOyJuml0QNysNHUbKzDxvi\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'UWV77G8u9psS8UJYO3StwzlgWUTO4rbYzHpHUp3Zef0-1789640649-1.2.1.1-ko7NP29n46TxzTAiXnYDGrdyaStbyBUjb50uEkJPTVnttURvP.Su4rCi0PY6xkjg',cITimeS: '1789640649',cN: 'eOyJuml0QNysNHUbKzDxvi',cRay: 'a3c766498eedd629',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:\"/robots.txt?__cf_chl_tk=y_bITxYmOIFhVZu_0M6xwSuCD.e7vjs_.GRUl.Q51v8-1789640649-1.0.1.1-ZUF0dmpfMrw2a2kS6Ctu75RgxopclOz55kWAbugjVVQ\",cvId: '3',cZone: 'experimentationsurbaines.ademe.fr',fa:\"/robots.txt?__cf_chl_f_tk=y_bITxYmOIFhVZu_0M6xwSuCD.e7vjs_.GRUl.Q51v8-1789640649-1.0.1.1-ZUF0dmpfMrw2a2kS6Ctu75RgxopclOz55kWAbugjVVQ\",md: 'N3TIH7bXuq7TO29XqfAvUefxsa.2UUgFN0tCIVY.IAg-1789640649-1.2.1.1-QGuhW3N2G1eGt2ygC1Se43R9CB6bBo_XBf5xIKrdt3qUU7pIRAvO4qh8I8KuyzlqLUOWkihYP3TniXxuu8F8F820WJH1vXoc1UODJCC8CkVTbmnwAkWtfTmD8h8siLugcQ0yhppijDLDZfKJU5M9l4ByzjtX3._dCMtWkmrat3xZCPVukGM84qPZQbpCIM25RsbfXScMgWF82eL1W_N1FWZhyrwrEDE7sUHK43s.lHJOjDj_G3M4b3wssOxIw59ovdN92Il8Qt4DuDxeyIRsFWIz0a2fkqF44MLysP3HrIaS4.RKosUKuxT6.EHS.Q8lFqSpgaulrAN80nz5xlKQ6usmulZghyyTpz_qibAf19BAflUqz9gDtc8yanZIQd_p67kJPA8wxGyH0pZOj6W0uHmoL7Z41dO.twnjPoMz_4MUc8KKW0.TfYVKhVEgJSU6DF9HRrx2BNjg5TrRsOCm2ZUcUZq49PiTJ12HywZcRDD.wkPY_b3Dac6x2eilpRHGYbz30at1x9qgAuzj_ld25ojfBJgyNgtqrh3uIMZYjviKD4u6uouTyS4uWSvJdv4oCsECljEX1ZEzy5hN7q5k1mcWHcyowbbB8kVF8qpuzTHCnYLKZyLHz1lSZQKPWMWT3FXHtUASjn7HFLJfc2nYTQo3G_CGYc.x55TBkax54jeASx.Srh2ILk3bLUpqJ2rU1WzVOmcwyitFOfDdHXY2KTQqejoBv5xfFUPe5a4HFYN0YHIyUHSRzCpvpZE0S2rf8nUiZZyWT9TWe4hZvjuqGQLa3E3cVlnH2jt4VuhBXs44A.yvIQkbFh5giiiUu2OAwuzUZwWtFJWf8jf2_.lJIQIG1B7EL88BCurzEnaeIpXqezqfjO1aWGK92zzrchDHHfTR5KBMcdry59jPZy5e7zmpCxbDaRyVxT2sN305THm0nK4KGrr_0Yb3yeXC.nWXcc5kgcVWcDw6nKlGlNuaCBTOHLysOUmnFOFoVZJJ38tyKP0CB11XrlIGInJofA2JqpamdhTdpkb3goiDQkmf9yyCg2BhuAMXu7ICf9m9PzF8JOF1qOAXwOeNhl2J6M1F',mdrd: 'x_sQLCyOR4yavO20palbxY59Ma.U3LeePXLYCdsi4pY-1789640649-1.2.1.1-JqPqxFYTF3KCG2QxaNy4LDsrdtMj85WLhB9NeQZEBbvzrGdZ5i.HEmiAXNgzsBa9F5PVEZvsLTX53Zhu5S5WnNcVuEEFLkHvJ6Xom_Kw6ycCIDz_6rNuPQXizgyMlCxyURP2tjOXrEiM2ZSkyacAD5HIR9qKdRIjcA5ZJ.0IEYFKf9yqNQQa426XEdVoEQ5QBAtHzkm78tUsETN86YlmOg',};var a = document.createElement('script');a.nonce = 'eOyJuml0QNysNHUbKzDxvi';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a3c766498eedd629';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/robots.txt?__cf_chl_rt_tk=y_bITxYmOIFhVZu_0M6xwSuCD.e7vjs_.GRUl.Q51v8-1789640649-1.0.1.1-ZUF0dmpfMrw2a2kS6Ctu75RgxopclOz55kWAbugjVVQ\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "48",
+							"uri": "https://experimentationsurbaines.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script nonce=\"SlEAUPhc68OfPYOkDMjBQh\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'GFH7nHcUEM7p28C2BtoSl442hu6kGkdg36p33y5ktqc-1789640649-1.2.1.1-aHWPqgWh.hlL74SjYUtzNcpNJ_DS634KXpRbsAbofHwmYByWAZNwjt4vqf325P37',cITimeS: '1789640649',cN: 'SlEAUPhc68OfPYOkDMjBQh',cRay: 'a3c766499c37f7a8',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:\"/sitemap.xml?__cf_chl_tk=y6wiLwjdG3XwoMj4fPu.SJJwYS3wZUYPBjI073haSwA-1789640649-1.0.1.1-6M8J.Na0JzTlcf6MkFob0qNsWgyLf_kgPVeTki60V24\",cvId: '3',cZone: 'experimentationsurbaines.ademe.fr',fa:\"/sitemap.xml?__cf_chl_f_tk=y6wiLwjdG3XwoMj4fPu.SJJwYS3wZUYPBjI073haSwA-1789640649-1.0.1.1-6M8J.Na0JzTlcf6MkFob0qNsWgyLf_kgPVeTki60V24\",md: 'p0y351brywYanX5yiqucOkWQd2xX8iMwToPa_Qbl.Tc-1789640649-1.2.1.1-gK64JrCAcvtK76f5_AIn2Yaj6ON5ME2MQuujzTaRkNOkTewEb1vL4ebH.cynWl4ej4AWjAkTJLYkDVvXCnBJgesS8kzc3Dqt1OJXYJdV8IJmxMRWx15nuWFFzZ38GSqEHuVztEvO46pW15qUQUxsr_lWVE54v2OU1uZBXc7GjyJ6U2HebFfmgrEHhseZrWWj6pQkRN_HQtheUlNMHtHZaFJMkSpYBv1lM.a4GdxpT7U8iSYRsLdZp9uzemAvitf2nzyyEvsvjOJTM4q7q77XjmblxKW19nkGVWjYhmmHqkFdEjA2X7LuuRKzWAZTXSH4IIbhaUmmMJb8.8Tpjh7MunubTPC0ViVmdLXbJJqF5ohYzvSGpy7wiiqsQlo3kqCvqMNRlts37Yfiak4M_wVSbXy.P.BAipxbCN9xevlmTYTj6jL73lURbnAIUd1ho5apW.YOGMV3UHbqaicTXoAsHrXUq9.zOLQ0F.LWg4gh2xJHQau1SVvzCYXiiX02urAA03couvrhmrjyaXKOCkTNmWCDTaMOR.QU6_oZxHc8laFyrwJhtHui4tExu.SYtWz_DudfLWfyow.fettJZG4CkItdLUDVObmJgPYaIBgGZBD.xabx4HXNlSjZ1eP9iSuUro9HOBhxac1LF_lYWjB.5uipK0SqYXS_pMaGiobUUf442Rm1o5WhkOBwalDI7RXfjT6A3QYECWJ8lnw.o15p6EwUJ4WUx_RQktZOLsxLu.9FMtEkt6ce.JclzWwDhRaFOL6FuhljfLQLbIR3qt4x2FRvIFLNUY_gHoO9YqjqUKkqT0kmJxWeQhVEY40d5BUzIABSRsIr9oHinsU2ynD9TxG4Cu2bCe1InDDLG3N1mUnhjdybaCNkrXfWogr1ix1QkYMk7G.Xo5GyEsMfF2SlAVgI4twgPVevvtrBTyHPxpSzPXcOi.IMlmWlhQnckWESVqkDUe_LrJZ1ysZ6DX4xg2JK8XpQIAiaQA4VVVkLRH2MEMeogCNIhShtPpbAf9PRaIAoMPeiWzrzEqhviE23RgJ0yloK38WhMJCBz6gyA7Nt3nHHnzHjP0Z8hZw6EJhH',mdrd: 'K4zZ.HmkOwvfNg3o72QwuoiRMwirk44Np2LPHf6j4W0-1789640649-1.2.1.1-hqaKLAektu_zDwxi.OYL08Pvjdx9sAiMHR59dQ4HqUb0xLzHclsnxm_gUyA28zU2FBPniWBYCO9dYdsgaGEJcG_uHkSDrbVGbJEjLM8La5aZRU4XyNfw_T21U8VFjKX_y792tTtOxEBr46BoJvrFh_BYb4tym_j11ShOs9sNmWaFNjqo2yiAejXOhaggpmWUXWR4OKCAIzhnfYbtYF_QGw',};var a = document.createElement('script');a.nonce = 'SlEAUPhc68OfPYOkDMjBQh';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a3c766499c37f7a8';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/sitemap.xml?__cf_chl_rt_tk=y6wiLwjdG3XwoMj4fPu.SJJwYS3wZUYPBjI073haSwA-1789640649-1.0.1.1-6M8J.Na0JzTlcf6MkFob0qNsWgyLf_kgPVeTki60V24\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>This is an informational alert and so no changes are required.</p>",
+					"otherinfo": "<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>",
+					"reference": "",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "8"
+				},
+				{
+					"pluginid": "10049",
+					"alertRef": "10049-1",
+					"alert": "Non-Storable Content",
+					"name": "Non-Storable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
+					"instances":[ 
+						{
+							"id": "106",
+							"uri": "https://experimentationsurbaines.ademe.fr",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "403",
+							"otherinfo": ""
+						},
+						{
+							"id": "107",
+							"uri": "https://experimentationsurbaines.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "403",
+							"otherinfo": ""
+						},
+						{
+							"id": "111",
+							"uri": "https://experimentationsurbaines.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "403",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
+					"cweid": "524",
+					"wascid": "13",
+					"sourceid": "8"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-3",
+					"alert": "Sec-Fetch-Dest Header is Missing",
+					"name": "Sec-Fetch-Dest Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
+					"instances":[ 
+						{
+							"id": "93",
+							"uri": "https://experimentationsurbaines.ademe.fr",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "99",
+							"uri": "https://experimentationsurbaines.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Dest</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-2",
+					"alert": "Sec-Fetch-Mode Header is Missing",
+					"name": "Sec-Fetch-Mode Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
+					"instances":[ 
+						{
+							"id": "91",
+							"uri": "https://experimentationsurbaines.ademe.fr",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "96",
+							"uri": "https://experimentationsurbaines.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Mode</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-1",
+					"alert": "Sec-Fetch-Site Header is Missing",
+					"name": "Sec-Fetch-Site Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
+					"instances":[ 
+						{
+							"id": "90",
+							"uri": "https://experimentationsurbaines.ademe.fr",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "94",
+							"uri": "https://experimentationsurbaines.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Site</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-4",
+					"alert": "Sec-Fetch-User Header is Missing",
+					"name": "Sec-Fetch-User Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
+					"instances":[ 
+						{
+							"id": "98",
+							"uri": "https://experimentationsurbaines.ademe.fr",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "101",
+							"uri": "https://experimentationsurbaines.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10112",
+					"alertRef": "10112",
+					"alert": "Session Management Response Identified",
+					"name": "Session Management Response Identified",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.</p>",
+					"instances":[ 
+						{
+							"id": "103",
+							"uri": "https://experimentationsurbaines.ademe.fr",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "__cf_bm",
+							"otherinfo": "cookie:__cf_bm"
+						},
+						{
+							"id": "104",
+							"uri": "https://experimentationsurbaines.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "__cf_bm",
+							"otherinfo": "cookie:__cf_bm"
+						},
+						{
+							"id": "110",
+							"uri": "https://experimentationsurbaines.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/experimentationsurbaines.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "__cf_bm",
+							"otherinfo": "cookie:__cf_bm"
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
+					"otherinfo": "<p>cookie:__cf_bm</p>",
+					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/</p>",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "8"
+				}
+			]
+		}
+	],
+	"sequences":[
+	]
+
+}
