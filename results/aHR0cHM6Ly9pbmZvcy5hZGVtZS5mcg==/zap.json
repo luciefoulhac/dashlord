@@ -1,0 +1,943 @@
+{
+	"@programName": "ZAP",
+	"@version": "2.17.0",
+	"@generated": "Thu, 17 Sept 2026 10:53:48",
+	"created": "2026-09-17T10:53:48.862852275Z",
+	"insights":[
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://infos.ademe.fr",
+			"key": "insight.code.4xx",
+			"description": "Percentage of responses with status code 4xx",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://infos.ademe.fr",
+			"key": "insight.endpoint.ctype.text/html",
+			"description": "Percentage of endpoints with content type text/html",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://infos.ademe.fr",
+			"key": "insight.endpoint.method.GET",
+			"description": "Percentage of endpoints with method GET",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://infos.ademe.fr",
+			"key": "insight.endpoint.total",
+			"description": "Count of total endpoints",
+			"statistic": "2"
+		}
+	],
+	"site":[ 
+		{
+			"@name": "https://infos.ademe.fr",
+			"@host": "infos.ademe.fr",
+			"@port": "443",
+			"@ssl": "true",
+			"alerts": [ 
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-13",
+					"alert": "CSP: Failure to Define Directive with No Fallback",
+					"name": "CSP: Failure to Define Directive with No Fallback",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>The Content Security Policy fails to define one of the directives that has no fallback. Missing/excluding them is the same as allowing anything.</p>",
+					"instances":[ 
+						{
+							"id": "3",
+							"uri": "https://infos.ademe.fr",
+							"nodeName": "https:\/\/infos.ademe.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-ImhxmjolZgbJZ1SKYVo93E' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src."
+						},
+						{
+							"id": "2",
+							"uri": "https://infos.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/infos.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-aQ5rDk3Eyw94h96JdJUUTT' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src."
+						},
+						{
+							"id": "20",
+							"uri": "https://infos.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/infos.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "content-security-policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-CYnUqSRbajdvMdVNAAWcr1' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "The directive(s): form-action is/are among the directives that do not fallback to default-src."
+						}
+					],
+					"count": "3",
+					"systemic": true,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src.</p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-10",
+					"alert": "CSP: script-src unsafe-eval",
+					"name": "CSP: script-src unsafe-eval",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"id": "11",
+							"uri": "https://infos.ademe.fr",
+							"nodeName": "https:\/\/infos.ademe.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-ImhxmjolZgbJZ1SKYVo93E' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "script-src includes unsafe-eval."
+						},
+						{
+							"id": "8",
+							"uri": "https://infos.ademe.fr",
+							"nodeName": "https:\/\/infos.ademe.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-Mu4JuTri23XW9zKiGWJB3R' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "script-src includes unsafe-eval."
+						},
+						{
+							"id": "10",
+							"uri": "https://infos.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/infos.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-aQ5rDk3Eyw94h96JdJUUTT' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "script-src includes unsafe-eval."
+						},
+						{
+							"id": "9",
+							"uri": "https://infos.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/infos.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-CYnUqSRbajdvMdVNAAWcr1' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "script-src includes unsafe-eval."
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>script-src includes unsafe-eval.</p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-6",
+					"alert": "CSP: style-src unsafe-inline",
+					"name": "CSP: style-src unsafe-inline",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"id": "4",
+							"uri": "https://infos.ademe.fr",
+							"nodeName": "https:\/\/infos.ademe.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-ImhxmjolZgbJZ1SKYVo93E' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"id": "5",
+							"uri": "https://infos.ademe.fr",
+							"nodeName": "https:\/\/infos.ademe.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-Mu4JuTri23XW9zKiGWJB3R' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"id": "7",
+							"uri": "https://infos.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/infos.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-aQ5rDk3Eyw94h96JdJUUTT' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"id": "6",
+							"uri": "https://infos.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/infos.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-CYnUqSRbajdvMdVNAAWcr1' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "style-src includes unsafe-inline."
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>style-src includes unsafe-inline.</p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10054",
+					"alertRef": "10054-2",
+					"alert": "Cookie with SameSite Attribute None",
+					"name": "Cookie with SameSite Attribute None",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set with its SameSite attribute set to \"none\", which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
+					"instances":[ 
+						{
+							"id": "47",
+							"uri": "https://infos.ademe.fr",
+							"nodeName": "https:\/\/infos.ademe.fr",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</p>",
+					"cweid": "1275",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10054",
+					"alertRef": "10054-1",
+					"alert": "Cookie without SameSite Attribute",
+					"name": "Cookie without SameSite Attribute",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
+					"instances":[ 
+						{
+							"id": "43",
+							"uri": "https://infos.ademe.fr",
+							"nodeName": "https:\/\/infos.ademe.fr",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						},
+						{
+							"id": "45",
+							"uri": "https://infos.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/infos.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						},
+						{
+							"id": "44",
+							"uri": "https://infos.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/infos.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</p>",
+					"cweid": "1275",
+					"wascid": "13",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "10035",
+					"alertRef": "10035-1",
+					"alert": "Strict-Transport-Security Header Not Set",
+					"name": "Strict-Transport-Security Header Not Set",
+					"riskcode": "1",
+					"confidence": "3",
+					"riskdesc": "Low (High)",
+					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
+					"instances":[ 
+						{
+							"id": "52",
+							"uri": "https://infos.ademe.fr",
+							"nodeName": "https:\/\/infos.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "53",
+							"uri": "https://infos.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/infos.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "55",
+							"uri": "https://infos.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/infos.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
+					"cweid": "319",
+					"wascid": "15",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "10096",
+					"alertRef": "10096",
+					"alert": "Timestamp Disclosure - Unix",
+					"name": "Timestamp Disclosure - Unix",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>A timestamp was disclosed by the application/web server. - Unix</p>",
+					"instances":[ 
+						{
+							"id": "60",
+							"uri": "https://infos.ademe.fr",
+							"nodeName": "https:\/\/infos.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1789642426",
+							"otherinfo": "1789642426, which evaluates to: 2026-09-17 10:53:46."
+						},
+						{
+							"id": "56",
+							"uri": "https://infos.ademe.fr",
+							"nodeName": "https:\/\/infos.ademe.fr",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789642426",
+							"otherinfo": "1789642426, which evaluates to: 2026-09-17 10:53:46."
+						},
+						{
+							"id": "57",
+							"uri": "https://infos.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/infos.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789642426",
+							"otherinfo": "1789642426, which evaluates to: 2026-09-17 10:53:46."
+						},
+						{
+							"id": "61",
+							"uri": "https://infos.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/infos.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1789642426",
+							"otherinfo": "1789642426, which evaluates to: 2026-09-17 10:53:46."
+						},
+						{
+							"id": "59",
+							"uri": "https://infos.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/infos.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789642426",
+							"otherinfo": "1789642426, which evaluates to: 2026-09-17 10:53:46."
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
+					"otherinfo": "<p>1789642426, which evaluates to: 2026-09-17 10:53:46.</p>",
+					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
+					"cweid": "497",
+					"wascid": "13",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "10094",
+					"alertRef": "10094-3",
+					"alert": "Base64 Disclosure",
+					"name": "Base64 Disclosure",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
+					"instances":[ 
+						{
+							"id": "89",
+							"uri": "https://infos.ademe.fr",
+							"nodeName": "https:\/\/infos.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1-fjrmElrMa_SVZE54Nlgu_hT9UN_CCscNSjyATXPZo4laUvSTdR_pC1dgQO5dU_WXsjVw8wpYlRVDWAyloTdu",
+							"otherinfo": "\uFFFD\uFFFD\uFFFDa%\uFFFD\u01BFIVD\uFFFDe\uFFFD\uFFFD\uFFFDO\uFFFD\r\uFFFD \uFFFDp\u0523\uFFFD\\x0004\uFFFD=\uFFFD8\uFFFD\uFFFD/I7Q\uFFFD\uFFFD\uFFFDv\\x0004\\x000e\uFFFD\uFFFD?Y{#W\\x000f0\uFFFD\uFFFDQT5\uFFFD\uFFFDZ\\x0013v"
+						},
+						{
+							"id": "88",
+							"uri": "https://infos.ademe.fr",
+							"nodeName": "https:\/\/infos.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eZpxqp5Sld9nX2JtZ6p1VrzWhmlARIdlJ2z3mMCY9Rk-1789642426",
+							"otherinfo": "y\uFFFDq\uFFFD\uFFFDR\uFFFD\uFFFDg_bmg\uFFFDuV\uFFFD\u0586i@D\uFFFDe'l\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0019>\u05FF=\uB378\uFFFD"
+						},
+						{
+							"id": "103",
+							"uri": "https://infos.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/infos.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "W4wXLNOBb217a2AT_yp5g8Dxs8gPRrx8SVGpqHy2b0g-1789642426",
+							"otherinfo": "[\uFFFD\\x0017,\u04C1om{k`\\x0013\uFFFD*y\uFFFD\uFFFD\uFFFD\uFFFD\\x000fF\uFFFD|IQ\uFFFD\uFFFD|\uFFFDoH>\u05FF=\uB378\uFFFD"
+						},
+						{
+							"id": "102",
+							"uri": "https://infos.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/infos.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "t5pJ3Sulk_2c98zELuYy9vMEmICVsoZP7G22Ze0GtmN_OuEgAhQZVj1",
+							"otherinfo": "\uFFFD\uFFFDI\uFFFD+\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD.\uFFFD2\uFFFD\uFFFD\\x0004\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDO\uFFFDm\uFFFDe\uFFFD\\x0006\uFFFDc:\uFFFD \\x0002\\x0014\\x0019V="
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
+					"otherinfo": "<p>\uFFFD\uFFFD\uFFFDa%\uFFFD\u01BFIVD\uFFFDe\uFFFD\uFFFD\uFFFDO\uFFFD\r\uFFFD \uFFFDp\u0523\uFFFD\\x0004\uFFFD=\uFFFD8\uFFFD\uFFFD/I7Q\uFFFD\uFFFD\uFFFDv\\x0004\\x000e\uFFFD\uFFFD?Y{#W\\x000f0\uFFFD\uFFFDQT5\uFFFD\uFFFDZ\\x0013v</p>",
+					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "319",
+					"wascid": "13",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-12",
+					"alert": "CSP: Header & Meta",
+					"name": "CSP: Header & Meta",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>The message contained both CSP specified via header and via Meta tag. It was not possible to union these policies in order to perform an analysis. Therefore, they have been evaluated individually.</p>",
+					"instances":[ 
+						{
+							"id": "15",
+							"uri": "https://infos.ademe.fr",
+							"nodeName": "https:\/\/infos.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "12",
+							"uri": "https://infos.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/infos.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "13",
+							"uri": "https://infos.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/infos.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90033",
+					"alertRef": "90033",
+					"alert": "Loosely Scoped Cookie",
+					"name": "Loosely Scoped Cookie",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>Cookies can be scoped by domain or path. This check is only concerned with domain scope.The domain scope applied to a cookie determines which domains can access it. For example, a cookie can be scoped strictly to a subdomain e.g. www.nottrusted.com, or loosely scoped to a parent domain e.g. nottrusted.com. In the latter case, any subdomain of nottrusted.com can access the cookie. Loosely scoped cookies are common in mega-applications like google.com and live.com. Cookies set from a subdomain like app.foo.bar are transmitted only to that domain by the browser. However, cookies scoped to a parent-level domain may be transmitted to the parent, or any subdomain of the parent.</p>",
+					"instances":[ 
+						{
+							"id": "39",
+							"uri": "https://infos.ademe.fr",
+							"nodeName": "https:\/\/infos.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Domain=ademe.fr",
+							"otherinfo": "The origin domain used for comparison was:\ninfos.ademe.fr\nCookie name: __cf_bm\n"
+						},
+						{
+							"id": "40",
+							"uri": "https://infos.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/infos.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Domain=ademe.fr",
+							"otherinfo": "The origin domain used for comparison was:\ninfos.ademe.fr\nCookie name: __cf_bm\n"
+						},
+						{
+							"id": "36",
+							"uri": "https://infos.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/infos.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Domain=ademe.fr",
+							"otherinfo": "The origin domain used for comparison was:\ninfos.ademe.fr\nCookie name: __cf_bm\n"
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Always scope cookies to a FQDN (Fully Qualified Domain Name).</p>",
+					"otherinfo": "<p>The origin domain used for comparison was:</p><p>infos.ademe.fr</p><p>Cookie name: __cf_bm</p><p></p>",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc6265#section-4.1</p><p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p><p>https://code.google.com/archive/p/browsersec/wikis/Part2.wiki</p>",
+					"cweid": "565",
+					"wascid": "15",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "10109",
+					"alertRef": "10109",
+					"alert": "Modern Web Application",
+					"name": "Modern Web Application",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Client Spider may well be more effective than the standard one.</p>",
+					"instances":[ 
+						{
+							"id": "51",
+							"uri": "https://infos.ademe.fr",
+							"nodeName": "https:\/\/infos.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script nonce=\"ImhxmjolZgbJZ1SKYVo93E\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: '0M_MYWEuRG9JFIR4KPqrJCzoEiriATHPzyOT.EAim1k-1789642426-1.2.1.1-yu3MNbggc0pQ46RAyy8_SvFwyu2t74K_rvLWpE8UnPSFtr9izUEgLmUkheua5WX5',cITimeS: '1789642426',cN: 'ImhxmjolZgbJZ1SKYVo93E',cRay: 'a3c791ab491ecc7e',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:\"/?__cf_chl_tk=Ql1T.kRhg0TFTPbOa9L3C3z4htn5dTpXWPTZAxJY5to-1789642426-1.0.1.1-AqVqNh_UN6iJ6qvHIBqxELNuBwdcveKKFIogSBBHFK0\",cvId: '3',cZone: 'infos.ademe.fr',fa:\"/?__cf_chl_f_tk=Ql1T.kRhg0TFTPbOa9L3C3z4htn5dTpXWPTZAxJY5to-1789642426-1.0.1.1-AqVqNh_UN6iJ6qvHIBqxELNuBwdcveKKFIogSBBHFK0\",md: 'pMgVAYM2_7vo5Z31or.J3Ohjc6AdzhXdSytzj.Gv9u8-1789642426-1.2.1.1-zcpFKUKTtlqDFsAYLN14dXv0g8nnQUvm1HFc_aXeZVJLEG_KNxsxU_6cBydr_dRjDC59W1sqWdmFSZ.b7Rqyl5Ho8ZntRjjCdew2jMXb_woS7joNpKAA4WXuXce5mdpp74nA0KeJgPtotcOX18_19KfxdxF2cTMHuvE11WjM9R3DTRb27zJMT5bUkyeVsxkQ__oECnJUXb2ipzl9H1LxG63wJvk_DsyE.cSeIrKEO07Afl1ROKKY4ZnLYKs30gdMESR4_v0ma_o_SCAak8f.fz6f36S7wNO6cD7MTzGAkiD1gbq80aZAncTHC0bbiP3aIJcu7kqlV8Tmu8Hpuwd1MdaKZcQkQRAXTDhria1l81Zc8cGfP982Vu5jE0OI65sryvcHPAkf3VXUnwcwGAuMzshMaWBrVDxJYceho55xJ3PGKA9I3XUzLGlsKQHn5Z0HdZWWpmg1VzUkhvFGidP5bblJIcgbmFeBlMKyxCqFfwD3vTYKk0Plhq9yFThv4QEp92uve6JInwqYBQ7SBZ2qHkTGRl4_wbB3h6TAep24DqFqsp9iltLj1rUg5oHwEsEhVDtmD2_W8gWZkM0dAXvdAgJjUW8aO_ekILdL.UIg3YRsiVBWsbp94S78inpE3eNVM7BfKf7mAxyLgNPlriGUO5QMn1NAlpcJQ9CqLgF1q6nQg2kxVne1bWxVAQEZ8RciIaEFtJAz5TIef20X8o4v4ggohY8Zh6KtX3.glJdvhQ5RbpmWmpu3t7ZbJT8gEj_nXELixoapgG1lD.w0jR8c0y6lRgGV9AnGRWhxnuVaV1s5Vy5vBM6Zx0a_Fa9sKxALW1o1d4TBhPLvCKILSufnCqPRPCLLbdYVxHiYl5P8223M9sEbt4g5UV7j5vx.NNQqXUMVVGUUIu3v1xzSvq7PZTS9dLwrNxtSi4A8Ho_g.f84b9JbGCLvhrh0aY1Xlp2zvP_YTOrpCbTfkHthb3AyLcppqlcCHFtdrAVlKI.r_97GFJJoVdvS.wgsgicaqmwxvGu0Bgs0SEsx9qcFWrE1tMFi.zh2yYTdI5FaELXQoSSiVTidawvCiHUIYuqKeuRCb37iozW_jY1UhuCfYdfrlYvZLOw.bZ0vDu1KAcPB8NjgcoprEkgugJExsFhsHgRiUjji9j1wCFq2HCnPrNFmYgOSVIAnUGua0jN8ADapkYg',mdrd: 'IObT8J6TBKEVyQeov1nfzQPSB.glfBdY9YpCEQUJNgo-1789642426-1.2.1.1-YDSYVoDEO_DMxhOARe1k5h2aEuXR7od0PRHA4GqVNwm8ta1r.NZRPiRuW8fzIlehQsQQmj66Q9IWHr1vV1zHPoRGdeJ.Ddulj9jHyewqQ86XtthBU5GJLsX.evOahQQqJ6f1Fuu9KuRE_wNOVFGQHxGZOisNYV3DytOiPTzbmyEmJsMBHVnEDAUVd6yVdxZAY6uo5EwwPzcMd_g5vemwSACMC6ZStRkz41mUsKtkILz9Df7ExxbnBhtlaBXsSwrZ4Rk8locfy1U0321uqFQRR_IQWihEu73Q9QQ1TMfd1uv5llkHtCRpWYS.grLRsxiN',};var a = document.createElement('script');a.nonce = 'ImhxmjolZgbJZ1SKYVo93E';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a3c791ab491ecc7e';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/?__cf_chl_rt_tk=Ql1T.kRhg0TFTPbOa9L3C3z4htn5dTpXWPTZAxJY5to-1789642426-1.0.1.1-AqVqNh_UN6iJ6qvHIBqxELNuBwdcveKKFIogSBBHFK0\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "49",
+							"uri": "https://infos.ademe.fr",
+							"nodeName": "https:\/\/infos.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script nonce=\"Mu4JuTri23XW9zKiGWJB3R\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: '1HoNvh2o7btuNC7SC4TNvuTQfwH3Xiecm0OzelSDxqc-1789642426-1.2.1.1-vkvydO7b80HzeaJwRNollyk0sv9N14XDsfdOw2NIbABys3bNPSvMs8iMkGLgtMp4',cITimeS: '1789642426',cN: 'Mu4JuTri23XW9zKiGWJB3R',cRay: 'a3c791abbabbf9c5',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:\"/?__cf_chl_tk=D1QiBWEHfHIPimkKYzLAr9P1adA.eBB7Jt86iPrclfM-1789642426-1.0.1.1-5Fof1hsuCdW5MagD4ZtF0ETIKKV6PEX9LFRue1Vk.pg\",cvId: '3',cZone: 'infos.ademe.fr',fa:\"/?__cf_chl_f_tk=D1QiBWEHfHIPimkKYzLAr9P1adA.eBB7Jt86iPrclfM-1789642426-1.0.1.1-5Fof1hsuCdW5MagD4ZtF0ETIKKV6PEX9LFRue1Vk.pg\",md: 'E5EUuy8rmAuB_V5iO6NScl5GplKft_2oEqh97sVPNtc-1789642426-1.2.1.1-ZrNf6f4HqpAfpg9GxQlPbPCU3l3INJBd15EoEG1YcSJJPrmzCgoME7hubFksqXy_wECoervGD_37yDa2kIcMSbwX5jcqYsElVeB9i7E9ZQlxA6Kvt4T..js07RZ.1.IJsWicY2VWl524v9CSpYgDZTv04FEUdqE52LOhlNiX.AdaR11Gv__p3sXPFna998aacJuFawdCB8k2xHeU_.v.hZaGVsr7JHQOLs9908PQegZCLjAqE17c65EMVEyfrXQP1hl7L_sVdDH6CJ2xTVyPWpQZVBE7_7RGDS0CLikKDHv4n7ybI3Szp4F61qKLFub17eoDSCI7bXqv4AY3PvG.vcWOEXilTtpHS7GEierv0K3HWIVCZwwVlZLPDT7GYF.7IVEzDwoJHd1IZRNSjnZn.8A0u1AMU5SLwL1eu994FaWwfMZfojOqoH8L98kAah9M3aX0X4vvfZNVon4zNWj_52_ApY.aQagiNM1c0ywoNTZHu5lL4Qyxp_zg63Mh_z3Sgbe15gGr5ETxyf0_lBXZtPC_4lx4ak.uC7bYVp5wLIzRtRHGydklaWv6RgH0YqQpIlCX0t.KBKFX40S4i.CuFqcTO0cQLfLGsa2U3yjb7tixLZZlUjrxito.FDwvG9v3DBoX23iASN7ddGUn9FYcArO.Npmvs8nMQ5N.odS5pgsK35i1W3TSUYfvoNpfQLqxsRKDnMJEmskbnjYq0WDWfSGP5cvJhUJbkVRA8ZdqTt4IHGNJZRifdkG5sxaSfjhts_RfU3mLaxtgVOkC9wCRXgFYxCbEhLE744_iTUk3d4ET6Y0hE2no1aYj_CUUDe7zU5y9X1ghrz.IqPsWXqkLeC86C3eNiW5SYZlKoZ_9Se3cpJCjMOO_kEM39tlRBlB0r8YL9xWFkoYyNow4MdY60FwUZBZltUMMLxBWF6iacdXzxH2VQzsuP82HjQlYxHy0V.YBCTZoeayZA8x3Y_a5cYzlkKGmXD.cts4sXT5cK217fB.KeNtxoiQQI7x7Fr6_oszZoKrAwOsy516wt4PgdQ',mdrd: 'L9SSh.efS0BPq4a8I1ch4DVZ8RM7WUQSbsYEarhmXo4-1789642426-1.2.1.1-H7CJdcl6uJwNyjeGliUDfYbQ1e78P9PjbG6p60EAudDXE696ozl6znJfHzv4eEj_TYYNFRL4nkSjkkyWV56Mpjtu704khNVYpxC5M3f6xiy9njci1rcXPq04vO19ISkiYGwBf6NcmVm6sU5YqZVKvZNoHLFPCeT_HB3hdSKWAfx4gLl2SsZ0LTY6Izt1Xv.X',};var a = document.createElement('script');a.nonce = 'Mu4JuTri23XW9zKiGWJB3R';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a3c791abbabbf9c5';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/?__cf_chl_rt_tk=D1QiBWEHfHIPimkKYzLAr9P1adA.eBB7Jt86iPrclfM-1789642426-1.0.1.1-5Fof1hsuCdW5MagD4ZtF0ETIKKV6PEX9LFRue1Vk.pg\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "48",
+							"uri": "https://infos.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/infos.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script nonce=\"aQ5rDk3Eyw94h96JdJUUTT\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'cSwuTNKosZMFKG5JjV_8YABUEttrk3wd9aEUMJBoHmk-1789642426-1.2.1.1-7ecChW4Uwq0S85.EmjERer3wMY3WZn7UYzWH2HndeS0LXBObID3Ri_8fKyEw0EB1',cITimeS: '1789642426',cN: 'aQ5rDk3Eyw94h96JdJUUTT',cRay: 'a3c791abb8d4f46e',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:\"/robots.txt?__cf_chl_tk=PNsWCc21NoibfKI6NtXnXpovnbdUIMCp7MOUTazJC60-1789642426-1.0.1.1-10mmLqCOTDSgL_y.4hZCURRFFNyE.Gc74dv1d2YJVWw\",cvId: '3',cZone: 'infos.ademe.fr',fa:\"/robots.txt?__cf_chl_f_tk=PNsWCc21NoibfKI6NtXnXpovnbdUIMCp7MOUTazJC60-1789642426-1.0.1.1-10mmLqCOTDSgL_y.4hZCURRFFNyE.Gc74dv1d2YJVWw\",md: 'UW_FF_NHb_FELIqTdJ3YVV2WuyvTC8zZO2bkZkDra.U-1789642426-1.2.1.1-z2ZP_U1gUI0EBDZp.YmI94pAQe40svU4vp1jm1.piNFgFfyiyiE4l2y72RSL7BYyD186AwREDrgGNzr67gkCUfOWgyYWeL5gVzn.ttgjv8PRWZNVdRcr_T1KHJb5m_SfX8hvBZpV85UUJ2TmjbNgPx0lhCJfEW54EjV4UyVoUBXRsitEy6pl35d4rl76FeT_FtbZBi9Qkpx_kSconY4oAyS.lqtebYvUx8FctpefJoLcZfz2LZCzpztYCXk86UKnnHN25bLr9G7DxzDTfGomPS1KUGZiqcP07r_hQIy6ugwVQtPgGx33giIxqQFLDTtgWgrB_CrxFmCUsfjFcC0TPZrXYZWZpwmQWIvgW3VenePeGhl6NWhDW85GiDQ4pXf84wA.NWGSFcKUtSIauiJufK0lzp_yh3F66MUIVyTFuhi5dAl1YIv7KytBjqrq6cPSvM4h.4XLl4RXmIkC29MoFt_KMyBZG0cpI4KL3gnrl944B8skW6RPautMOqJayu4Co4GO13Fz_J6gbnFg3I10x5cJm3Ir7NJbUeHvCw3A3xYcyeDEX4ULjIBTvCroiX7.J3A.4EK70l5nt5zHSSQKHFOyxIzTHZp9hY43JlmU5_UpoCLPmrrK4Vi80zJwdORIVryF_sST6Tj1AC6nHlMZDe2HQAVluCJG1_HoGPNs_9FDcuOVc2S8D5I1trxIqg13blhc3J7YP.Er5wUk.SSCHIlnC8HCEehWW2l_1.3ASj.XRg5afEb94IIavP9wQyTAXKRscTD4e0RxQnTYZk4CzBy5QLQUvYnddF6QHjghcgSMLPRwM7vy1FnsiAJgijeMp0U5rc5kHG1iEjU6MCQDG8ymxXbp4KiHTNqT.14KXmneuGcnNJuyqYb3LDCPX0kbH6zHXl26_ywx26h52.7IMPZ4exEIAhCd_.WZm.pv5Lpo05DntckfV3DJnLQNctnG85r5FF_os5F12WGjBIl7LJIHoO196xfvK_1eEh5PL0T_K4_4M6V4DTineukVpGHrFlR86Eipipo_6xVv9_pu0g',mdrd: 'mDnfzdwnTo5tFfaTITyXZXLYje0qCtSyTzrL3dxc4E0-1789642426-1.2.1.1-Rd7lMEE.qIAsKvHmmU2eBCJnM4RLqI1vZZxgscu3Ye8fylsCre7rQVq3qU8S.aKC8Sm_aPshQoMJKCV6mvKidjMfclDFMm0FcaJ.AwmnSQLP9rP9H4MAstwC4Q2Y1H9nFhyvVeZRuniKf2X.quI6DG70U74B74w.jBbPR5POhRy461QA55ZMUtyBtTuC7DD6',};var a = document.createElement('script');a.nonce = 'aQ5rDk3Eyw94h96JdJUUTT';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a3c791abb8d4f46e';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/robots.txt?__cf_chl_rt_tk=PNsWCc21NoibfKI6NtXnXpovnbdUIMCp7MOUTazJC60-1789642426-1.0.1.1-10mmLqCOTDSgL_y.4hZCURRFFNyE.Gc74dv1d2YJVWw\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "50",
+							"uri": "https://infos.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/infos.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script nonce=\"CYnUqSRbajdvMdVNAAWcr1\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'Ga.fAEj_0mv8_XnZ4tqcmiUgbQhx2R7raT4v7l_iqto-1789642426-1.2.1.1-JMxy_TJaMZ1dD0saMnXtSZQXIg8b1j9Ue9qy4OquHC3Ck8F6WzVqOUMcEozUd0Hx',cITimeS: '1789642426',cN: 'CYnUqSRbajdvMdVNAAWcr1',cRay: 'a3c791abcd11af0d',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:\"/sitemap.xml?__cf_chl_tk=eR12hzaYUVg1B0PVSZvb54EQ0oHRFbaCqfRlkwqukwM-1789642426-1.0.1.1-knhrYfRcEoQqQqHO_6VC.N1NpLRHVBkYRdTAMxbFPpc\",cvId: '3',cZone: 'infos.ademe.fr',fa:\"/sitemap.xml?__cf_chl_f_tk=eR12hzaYUVg1B0PVSZvb54EQ0oHRFbaCqfRlkwqukwM-1789642426-1.0.1.1-knhrYfRcEoQqQqHO_6VC.N1NpLRHVBkYRdTAMxbFPpc\",md: 'djuSEgScu5gYLTd4J0xYS.ZTQ2E90ooxduRSMoDIb.8-1789642426-1.2.1.1-l16I4kc1jHV0wSrK1RR8DgEZVTn5yoHIKEBU0PMBPa5rpSno81lj_IaI_NZHmQlPdGV5bc4RHoRGzq6DwZVAmN7H119n7xF1lOIuWoEXwax0v4Z4NPP6xga5BYTvxEtAxs6NPsnyhgotDGCESbuV4UTxR64OAVd9zLQZcYjXxXL2tkbfKr71mGbSbEBgoGNIgeW_gc5hnKO5Z6u4STbkna0hD0z8XHHEQJ65tN8RML_p5R8h3vGQomnbmIayGrBMWs6XObLhczsqUY3C3qY1GIQaVHIsofdAPbdANFk4fFDzNmT97whUJ76oT9dnspkkUl7q5nfIqisDRsauMlU4HY0NfoAkNSYOBmphjr62VWeDhPCeWYsa77fL0cxdl61p_lAQYzzNXYO9YgvCSDhpnVTW4zM3Eoifa2dS3OAe678gJX5xLgJoXOhFvWgAr2O7TwfNhevpN8vqFomHAoolsvRu4XbGx.1kvBciHgFv_5Pu08hI.vrqG0v.ZKakx.8mDFtYAYnDNbbTsRt_TFrH6u9Az11KTf_riYYEjpNsm0qsRJLgGyG7_54D1oodVidJNwzGwxwQtP_pTTb9Rm.3gYJvP7Cim4wgj6ONxqwp90qTv.9DYn3JrqfWY6zstYqOyneHvH6i4PgYn4AAr47E5WbwW2Jx8S81c6b7Ah3P8nuz4MUUD371GtW5dZAXgbCYyJP6Yh1RkwhTf5k_XIrqCbPUSgBE6PpJCw9q3HWyY58aIOlSiYv5hCZi2ogRapZflQI3lpHq.gfZRGIvrAkKTH8C0vttqDZBTQHrz_nXoMRd9YpGrW2OsXGXQeYEXPFxFVmdkqLqBnE8D2pXw5ON3xPnl1f4AfGDHb_C1VECitLGzB5IayopSmWN_NSMa_67yfZWu3SWmMyq1dEtk9tcywOE9XRMvnFetVDSt5bi9n1z71YpvQtpJnOns_ynKkGd6B49.wGO3ZhC7CbGidVSQpOiqBKMvtl5CNx7ExcSWV93J8h1uewL1nl_wix9q9Tm8Efc7LJAxlZVGR7UyvndOg',mdrd: 'KD.3SHtJfjIK8JfSS77K_u239Kp.bWb239n.3xL77GI-1789642426-1.2.1.1-7LlevinOHVRmKlDEXIuae9txVCFRB3EgwzizHVX3gIszh9HKzAW2JQxxCCR_msxIsjZnbkJJvobokw6t2hI.e4GtoCIFGl.dORhySgRweAo1_Prsf12xQ1Qhsd1uYKpnD2D1LxORMntThog1BiM2eOyS7OFvDbmVYGS2zKeqpNnupvbewDivYHf9Y8OIqI7O',};var a = document.createElement('script');a.nonce = 'CYnUqSRbajdvMdVNAAWcr1';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a3c791abcd11af0d';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/sitemap.xml?__cf_chl_rt_tk=eR12hzaYUVg1B0PVSZvb54EQ0oHRFbaCqfRlkwqukwM-1789642426-1.0.1.1-knhrYfRcEoQqQqHO_6VC.N1NpLRHVBkYRdTAMxbFPpc\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>This is an informational alert and so no changes are required.</p>",
+					"otherinfo": "<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>",
+					"reference": "",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10049",
+					"alertRef": "10049-1",
+					"alert": "Non-Storable Content",
+					"name": "Non-Storable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
+					"instances":[ 
+						{
+							"id": "101",
+							"uri": "https://infos.ademe.fr",
+							"nodeName": "https:\/\/infos.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "403",
+							"otherinfo": ""
+						},
+						{
+							"id": "115",
+							"uri": "https://infos.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/infos.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "403",
+							"otherinfo": ""
+						},
+						{
+							"id": "113",
+							"uri": "https://infos.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/infos.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "403",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
+					"cweid": "524",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-3",
+					"alert": "Sec-Fetch-Dest Header is Missing",
+					"name": "Sec-Fetch-Dest Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
+					"instances":[ 
+						{
+							"id": "93",
+							"uri": "https://infos.ademe.fr",
+							"nodeName": "https:\/\/infos.ademe.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "110",
+							"uri": "https://infos.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/infos.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "107",
+							"uri": "https://infos.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/infos.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Dest</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-2",
+					"alert": "Sec-Fetch-Mode Header is Missing",
+					"name": "Sec-Fetch-Mode Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
+					"instances":[ 
+						{
+							"id": "92",
+							"uri": "https://infos.ademe.fr",
+							"nodeName": "https:\/\/infos.ademe.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "108",
+							"uri": "https://infos.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/infos.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "106",
+							"uri": "https://infos.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/infos.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Mode</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-1",
+					"alert": "Sec-Fetch-Site Header is Missing",
+					"name": "Sec-Fetch-Site Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
+					"instances":[ 
+						{
+							"id": "90",
+							"uri": "https://infos.ademe.fr",
+							"nodeName": "https:\/\/infos.ademe.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "105",
+							"uri": "https://infos.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/infos.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "104",
+							"uri": "https://infos.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/infos.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Site</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-4",
+					"alert": "Sec-Fetch-User Header is Missing",
+					"name": "Sec-Fetch-User Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
+					"instances":[ 
+						{
+							"id": "95",
+							"uri": "https://infos.ademe.fr",
+							"nodeName": "https:\/\/infos.ademe.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "111",
+							"uri": "https://infos.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/infos.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "109",
+							"uri": "https://infos.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/infos.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "10112",
+					"alertRef": "10112",
+					"alert": "Session Management Response Identified",
+					"name": "Session Management Response Identified",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.</p>",
+					"instances":[ 
+						{
+							"id": "98",
+							"uri": "https://infos.ademe.fr",
+							"nodeName": "https:\/\/infos.ademe.fr",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "__cf_bm",
+							"otherinfo": "cookie:__cf_bm"
+						},
+						{
+							"id": "114",
+							"uri": "https://infos.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/infos.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "__cf_bm",
+							"otherinfo": "cookie:__cf_bm"
+						},
+						{
+							"id": "112",
+							"uri": "https://infos.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/infos.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "__cf_bm",
+							"otherinfo": "cookie:__cf_bm"
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
+					"otherinfo": "<p>cookie:__cf_bm</p>",
+					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/</p>",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "1"
+				}
+			]
+		}
+	],
+	"sequences":[
+	]
+
+}
