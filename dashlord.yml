@@ -7,7 +7,7 @@ seo: false
 
 tools:
   "404": true
-  screenshot: true
+  screenshot: false
   nmap: true
   zap: true
   wappalyzer: true
