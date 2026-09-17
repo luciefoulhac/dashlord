@@ -9,12 +9,12 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 17 Sep 2026 11:23:04 GMT",
+      "date": "Thu, 17 Sep 2026 13:01:44 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "vary": "accept-encoding",
-      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=EDmhLnUqcLlL6XQz9FIj7aUqZzAC6tET3JeKj9tQ5F940LXUtP8qKinK%2FJXFIg0FtccGu3LZvSqjrJSR0GIRA%2Bz57XZrSt6meyZCLXsqusjiyTcWZZb2da9jqMdcjDTRzv9y\"}]}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=nhmnfpVghP03BdMK8JdrdVdWcZ68w1GGTyMi7EFHjOGCq%2BXjN%2BmN4xplsE91fJJrcZEtWMow5dy4qJ%2BGr0co8o0cnd%2ByrwL05PQMlindNRJKux4LyKZoVcCiUoa%2Bh%2BhTCZuo\"}]}",
       "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
       "access-control-allow-origin": "*",
       "cache-control": "public, max-age=0, must-revalidate",
@@ -22,11 +22,11 @@
       "link": "</_next/static/chunks/00_o3g_duxm50.css>; rel=\"preload\"; as=style",
       "referrer-policy": "strict-origin-when-cross-origin",
       "set-cookie": [
-        "__cf_bm=J0XhoYKD5r8EK1NKRtuWj0g_1h441Pw13JV04HszxRg-1789644184.4558446-1.0.1.1-sUxzVH1xox9qbqjovtX5HASqCTF5.eZDaOcJDlX6bAGW0oAWfqgJL63HrC1qH1lmFhEcfIYpvyhMPrMtDQ.uxDGdR5SeX63UVV4N8oY9QbBGuHYM6fFKwhD7jtnMQbuP; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 11:53:04 GMT"
+        "__cf_bm=ryF6U5d__AY5mnyyTJVRB0MHXtCnGDjt.VqPa_7GuWY-1789650103.830611-1.0.1.1-AtRZPuG5.l35xbQRXiyQ0hULciMPxRF7p_K04t.ByPYGI9eTa8Bhhez1_mglwhpz62RZ7CCZ6vbQG08mC_JBKx8GgogQH1aHzhXgM8Fx5._bBhiiNtTtoHy1Ji6PUtPK; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 13:31:43 GMT"
       ],
       "server": "cloudflare",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "a3c7bc98da9b9c1e-IAD"
+      "cf-ray": "a3c84d1cedbc22e7-ORD"
     }
   },
   "tests": {
@@ -49,7 +49,7 @@
       "data": {
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-09-17T11:53:04.000Z",
+          "expires": "2026-09-17T13:31:43.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
