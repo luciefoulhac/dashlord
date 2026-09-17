@@ -857,7 +857,7 @@
               "ip"           : "infos.ademe.fr/104.18.1.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789653744"
+              "finding"      : "1789656848"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -865,7 +865,7 @@
               "port"         : "443",
               "severity"     : "MEDIUM",
               "cwe"          : "CWE-212",
-              "finding"      : "set-cookie: __cf_bm=uC6jkQeDxd08PseZxnyS2fqKWiXYRKHy9HiadGj_NaQ-1789653744.6398377-1.0.1.1-4zGSKQyWf82UkWnxoOyJ8iRW0dG2bLaZ5Z_EysfC6TRL_Os1d6SmHT06AMff2o8BB7fOiIFozU_adDrPjW0LELNHmIDXUl8lzzFeTzZWCjXmFiOqXsqSL1bLcOXpwgM_; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 14:32:24 GMT (check if it's your IP address or e.g. a cluster IP)"
+              "finding"      : "set-cookie: __cf_bm=YP6CW5NnBTFRlHHhmjvh_phCfAtV8AfhFQzijnuLjUM-1789656848.1337347-1.0.1.1-W1okpFAfA7Y54gJ_WKlGdcxcsG9MDawcizRLP3PSdFDtFAiGpQjvgia_MxfzUjyqnPdBlHpjdVUjP.ODCyFu_UXq0fw15J2mFLBIxAiKqOtUI8ir7rYjcBpihr_l19HB; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 15:24:08 GMT (check if it's your IP address or e.g. a cluster IP)"
           }
 ,         {
               "id"           : "HSTS",
@@ -935,7 +935,7 @@
               "ip"           : "infos.ademe.fr/104.18.1.202",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'none'; script-src 'nonce-fzj2cAB1MtfOrhTjcZLska' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
+              "finding"      : "default-src 'none'; script-src 'nonce-9pkKd1KiAvqaPLjwmjYb2q' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
           }
 ,         {
               "id"           : "Permissions-Policy",
@@ -2323,7 +2323,7 @@
               "ip"           : "infos.ademe.fr/104.18.0.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789653788"
+              "finding"      : "1789656890"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -2331,7 +2331,7 @@
               "port"         : "443",
               "severity"     : "MEDIUM",
               "cwe"          : "CWE-212",
-              "finding"      : "set-cookie: __cf_bm=AQJ_aeYaNei7TAiJDobov3lZtczwsE6Qk7QM8wqhLrM-1789653788.6453342-1.0.1.1-OqqN8XkMp7N8W_BbTqaDY_jhQxbSEkEflZFZ9YhgvGtVtfdasXimRhlRj5WRaQqlvUYHxEWMgXRMjDQa6SONS9gkVpVgdFysgVzmk0v8OiyX4JsLQyrbzLcYBX.JFnX4; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 14:33:08 GMT (check if it's your IP address or e.g. a cluster IP)"
+              "finding"      : "set-cookie: __cf_bm=IDiLWdF2.uX9L01_oLVawaFILepzmqbNXaCqe9e5_iA-1789656890.3327901-1.0.1.1-7Gfs4FA5YsycRJ50t27XptjvLABaPmHZdhThbtP3LEf0WoyuX.q8UFfz5LfypFdF7Hp2ozjpM5PSKbD11Ov5dtQ8NZD8ptZHxvPBiRIqPcgVp3YDLYHFb1sEozG9MwqD; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 15:24:50 GMT (check if it's your IP address or e.g. a cluster IP)"
           }
 ,         {
               "id"           : "HSTS",
@@ -2401,7 +2401,7 @@
               "ip"           : "infos.ademe.fr/104.18.0.202",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'none'; script-src 'nonce-7OVtrqFng0Qp8Iptn8dd6R' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
+              "finding"      : "default-src 'none'; script-src 'nonce-c14khTJ1pIYv0VaOIyuz0p' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
           }
 ,         {
               "id"           : "Permissions-Policy",
@@ -2943,6 +2943,6 @@
               "ip"           : "infos.ademe.fr/104.18.0.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "90"
+              "finding"      : "86"
           }
 ]
