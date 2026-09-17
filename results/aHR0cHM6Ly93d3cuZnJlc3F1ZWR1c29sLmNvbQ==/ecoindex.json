@@ -1,0 +1,17 @@
+[
+    {
+        "width": 1920,
+        "height": 1080,
+        "url": "https://www.fresquedusol.com",
+        "size": 718.632,
+        "nodes": 440,
+        "requests": 22,
+        "grade": "B",
+        "score": 72.0,
+        "ges": 1.56,
+        "water": 2.34,
+        "ecoindex_version": "5.4.2",
+        "date": "2026-09-17 10:33:14.535138",
+        "page_type": "website"
+    }
+]
