@@ -395,7 +395,7 @@
               "ip"           : "www.fresquedusol.com/172.67.167.51",
               "port"         : "443",
               "severity"     : "MEDIUM",
-              "finding"      : "expires < 60 days (44)"
+              "finding"      : "expires < 60 days (43)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -598,7 +598,7 @@
               "ip"           : "www.fresquedusol.com/172.67.167.51",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789653176"
+              "finding"      : "1789656424"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -606,7 +606,7 @@
               "port"         : "443",
               "severity"     : "MEDIUM",
               "cwe"          : "CWE-212",
-              "finding"      : "set-cookie: __cf_bm=gD76AVF47BVWmkP0XWYL59BjQJj9XkBdBGpr1fIzyrQ-1789653174.9781353-1.0.1.1-xWWXZhUDrNOC7Xka667VDSFvQm94C70sXUEoAsnjBfVX4_ZoSdmW1O8O3397S9ZIwxbsrXwsLBNJ2qIqKzAxi_BpilyiTLUB.Ef_aeHGKhAxlBVg3aeXRpxgVqX0BTb9; HttpOnly; SameSite=None; Secure; Path=/; Domain=fresquedusol.com; Expires=Thu, 17 Sep 2026 14:22:56 GMT (check if it's your IP address or e.g. a cluster IP)"
+              "finding"      : "set-cookie: __cf_bm=JA8Dr_67_s_GvKeiDM_vy_.mpm0D6feoUg6vuHK80u4-1789656422.0275228-1.0.1.1-MhvE7E6xWYgwK9uen54H_kK8mo2c_KYLopenvS0W2ryNvmUeApPkERKDN96YyCHToQrv_jzIVOjPDnLHb59QxywFDV.x_E6r73v8iBVZEaBteN3MEtCyV5aAzk66Z96I; HttpOnly; SameSite=None; Secure; Path=/; Domain=fresquedusol.com; Expires=Thu, 17 Sep 2026 15:17:04 GMT (check if it's your IP address or e.g. a cluster IP)"
           }
 ,         {
               "id"           : "HSTS",
@@ -1422,7 +1422,7 @@
               "ip"           : "www.fresquedusol.com/104.21.16.95",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "sessionresumption_ID",
@@ -1576,7 +1576,7 @@
               "ip"           : "www.fresquedusol.com/104.21.16.95",
               "port"         : "443",
               "severity"     : "MEDIUM",
-              "finding"      : "expires < 60 days (44)"
+              "finding"      : "expires < 60 days (43)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1779,7 +1779,7 @@
               "ip"           : "www.fresquedusol.com/104.21.16.95",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789653223"
+              "finding"      : "1789656479"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -1787,7 +1787,7 @@
               "port"         : "443",
               "severity"     : "MEDIUM",
               "cwe"          : "CWE-212",
-              "finding"      : "set-cookie: __cf_bm=RA9R0Z_lQ1o6xJg6KKz4TYLJSp5WQ8ETv7BqEB3h4nM-1789653221.7505658-1.0.1.1-wTB8bTZevmd7kxP1hWc6e.J.NZCYjAvgdDKguBmvDCCfT7uAj8ZPIATffcSEoAnnin0GKC6rUn5abpJsP0DiD_rtzbDDXR5b1YytlCHjH2OC4gXbNkdp5DHh3TxaF6.G; HttpOnly; SameSite=None; Secure; Path=/; Domain=fresquedusol.com; Expires=Thu, 17 Sep 2026 14:23:43 GMT (check if it's your IP address or e.g. a cluster IP)"
+              "finding"      : "set-cookie: __cf_bm=skR4MgUEuyGwoW3Dm6wKjXlmct1s8K7ms1Nvrii8fdU-1789656476.6082568-1.0.1.1-c2Aa6JfcnHPI7AgoAyNEEMM4LKrU_v0AD2NPK_5NIfRwPdfCBi.0atesvcYcgBY9locCKoVsL1o9EaYFzfbsExWndDluEupbHh910wlm1GsIrEasvxT8lUoyzUm1EnP3; HttpOnly; SameSite=None; Secure; Path=/; Domain=fresquedusol.com; Expires=Thu, 17 Sep 2026 15:17:59 GMT (check if it's your IP address or e.g. a cluster IP)"
           }
 ,         {
               "id"           : "HSTS",
@@ -2373,6 +2373,6 @@
               "ip"           : "www.fresquedusol.com/104.21.16.95",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "94"
+              "finding"      : "111"
           }
 ]
