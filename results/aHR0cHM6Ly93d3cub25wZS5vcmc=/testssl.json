@@ -220,7 +220,7 @@
               "ip"           : "www.onpe.org/104.18.27.211",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -367,7 +367,7 @@
               "ip"           : "www.onpe.org/104.18.27.211",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "70 >= 60 days"
+              "finding"      : "69 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore <hostCert#1>",
@@ -668,7 +668,7 @@
               "ip"           : "www.onpe.org/104.18.27.211",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "70 >= 60 days"
+              "finding"      : "69 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore <hostCert#2>",
@@ -871,7 +871,7 @@
               "ip"           : "www.onpe.org/104.18.27.211",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789654094"
+              "finding"      : "1789658104"
           }
 ,         {
               "id"           : "HSTS",
@@ -1776,7 +1776,7 @@
               "ip"           : "www.onpe.org/104.18.26.211",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "70 >= 60 days"
+              "finding"      : "69 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore <hostCert#1>",
@@ -2077,7 +2077,7 @@
               "ip"           : "www.onpe.org/104.18.26.211",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "70 >= 60 days"
+              "finding"      : "69 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore <hostCert#2>",
@@ -2280,7 +2280,7 @@
               "ip"           : "www.onpe.org/104.18.26.211",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789654134"
+              "finding"      : "1789658143"
           }
 ,         {
               "id"           : "HSTS",
@@ -2829,6 +2829,6 @@
               "ip"           : "www.onpe.org/104.18.26.211",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "86"
+              "finding"      : "79"
           }
 ]
