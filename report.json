@@ -3363,16 +3363,16 @@
         "testsPassed": 8,
         "testsQuantity": 10,
         "responseHeaders": {
-          "date": "Thu, 17 Sep 2026 13:36:32 GMT",
+          "date": "Thu, 17 Sep 2026 14:14:12 GMT",
           "content-type": "text/html; charset=UTF-8",
           "transfer-encoding": "chunked",
           "connection": "close",
           "cache-control": "max-age=0, must-revalidate, private",
           "set-cookie": [
-            "__cf_bm=2Uwa9KHGmz9OQR.Z6Sk8OEiYTaibRujniju0mEwiZyE-1789652192.594052-1.0.1.1-rkPC5AixjC2.Uhgq1dwiiDqdlNmp0TwK2arn9p_WYkjjs_VNmTS3TSSW9sdx9AMkux0In5VHyEXn9J0Gl.05LRJUkYAwJwzCsONYslxtIzfCWT9nBdSyvin7Iq4Kqmqm; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 14:06:32 GMT"
+            "__cf_bm=6gmgw_89HCP7MlDhWTfQEJ5yCsRnk_.BJN.fL299dUI-1789654452.1907508-1.0.1.1-EZ_EQ2ukBfKbn2LBknRJjy28_rYm8PXqdIyImFRaZipITG49t.wJFtSJ4o6884ibsBkB79kNFjEOU3aOPCRAnZp5UOIEWwhv3F.Kl7Y5FU.ShJ_fW8PTQ3RkCIefwKIp; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 14:44:12 GMT"
           ],
           "content-security-policy": "frame-ancestors 'self';",
-          "expires": "Thu, 17 Sep 2026 13:36:32 GMT",
+          "expires": "Thu, 17 Sep 2026 14:14:12 GMT",
           "permissions-policy": "geolocation=(self), microphone=(), camera=(), fullscreen=*",
           "referrer-policy": "strict-origin",
           "server": "cloudflare",
@@ -3383,7 +3383,7 @@
           "x-powered-by": "PHP/8.1.31",
           "x-xss-protection": "1; mode=block",
           "cf-cache-status": "DYNAMIC",
-          "cf-ray": "a3c8801bbb762c7f-IAD"
+          "cf-ray": "a3c8b7462a031f54-LAX"
         }
       },
       "tests": {
@@ -3422,7 +3422,7 @@
           "data": {
             "__cf_bm": {
               "domain": "ademe.fr",
-              "expires": "2026-09-17T14:06:32.000Z",
+              "expires": "2026-09-17T14:44:12.000Z",
               "httponly": true,
               "path": "/",
               "port": null,
@@ -4372,7 +4372,7 @@
         "ip": "renovfriches.ademe.fr/104.18.1.202",
         "port": "443",
         "severity": "INFO",
-        "finding": "1789652215"
+        "finding": "1789654479"
       },
       {
         "id": "ipv4_in_header",
@@ -4380,7 +4380,7 @@
         "port": "443",
         "severity": "MEDIUM",
         "cwe": "CWE-212",
-        "finding": "set-cookie: __cf_bm=FvC_YB_YXupV9KEJ.Dj_vuERkEEn.3nNHe.nDCmdEwc-1789652215.1145198-1.0.1.1-RIcsHXnPBgsrTNLDCrN8BeWdxISsrP1QMPWNz8zlO2CiZi07sznTbPPTrJJUOZhWq2IR0mg3Ze9ljGERawXP9A_oVYhidsVKIAMgZteodh4d5miyL4NFfhbWjjizYdEa; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 14:06:55 GMT (check if it's your IP address or e.g. a cluster IP)"
+        "finding": "set-cookie: __cf_bm=2CqjCibEF1MtgygkAGSOHmre4ulHqAE7XsS4q0c1bqY-1789654479.379808-1.0.1.1-jKed9hg0Kp.p3o.0PkeslDXiko8u0ZRJZOwjKXES6se0_OEYseGW913ZJHPEFpYsyK5_24M51oquOlw88upGQGuQ7xZMKyR1Qa3SHztrhS7lX3wo.23qyKi5anyeKBOF; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 14:44:39 GMT (check if it's your IP address or e.g. a cluster IP)"
       },
       {
         "id": "HSTS_time",
@@ -5845,7 +5845,7 @@
         "ip": "renovfriches.ademe.fr/104.18.0.202",
         "port": "443",
         "severity": "INFO",
-        "finding": "1789652259"
+        "finding": "1789654523"
       },
       {
         "id": "ipv4_in_header",
@@ -5853,7 +5853,7 @@
         "port": "443",
         "severity": "MEDIUM",
         "cwe": "CWE-212",
-        "finding": "set-cookie: __cf_bm=3_yTINhh4kgaIg3R9u49vxwLMDWZoyMAXK.UHY8oPNg-1789652259.6690722-1.0.1.1-tu405S2TbYCjI87TdK7c9Q0YqOxQuXh6hYWF.k4RZfMy24lOJjfhTsPSRDout7Ww3OigMWebG7h7Kl3WWU1WT0DuVakMQkFM0Hk9PA3eQJGh7C75Patkzcj08UKQgriq; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 14:07:39 GMT (check if it's your IP address or e.g. a cluster IP)"
+        "finding": "set-cookie: __cf_bm=sSK6H7cQG1HtMPWf4o3mn6FUv9hvlTUyZHquuRMUEu0-1789654522.9972324-1.0.1.1-rs7jh.lUr7QqZtYXegglsqVK9s2eUT1mcKxQEgx2Wm0g6mhO6MAckQBK39F6woIhHfkE3mHPhZjdZYmgN.3hFkUa6LgBUzh5UbNAcrRJJyWxr4NKpURJ__UuSlBzlAUn; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 14:45:23 GMT (check if it's your IP address or e.g. a cluster IP)"
       },
       {
         "id": "HSTS_time",
@@ -6483,7 +6483,7 @@
       {
         "requestedUrl": "https://renovfriches.ademe.fr/",
         "finalUrl": "https://renovfriches.ademe.fr/",
-        "fetchTime": "2026-09-17T13:36:00.496Z",
+        "fetchTime": "2026-09-17T14:13:44.140Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -6494,7 +6494,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.43
+            "score": 0.46
           },
           "accessibility": {
             "title": "Accessibility",
@@ -6546,53 +6546,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 8611,
+            "numericValue": 8560,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 3245,
-                  "firstMeaningfulPaint": 3245,
-                  "largestContentfulPaint": 11205,
-                  "interactive": 8611,
-                  "speedIndex": 6427,
-                  "totalBlockingTime": 212,
-                  "maxPotentialFID": 335,
+                  "firstContentfulPaint": 3207,
+                  "firstMeaningfulPaint": 3207,
+                  "largestContentfulPaint": 11069,
+                  "interactive": 8560,
+                  "speedIndex": 5662,
+                  "totalBlockingTime": 152,
+                  "maxPotentialFID": 276,
                   "cumulativeLayoutShift": 0.3740848999023437,
                   "cumulativeLayoutShiftMainFrame": 0.3740848999023437,
                   "totalCumulativeLayoutShift": 0.3740848999023437,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 155744239,
+                  "observedTimeOriginTs": 213415204,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 155744239,
-                  "observedFirstPaint": 1054,
-                  "observedFirstPaintTs": 156798608,
-                  "observedFirstContentfulPaint": 1054,
-                  "observedFirstContentfulPaintTs": 156798608,
-                  "observedFirstContentfulPaintAllFrames": 1054,
-                  "observedFirstContentfulPaintAllFramesTs": 156798608,
-                  "observedFirstMeaningfulPaint": 1054,
-                  "observedFirstMeaningfulPaintTs": 156798608,
-                  "observedLargestContentfulPaint": 1206,
-                  "observedLargestContentfulPaintTs": 156950426,
-                  "observedLargestContentfulPaintAllFrames": 1206,
-                  "observedLargestContentfulPaintAllFramesTs": 156950426,
-                  "observedTraceEnd": 3967,
-                  "observedTraceEndTs": 159710913,
-                  "observedLoad": 1220,
-                  "observedLoadTs": 156964480,
-                  "observedDomContentLoaded": 9,
-                  "observedDomContentLoadedTs": 155752969,
+                  "observedNavigationStartTs": 213415204,
+                  "observedFirstPaint": 1114,
+                  "observedFirstPaintTs": 214529285,
+                  "observedFirstContentfulPaint": 1114,
+                  "observedFirstContentfulPaintTs": 214529285,
+                  "observedFirstContentfulPaintAllFrames": 1114,
+                  "observedFirstContentfulPaintAllFramesTs": 214529285,
+                  "observedFirstMeaningfulPaint": 1114,
+                  "observedFirstMeaningfulPaintTs": 214529285,
+                  "observedLargestContentfulPaint": 1253,
+                  "observedLargestContentfulPaintTs": 214667805,
+                  "observedLargestContentfulPaintAllFrames": 1253,
+                  "observedLargestContentfulPaintAllFramesTs": 214667805,
+                  "observedTraceEnd": 4406,
+                  "observedTraceEndTs": 217821565,
+                  "observedLoad": 1261,
+                  "observedLoadTs": 214676313,
+                  "observedDomContentLoaded": 4,
+                  "observedDomContentLoadedTs": 213419617,
                   "observedCumulativeLayoutShift": 0.3740848999023437,
                   "observedCumulativeLayoutShiftMainFrame": 0.3740848999023437,
                   "observedTotalCumulativeLayoutShift": 0.3740848999023437,
-                  "observedFirstVisualChange": 1054,
-                  "observedFirstVisualChangeTs": 156798239,
-                  "observedLastVisualChange": 1352,
-                  "observedLastVisualChangeTs": 157096239,
-                  "observedSpeedIndex": 1307,
-                  "observedSpeedIndexTs": 157051247
+                  "observedFirstVisualChange": 1114,
+                  "observedFirstVisualChangeTs": 214529204,
+                  "observedLastVisualChange": 1728,
+                  "observedLastVisualChangeTs": 215143204,
+                  "observedSpeedIndex": 1416,
+                  "observedSpeedIndexTs": 214830797
                 },
                 {
                   "lcpInvalidated": false
@@ -6614,19 +6614,19 @@
                   "numScripts": 11,
                   "numStylesheets": 2,
                   "numFonts": 2,
-                  "numTasks": 578,
+                  "numTasks": 580,
                   "numTasksOver10ms": 9,
-                  "numTasksOver25ms": 6,
-                  "numTasksOver50ms": 3,
+                  "numTasksOver25ms": 5,
+                  "numTasksOver50ms": 1,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 5.9830000000000005,
-                  "throughput": 154489955.14756474,
-                  "maxRtt": 86.297,
-                  "maxServerLatency": 319.75,
-                  "totalByteWeight": 1851578,
-                  "totalTaskTime": 485.09599999999926,
-                  "mainDocumentTransferSize": 4886
+                  "rtt": 11.121,
+                  "throughput": 102847532.4801128,
+                  "maxRtt": 141.145,
+                  "maxServerLatency": 132.43099999999998,
+                  "totalByteWeight": 1851606,
+                  "totalTaskTime": 408.0830000000001,
+                  "mainDocumentTransferSize": 4889
                 }
               ]
             }
@@ -6634,7 +6634,7 @@
         }
       }
     ],
-    "screenshot": true,
+    "screenshot": false,
     "stats": null,
     "github_repository": null,
     "budget_page": null,
@@ -6676,7 +6676,7 @@
       "testsslExpireSoon": null,
       "testsslExpireDate": null,
       "testsslGrade": "A+",
-      "lighthouse_performance": 0.43,
+      "lighthouse_performance": 0.46,
       "lighthouse_performanceGrade": "D",
       "lighthouse_accessibility": 0.93,
       "lighthouse_accessibilityGrade": "A",
@@ -6709,13 +6709,13 @@
         "testsPassed": 8,
         "testsQuantity": 10,
         "responseHeaders": {
-          "date": "Thu, 17 Sep 2026 13:37:07 GMT",
+          "date": "Thu, 17 Sep 2026 14:14:53 GMT",
           "content-type": "text/html; charset=UTF-8",
           "transfer-encoding": "chunked",
           "connection": "close",
           "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
           "cf-mitigated": "challenge",
-          "content-security-policy": "default-src 'none'; script-src 'nonce-i7e9M5uoMr8i1PgewBkglk' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+          "content-security-policy": "default-src 'none'; script-src 'nonce-qtSQhGd6kjhSPmPilmBymG' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
           "server": "cloudflare",
           "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
           "cross-origin-embedder-policy": "require-corp",
@@ -6724,13 +6724,13 @@
           "origin-agent-cluster": "?1",
           "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
           "referrer-policy": "same-origin",
-          "server-timing": "chlray;desc=\"a3c880f42f151568\"",
+          "server-timing": "chlray;desc=\"a3c8b8488b0767be\"",
           "x-content-type-options": "nosniff",
           "x-frame-options": "SAMEORIGIN",
           "set-cookie": [
-            "__cf_bm=nvDBw0BbLo.gGYwAWxqtRFGOtYDV8POKRsKw6vYXKJ0-1789652227.2284126-1.0.1.1-i5htiky.7L0U1JfhqBaIskvweEpdfRpn_T_XRoDUPJiSjNpX_Y84RiRVNwmHfvd1Dejhh7U4ld_PP57s3eHxdgAeyfKwX.xWzcQ4OtKpuzQFVvhycWYN1S2xkGxIdVRf; HttpOnly; SameSite=None; Secure; Path=/; Domain=selecdepol.fr; Expires=Thu, 17 Sep 2026 14:07:07 GMT"
+            "__cf_bm=kxhv2lPnihfBkJBvYyd2WP7Xcu0.WoPWs8jJ_2ojwrg-1789654493.5224504-1.0.1.1-3yhfnKlyW43Piu8DrwdH6IoCqteLAaMjFtB3hjaCrNG1c_5nTCoQSoaMUNKFTRGGBJOQd9JguVdl.DeTJE0720Huch88oTOVirUxa7xzgEV6cwy401tmhN5CVE1Z20Tb; HttpOnly; SameSite=None; Secure; Path=/; Domain=selecdepol.fr; Expires=Thu, 17 Sep 2026 14:44:53 GMT"
           ],
-          "cf-ray": "a3c880f42f151568-SJC"
+          "cf-ray": "a3c8b8488b0767be-SJC"
         }
       },
       "tests": {
@@ -6744,7 +6744,7 @@
               "'none'"
             ],
             "script-src": [
-              "'nonce-i7e9m5uomr8i1pgewbkglk'",
+              "'nonce-qtsqhgd6kjhspmpilmbymg'",
               "'unsafe-eval'",
               "https://challenges.cloudflare.com"
             ],
@@ -6808,7 +6808,7 @@
           "data": {
             "__cf_bm": {
               "domain": "selecdepol.fr",
-              "expires": "2026-09-17T14:07:07.000Z",
+              "expires": "2026-09-17T14:44:53.000Z",
               "httponly": true,
               "path": "/",
               "port": null,
@@ -7753,7 +7753,7 @@
         "ip": "selecdepol.fr/104.18.15.178",
         "port": "443",
         "severity": "INFO",
-        "finding": "1789652249"
+        "finding": "1789654515"
       },
       {
         "id": "ipv4_in_header",
@@ -7761,7 +7761,7 @@
         "port": "443",
         "severity": "MEDIUM",
         "cwe": "CWE-212",
-        "finding": "set-cookie: __cf_bm=k0NiMF4mYk6vFEd4sP2dhl5QGPK5bdaMB8O.MOoraTA-1789652249.0973892-1.0.1.1-aJ3aR630ITjEnEgreSOxJQs3Uv.28VKfGN11F9.3K2MEJ.UvWSyBWp01G0PR6_zjuP9fKg90sflfcCIu2Cvh5FNLblAiEyMF2YsN9AJuxfgUK9c_n0Qyc_OnOdb1fJyC; HttpOnly; SameSite=None; Secure; Path=/; Domain=selecdepol.fr; Expires=Thu, 17 Sep 2026 14:07:29 GMT (check if it's your IP address or e.g. a cluster IP)"
+        "finding": "set-cookie: __cf_bm=ty9ANW4DTkmY6kAXXp7ebWCPpbS3cCxzf9nd1L3pCFw-1789654515.2588184-1.0.1.1-ffnGVBIK4L0p9uA2VikLmhXjJVkwqWkOptKPFKbtII5hNviCReUZ_tcJlCo6Ux7yrXSK2yCDhd9ueOt_nVglh8Y1NOho4n0gGY1esm9f9WbN9Ym9NgcHBX4uoc_0eogP; HttpOnly; SameSite=None; Secure; Path=/; Domain=selecdepol.fr; Expires=Thu, 17 Sep 2026 14:45:15 GMT (check if it's your IP address or e.g. a cluster IP)"
       },
       {
         "id": "HSTS",
@@ -7831,7 +7831,7 @@
         "ip": "selecdepol.fr/104.18.15.178",
         "port": "443",
         "severity": "OK",
-        "finding": "default-src 'none'; script-src 'nonce-sYQbzATQbDIUwmdZVyxomF' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
+        "finding": "default-src 'none'; script-src 'nonce-uZnfYNby3FMrsLEVCXXLG6' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
       },
       {
         "id": "Permissions-Policy",
@@ -9219,7 +9219,7 @@
         "ip": "selecdepol.fr/104.18.14.178",
         "port": "443",
         "severity": "INFO",
-        "finding": "1789652291"
+        "finding": "1789654557"
       },
       {
         "id": "ipv4_in_header",
@@ -9227,7 +9227,7 @@
         "port": "443",
         "severity": "MEDIUM",
         "cwe": "CWE-212",
-        "finding": "set-cookie: __cf_bm=jMq237O8feOgrN7obrLpGLIhYfxqKk09ivaRDGyZ5xk-1789652291.2062795-1.0.1.1-T.nQ5utgZgoNp9v9gNhh4YG1QMHk2yUjWGGFS2B2yS20w6uHMGQEguuYJsn8lT5XHwaukIZJX0YJG2I54yF_sTFuZ_wzgmT9qaN97CA98dVO9tgMjMl0CP9dQ65JkhFc; HttpOnly; SameSite=None; Secure; Path=/; Domain=selecdepol.fr; Expires=Thu, 17 Sep 2026 14:08:11 GMT (check if it's your IP address or e.g. a cluster IP)"
+        "finding": "set-cookie: __cf_bm=foUFpyZKsYHtj_G8Xqq_Jo1Hv3QJFE.23GDTJj4.lgc-1789654557.0067928-1.0.1.1-2xBL832Zgme8JYEtAdmn7C5qxPpE0sWFaKqSG_ggAcG3LmhkNe3kYCahBMVgTQE9ee4bHJqR8gdl6lX5N1UC8VMAQ83D3yoMU69dHwPyhftvm_4BmQxdDj5WM1y9GYm5; HttpOnly; SameSite=None; Secure; Path=/; Domain=selecdepol.fr; Expires=Thu, 17 Sep 2026 14:45:57 GMT (check if it's your IP address or e.g. a cluster IP)"
       },
       {
         "id": "HSTS",
@@ -9297,7 +9297,7 @@
         "ip": "selecdepol.fr/104.18.14.178",
         "port": "443",
         "severity": "OK",
-        "finding": "default-src 'none'; script-src 'nonce-KdIflwGy7yNr49FgzxFTAw' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
+        "finding": "default-src 'none'; script-src 'nonce-XcePPhkJbchLhTdKxdSehS' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
       },
       {
         "id": "Permissions-Policy",
@@ -9839,7 +9839,7 @@
         "ip": "selecdepol.fr/104.18.14.178",
         "port": "443",
         "severity": "INFO",
-        "finding": "86"
+        "finding": "85"
       }
     ],
     "thirdparties": null,
@@ -9850,7 +9850,7 @@
       {
         "requestedUrl": "https://selecdepol.fr/",
         "finalUrl": "https://selecdepol.fr/",
-        "fetchTime": "2026-09-17T13:35:58.530Z",
+        "fetchTime": "2026-09-17T14:13:42.081Z",
         "runWarnings": [
           "The page loaded too slowly to finish within the time limit. Results may be incomplete."
         ],
@@ -9915,53 +9915,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 4852,
+            "numericValue": 4860,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 4852,
-                  "firstMeaningfulPaint": 4852,
-                  "largestContentfulPaint": 8833,
-                  "interactive": 4852,
-                  "speedIndex": 5064,
+                  "firstContentfulPaint": 4860,
+                  "firstMeaningfulPaint": 4860,
+                  "largestContentfulPaint": 9077,
+                  "interactive": 4860,
+                  "speedIndex": 5205,
                   "totalBlockingTime": 0,
                   "maxPotentialFID": 16,
                   "cumulativeLayoutShift": 0.110482234954834,
                   "cumulativeLayoutShiftMainFrame": 0.110482234954834,
                   "totalCumulativeLayoutShift": 0.110482234954834,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 460560059,
+                  "observedTimeOriginTs": 162874451,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 460560059,
-                  "observedFirstPaint": 893,
-                  "observedFirstPaintTs": 461453079,
-                  "observedFirstContentfulPaint": 893,
-                  "observedFirstContentfulPaintTs": 461453079,
-                  "observedFirstContentfulPaintAllFrames": 893,
-                  "observedFirstContentfulPaintAllFramesTs": 461453079,
-                  "observedFirstMeaningfulPaint": 893,
-                  "observedFirstMeaningfulPaintTs": 461453079,
-                  "observedLargestContentfulPaint": 953,
-                  "observedLargestContentfulPaintTs": 461513135,
-                  "observedLargestContentfulPaintAllFrames": 953,
-                  "observedLargestContentfulPaintAllFramesTs": 461513135,
-                  "observedTraceEnd": 42984,
-                  "observedTraceEndTs": 503543709,
-                  "observedLoad": 1312,
-                  "observedLoadTs": 461871954,
+                  "observedNavigationStartTs": 162874451,
+                  "observedFirstPaint": 911,
+                  "observedFirstPaintTs": 163785448,
+                  "observedFirstContentfulPaint": 911,
+                  "observedFirstContentfulPaintTs": 163785448,
+                  "observedFirstContentfulPaintAllFrames": 911,
+                  "observedFirstContentfulPaintAllFramesTs": 163785448,
+                  "observedFirstMeaningfulPaint": 911,
+                  "observedFirstMeaningfulPaintTs": 163785448,
+                  "observedLargestContentfulPaint": 966,
+                  "observedLargestContentfulPaintTs": 163840262,
+                  "observedLargestContentfulPaintAllFrames": 966,
+                  "observedLargestContentfulPaintAllFramesTs": 163840262,
+                  "observedTraceEnd": 42857,
+                  "observedTraceEndTs": 205731269,
+                  "observedLoad": 1404,
+                  "observedLoadTs": 164278259,
                   "observedDomContentLoaded": 1,
-                  "observedDomContentLoadedTs": 460560817,
+                  "observedDomContentLoadedTs": 162875298,
                   "observedCumulativeLayoutShift": 0.110482234954834,
                   "observedCumulativeLayoutShiftMainFrame": 0.110482234954834,
                   "observedTotalCumulativeLayoutShift": 0.110482234954834,
-                  "observedFirstVisualChange": 893,
-                  "observedFirstVisualChangeTs": 461453059,
-                  "observedLastVisualChange": 1576,
-                  "observedLastVisualChangeTs": 462136059,
-                  "observedSpeedIndex": 1331,
-                  "observedSpeedIndexTs": 461891120
+                  "observedFirstVisualChange": 911,
+                  "observedFirstVisualChangeTs": 163785451,
+                  "observedLastVisualChange": 1638,
+                  "observedLastVisualChangeTs": 164512451,
+                  "observedSpeedIndex": 1426,
+                  "observedSpeedIndexTs": 164300158
                 },
                 {
                   "lcpInvalidated": false
@@ -9979,7 +9979,7 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 48,
+                  "numRequests": 49,
                   "numScripts": 17,
                   "numStylesheets": 3,
                   "numFonts": 4,
@@ -9989,13 +9989,13 @@
                   "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 1.3760000000000003,
-                  "throughput": 28194507.476593055,
-                  "maxRtt": 149.707,
-                  "maxServerLatency": 143.381,
-                  "totalByteWeight": 976611,
-                  "totalTaskTime": 17.761999999999997,
-                  "mainDocumentTransferSize": 3345
+                  "rtt": 1.4340000000000002,
+                  "throughput": 28151363.116933804,
+                  "maxRtt": 150.96300000000065,
+                  "maxServerLatency": 144.958,
+                  "totalByteWeight": 977507,
+                  "totalTaskTime": 19.776999999999997,
+                  "mainDocumentTransferSize": 3348
                 }
               ]
             }
@@ -10003,7 +10003,7 @@
         }
       }
     ],
-    "screenshot": true,
+    "screenshot": false,
     "stats": null,
     "github_repository": null,
     "budget_page": null,
