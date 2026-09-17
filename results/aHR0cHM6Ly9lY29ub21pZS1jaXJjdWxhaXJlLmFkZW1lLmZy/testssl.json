@@ -857,7 +857,7 @@
               "ip"           : "economie-circulaire.ademe.fr/104.18.0.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789653158"
+              "finding"      : "1789655998"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -865,7 +865,7 @@
               "port"         : "443",
               "severity"     : "MEDIUM",
               "cwe"          : "CWE-212",
-              "finding"      : "set-cookie: __cf_bm=y0ePKMfws9DVV_0VVdWw2DU.tErHgFt25.ufxJUdybQ-1789653158.6803184-1.0.1.1-GYNN5uJXxaBufOxyhAKSQUn14PsrFgMTJBgFaIMzZy.4ei2BklVr3bqJ_JdZhG1hZKzt9OUYQuTQOUP1h7OrpuIcyxQfP6xPPWfGtOi4sNiMIg2ijDDH66oXQwHW9IHQ; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 14:22:38 GMT (check if it's your IP address or e.g. a cluster IP)"
+              "finding"      : "set-cookie: __cf_bm=BKL9f15JaQLQtbcNOq2wYKIRgU4jIICElzo3hoC4ARk-1789655998.9650927-1.0.1.1-eYiZK9wEXGplW3uTwXbyfGXyInX1GX_8Ld62yA7hTcheaquI4JslG1J2tkUmofOIdHb7ZFJcoI0yittnuqzbKXGz7DN6XihGVe.lxn1nAqseKRDWz0PEjPvJXrUwTxw1; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 15:09:58 GMT (check if it's your IP address or e.g. a cluster IP)"
           }
 ,         {
               "id"           : "HSTS",
@@ -935,7 +935,7 @@
               "ip"           : "economie-circulaire.ademe.fr/104.18.0.202",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'none'; script-src 'nonce-auVpyGg9FAxXtWqIkl4gxd' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
+              "finding"      : "default-src 'none'; script-src 'nonce-rp1XIDpR9jz7j0wF4sUjaS' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
           }
 ,         {
               "id"           : "Permissions-Policy",
@@ -2323,7 +2323,7 @@
               "ip"           : "economie-circulaire.ademe.fr/104.18.1.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789653206"
+              "finding"      : "1789656040"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -2331,7 +2331,7 @@
               "port"         : "443",
               "severity"     : "MEDIUM",
               "cwe"          : "CWE-212",
-              "finding"      : "set-cookie: __cf_bm=V766fVp5kTn5vFaj8GGfFfSU3uAFlbFKP2_TEpYW8QM-1789653206.3585541-1.0.1.1-9DAWT52lNpsOCfUxG3b1L0sn_qZZ6PxO7_Yb321PXDgbRdA38fLdGA_9nW9XckHgB.A0qEuFgiZEAafoEqG6gBd2llnTcVa7BY2Zl3lnD6AAiXW4wf8gibwxbkdC3XoD; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 14:23:26 GMT (check if it's your IP address or e.g. a cluster IP)"
+              "finding"      : "set-cookie: __cf_bm=7Z7tDk2v7LekLz8.CyMqzLKLtWrox4dtc6DWNuhCCf8-1789656040.8952086-1.0.1.1-6318ZnQUL6LIVyyPK9jkOVLjIToRwtXc5.pAuuKLpuhLlSQeiUm4ROIpI9l8xoEiET5lSduRoZILOixe6BoAwGKtujFNiNKoRoK1dZOq_i0FzvC5SAT8eWC0D1i4I3qe; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 15:10:40 GMT (check if it's your IP address or e.g. a cluster IP)"
           }
 ,         {
               "id"           : "HSTS",
@@ -2401,7 +2401,7 @@
               "ip"           : "economie-circulaire.ademe.fr/104.18.1.202",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'none'; script-src 'nonce-3hlV533ODi3VzSInVsC6TJ' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
+              "finding"      : "default-src 'none'; script-src 'nonce-jQ46CjYJkXdXHp8vz6mi0u' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
           }
 ,         {
               "id"           : "Permissions-Policy",
@@ -2943,6 +2943,6 @@
               "ip"           : "economie-circulaire.ademe.fr/104.18.1.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "97"
+              "finding"      : "85"
           }
 ]
