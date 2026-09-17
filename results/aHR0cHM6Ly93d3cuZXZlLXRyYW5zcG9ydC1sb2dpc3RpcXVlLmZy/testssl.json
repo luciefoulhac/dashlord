@@ -871,7 +871,7 @@
               "ip"           : "www.eve-transport-logistique.fr/104.18.23.135",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789640545"
+              "finding"      : "1789648304"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -879,7 +879,7 @@
               "port"         : "443",
               "severity"     : "MEDIUM",
               "cwe"          : "CWE-212",
-              "finding"      : "set-cookie: __cf_bm=l2Lkb3sxzYAUZExElRKNtz3PIrOlC3EqOJroqJFwWrg-1789640545.043091-1.0.1.1-YdeKeAIPZ2wDEd9ZviSSWlcinnhiHh.ufkQqVOUltTM5OPyji4B_ojqSteK8AJ.mpxYbdVQy46ZabTK5DCTq1Q1LI_knHi8O6.j.4Csmnp7RERk0tSrhLHSvE06BvE.z; HttpOnly; SameSite=None; Secure; Path=/; Domain=eve-transport-logistique.fr; Expires=Thu, 17 Sep 2026 10:52:25 GMT (check if it's your IP address or e.g. a cluster IP)"
+              "finding"      : "set-cookie: __cf_bm=y6GCGeC7RhH9LaEcNDOi_a2xf2kkth6P0McBl099HrU-1789648304.7290502-1.0.1.1-3z_E.Xcum.Og_U5einP0vPTYHSoV7r4VzwEaoHe.ZTA5757ObtRfGXAk9xqzl90MBvLuQTJCqXB1NNoRm20WgeATadNNtWfPn1qJFmkMNHVaMMpvNRRL4AEEvcK.g3jL; HttpOnly; SameSite=None; Secure; Path=/; Domain=eve-transport-logistique.fr; Expires=Thu, 17 Sep 2026 13:01:44 GMT (check if it's your IP address or e.g. a cluster IP)"
           }
 ,         {
               "id"           : "HSTS",
@@ -949,7 +949,7 @@
               "ip"           : "www.eve-transport-logistique.fr/104.18.23.135",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'none'; script-src 'nonce-Gk2P4H7zozzM0qgcP2TVgO' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
+              "finding"      : "default-src 'none'; script-src 'nonce-AM96eVHakQSnFAzGh9VH5q' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
           }
 ,         {
               "id"           : "Permissions-Policy",
@@ -2351,7 +2351,7 @@
               "ip"           : "www.eve-transport-logistique.fr/104.18.22.135",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789640588"
+              "finding"      : "1789648346"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -2359,7 +2359,7 @@
               "port"         : "443",
               "severity"     : "MEDIUM",
               "cwe"          : "CWE-212",
-              "finding"      : "set-cookie: __cf_bm=6lgfzMHMD5L8G9x89A6cGDnT86D8RFR_7w6jOyFxBkQ-1789640588.580823-1.0.1.1-veZ1_Liz7SF2w6JUaizUPfGouhdKb0n3IPuQd5CblP6DqjS5hgptW9xj9tjQ2_vf_tLoHWkHarLhEWlBSJ8IpqNzQ2ctLRCq.xIykO5UTVVekXl1xUGU2195wBB8Rg.x; HttpOnly; SameSite=None; Secure; Path=/; Domain=eve-transport-logistique.fr; Expires=Thu, 17 Sep 2026 10:53:08 GMT (check if it's your IP address or e.g. a cluster IP)"
+              "finding"      : "set-cookie: __cf_bm=PjdDt9wZ1VdCV7OJsp6ikwU0VRoqpkTxAo5oI8i7CL8-1789648346.5352595-1.0.1.1-2LxtjZpAhhVoPwRTulWVfAKuvLkd.FmBsDbQmdBQb5dMRe6pH_LjXm3hvbBwG5SxX2Zc9fMaUMUBXk8aUZokd1alPqYO8NkRSfdEX0WriGIe2vgChomXh2.UxEv_Uujw; HttpOnly; SameSite=None; Secure; Path=/; Domain=eve-transport-logistique.fr; Expires=Thu, 17 Sep 2026 13:02:26 GMT (check if it's your IP address or e.g. a cluster IP)"
           }
 ,         {
               "id"           : "HSTS",
@@ -2429,7 +2429,7 @@
               "ip"           : "www.eve-transport-logistique.fr/104.18.22.135",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'none'; script-src 'nonce-4ddVcA3VprIuHbY7qIoyyT' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
+              "finding"      : "default-src 'none'; script-src 'nonce-1tQXgf6hDInrSkizA3K5Ta' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
           }
 ,         {
               "id"           : "Permissions-Policy",
@@ -2971,6 +2971,6 @@
               "ip"           : "www.eve-transport-logistique.fr/104.18.22.135",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "89"
+              "finding"      : "86"
           }
 ]
