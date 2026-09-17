@@ -1,0 +1,43 @@
+{
+  "links": [
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "wattris.ademe.fr",
+        "port": null,
+        "hostname": "wattris.ademe.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/",
+        "path": "/",
+        "href": "https://wattris.ademe.fr/"
+      },
+      "link": "https://wattris.ademe.fr/",
+      "line": "--2026-09-17 11:20:54--  https://wattris.ademe.fr/",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "wattris.ademe.fr",
+        "port": null,
+        "hostname": "wattris.ademe.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/robots.txt",
+        "path": "/robots.txt",
+        "href": "https://wattris.ademe.fr/robots.txt"
+      },
+      "link": "https://wattris.ademe.fr/robots.txt",
+      "line": "--2026-09-17 11:20:54--  https://wattris.ademe.fr/robots.txt",
+      "broken": false
+    }
+  ],
+  "broken": []
+}
