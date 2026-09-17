@@ -1,0 +1,913 @@
+{
+	"@programName": "ZAP",
+	"@version": "2.17.0",
+	"@generated": "Thu, 17 Sept 2026 10:33:28",
+	"created": "2026-09-17T10:33:28.213387103Z",
+	"insights":[
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://lesgenerateurs.ademe.fr",
+			"key": "insight.code.4xx",
+			"description": "Percentage of responses with status code 4xx",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://lesgenerateurs.ademe.fr",
+			"key": "insight.endpoint.ctype.text/html",
+			"description": "Percentage of endpoints with content type text/html",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://lesgenerateurs.ademe.fr",
+			"key": "insight.endpoint.method.GET",
+			"description": "Percentage of endpoints with method GET",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://lesgenerateurs.ademe.fr",
+			"key": "insight.endpoint.total",
+			"description": "Count of total endpoints",
+			"statistic": "2"
+		}
+	],
+	"site":[ 
+		{
+			"@name": "https://lesgenerateurs.ademe.fr",
+			"@host": "lesgenerateurs.ademe.fr",
+			"@port": "443",
+			"@ssl": "true",
+			"alerts": [ 
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-13",
+					"alert": "CSP: Failure to Define Directive with No Fallback",
+					"name": "CSP: Failure to Define Directive with No Fallback",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>The Content Security Policy fails to define one of the directives that has no fallback. Missing/excluding them is the same as allowing anything.</p>",
+					"instances":[ 
+						{
+							"id": "2",
+							"uri": "https://lesgenerateurs.ademe.fr",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-lEMgQa62QiS72gaj8suwhp' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src."
+						},
+						{
+							"id": "19",
+							"uri": "https://lesgenerateurs.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "content-security-policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-NIb3PfiA4NxwC1V1pcpZvG' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "The directive(s): form-action is/are among the directives that do not fallback to default-src."
+						}
+					],
+					"count": "2",
+					"systemic": true,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src.</p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-10",
+					"alert": "CSP: script-src unsafe-eval",
+					"name": "CSP: script-src unsafe-eval",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"id": "8",
+							"uri": "https://lesgenerateurs.ademe.fr",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-lEMgQa62QiS72gaj8suwhp' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "script-src includes unsafe-eval."
+						},
+						{
+							"id": "9",
+							"uri": "https://lesgenerateurs.ademe.fr",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-praLJyXrPDDlBsRmvbASKM' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "script-src includes unsafe-eval."
+						},
+						{
+							"id": "11",
+							"uri": "https://lesgenerateurs.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-vsQ5RIYqtqLth8nHVQ5auU' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "script-src includes unsafe-eval."
+						},
+						{
+							"id": "10",
+							"uri": "https://lesgenerateurs.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-NIb3PfiA4NxwC1V1pcpZvG' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "script-src includes unsafe-eval."
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>script-src includes unsafe-eval.</p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-6",
+					"alert": "CSP: style-src unsafe-inline",
+					"name": "CSP: style-src unsafe-inline",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"id": "4",
+							"uri": "https://lesgenerateurs.ademe.fr",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-lEMgQa62QiS72gaj8suwhp' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"id": "5",
+							"uri": "https://lesgenerateurs.ademe.fr",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-praLJyXrPDDlBsRmvbASKM' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"id": "6",
+							"uri": "https://lesgenerateurs.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-vsQ5RIYqtqLth8nHVQ5auU' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"id": "7",
+							"uri": "https://lesgenerateurs.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-NIb3PfiA4NxwC1V1pcpZvG' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "style-src includes unsafe-inline."
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>style-src includes unsafe-inline.</p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "10054",
+					"alertRef": "10054-2",
+					"alert": "Cookie with SameSite Attribute None",
+					"name": "Cookie with SameSite Attribute None",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set with its SameSite attribute set to \"none\", which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
+					"instances":[ 
+						{
+							"id": "45",
+							"uri": "https://lesgenerateurs.ademe.fr",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</p>",
+					"cweid": "1275",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10054",
+					"alertRef": "10054-1",
+					"alert": "Cookie without SameSite Attribute",
+					"name": "Cookie without SameSite Attribute",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
+					"instances":[ 
+						{
+							"id": "42",
+							"uri": "https://lesgenerateurs.ademe.fr",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						},
+						{
+							"id": "43",
+							"uri": "https://lesgenerateurs.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</p>",
+					"cweid": "1275",
+					"wascid": "13",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "10035",
+					"alertRef": "10035-1",
+					"alert": "Strict-Transport-Security Header Not Set",
+					"name": "Strict-Transport-Security Header Not Set",
+					"riskcode": "1",
+					"confidence": "3",
+					"riskdesc": "Low (High)",
+					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
+					"instances":[ 
+						{
+							"id": "51",
+							"uri": "https://lesgenerateurs.ademe.fr",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "52",
+							"uri": "https://lesgenerateurs.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "50",
+							"uri": "https://lesgenerateurs.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
+					"cweid": "319",
+					"wascid": "15",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "10096",
+					"alertRef": "10096",
+					"alert": "Timestamp Disclosure - Unix",
+					"name": "Timestamp Disclosure - Unix",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>A timestamp was disclosed by the application/web server. - Unix</p>",
+					"instances":[ 
+						{
+							"id": "67",
+							"uri": "https://lesgenerateurs.ademe.fr",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1789641205",
+							"otherinfo": "1789641205, which evaluates to: 2026-09-17 10:33:25."
+						},
+						{
+							"id": "56",
+							"uri": "https://lesgenerateurs.ademe.fr",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789641205",
+							"otherinfo": "1789641205, which evaluates to: 2026-09-17 10:33:25."
+						},
+						{
+							"id": "54",
+							"uri": "https://lesgenerateurs.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1789641205",
+							"otherinfo": "1789641205, which evaluates to: 2026-09-17 10:33:25."
+						},
+						{
+							"id": "55",
+							"uri": "https://lesgenerateurs.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1789641205",
+							"otherinfo": "1789641205, which evaluates to: 2026-09-17 10:33:25."
+						},
+						{
+							"id": "53",
+							"uri": "https://lesgenerateurs.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789641205",
+							"otherinfo": "1789641205, which evaluates to: 2026-09-17 10:33:25."
+						}
+					],
+					"count": "5",
+					"systemic": false,
+					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
+					"otherinfo": "<p>1789641205, which evaluates to: 2026-09-17 10:33:25.</p>",
+					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
+					"cweid": "497",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10094",
+					"alertRef": "10094-3",
+					"alert": "Base64 Disclosure",
+					"name": "Base64 Disclosure",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
+					"instances":[ 
+						{
+							"id": "106",
+							"uri": "https://lesgenerateurs.ademe.fr",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1-Nl7s3eoKDW7ZxrnomLgqp5iTHDRjmjnRHRSne8nLGkii81aqxLF7IbjplLRdPvdXHMvwrUCSWWIvtSAhIVue0RNZV03lQ4fXeIS9BQLq_zXbtEnozP9TUnZYYdIcz5tJ",
+							"otherinfo": "\uFFFD\uFFFDe\uFFFD\uFFFD\u07A0\uFFFD\uFFFD\uFFFDk\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDy\uFFFD1\uFFFDF9\uFFFD\uFFFD\\x0011\uFFFDJw\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD/5j\uFFFDK\\x0017\uFFFD\\x001b\uFFFD\uFFFDKE\uFFFD\uFFFDuq\u033F\n\uFFFD\t%\uFFFD\"\uFFFDR\\x0002\\x0012\\x0015\uFFFD\uFFFD\\x00115\uFFFDt\uFFFDT8}w\uFFFDK\uFFFDP.\uFFFD\uFFFD]\uFFFDD\uFFFD\uFFFD\uFFFD\uFFFD5'e\uFFFD\\x001d!\uFFFD\uFFFD\uFFFD"
+						},
+						{
+							"id": "87",
+							"uri": "https://lesgenerateurs.ademe.fr",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "AiC6jDhZlq87MaAIjBdqSPlZdUmUCBKb3mZa3vbFZkE-1789641205",
+							"otherinfo": "\\x0002 \uFFFD\uFFFD8Y\uFFFD\uFFFD;1\uFFFD\\x0008\uFFFD\\x0017jH\uFFFDYuI\uFFFD\\x0008\\x0012\uFFFD\uFFFDfZ\uFFFD\uFFFD\uFFFDfA>\u05FF=\uFFFDv\uFFFD"
+						},
+						{
+							"id": "85",
+							"uri": "https://lesgenerateurs.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+",
+							"otherinfo": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" fill=\"none\"><path fill=\"#B20F03\" d=\"M16 3a13 13 0 1 0 13 13A13.015 13.015 0 0 0 16 3m0 24a11 11 0 1 1 11-11 11.01 11.01 0 0 1-11 11\"/><path fill=\"#B20F03\" d=\"M17.038 18.615H14.87L14.563 9.5h2.783zm-1.084 1.427q.66 0 1.057.388.407.389.407.994 0 .596-.407.984-.397.39-1.057.389-.65 0-1.056-.389-.398-.389-.398-.984 0-.597.398-.985.406-.397 1.056-.397\"/></svg>"
+						},
+						{
+							"id": "86",
+							"uri": "https://lesgenerateurs.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "mUVVXYMxZJqC4eWvsKU01WlLZKW7YKUdMHu50Q_LgUo-1789641205",
+							"otherinfo": "\uFFFDEU]\uFFFD1d\uFFFD\uFFFD\uFFFD\u5BF0\uFFFD4\uFFFDiKd\uFFFD\uFFFD`\uFFFD\\x001d0{\uFFFD\uFFFD\\x000f\u02C1J>\u05FF=\uFFFDv\uFFFD"
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
+					"otherinfo": "<p>\uFFFD\uFFFDe\uFFFD\uFFFD\u07A0\uFFFD\uFFFD\uFFFDk\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDy\uFFFD1\uFFFDF9\uFFFD\uFFFD\\x0011\uFFFDJw\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD/5j\uFFFDK\\x0017\uFFFD\\x001b\uFFFD\uFFFDKE\uFFFD\uFFFDuq\u033F</p><p>\uFFFD\t%\uFFFD\"\uFFFDR\\x0002\\x0012\\x0015\uFFFD\uFFFD\\x00115\uFFFDt\uFFFDT8}w\uFFFDK\uFFFDP.\uFFFD\uFFFD]\uFFFDD\uFFFD\uFFFD\uFFFD\uFFFD5'e\uFFFD\\x001d!\uFFFD\uFFFD\uFFFD</p>",
+					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "319",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-12",
+					"alert": "CSP: Header & Meta",
+					"name": "CSP: Header & Meta",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>The message contained both CSP specified via header and via Meta tag. It was not possible to union these policies in order to perform an analysis. Therefore, they have been evaluated individually.</p>",
+					"instances":[ 
+						{
+							"id": "14",
+							"uri": "https://lesgenerateurs.ademe.fr",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "16",
+							"uri": "https://lesgenerateurs.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "12",
+							"uri": "https://lesgenerateurs.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90033",
+					"alertRef": "90033",
+					"alert": "Loosely Scoped Cookie",
+					"name": "Loosely Scoped Cookie",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>Cookies can be scoped by domain or path. This check is only concerned with domain scope.The domain scope applied to a cookie determines which domains can access it. For example, a cookie can be scoped strictly to a subdomain e.g. www.nottrusted.com, or loosely scoped to a parent domain e.g. nottrusted.com. In the latter case, any subdomain of nottrusted.com can access the cookie. Loosely scoped cookies are common in mega-applications like google.com and live.com. Cookies set from a subdomain like app.foo.bar are transmitted only to that domain by the browser. However, cookies scoped to a parent-level domain may be transmitted to the parent, or any subdomain of the parent.</p>",
+					"instances":[ 
+						{
+							"id": "39",
+							"uri": "https://lesgenerateurs.ademe.fr",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Domain=ademe.fr",
+							"otherinfo": "The origin domain used for comparison was:\nlesgenerateurs.ademe.fr\nCookie name: __cf_bm\n"
+						},
+						{
+							"id": "41",
+							"uri": "https://lesgenerateurs.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Domain=ademe.fr",
+							"otherinfo": "The origin domain used for comparison was:\nlesgenerateurs.ademe.fr\nCookie name: __cf_bm\n"
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Always scope cookies to a FQDN (Fully Qualified Domain Name).</p>",
+					"otherinfo": "<p>The origin domain used for comparison was:</p><p>lesgenerateurs.ademe.fr</p><p>Cookie name: __cf_bm</p><p></p>",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc6265#section-4.1</p><p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p><p>https://code.google.com/archive/p/browsersec/wikis/Part2.wiki</p>",
+					"cweid": "565",
+					"wascid": "15",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "10109",
+					"alertRef": "10109",
+					"alert": "Modern Web Application",
+					"name": "Modern Web Application",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Client Spider may well be more effective than the standard one.</p>",
+					"instances":[ 
+						{
+							"id": "47",
+							"uri": "https://lesgenerateurs.ademe.fr",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script nonce=\"lEMgQa62QiS72gaj8suwhp\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'EyjnjwuqL0graKumv5hgHIpgFHS0S6QmPk_9NrlaKIM-1789641205-1.2.1.1-ctEVPbm45mVXBKQyeKsAfIQMZJw90AcagZ6RDuqq1yGrMzdwodG8An2aWDyIDLqo',cITimeS: '1789641205',cN: 'lEMgQa62QiS72gaj8suwhp',cRay: 'a3c773def9777b83',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:\"/?__cf_chl_tk=fNRrNwix3m5fHtQFQ132glwIbPOgVgeMcDdb4cv1uro-1789641205-1.0.1.1-1SeqqsUQSSE3Ol4P9PM88IYV5_Sf1Zdnl2geuMFevWw\",cvId: '3',cZone: 'lesgenerateurs.ademe.fr',fa:\"/?__cf_chl_f_tk=fNRrNwix3m5fHtQFQ132glwIbPOgVgeMcDdb4cv1uro-1789641205-1.0.1.1-1SeqqsUQSSE3Ol4P9PM88IYV5_Sf1Zdnl2geuMFevWw\",md: 'xygGWSlhqzHN4pvZXkwnWS6uH1o1RWvZyfjh8RTtHdI-1789641205-1.2.1.1-DptK.rb4ag9dMstiugvd6l1l9mtsxz0V2SzMYcpMAZyBgcML175PDXNQx8hsy4aJIHnhvIQZKtrrUozWSr1IlGha.cTPusP_jMVmlBYUhLUr97k9QuDPMxrOCZ0aKdAku6R_OjxE3s91J1mSxi6imALdJKL4SGyfGrxLOFYfW4ysfOw9MZ4WeVb.OOTkEt7.2H.tBJ_ruDfyJr5gaKipSXSgc_TSuqyvt.hMGCGPJiWPvPXOGMrru8_Tl7wG3OKInVX2kGWjeisWobpL9RRbzakvkhz31woolKXLEbsRhix.WaYkIrj5iwxtdRFbgpgB_kMdzWr3eKGijkR9cLqPba2kMKf5FUReqKCDaEh40S7LVzMz9kNQIdOofm2WWUzMhCzBT6Dbfb2ENirt7f5gK4leVAQZQEqW7mi9TVsQm_kSceDz2SIFgG8KKAHVKticWvRn2yTIWjVbD_EE90xg86UFR3LO2bkMW7tz8Owi.ABnLQjofbqZ_yrFe0d7a9qy07pYBEdaLSrPNClvLeTC3XQUAH.KenAqlfrF_1kua8Ucwf6NppqxsMgD4tX64GKjUthDcJY4saj1C6U6eq5_0Z8HkXlxKEkwGqoBAPMHqL7B4mDFGfJrZmTcxHGZf7KKfcSHMMQGJSmhhaYIOZ516tq02sFceWZDASUYMTZvdASLf8tot5Pzrh9FP4cApKc1uq4HNwpYki.zlMTl06uQGF0gLsnfJzRtWdWx8AXKwxZbcmW86YoNogHEUejPM.zO89XpyaTfhJlaf3VSr_nAqEByE9sbSdePP3nHv1w_PGmQkjMBNbr1b4BL_H7HdVmS7k6OUk0EePHz4r8QkNNdcV_uUP6pmclNhvjK09FyTKULdhSZqX2ODw1aS4E_FEPZINJTlxUnJxk6jKdbGB83HT1Bhiskr4EpHpKmPkJHY.UkR0y.N_Rt2GZvJzZ.YOAIbY4U.fUvzpU7iGGYnlrHC8ubYrtfCbNjFHaNgYsBNhKsKlQ29Cy7K5Q8Totjz7d1tt7RAptvaLMuxxir6g3Q9xykb7SOWX2amyDKgVMcqis',mdrd: 'X7q7b.bh7TNGcMFDFCzZlEb.3L20vwwVADclo0mxfCw-1789641205-1.2.1.1-0RGu71GplXrvWMj7AEjbZ83uF84K1XzcL4qZg3MJca3dKfWTdkcBBddq.GrSIn0PpAHHnjj7REXr4xTo6BV3pg.3ZLAJnsMC0P8G0Z7jCPx6ciQp5UJtKjkOyRAmG8gbnT4kgPwmhpyOJyhb4uKtH2LoVu2Yihwm6tjTpJEbWfaJgbShpPsMbskoJGIZUc94',};var a = document.createElement('script');a.nonce = 'lEMgQa62QiS72gaj8suwhp';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a3c773def9777b83';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/?__cf_chl_rt_tk=fNRrNwix3m5fHtQFQ132glwIbPOgVgeMcDdb4cv1uro-1789641205-1.0.1.1-1SeqqsUQSSE3Ol4P9PM88IYV5_Sf1Zdnl2geuMFevWw\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "49",
+							"uri": "https://lesgenerateurs.ademe.fr",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script nonce=\"praLJyXrPDDlBsRmvbASKM\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'OAoomtT3gjg0Yq.41lc5BNlYjB7W2FIzJlYqHLjwqiU-1789641205-1.2.1.1-He2OfEPUzPDooy9_AEHFcpgCdXUr4L0irsYlK2Xu0lVBj40D9xNeXRwMoPncXNDS',cITimeS: '1789641205',cN: 'praLJyXrPDDlBsRmvbASKM',cRay: 'a3c773de9b905476',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:\"/?__cf_chl_tk=vlunTXmuZWcNEmLdy4.Pxs4ymMja2bFAe89SZd5c5Fc-1789641205-1.0.1.1-Z9VsSsiECGZPibbkdqAa0zDwHG0WTNjRq2efXhihOPU\",cvId: '3',cZone: 'lesgenerateurs.ademe.fr',fa:\"/?__cf_chl_f_tk=vlunTXmuZWcNEmLdy4.Pxs4ymMja2bFAe89SZd5c5Fc-1789641205-1.0.1.1-Z9VsSsiECGZPibbkdqAa0zDwHG0WTNjRq2efXhihOPU\",md: 'wlKXlJ7iYGKabDMyNRWt.jFdjYlhh09AgAVov3tDUjM-1789641205-1.2.1.1-gu0jOLUuzKPE0J7r0TQD0nAnW.KVLSGNmi6GZjt.Vv9sGgFKAnicIGC_QDhzRw889l_Ibc_guUnkfande19pu5MIQq2iP_w6S3JDZiBbOziNpZqw7PAZnl80iAl0bxuaVEjlHMT8LBH.a1Kzqqax22zyw4SedwfZksxqcxm80aGDy.2uLYCLNH8yow3jlDw6pRTbrwzgJUoBuG3SSDUZBbQTXfb7zoTMpcTidSMk5u9tyIj.doS9DPJia4VGw7Wi3i7DC2ZauBJvXTMw0igYTHcrprc.Cf_LwETnX4ElAlKyG8cOuonDFPMqidsXobQnXipnIaOGjbCSmbBV7Sp0jQHo5nR_q.2XavygHj_YqauJL4MNt9qkLCeD9eJtXkzWGjhbLhHPYJa0GnpcdbdqpE1qJKzQTxl9UFuCSmic0hKRsxdNR66_fm7tMVqaXrIAeug0QRNT2yQ0LmjvhrBURrr1SG2ta23Hh.nbr4wCPrtf2btuuHlmVDyCFrHKdt5u6vWwKU5LyCBljK83Q3zd2gNhglO0zeHG9e_nIOS6FZnZS0K2Da6RdqH95PRuqNDCfpdcmpOk3rDNSK4yTGZWefx2jdHtQUMFL0chKfQubTzbQwLu89Dbgds3UK0EqtO27r7e7Z7YeMEMVDxSsBDFEmMIHCVSBxynOLAnxMr9zvnWEEjF7.AcDpuxbxo2l1pWLDci1TmKbZFG0rLOwllqQWb1LAV.B8sNb8lSJU9jAH3BdC6J3hO9JZu0azD6pKZKCk3mhnffWeu1GRJgIRXKDw3UNfiWvqiMdANUjSEphyOPhWyt0_1AERvrSZM0pIgHZ37dSUVnSOu9ChVzIfncUpNRUG3AHwqaqsu2FnYTa23YAJnSuUQqad7aofqLK4_FMsYASypoXu89knNJQ2iYBG8vNeZcbtj936oZlAcdOdIC0i5zsig_n.5br4eRahx8HvWNj5KGJdlvvK0dd_KlctYIEUiCRarno0WKHk0Y5Ud2ZN_zi1Yxkg2zSyVEkhpSIwXiB5HTgROLhs2Kt3cqWjwSPF.XwH416FJqgP3vOKFT9e3IxYqK7gHE69ZhvlT0onvnV39tNZz_szrvgdEpnOpgmPzZvrJ1rcq4wy1GYIbuZyNr79y8tAbGgawxjShLCgAJa4FT9bL7EwvBYiSSIMF2qW7lpjS7yo2FOPNPa8xLAlt7ZFayvkpH3OhIWsgI',mdrd: 'wafmYSccbQN1j.VGyD.aszWyvyuOg1Acj7RhzEZe7BM-1789641205-1.2.1.1-yRhP9di_0ytfjnI.cCom0JDgy2O1RT6WWHDcqygE7fdM_FAihqM38ep4_qZO1_UE6hy6x2tsgkh9Zk7eAN_fRSQJzENJp43UI_08mgNWKwe8SVu0.Deoi2etMWR4YR2wWPalxkAzL4O2ZvBMthmHlE2yXfuSaxLmZSx1wXmMlJbXkwfUwAnx4t77vfZrJN49effzRYT97k4r.f64cwIC2r070Il5gHed7TUZI4c5ETMvVQtR9XlN5_p9TZ4ekATX6.NLv0XPqnk.sB6THknYZnFqe8rEOOhOjCLgLcPjP3IB8Roh37.mW3sZUfI1Ha6.',};var a = document.createElement('script');a.nonce = 'praLJyXrPDDlBsRmvbASKM';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a3c773de9b905476';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/?__cf_chl_rt_tk=vlunTXmuZWcNEmLdy4.Pxs4ymMja2bFAe89SZd5c5Fc-1789641205-1.0.1.1-Z9VsSsiECGZPibbkdqAa0zDwHG0WTNjRq2efXhihOPU\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "46",
+							"uri": "https://lesgenerateurs.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script nonce=\"vsQ5RIYqtqLth8nHVQ5auU\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'lki.uJNvRPfEUHa9F_1Wam_nI0VnZG2ZVKg.4hGKQ.Q-1789641205-1.2.1.1-U3UrYwi_sMMNVDVq_ZFLUusHRsn67iYdcats6mqBEJXapSouXkJnEMhRzOd0Jpqu',cITimeS: '1789641205',cN: 'vsQ5RIYqtqLth8nHVQ5auU',cRay: 'a3c773df1c38483d',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:\"/robots.txt?__cf_chl_tk=8_UNxwZO6tNwhfvjy2ha5736hSmoUh_84S6igFiDj1M-1789641205-1.0.1.1-xjO4DiOikSzJ2sk6mUBNa33aRmThsxaToQgkLqmrgiE\",cvId: '3',cZone: 'lesgenerateurs.ademe.fr',fa:\"/robots.txt?__cf_chl_f_tk=8_UNxwZO6tNwhfvjy2ha5736hSmoUh_84S6igFiDj1M-1789641205-1.0.1.1-xjO4DiOikSzJ2sk6mUBNa33aRmThsxaToQgkLqmrgiE\",md: 'luAW3nxB2wo59G9MeQ1G8SHKADd59mPYkrjBaG23TVQ-1789641205-1.2.1.1-MTIPf7y4y9uX2tClfBB7yEJrtnqahc1FdPzWWJ2L1eyG_40Yi3Kzbgy7uIyUGbFuDJPeBRcOutJDtI9Glc3Rk97FqbOz4YkFqpEWUaoAgQlkGson.aUFy9xui2rZHn9lm4crt7HXH5PoEJj8re9sAQQp8DfoBNrz9XltxqlRiQcCP.74zFsWpjYT8ZOuoQR2bhl.WVAzcgnoQW_nr.U2UNO315mJy9iK5dJzu9X7X_qA6odc0z9ZQCl.hqDXTg5C897wI00a1p0QMCY5zhG1hK2bSJSbHirV8UMYXV1x7gx9u.DCRfC6nbqwYmR7Vz8NuguSaeea1mlGK9LMp7_yBxJC7HkG.fIr5U5B0n4Cf2fIUn6_Xh1EzgSdAk6ovJTYJaJUNtdvdnjx0Qw2XLjTsh2zUXEU0hYd.yW5bLp93gmfzdn_rO9R5rJcba5CDgy31QEl72tfJFS_aULEJG9YKyuy69ANVnde6KgF7siJNf7N5kaBQvtEOhSEbfiZb._NdZRt.i9.9Xxl_qOAS.saM3wqBiRciQCusemsUUAZ0NTuld9wNSpsosFd4SQeCp98nGCgaj5WOGANmM4Tey7tHerMLZfs_12.N9UBB45J9Iyj5RySF2J3re_RAmdaIf1cCRkPhFxsTbtvXBAvMsAaQEwkZoj1Pwp4qb9xioKZxq94.id31oa1A11sniVKVW9ZqeylTqlqSK5z.0I991X8_huPIfacUEZKORuxyF6KlAlNFjr46yn9MFWKvd_ZjqvKp.BrHjpSLi0RVwh80LPP.4iWJYjDbHZCSTW4jS6q9aB6DEenw8MjPnAuT6EgHoZ95d5YSI2kPNde80OZc3vUrncbopE2mIOz6Ag2IOmQr4uYtvijhwbbMbVcv.3MaZAau7WzuL55JHfYfX6.H4z1ShgpO0Uip36PWy9T24SMTLKOdl3uiWYxvaIwQb2emJu9ObIpD.O.eYMEh3slxyjPNLB7vijeNJ.HDP4qT5uQrUERYSuRGqpLPqgSgkHSUEwXQuXubtFYGqMfT16X0NqZUNW5ekGDEX.qRT._S0fbX6g',mdrd: 'zx7U0n63_FZMTpTnpWkAyH10.YTxiCs3PvVAJWhEpZc-1789641205-1.2.1.1-zUlgMy1HMTf7weaXyYVXZ418hm2SCx.nysHD6pOEAV4M__zkykZmHpFb8TuyUmHtOmsldQqpSC37YSXp87Abww8y_ltK42KWxyaLBnnV4KvebLdl8Q6zqphpseDTnn.Q7cbKSvi1u.cbDchCp8w0FCQwMig7lsp3FZh83tAoOz5SgZ9UaM5JBEvNr7GecDsA',};var a = document.createElement('script');a.nonce = 'vsQ5RIYqtqLth8nHVQ5auU';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a3c773df1c38483d';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/robots.txt?__cf_chl_rt_tk=8_UNxwZO6tNwhfvjy2ha5736hSmoUh_84S6igFiDj1M-1789641205-1.0.1.1-xjO4DiOikSzJ2sk6mUBNa33aRmThsxaToQgkLqmrgiE\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "48",
+							"uri": "https://lesgenerateurs.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script nonce=\"NIb3PfiA4NxwC1V1pcpZvG\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'Tk_93d9laqPRnYhY4Xd8o0bNyLtbfCsCDeHm_3blS8E-1789641205-1.2.1.1-XxalCHVPUpwIW2F2CvkLkz5Sg8I2Pb69PUZijdZdcC7s.CsISXGU99OjI5gdXZjH',cITimeS: '1789641205',cN: 'NIb3PfiA4NxwC1V1pcpZvG',cRay: 'a3c773df08ef7af7',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:\"/sitemap.xml?__cf_chl_tk=xwDZimHxSHNT0iSsnKt5RMndDbPUyYbPlmw7k7mb_5E-1789641205-1.0.1.1-NrSj_oOiqYWran247idrId57cw4rgJrINqSUs1JAV7Q\",cvId: '3',cZone: 'lesgenerateurs.ademe.fr',fa:\"/sitemap.xml?__cf_chl_f_tk=xwDZimHxSHNT0iSsnKt5RMndDbPUyYbPlmw7k7mb_5E-1789641205-1.0.1.1-NrSj_oOiqYWran247idrId57cw4rgJrINqSUs1JAV7Q\",md: 'JtPPCdsTpx6XbUXIfuPylo6RtwjlyH4tDSD5eyscEqs-1789641205-1.2.1.1-x62BVT2b_khRuH7m1HDoTT.XC8TbcV1NR4ktDys91N5Il9l8RdqFYIotmwwv1xhRm876zsCOzY3vGSJ8L.1T4bgrc755e1b.D4.pA5APvqCSWcqxEfOFXmJ9Br5ckpuVKHM5vBUE5tF5dT2KjCNKB416DtBFDfhjedRm3L6IJttkwF_Dw0shsg.LpWCssfqW37wKPVgdh9sW87UGmunGZQKIhkik5wYTCzWEwXgWVEW9LaOoX_G_c0h.EoBx8ZW8n0ev70ieHP7yEFeJ_gHvSnsQGKSxRSjMCFYtTThGolYy9YGCcGBo7AAtq0uSqc3JI9_TKa_OJgULwLMXsEL_GCLWMBAwLoMKilonukPu3hGazgiALEjHuyO7z1cWftthXzU4g13tnouaJnmbKtWhKm6xiRFFHtV8kGg2INXE21prM8dhner8ObyohK6UNkCGMTyxR02hC1kJsV..ojNf52zuPsu6R87CurIs6tf.AC2FvnPzpJba8p4lx2kHxXfRmlJSrwbxjLZlOMr0sLt.uf0Hs7jqTyjplKmYJzrnXP4McZHT5fD44AauvvKQ8LIlBgxfkmuv7x5Mybav9isN6YaYk3hIFQld6xuEufVgLllJh1qfLEcTZP01OS0w2v9kN2IDDIj_O3i.BRTyzc71VHmqEaZFbo8c_Da97Vh4HtBDMWgxjifPBlPB9ETBaTpHOh4LYSMRI9mhXU0kazggO3FeBftSx8hOHlugIHMB3xW4J_qSPrhAY3zfXbwt9goTLw979IeJztAR0wReJLrkTxidCYeZS3eGgE6avdujHgfR2iP97LcMIpk1r6n03oEZmh.54rBeJXs4HHlUy0522e8NaFp4_oWz2CmrixGfu88kxS3jYHeRiQCSk6JddvEV82JTHWtPRIoy0diFFdGqu6wD0Q4tKtB63MDQUIJmtDmGmQofxMBn.0Akg0D.jNO6.VVVKIu7SGmBXxyEQ_q1H6hp5MhKuYdUIOjslFRRnj3n0dOeatafgZelwkhUavS2OwCucBMZgrWbxU0HarhMssahTFFTpzUJez6xbQdGNxw',mdrd: 't0blqlc6.egZGXagG_WffzGefUaDgmhNdnBjaOHVHrM-1789641205-1.2.1.1-Qvx9FJCQkw6k3p94.40QOSroa8j7naAZk5rkwmrVQtZCLxIdt1pPIS9LyBXBsoMrFCZQ_znIeL0rcoH9SrtiDDHjAV2rqugC7wB.3R3QAGMCs7M55G1l9zGaLTfdUebH5ovXKvx.l78wwOTSLOH3UcY9zpRKghZo3FF6zk_liVZo8beJ03kuNFqUsAikeER0',};var a = document.createElement('script');a.nonce = 'NIb3PfiA4NxwC1V1pcpZvG';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a3c773df08ef7af7';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/sitemap.xml?__cf_chl_rt_tk=xwDZimHxSHNT0iSsnKt5RMndDbPUyYbPlmw7k7mb_5E-1789641205-1.0.1.1-NrSj_oOiqYWran247idrId57cw4rgJrINqSUs1JAV7Q\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>This is an informational alert and so no changes are required.</p>",
+					"otherinfo": "<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>",
+					"reference": "",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "10049",
+					"alertRef": "10049-1",
+					"alert": "Non-Storable Content",
+					"name": "Non-Storable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
+					"instances":[ 
+						{
+							"id": "103",
+							"uri": "https://lesgenerateurs.ademe.fr",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "403",
+							"otherinfo": ""
+						},
+						{
+							"id": "105",
+							"uri": "https://lesgenerateurs.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "403",
+							"otherinfo": ""
+						},
+						{
+							"id": "102",
+							"uri": "https://lesgenerateurs.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "403",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
+					"cweid": "524",
+					"wascid": "13",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-3",
+					"alert": "Sec-Fetch-Dest Header is Missing",
+					"name": "Sec-Fetch-Dest Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
+					"instances":[ 
+						{
+							"id": "95",
+							"uri": "https://lesgenerateurs.ademe.fr",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "94",
+							"uri": "https://lesgenerateurs.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "96",
+							"uri": "https://lesgenerateurs.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Dest</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-2",
+					"alert": "Sec-Fetch-Mode Header is Missing",
+					"name": "Sec-Fetch-Mode Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
+					"instances":[ 
+						{
+							"id": "91",
+							"uri": "https://lesgenerateurs.ademe.fr",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "92",
+							"uri": "https://lesgenerateurs.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "93",
+							"uri": "https://lesgenerateurs.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Mode</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-1",
+					"alert": "Sec-Fetch-Site Header is Missing",
+					"name": "Sec-Fetch-Site Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
+					"instances":[ 
+						{
+							"id": "90",
+							"uri": "https://lesgenerateurs.ademe.fr",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "89",
+							"uri": "https://lesgenerateurs.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "88",
+							"uri": "https://lesgenerateurs.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Site</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-4",
+					"alert": "Sec-Fetch-User Header is Missing",
+					"name": "Sec-Fetch-User Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
+					"instances":[ 
+						{
+							"id": "98",
+							"uri": "https://lesgenerateurs.ademe.fr",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "99",
+							"uri": "https://lesgenerateurs.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "97",
+							"uri": "https://lesgenerateurs.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "10112",
+					"alertRef": "10112",
+					"alert": "Session Management Response Identified",
+					"name": "Session Management Response Identified",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.</p>",
+					"instances":[ 
+						{
+							"id": "101",
+							"uri": "https://lesgenerateurs.ademe.fr",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "__cf_bm",
+							"otherinfo": "cookie:__cf_bm"
+						},
+						{
+							"id": "100",
+							"uri": "https://lesgenerateurs.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "__cf_bm",
+							"otherinfo": "cookie:__cf_bm"
+						},
+						{
+							"id": "104",
+							"uri": "https://lesgenerateurs.ademe.fr",
+							"nodeName": "https:\/\/lesgenerateurs.ademe.fr",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "__cf_bm",
+							"otherinfo": "cookie:__cf_bm"
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
+					"otherinfo": "<p>cookie:__cf_bm</p>",
+					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/</p>",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "6"
+				}
+			]
+		}
+	],
+	"sequences":[
+	]
+
+}
