@@ -1,0 +1,157 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B",
+    "error": null,
+    "score": 75,
+    "statusCode": 200,
+    "testsFailed": 2,
+    "testsPassed": 8,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Thu, 17 Sep 2026 10:15:10 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "cache-control": "max-age=0, must-revalidate, private",
+      "set-cookie": [
+        "__cf_bm=dLQK3rkr4HBq1j1JerJblTy33yVIpa17Jk0jrlnB2j8-1789640110.396185-1.0.1.1-f5D5Hn4ByHGie3FX1YDdkw4aJf3SX2ICLSOWuPrFU7JvF6BRaZzFes7cyAi_w7DZqfENPBJvS82kmsce4iVek6MXyr9YsCcab7tz9lAl9uQwAZV7KvIzaAlDmW1M9YLe; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 10:45:10 GMT"
+      ],
+      "content-security-policy": "frame-ancestors 'self';",
+      "expires": "Thu, 17 Sep 2026 10:15:10 GMT",
+      "permissions-policy": "geolocation=(self), microphone=(), camera=(), fullscreen=*",
+      "referrer-policy": "strict-origin",
+      "server": "cloudflare",
+      "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
+      "vary": "Accept-Encoding,Origin",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "sameorigin",
+      "x-powered-by": "PHP/8.1.31",
+      "x-xss-protection": "1; mode=block",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "a3c75921f9b2eb43-SEA"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-ancestors": [
+          "'self'"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-secure-with-httponly-sessions-and-samesite",
+      "scoreModifier": 5,
+      "data": {
+        "__cf_bm": {
+          "domain": "ademe.fr",
+          "expires": "2026-09-17T10:45:10.000Z",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "samesite": "none",
+          "secure": true
+        }
+      },
+      "sameSite": true
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://renovfriches.ademe.fr/",
+      "redirects": true,
+      "route": [
+        "http://renovfriches.ademe.fr/",
+        "https://renovfriches.ademe.fr/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=16070400; includeSubDomains; preload",
+      "includeSubDomains": true,
+      "maxAge": 16070400,
+      "preload": true,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": false,
+      "result": "sri-not-implemented-but-external-scripts-loaded-securely",
+      "scoreModifier": -5,
+      "data": {
+        "https://tarteaucitron.io/load.js?domain=renovfriches.ademe.fr&uuid=2df1000bf385655312abede8e30421664e7d594e": {
+          "crossorigin": null,
+          "integrity": null
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "sameorigin"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
