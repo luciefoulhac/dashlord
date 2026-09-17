@@ -1,34 +1,36 @@
 title: DashLord de la Ruche Numérique
 description: Bonnes pratiques techniques de la Ruche Numérique de l'ADEME
-entity: ADEME
-footer: Powered by SocialGouv
+entity: République Française
+footer: La Ruche Numérique de l'ADEME
 marianne: true
 seo: false
+operator:
+  logo: https://raw.githubusercontent.com/incubateur-ademe/.github/main/ademe-logo-2022-1.svg
+  name: ADEME
 tools:
   "404": true
   screenshot: true
-  nmap: true
-  zap: true
+  lighthouse: true
   wappalyzer: true
   http: true
   testssl: true
   lighthouse: true
-  thirdparties: true
-  nuclei: true
-  updownio: false
-  dependabot: true
-  codescan: true
-  stats: false
   declaration-a11y: true
-  ecoindex: true
+  declaration-rgpd: true
+  sonarcloud: true
+  trivy: true
   dsfr: true
-  betagouv: true
+  nmap: false
+  zap: false
+  nuclei: false
+  dependabot: false
+  codescan: false
+  ecoindex: false
+  stats: false
+  thirdparties: false
+  updownio: false
 columns: # pour masquer des colonnes
   zap: false
-updownioStatusPage: https://updown.io/status_pages
-updownioRecipients:
-  - email:123456
-  - email:789987
 urls:
   - url: https://pfe-det.ademe.fr
   - url: https://renovfriches.ademe.fr
