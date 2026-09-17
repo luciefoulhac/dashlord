@@ -1,0 +1,943 @@
+{
+	"@programName": "ZAP",
+	"@version": "2.17.0",
+	"@generated": "Thu, 17 Sept 2026 10:46:12",
+	"created": "2026-09-17T10:46:12.561826595Z",
+	"insights":[
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://affichage-environnemental.ademe.fr",
+			"key": "insight.code.4xx",
+			"description": "Percentage of responses with status code 4xx",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://affichage-environnemental.ademe.fr",
+			"key": "insight.endpoint.ctype.text/html",
+			"description": "Percentage of endpoints with content type text/html",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://affichage-environnemental.ademe.fr",
+			"key": "insight.endpoint.method.GET",
+			"description": "Percentage of endpoints with method GET",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://affichage-environnemental.ademe.fr",
+			"key": "insight.endpoint.total",
+			"description": "Count of total endpoints",
+			"statistic": "2"
+		}
+	],
+	"site":[ 
+		{
+			"@name": "https://affichage-environnemental.ademe.fr",
+			"@host": "affichage-environnemental.ademe.fr",
+			"@port": "443",
+			"@ssl": "true",
+			"alerts": [ 
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-13",
+					"alert": "CSP: Failure to Define Directive with No Fallback",
+					"name": "CSP: Failure to Define Directive with No Fallback",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>The Content Security Policy fails to define one of the directives that has no fallback. Missing/excluding them is the same as allowing anything.</p>",
+					"instances":[ 
+						{
+							"id": "17",
+							"uri": "https://affichage-environnemental.ademe.fr",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr",
+							"method": "GET",
+							"param": "content-security-policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-N3MUHsvv2xO3TX5C6PhXA6' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "The directive(s): form-action is/are among the directives that do not fallback to default-src."
+						},
+						{
+							"id": "0",
+							"uri": "https://affichage-environnemental.ademe.fr",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-ss9scoUvRydI9Rl6lTm1Ek' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src."
+						},
+						{
+							"id": "1",
+							"uri": "https://affichage-environnemental.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-Gal2kMPcxL0cY2HZjfDVTt' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src."
+						}
+					],
+					"count": "3",
+					"systemic": true,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>The directive(s): form-action is/are among the directives that do not fallback to default-src.</p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-10",
+					"alert": "CSP: script-src unsafe-eval",
+					"name": "CSP: script-src unsafe-eval",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"id": "6",
+							"uri": "https://affichage-environnemental.ademe.fr",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-N3MUHsvv2xO3TX5C6PhXA6' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "script-src includes unsafe-eval."
+						},
+						{
+							"id": "11",
+							"uri": "https://affichage-environnemental.ademe.fr",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-ss9scoUvRydI9Rl6lTm1Ek' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "script-src includes unsafe-eval."
+						},
+						{
+							"id": "12",
+							"uri": "https://affichage-environnemental.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-Gal2kMPcxL0cY2HZjfDVTt' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "script-src includes unsafe-eval."
+						},
+						{
+							"id": "9",
+							"uri": "https://affichage-environnemental.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-NY6o0V2uynHqiE8TgvrKMw' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "script-src includes unsafe-eval."
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>script-src includes unsafe-eval.</p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-6",
+					"alert": "CSP: style-src unsafe-inline",
+					"name": "CSP: style-src unsafe-inline",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"id": "4",
+							"uri": "https://affichage-environnemental.ademe.fr",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-N3MUHsvv2xO3TX5C6PhXA6' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"id": "7",
+							"uri": "https://affichage-environnemental.ademe.fr",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-ss9scoUvRydI9Rl6lTm1Ek' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"id": "8",
+							"uri": "https://affichage-environnemental.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-Gal2kMPcxL0cY2HZjfDVTt' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"id": "5",
+							"uri": "https://affichage-environnemental.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-NY6o0V2uynHqiE8TgvrKMw' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "style-src includes unsafe-inline."
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>style-src includes unsafe-inline.</p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10054",
+					"alertRef": "10054-2",
+					"alert": "Cookie with SameSite Attribute None",
+					"name": "Cookie with SameSite Attribute None",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set with its SameSite attribute set to \"none\", which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
+					"instances":[ 
+						{
+							"id": "47",
+							"uri": "https://affichage-environnemental.ademe.fr",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</p>",
+					"cweid": "1275",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10054",
+					"alertRef": "10054-1",
+					"alert": "Cookie without SameSite Attribute",
+					"name": "Cookie without SameSite Attribute",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
+					"instances":[ 
+						{
+							"id": "43",
+							"uri": "https://affichage-environnemental.ademe.fr",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						},
+						{
+							"id": "44",
+							"uri": "https://affichage-environnemental.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						},
+						{
+							"id": "46",
+							"uri": "https://affichage-environnemental.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</p>",
+					"cweid": "1275",
+					"wascid": "13",
+					"sourceid": "7"
+				},
+				{
+					"pluginid": "10035",
+					"alertRef": "10035-1",
+					"alert": "Strict-Transport-Security Header Not Set",
+					"name": "Strict-Transport-Security Header Not Set",
+					"riskcode": "1",
+					"confidence": "3",
+					"riskdesc": "Low (High)",
+					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
+					"instances":[ 
+						{
+							"id": "55",
+							"uri": "https://affichage-environnemental.ademe.fr",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "54",
+							"uri": "https://affichage-environnemental.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "52",
+							"uri": "https://affichage-environnemental.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
+					"cweid": "319",
+					"wascid": "15",
+					"sourceid": "7"
+				},
+				{
+					"pluginid": "10096",
+					"alertRef": "10096",
+					"alert": "Timestamp Disclosure - Unix",
+					"name": "Timestamp Disclosure - Unix",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>A timestamp was disclosed by the application/web server. - Unix</p>",
+					"instances":[ 
+						{
+							"id": "57",
+							"uri": "https://affichage-environnemental.ademe.fr",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789641969",
+							"otherinfo": "1789641969, which evaluates to: 2026-09-17 10:46:09."
+						},
+						{
+							"id": "59",
+							"uri": "https://affichage-environnemental.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1789641970",
+							"otherinfo": "1789641970, which evaluates to: 2026-09-17 10:46:10."
+						},
+						{
+							"id": "56",
+							"uri": "https://affichage-environnemental.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789641970",
+							"otherinfo": "1789641970, which evaluates to: 2026-09-17 10:46:10."
+						},
+						{
+							"id": "61",
+							"uri": "https://affichage-environnemental.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1789641970",
+							"otherinfo": "1789641970, which evaluates to: 2026-09-17 10:46:10."
+						},
+						{
+							"id": "58",
+							"uri": "https://affichage-environnemental.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789641970",
+							"otherinfo": "1789641970, which evaluates to: 2026-09-17 10:46:10."
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
+					"otherinfo": "<p>1789641969, which evaluates to: 2026-09-17 10:46:09.</p>",
+					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
+					"cweid": "497",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10094",
+					"alertRef": "10094-3",
+					"alert": "Base64 Disclosure",
+					"name": "Base64 Disclosure",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
+					"instances":[ 
+						{
+							"id": "89",
+							"uri": "https://affichage-environnemental.ademe.fr",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "4AGyYsEhmVbgCVKZteQZaXFeyvDJH7dczzWsRAGkVFA-1789641970",
+							"otherinfo": "\uFFFD\\x0001\uFFFDb\uFFFD!\uFFFDV\uFFFD\tR\uFFFD\uFFFD\uFFFD\\x0019iq^\uFFFD\uFFFD\uFFFD\\x001f\uFFFD\\\uFFFD5\uFFFDD\\x0001\uFFFDTP>\u05FF=\uFFFD}\uFFFD"
+						},
+						{
+							"id": "109",
+							"uri": "https://affichage-environnemental.ademe.fr",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "hVL6j7ItAeGU57phmeqlQpduhAYsuo6gMNCo3CvFc3I-1789641969",
+							"otherinfo": "\uFFFDR\uFFFD\uFFFD\uFFFD-\\x0001\uFFFD\uFFFDa\uFFFD\uFFFDB\uFFFDn\uFFFD\\x0006,\uFFFD\uFFFD\uFFFD0\u0428\uFFFD+\uFFFDsr>\u05FF=\uFFFD}\uFFFD"
+						},
+						{
+							"id": "88",
+							"uri": "https://affichage-environnemental.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "4IT3Kk0SHp6G3UCOSrxqUFSgOCjS2KES_6OiyOMtTLI-1789641970",
+							"otherinfo": "\uFFFD\uFFFD\uFFFD*M\\x0012\\x001e\uFFFD\uFFFD\uFFFD@\uFFFDJ\uFFFDjPT\uFFFD8(\uFFFD\u0621\\x0012\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD-L\uFFFD>\u05FF=\uFFFD}\uFFFD"
+						},
+						{
+							"id": "90",
+							"uri": "https://affichage-environnemental.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "iy22s_lid6Xvs9bop9I45WuDyKej2aHE4_RohfjJgNs-1789641970",
+							"otherinfo": "\uFFFD-\uFFFD\uFFFD\uFFFDbw\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD8\uFFFDk\uFFFD\u0227\uFFFD\u0661\uFFFD\uFFFD\uFFFDh\uFFFD\uFFFD\u0240\uFFFD>\u05FF=\uFFFD}\uFFFD"
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
+					"otherinfo": "<p>\uFFFD\\x0001\uFFFDb\uFFFD!\uFFFDV\uFFFD\tR\uFFFD\uFFFD\uFFFD\\x0019iq^\uFFFD\uFFFD\uFFFD\\x001f\uFFFD\\\uFFFD5\uFFFDD\\x0001\uFFFDTP>\u05FF=\uFFFD}\uFFFD</p>",
+					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "319",
+					"wascid": "13",
+					"sourceid": "7"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-12",
+					"alert": "CSP: Header & Meta",
+					"name": "CSP: Header & Meta",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>The message contained both CSP specified via header and via Meta tag. It was not possible to union these policies in order to perform an analysis. Therefore, they have been evaluated individually.</p>",
+					"instances":[ 
+						{
+							"id": "10",
+							"uri": "https://affichage-environnemental.ademe.fr",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "20",
+							"uri": "https://affichage-environnemental.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "14",
+							"uri": "https://affichage-environnemental.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90033",
+					"alertRef": "90033",
+					"alert": "Loosely Scoped Cookie",
+					"name": "Loosely Scoped Cookie",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>Cookies can be scoped by domain or path. This check is only concerned with domain scope.The domain scope applied to a cookie determines which domains can access it. For example, a cookie can be scoped strictly to a subdomain e.g. www.nottrusted.com, or loosely scoped to a parent domain e.g. nottrusted.com. In the latter case, any subdomain of nottrusted.com can access the cookie. Loosely scoped cookies are common in mega-applications like google.com and live.com. Cookies set from a subdomain like app.foo.bar are transmitted only to that domain by the browser. However, cookies scoped to a parent-level domain may be transmitted to the parent, or any subdomain of the parent.</p>",
+					"instances":[ 
+						{
+							"id": "41",
+							"uri": "https://affichage-environnemental.ademe.fr",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Domain=ademe.fr",
+							"otherinfo": "The origin domain used for comparison was:\naffichage-environnemental.ademe.fr\nCookie name: __cf_bm\n"
+						},
+						{
+							"id": "42",
+							"uri": "https://affichage-environnemental.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Domain=ademe.fr",
+							"otherinfo": "The origin domain used for comparison was:\naffichage-environnemental.ademe.fr\nCookie name: __cf_bm\n"
+						},
+						{
+							"id": "40",
+							"uri": "https://affichage-environnemental.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Domain=ademe.fr",
+							"otherinfo": "The origin domain used for comparison was:\naffichage-environnemental.ademe.fr\nCookie name: __cf_bm\n"
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Always scope cookies to a FQDN (Fully Qualified Domain Name).</p>",
+					"otherinfo": "<p>The origin domain used for comparison was:</p><p>affichage-environnemental.ademe.fr</p><p>Cookie name: __cf_bm</p><p></p>",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc6265#section-4.1</p><p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p><p>https://code.google.com/archive/p/browsersec/wikis/Part2.wiki</p>",
+					"cweid": "565",
+					"wascid": "15",
+					"sourceid": "7"
+				},
+				{
+					"pluginid": "10109",
+					"alertRef": "10109",
+					"alert": "Modern Web Application",
+					"name": "Modern Web Application",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Client Spider may well be more effective than the standard one.</p>",
+					"instances":[ 
+						{
+							"id": "49",
+							"uri": "https://affichage-environnemental.ademe.fr",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script nonce=\"N3MUHsvv2xO3TX5C6PhXA6\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'NSULmbEsjQDi_SNsEdjbIjFJ2a4nFP5fW98Qg5mfzDA-1789641969-1.2.1.1-89JtuxCs6Nz8W4j1U_KM7aHws6Ji8aUpAEdjcToSju5LewXDfYdGRx31lWsqhxIV',cITimeS: '1789641969',cN: 'N3MUHsvv2xO3TX5C6PhXA6',cRay: 'a3c78687ecc5f05f',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:\"/?__cf_chl_tk=rxNlwYe5Opk1jSXZxWSZeSSrGYFQKGEatxQcL9m6rUI-1789641969-1.0.1.1-QwLwq1ydb48FzFnH7WLznn0gTy.CLBlHGAt9czYfVHE\",cvId: '3',cZone: 'affichage-environnemental.ademe.fr',fa:\"/?__cf_chl_f_tk=rxNlwYe5Opk1jSXZxWSZeSSrGYFQKGEatxQcL9m6rUI-1789641969-1.0.1.1-QwLwq1ydb48FzFnH7WLznn0gTy.CLBlHGAt9czYfVHE\",md: 'yNvA.h6SGc7_rIuvZj9KcKBurPTCpFeBPZDnNIFE..I-1789641969-1.2.1.1-rQZ9j7lXGdlW9wD5PErKdc9Qpy2CKrL4jF21prv3sW3XxzvPU6.vu_iHMj9EhVCBKlHTZkM9aYjalIJUdITngnwdr5tcXJ8Z9CQYUlUTGJb64AqIxoFEYy4lbZzZ85iMniKy1hbW5i0HdFyqbWcQY.SDEnTrubyWp_XrjFyLLP0OJYAKl33AoX5AMmxNHNGHzjs2aiy_P9IUi9B8h2f2TlvR7Zw9pYu0nTA8R.Eyrwp8fFciEmc0ugp__233SliRgZPBUM8wR3LAttyr3hOFTNoISQ_K4jm0LHzeKh8RLDE8sUxnO5k7NlKiGZwXAg.PGW03hwx2SmFRCgVhiZmLWBdf0ST2PhUtHO2kK7wYoQ7zDavYJ61k2Pq5jeDoE.UWHYG0uUtcvxSgI8ii5wDV3ZswAWeSBIROo7jwCgqYjEQBO2P0eSeEJxLLhzL770kK2tXGGoHsdbFx5awMakMa6YPV29k8BqDK6vOUHvp6g7o0RBUWn8EFqZUVHMTa2WVWew5jicvoTD2iW_NuMDHzXxlXu0OCDUWqsncYYfgvs.CC903d8AC4Wh5WnXoXBlQKR2E_IfDBDXLH6zraaqPhiY.UkU2drMXXhCcEE0q2qYuvrQiJFIVhd9sBAbe.V8QD70eX_U5F300SV1kM4yepS6n4gUqjf39x6c1a1hyZZ1_YXuFV4zIWClcyx.FRAdk8Q_npr1gGoPK5Au1Zs7KBJC9XKhjRjOHsVZzV5rEIrXkTm8OmlV7ERaYByXkfDiuZSx3aKOUAoDgqaFaeQzYPMMj3xSDAJvQ_KbtF5BhlksXmmLK8EuUY48P76oA9zmOLeq60kIPFHKx4zjb3GnSzsl18KXtBbGuDDry8zitonGETMKOtBrOvATc84IUqvaaHh.bllxeaGPG5yHfucWWLEOvDWO3SbFDLp5gcfTpu42pvYHb35zXKSSGijSGo8kJrbL20UlWffF5Mk3tlIrKxF653f1bDFXY3nEVYciwABzyyb_Y45IsmseyOMA0V7DGJE7R8F.wbGe.sQ_rws8lvlToKJGhWW8XMINodl29ObJpxt.AIP9AUNcroEgWES5NiL0863kRCwzZZ1THOSMhLtfEFR2OqrU8XnP1O3RlDEriKjhJzoSWA6Q15koz4pZ8r5BkROX55F4IKXTX.tTh_uyAm0OX5pK65o1aZzQeIhESsOT83zu0kcisZ7j8szGVQ',mdrd: 'lDlT8mptMXmrfJ1VtZahK9d44WuCZRVyjMFImx0LeGc-1789641969-1.2.1.1-p8Yb0UFe7pTHXwcxhk2erhLdEbg2HYOzJLzPDoIVD1gfb9AhkLEUlODATgRWn.b9z8B2VXUDgWVIeoeaNcAUL38ApXoeFGSGFG48ldlMrKZQS8vY7SjgH2CzLK9x7hItmz40EBGl_7.Edxz6ibPR93i6WmBUqKvRn5CKHCnbFNPAkdgHAfu7tvZK6fCSeqUjaocj2mgb99zsYAUquFgtVyMQE9DDxOvtb3BibPTn7nvTiJDe3MmjYHxc76kiZZno_dWlTZjR33DPzfNhYmymS3UKBbCxpgtCaEgAmYBNxJnkA3A6L0vD6Xyav34wCXLwzoezCzDajjBxmlFFsePRxw',};var a = document.createElement('script');a.nonce = 'N3MUHsvv2xO3TX5C6PhXA6';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a3c78687ecc5f05f';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/?__cf_chl_rt_tk=rxNlwYe5Opk1jSXZxWSZeSSrGYFQKGEatxQcL9m6rUI-1789641969-1.0.1.1-QwLwq1ydb48FzFnH7WLznn0gTy.CLBlHGAt9czYfVHE\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "51",
+							"uri": "https://affichage-environnemental.ademe.fr",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script nonce=\"ss9scoUvRydI9Rl6lTm1Ek\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'pZc98LYxgzVVU5l7_yVD01p06eHdssBaH7z73vWaUwI-1789641970-1.2.1.1-VscYOSUFkueUmhTZxlGD0RB3v2NX4rjClsk7zcoMe1oFeo2fRW.CXS7T3kG9vGqM',cITimeS: '1789641970',cN: 'ss9scoUvRydI9Rl6lTm1Ek',cRay: 'a3c786889a1a468f',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:\"/?__cf_chl_tk=MGnRaZPDo9atthEQuSN.Hcp8X.uGD5a6nQJ5XjWIROs-1789641970-1.0.1.1-eEL_ydKQv90u0S9OjkIigQ57SwDR5sZrwTloc0BA9II\",cvId: '3',cZone: 'affichage-environnemental.ademe.fr',fa:\"/?__cf_chl_f_tk=MGnRaZPDo9atthEQuSN.Hcp8X.uGD5a6nQJ5XjWIROs-1789641970-1.0.1.1-eEL_ydKQv90u0S9OjkIigQ57SwDR5sZrwTloc0BA9II\",md: 'w6CV4oQ8TPwa99rcy9kRNZz29L6Pxha6ZdvHndGDAuU-1789641970-1.2.1.1-PfL4ddyxCFS1Vh4q9pn.U2h8HvjOz4wwix.nxmEb4gEmH8wlIlqOzBp1DMBY833.p6h.S_McAOxOg9W7Khfh0Cvs4nW6FtK_KR.ELdJVwCht3sJC_WEBlR0SISrpO2XYCaKrKwuhPlN8OoQHWUI7DXCpQt.4f9CAXQe2Kgm.TQgT02WSxEzLLd92EXeO1_qEHf7UZfLYOxIEqpznvMkGlN2OehJ.Na4JWXvohGVqUlK7bmlQm5KN5Xj_4AXg5Krqnc9avEbNiwA3GNcn6E2rrbJG.7XW7kvLw1XUYqN_jJk74kdqYoYaSqX.5aZI3NTVp9mOuD0UKNlHaKGxSf.N.JGQi_wosdue1AlVoCICfIUjwpckRhLGMei95ze5PBiLgk_QA29Q6hfQmrNWUbuolw1Ey2w9D7QQ7SiBF8CtheyKexYMlb.rpCFf4WVWzl.3_5jb4BkYklFWOyc6B9WSa2W4sJkBo7F4ozWHCKNUTbrsaYQBN2Kf3kzpz5fF9nSkG1IGd_G.RFw34P8c4j5lOBxAx_yDWW5Ml5T1aj6hHyqW8j_Ae22cbmMrcYpQC9UqvDzW0JZU29TZ.ZU2aZ_GWaDkqFmprMysubLu2xTfmWszomU6jyx7eEvUWIv_lzCf_o64l.K230IGghX3r1o7NxSqmvFizgKzxDknHBuPVvhBATd.laidtvZXVh7hKgWv8kq61cxUJZNVk.ho5RzUYpwDnlHE86Z8kn_hZp8uI15i4Fs4E3Y_srSt23OsfrsTc9EE9Q7hIwaUb0QMO4qdsm3D0UU8qbvp2amxJpX_uPKG_wY_09jEP0oeerUz2JA43W9QzGc_k0Lp_1Td9uiKyPxOzx6d8g24_8uv9BVwn3qUbCH6Z5g7.I4Jh8CeR1dsbcz0ktdIae2SpUIce8MP7Fwp9kxulhqAHBANFjYMn0wk_7_beecMAZ2sH28nPZaVWNwcR8CKZ8R29cftPDjpSzhY0093eXCiRu4CZEjf8VAzEiGdurAuFLT1Zhuc0cEe2uyYrFisBfI6IdKFN6XS0sWvWb1pFNwPqFlOrSjLD9o',mdrd: 'gsBuUCW5ae044hcUs2nC3w1eZVwLSiFXpr5XUdNcot0-1789641970-1.2.1.1-hky0QBio6laO_luLB58Y9cChtNKUZoD0WdRa4jeD.av_uIdRG5PDOZkcysANqr3MzSdl1r.Wue6LTvi0_GhBiNPTCMFF6dRczW0wLjPu9CLnyJbBu_gbjc55SI5BU3TnY7B2g6MekMQFU8lovP4Ycr1H.DAGmQ1Fm9.4AuX5.WR4JnKZ3wMk0Vw84jw9j892fZ7D15WF8beZHhItMt1TlA',};var a = document.createElement('script');a.nonce = 'ss9scoUvRydI9Rl6lTm1Ek';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a3c786889a1a468f';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/?__cf_chl_rt_tk=MGnRaZPDo9atthEQuSN.Hcp8X.uGD5a6nQJ5XjWIROs-1789641970-1.0.1.1-eEL_ydKQv90u0S9OjkIigQ57SwDR5sZrwTloc0BA9II\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "50",
+							"uri": "https://affichage-environnemental.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script nonce=\"Gal2kMPcxL0cY2HZjfDVTt\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'SQDCgnBerSnecuaPRRF1dxsgnWj8s.5GEvT3D41DQ1M-1789641970-1.2.1.1-8duc0wnLjMEtxtLxI7zqpFM2WfXahCZXRYYD7XX0wgyTCSHvgSbUXqyq_z5iXyYa',cITimeS: '1789641970',cN: 'Gal2kMPcxL0cY2HZjfDVTt',cRay: 'a3c786889ead69c5',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:\"/robots.txt?__cf_chl_tk=RFLyYFz4iq4a9fP14jEBFmnLPkukDkEEByKb1Hx9XiY-1789641970-1.0.1.1-NfWnNyYUzYiuglMsr_C4hFm6xiwLgmSYikNgDvmbcOY\",cvId: '3',cZone: 'affichage-environnemental.ademe.fr',fa:\"/robots.txt?__cf_chl_f_tk=RFLyYFz4iq4a9fP14jEBFmnLPkukDkEEByKb1Hx9XiY-1789641970-1.0.1.1-NfWnNyYUzYiuglMsr_C4hFm6xiwLgmSYikNgDvmbcOY\",md: 'gIiAvc1kuPFMspMriH2yMAB3NnKmueZ6UtyzaSIpqQY-1789641970-1.2.1.1-1MQH5lQWApS60kawJkrixuX1554m5GT5gaezxBbGsTJV7JwchNxQxkLuG0HhEGGeiGG0boegI2sTqKNwMRFwxyfZelcMYwSU_X3AXoLRL4b1pWh6ofwLMjeCsWyHQTx2jr0bdtqVOprfxmW8.8IRmYiHKwlVJp0POBqXA95LhwO9QaBoYwfUboLDmGWgkZZh_8e5.s_HhKLpJtF4FATAgoj3z11ZJLq4GsvyKj47avBmPl6YUfhmDNaXGA9TVY5gjcg6PCGN3pKBIc1yBwcboglUCappqC0hSp3vEzp0bp8OL8yT6VYg68YnEiOC3u.AYyV4Is4CYcLGSN_BOSw3KywXHNCWsgVHXwliBL7QhEa9I8tamXV0O2QXT7LlJPnFKcy1kYrCPhLR9jxfFKLaMXX6T1OFjTlfs8IL2EPPt4S2wZ1Sig96vasJvzvYvyu0PtGtU60Sl6DVbkhERrKIjozLHwHIJRMvcLPQeueJrw9TFnaeusI2rw8OTUHgKkhjtfln55oet74q_CcG3nPZnNfdBdMknBtMaLw2RhO2Fwr9H.SVZ3x7DyucjGnoR_2zvCw.oVWQvws_4.mTpr5fUv_X_N1xwed5IDaic_fBAFbYXz.c9.n5R8lljfCiOCIfzi0hJup40rk6NWx5ImGCOFo6JgZ.rJ3.vO4TiPJSzU9mJbWDfLn8Ue4OMttJb7vXQ0Lud75OX0KgfXhqS3aMx9Geq5zBQdXt7GeKkHBq5lzlKzTdJXoV37HGNZdGAMR8Av_CYa1hnA9mnXExOnLmSS4L9MVZJzAvjPW1KG524lAS6FVl1PHyoxs9hjgvZdsFZCmjRTa5W_qMGHRRQDV6DsBy3qvlvMRg_OqR577eMZeGjxbxzVSUna5P1ajKfnQG21.SOmRUrJherdyNZfiimWdYPERjap2fBtdFbJzoiyfgknZwcAgVG01eULL5kQH4uM5hS0zSns78TbocYakGoQST5fyxy6Lr29a1SaK3l9_XvU1z5fjQI1HbWWpZdmumHDPahpCasEGKd2bCtxW9i9pnrQMGRCdjjbygXGNcSQnYoJ1Bcsq_c8MZN.R3gbvo',mdrd: 'dRfjrOi2.9TcCcacusFih0U.7YjIh4BHQnmOjD6boZM-1789641970-1.2.1.1-GqEigzJMORI9xvg9xdCxKvjB79l5zqA3n8xr2SpnY2pGFAC5UdhgcTPJuxBWt.PCa.MR6GA8Us2JEBgyoDyWyR2NGFt0SEp.qNeK9xYMlOTeLoO4ALAZfmZkcWeEFXT8HZeYzU9TFfwHBTj9l69f2ZSmipHNk7O3LDbQ.EbvVN5QPaY3tT1RYTdi2Zo9X1mtkdGlCVDyws3dNO2niROqgA',};var a = document.createElement('script');a.nonce = 'Gal2kMPcxL0cY2HZjfDVTt';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a3c786889ead69c5';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/robots.txt?__cf_chl_rt_tk=RFLyYFz4iq4a9fP14jEBFmnLPkukDkEEByKb1Hx9XiY-1789641970-1.0.1.1-NfWnNyYUzYiuglMsr_C4hFm6xiwLgmSYikNgDvmbcOY\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "48",
+							"uri": "https://affichage-environnemental.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script nonce=\"NY6o0V2uynHqiE8TgvrKMw\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'pYUSQ65Kr6Hx9yBNmTh2fOXf2gYL8pUgU81QpWM60r0-1789641970-1.2.1.1-UhdaScPVcFoMX6FkoVksVqg3TW7NQOoLi0d1eXlx6k6.OrI.7ZIblIxGYCr2.XYl',cITimeS: '1789641970',cN: 'NY6o0V2uynHqiE8TgvrKMw',cRay: 'a3c786889e2658c5',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:\"/sitemap.xml?__cf_chl_tk=9f98tGTopcHMDmpXlmm2607HHCCDILor546lYCHYG2U-1789641970-1.0.1.1-Us5Qeq3L4dPKGb7zoPsoJkcdqXPiuigedmLN_XjDPvk\",cvId: '3',cZone: 'affichage-environnemental.ademe.fr',fa:\"/sitemap.xml?__cf_chl_f_tk=9f98tGTopcHMDmpXlmm2607HHCCDILor546lYCHYG2U-1789641970-1.0.1.1-Us5Qeq3L4dPKGb7zoPsoJkcdqXPiuigedmLN_XjDPvk\",md: 'XhnBxygTqhAOhXfMyWui6FHpNM6cInPx5zdbC_tJwhI-1789641970-1.2.1.1-0u0_.QxlmCGLECReGeEPEt9Sgf4zrL.isW4uJL2VNfpMOKsT3hB9TqZnsjKFNLeXMy4.EQEvGsOgV0QPdS0CjSxA.R0anALUS_ktNSLfLyyX4.Q4Qzx.FcFBit0RjL6IfOGeu4MZ4K5gdtXLeLldz_goGh5YUsstzv7h97wN3wIh5zjwps4ZVVcZtiDfUYDD.2fL3Uam_M_cmdNhFncMwvH.62_.C7cfS06eU8V4f9xtYPy2lwpseiOjz4DpeR0mk6GBRmrvmtxDp7e9olzuqJf.L_qvvFwyKi.ch_v7EJ.bD5ax1hgE5el.xaP0XQjOL1mVYTWdVPYIk4mn7nxJa7QGHLAb93rFhZiCara5uMhlpFdMHRK2bbOiaT8OAjEXeGidAlGry.7Evi5yF82K_tXhqYi5Yhmvb7zSiHzulAsGfkqH5l3JEEhoiLbNIiZL_GFJctQGJHVGxd1LNQkWLphwEsiTiCUDbB6kHkn329vXyxOduGW5LuXxBf5jKmzIr8GfY3iTJ1A3goFWTBVzC0W3tqieBWKUr26PA061fc7eKAxSxkA.eHH2ZW23Fc6vvYKwwdQuYNoxmmxRotw8YGlKPwrIl5bD_j2E1T.G7GjCIuY0.BBKl2AWPvksOZ8fOaV2chQZK0rUxfL37.hvkJIynpQuBa.F_lAPS2xe4huCWqFcdycDnPKuJw1F6ZYIvgUcO7d306x9BDCXt0LeyQmHERECN8olXx1CIXtzhB_tXtZObuQi_b_xetOGjEHUX5u4XOyCRVDgLvk9QGCC4ZZNiSncQwNFi8zMnSgUSOZNz89ccvyBwVF4y26kIU0QnrhDIJuv2mCOYzQoASCj54apBAA49l_L8dIs_Qt2wU4nTHpvgRpYbsj9nmAsBSk_TgOgMpmdkDlEiRhHT_n.rOqEpgMtw2cOvAYImwspfhC8ZPFzLAM1aSUrFTpKIJXByY_Q26Av3TwwywiqVgyE99mDJJIacTf50AkEV6GHIXpd72_acn4G.zIszg2tTHZ1T63gi53G6SOvdVn28ZMnSMim5ihX8.q_gA3XVDfqWTmSof8vIKBMSE.lg0D2gxON',mdrd: 'UHLxoBNCn.u1TgX9XL9pw.9WGOOGY04G8CRnpLdV7tU-1789641970-1.2.1.1-qbly_6Az9stCw.0GNisBBpgrnWPbqRsK3wNzarJ6AhhJH38P5cKFCbS2kCL0l25ukv5K7iCThfIT7teenM3.yXAMmyBYx1JsSiSBrwGkxji865zN9Qh4PJWGAlUk3Zka1LJAPqpVKoiqV95LViClZPtzftY9P6ekws.XoFbscYUisBFLTIC1AUj2l9SC87OlXGt_a1Lhvz5QyGDmJbCptg',};var a = document.createElement('script');a.nonce = 'NY6o0V2uynHqiE8TgvrKMw';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a3c786889e2658c5';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/sitemap.xml?__cf_chl_rt_tk=9f98tGTopcHMDmpXlmm2607HHCCDILor546lYCHYG2U-1789641970-1.0.1.1-Us5Qeq3L4dPKGb7zoPsoJkcdqXPiuigedmLN_XjDPvk\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>This is an informational alert and so no changes are required.</p>",
+					"otherinfo": "<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>",
+					"reference": "",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10049",
+					"alertRef": "10049-1",
+					"alert": "Non-Storable Content",
+					"name": "Non-Storable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
+					"instances":[ 
+						{
+							"id": "107",
+							"uri": "https://affichage-environnemental.ademe.fr",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "403",
+							"otherinfo": ""
+						},
+						{
+							"id": "106",
+							"uri": "https://affichage-environnemental.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "403",
+							"otherinfo": ""
+						},
+						{
+							"id": "108",
+							"uri": "https://affichage-environnemental.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "403",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
+					"cweid": "524",
+					"wascid": "13",
+					"sourceid": "7"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-3",
+					"alert": "Sec-Fetch-Dest Header is Missing",
+					"name": "Sec-Fetch-Dest Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
+					"instances":[ 
+						{
+							"id": "100",
+							"uri": "https://affichage-environnemental.ademe.fr",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "95",
+							"uri": "https://affichage-environnemental.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "98",
+							"uri": "https://affichage-environnemental.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Dest</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "7"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-2",
+					"alert": "Sec-Fetch-Mode Header is Missing",
+					"name": "Sec-Fetch-Mode Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
+					"instances":[ 
+						{
+							"id": "96",
+							"uri": "https://affichage-environnemental.ademe.fr",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "94",
+							"uri": "https://affichage-environnemental.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "97",
+							"uri": "https://affichage-environnemental.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Mode</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "7"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-1",
+					"alert": "Sec-Fetch-Site Header is Missing",
+					"name": "Sec-Fetch-Site Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
+					"instances":[ 
+						{
+							"id": "92",
+							"uri": "https://affichage-environnemental.ademe.fr",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "93",
+							"uri": "https://affichage-environnemental.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "91",
+							"uri": "https://affichage-environnemental.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Site</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "7"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-4",
+					"alert": "Sec-Fetch-User Header is Missing",
+					"name": "Sec-Fetch-User Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
+					"instances":[ 
+						{
+							"id": "101",
+							"uri": "https://affichage-environnemental.ademe.fr",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "102",
+							"uri": "https://affichage-environnemental.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "99",
+							"uri": "https://affichage-environnemental.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "7"
+				},
+				{
+					"pluginid": "10112",
+					"alertRef": "10112",
+					"alert": "Session Management Response Identified",
+					"name": "Session Management Response Identified",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.</p>",
+					"instances":[ 
+						{
+							"id": "103",
+							"uri": "https://affichage-environnemental.ademe.fr",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "__cf_bm",
+							"otherinfo": "cookie:__cf_bm"
+						},
+						{
+							"id": "105",
+							"uri": "https://affichage-environnemental.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "__cf_bm",
+							"otherinfo": "cookie:__cf_bm"
+						},
+						{
+							"id": "104",
+							"uri": "https://affichage-environnemental.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/affichage-environnemental.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "__cf_bm",
+							"otherinfo": "cookie:__cf_bm"
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
+					"otherinfo": "<p>cookie:__cf_bm</p>",
+					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/</p>",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "7"
+				}
+			]
+		}
+	],
+	"sequences":[
+	]
+
+}

@@ -1,0 +1,24 @@
+{
+  "links": [
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "affichage-environnemental.ademe.fr",
+        "port": null,
+        "hostname": "affichage-environnemental.ademe.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/",
+        "path": "/",
+        "href": "https://affichage-environnemental.ademe.fr/"
+      },
+      "link": "https://affichage-environnemental.ademe.fr/",
+      "line": "--2026-09-17 10:44:51--  https://affichage-environnemental.ademe.fr/",
+      "broken": false
+    }
+  ],
+  "broken": []
+}
