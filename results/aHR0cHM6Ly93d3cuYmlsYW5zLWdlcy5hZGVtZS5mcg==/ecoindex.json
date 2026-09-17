@@ -1,0 +1,17 @@
+[
+    {
+        "width": 1920,
+        "height": 1080,
+        "url": "https://www.bilans-ges.ademe.fr",
+        "size": 7435.269,
+        "nodes": 480,
+        "requests": 52,
+        "grade": "D",
+        "score": 53.0,
+        "ges": 1.94,
+        "water": 2.91,
+        "ecoindex_version": "5.4.2",
+        "date": "2026-09-17 11:11:37.010352",
+        "page_type": null
+    }
+]
