@@ -9,7 +9,7 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 17 Sep 2026 12:46:29 GMT",
+      "date": "Thu, 17 Sep 2026 14:01:00 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -20,9 +20,9 @@
       "referrer-policy": "strict-origin-when-cross-origin",
       "server": "cloudflare",
       "set-cookie": [
-        "XSRF-TOKEN=eyJpdiI6IlRLSVB3L21OdHliajR2NU1NdnpOOXc9PSIsInZhbHVlIjoiWWhjL2NwY2hLSVhtUU5ydjdmTmIwaUpyVXVmY3AveU5CL242aDhkQXc1eGlLNlk5MFZwSGg3RmVOTUd5b3JDMFMwTXV1bWEvNkxzWW4wVUh6NDMrTVN2d2NRWUIvTllUN090UUFLMTZralJiNTVsOUdpdlpnRmppL2hCYWFaOUwiLCJtYWMiOiI0ZmJhYWUzMmQxMTFlYTYwODQ0YjdlM2Y2NWE4NTMxMjYxMGY2YjM3N2U1ZmNhZWM5ZWY0Y2UwYTM1OTIzYjgwIiwidGFnIjoiIn0%3D; expires=Thu, 17 Sep 2026 14:46:28 GMT; Max-Age=7200; path=/; secure; samesite=lax",
-        "laravel_session=eyJpdiI6Ik42bmlmK2RrZXRRVkxmWmVhQ2Evdnc9PSIsInZhbHVlIjoicXhFY0RjZHZmOGxmWTZ6K3VCR2lhdmxIeFRXNStFQ1dMT3Fmc0NzOGlLMkY5QnFpUmo2UlFXUW03NDVNR2xDc0l3alRidE5uM3U3N3F1NGV5Z1ZHUXphcy9xSFVRR2JTem92b2F4RnhSbThKSG1UTDM4a1l4Z0VHanZhV2RaRnIiLCJtYWMiOiI1M2E5NmJkNzkzZTM4MWQ3NDc0NjRlY2FiYjY3NDc5Yjc3Y2JiYTZkZGIwZWQ4OTkzNWQ2ZWM0NGQ0MjBiZTc0IiwidGFnIjoiIn0%3D; expires=Thu, 17 Sep 2026 14:46:28 GMT; Max-Age=7200; path=/; secure; httponly; samesite=lax",
-        "__cf_bm=oVuAzi_xcPBa5k3mGaYeaX266zKWJfrZhMUcHVhuzZ8-1789649188.893864-1.0.1.1-NiS0Jm3cQ20w90MIw3nJjBsSv4.1IbY6kh_.fyT3D.W0WsXW93fH2N6idZGo2Nk9gFdehz4o5RyCR_eRk_YauhmGgt3ymiMmCxMiYUmTCxhdl_ik0iQ0gL2hOTP2FxHN; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 13:16:29 GMT"
+        "XSRF-TOKEN=eyJpdiI6IkJWRW1IWXlTL25nVnJYRllVM0c3VGc9PSIsInZhbHVlIjoibkRYdGhoL3JaZ0RvdEl3R2pCdTNIaGVnZkhsRTkwU2FXUGR5T21mQjNOeWF2bnpFanhBUGRHREtUMHo2T0FkYXpWVlNCQU8vd2hSRGlkWWxTSFdMMm5ZVklPbE5JRWZMaUF2U0NYa1Uwc2NxZi9WZUZESFFUWHVhWHJsUjdYRzQiLCJtYWMiOiI4ZDhjNjM2NTFkMzhlM2U0MWI4MGU2MzQ0ZWE1MzI5ZmQ2ZDgzNWQ1NTM4YWY4NGU5YzMyYzdkMjI1NzgzYmEwIiwidGFnIjoiIn0%3D; expires=Thu, 17 Sep 2026 16:01:00 GMT; Max-Age=7200; path=/; secure; samesite=lax",
+        "laravel_session=eyJpdiI6IlZXRGhmejBMQmRlaWp6MHpnOTQ0TVE9PSIsInZhbHVlIjoiUmFDUVZydmVQVkVheTgxWEE4SlNjazFXQlFQck54bnFQNTVFcSs4Ti9sanhNT0hUeXU4ZFQ0OFhyeGVlUXQyaWRHR0VXUnJQMWVxYkJNeE85RWppUXhZWUR6b2lrOGdtQ3h4RmFFNVRrSVFiMjBiUSsvUERWWnRsQnRHeFJUUm4iLCJtYWMiOiIxMTg5NzQyZjg2NWU3OWY3NWRmZDhiNjY5OGNhYjZlYWRmNWYxNWUxZGI0Y2JlMDNjYTJjM2YxY2JmYjdlOGI2IiwidGFnIjoiIn0%3D; expires=Thu, 17 Sep 2026 16:01:00 GMT; Max-Age=7200; path=/; secure; httponly; samesite=lax",
+        "__cf_bm=7SZrukw86MA7a7eDZ90KrAFtfmJVRP7ncfT45sMV6xY-1789653660.4670606-1.0.1.1-CiqrA9k1S657hFkPtzZNWXSSk3QPPj.N2w1vTufgwJdeRLEe20v30djqpv8n_4HUR3AJYMFfc7_jreJCCn2pLYa1WLsLgq7.WbmFKI5oR_iB__1MJBC4iDqRVONPDCyQ; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 14:31:00 GMT"
       ],
       "strict-transport-security": "max-age=16070400; includeSubDomains; preload",
       "vary": "Accept-Encoding,Origin",
@@ -31,7 +31,7 @@
       "x-powered-by": "PHP/8.4.24",
       "x-xss-protection": "1; mode=block",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "a3c836c69adb1dd5-IAD"
+      "cf-ray": "a3c8a3f1efd18b3e-IAD"
     }
   },
   "tests": {
@@ -72,7 +72,7 @@
       "data": {
         "XSRF-TOKEN": {
           "domain": "evenementresponsable.ademe.fr",
-          "expires": "2026-09-17T14:46:28.000Z",
+          "expires": "2026-09-17T16:01:00.000Z",
           "max-age": 7200,
           "path": "/",
           "port": null,
@@ -81,7 +81,7 @@
         },
         "laravel_session": {
           "domain": "evenementresponsable.ademe.fr",
-          "expires": "2026-09-17T14:46:28.000Z",
+          "expires": "2026-09-17T16:01:00.000Z",
           "httponly": true,
           "max-age": 7200,
           "path": "/",
@@ -91,7 +91,7 @@
         },
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-09-17T13:16:29.000Z",
+          "expires": "2026-09-17T14:31:00.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
