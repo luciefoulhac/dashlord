@@ -186,6 +186,12 @@ jobs:
           width: 1280
           scaleFactor: 0.5
 
+      - name: Setup Node.js for Wappalyzer
+        if: ${{ matrix.sites.tools.wappalyzer }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
       - name: Wappalyzer scan
         if: ${{ matrix.sites.tools.wappalyzer }}
         uses: "socialgouv/wappalyzer-action@master"
