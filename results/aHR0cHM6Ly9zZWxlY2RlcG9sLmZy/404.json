@@ -1,0 +1,24 @@
+{
+  "links": [
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "selecdepol.fr",
+        "port": null,
+        "hostname": "selecdepol.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/",
+        "path": "/",
+        "href": "https://selecdepol.fr/"
+      },
+      "link": "https://selecdepol.fr/",
+      "line": "--2026-09-17 09:08:28--  https://selecdepol.fr/",
+      "broken": false
+    }
+  ],
+  "broken": []
+}

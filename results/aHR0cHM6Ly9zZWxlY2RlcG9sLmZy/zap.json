@@ -1,0 +1,891 @@
+{
+	"@programName": "ZAP",
+	"@version": "2.17.0",
+	"@generated": "Thu, 17 Sept 2026 09:09:33",
+	"created": "2026-09-17T09:09:33.441016356Z",
+	"insights":[
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://selecdepol.fr",
+			"key": "insight.code.4xx",
+			"description": "Percentage of responses with status code 4xx",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://selecdepol.fr",
+			"key": "insight.endpoint.ctype.text/html",
+			"description": "Percentage of endpoints with content type text/html",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://selecdepol.fr",
+			"key": "insight.endpoint.method.GET",
+			"description": "Percentage of endpoints with method GET",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://selecdepol.fr",
+			"key": "insight.endpoint.total",
+			"description": "Count of total endpoints",
+			"statistic": "2"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://selecdepol.fr",
+			"key": "insight.response.slow",
+			"description": "Percentage of slow responses",
+			"statistic": "25"
+		}
+	],
+	"site":[ 
+		{
+			"@name": "https://selecdepol.fr",
+			"@host": "selecdepol.fr",
+			"@port": "443",
+			"@ssl": "true",
+			"alerts": [ 
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-13",
+					"alert": "CSP: Failure to Define Directive with No Fallback",
+					"name": "CSP: Failure to Define Directive with No Fallback",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>The Content Security Policy fails to define one of the directives that has no fallback. Missing/excluding them is the same as allowing anything.</p>",
+					"instances":[ 
+						{
+							"id": "3",
+							"uri": "https://selecdepol.fr/robots.txt",
+							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-lXyvaRxHPOVgzFDtTnm6zK' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src."
+						},
+						{
+							"id": "20",
+							"uri": "https://selecdepol.fr/sitemap.xml",
+							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "content-security-policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-fT0ZUyfgkgTsnwfk5vIbwl' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "The directive(s): form-action is/are among the directives that do not fallback to default-src."
+						}
+					],
+					"count": "2",
+					"systemic": true,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src.</p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "7"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-10",
+					"alert": "CSP: script-src unsafe-eval",
+					"name": "CSP: script-src unsafe-eval",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"id": "11",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-UGjXJMB2SbV839NsSONzyp' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "script-src includes unsafe-eval."
+						},
+						{
+							"id": "10",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-XLKFuddaU8FzSxx8cuQS4u' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "script-src includes unsafe-eval."
+						},
+						{
+							"id": "9",
+							"uri": "https://selecdepol.fr/robots.txt",
+							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-lXyvaRxHPOVgzFDtTnm6zK' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "script-src includes unsafe-eval."
+						},
+						{
+							"id": "8",
+							"uri": "https://selecdepol.fr/sitemap.xml",
+							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-fT0ZUyfgkgTsnwfk5vIbwl' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "script-src includes unsafe-eval."
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>script-src includes unsafe-eval.</p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "8"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-6",
+					"alert": "CSP: style-src unsafe-inline",
+					"name": "CSP: style-src unsafe-inline",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"id": "6",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-UGjXJMB2SbV839NsSONzyp' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"id": "4",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-XLKFuddaU8FzSxx8cuQS4u' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"id": "7",
+							"uri": "https://selecdepol.fr/robots.txt",
+							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-lXyvaRxHPOVgzFDtTnm6zK' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"id": "5",
+							"uri": "https://selecdepol.fr/sitemap.xml",
+							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-fT0ZUyfgkgTsnwfk5vIbwl' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "style-src includes unsafe-inline."
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>style-src includes unsafe-inline.</p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "8"
+				},
+				{
+					"pluginid": "10054",
+					"alertRef": "10054-2",
+					"alert": "Cookie with SameSite Attribute None",
+					"name": "Cookie with SameSite Attribute None",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set with its SameSite attribute set to \"none\", which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
+					"instances":[ 
+						{
+							"id": "40",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</p>",
+					"cweid": "1275",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10054",
+					"alertRef": "10054-1",
+					"alert": "Cookie without SameSite Attribute",
+					"name": "Cookie without SameSite Attribute",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
+					"instances":[ 
+						{
+							"id": "42",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						},
+						{
+							"id": "41",
+							"uri": "https://selecdepol.fr/robots.txt",
+							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						},
+						{
+							"id": "43",
+							"uri": "https://selecdepol.fr/sitemap.xml",
+							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</p>",
+					"cweid": "1275",
+					"wascid": "13",
+					"sourceid": "8"
+				},
+				{
+					"pluginid": "10035",
+					"alertRef": "10035-1",
+					"alert": "Strict-Transport-Security Header Not Set",
+					"name": "Strict-Transport-Security Header Not Set",
+					"riskcode": "1",
+					"confidence": "3",
+					"riskdesc": "Low (High)",
+					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
+					"instances":[ 
+						{
+							"id": "50",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "49",
+							"uri": "https://selecdepol.fr/robots.txt",
+							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "48",
+							"uri": "https://selecdepol.fr/sitemap.xml",
+							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
+					"cweid": "319",
+					"wascid": "15",
+					"sourceid": "8"
+				},
+				{
+					"pluginid": "10096",
+					"alertRef": "10096",
+					"alert": "Timestamp Disclosure - Unix",
+					"name": "Timestamp Disclosure - Unix",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>A timestamp was disclosed by the application/web server. - Unix</p>",
+					"instances":[ 
+						{
+							"id": "55",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1789636170",
+							"otherinfo": "1789636170, which evaluates to: 2026-09-17 09:09:30."
+						},
+						{
+							"id": "53",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789636170",
+							"otherinfo": "1789636170, which evaluates to: 2026-09-17 09:09:30."
+						},
+						{
+							"id": "59",
+							"uri": "https://selecdepol.fr/robots.txt",
+							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789636170",
+							"otherinfo": "1789636170, which evaluates to: 2026-09-17 09:09:30."
+						},
+						{
+							"id": "63",
+							"uri": "https://selecdepol.fr/sitemap.xml",
+							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1789636170",
+							"otherinfo": "1789636170, which evaluates to: 2026-09-17 09:09:30."
+						},
+						{
+							"id": "52",
+							"uri": "https://selecdepol.fr/sitemap.xml",
+							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789636170",
+							"otherinfo": "1789636170, which evaluates to: 2026-09-17 09:09:30."
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
+					"otherinfo": "<p>1789636170, which evaluates to: 2026-09-17 09:09:30.</p>",
+					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
+					"cweid": "497",
+					"wascid": "13",
+					"sourceid": "8"
+				},
+				{
+					"pluginid": "10094",
+					"alertRef": "10094-3",
+					"alert": "Base64 Disclosure",
+					"name": "Base64 Disclosure",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
+					"instances":[ 
+						{
+							"id": "92",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "HBYQT0Ef4BkaTl7_XQTv2myx9xFvlZGFd67g-1789636170",
+							"otherinfo": "\\x001c\\x0016\\x0010OA\\x001f\uFFFD\\x0019\\x001aN^\uFFFD]\\x0004\uFFFD\uFFFDl\uFFFD\uFFFD\\x0011o\uFFFD\uFFFD\uFFFDw\uFFFD\uFFFD\uFFFD^\uFFFD\uFFFD\uFFFD\uFFFD\u05FD"
+						},
+						{
+							"id": "91",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "t3GMn17k5RFgqYY0vL0-1789636170",
+							"otherinfo": "\uFFFDq\uFFFD\uFFFD^\uFFFD\uFFFD\\x0011`\uFFFD\uFFFD4\uFFFD\uFFFD>\u05FF=\uFFFD~\uFFFD\uFFFD"
+						},
+						{
+							"id": "95",
+							"uri": "https://selecdepol.fr/robots.txt",
+							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1-2hBDohU_0sayi0v3bcYU2ERXtzAnBej5QYmuntADkwQkEDPHLztF7Db4LzJfmBeCtAHM_DfAzVZKTNbHEmHOE9zKlHpq8Wr8JenfiS2lxvURt80fRw_CPTXKj9qtiJ",
+							"otherinfo": "\uFFFD\uFFFD\\x0004:!S\uFFFD,k(\uFFFD\uFFFDv\uFFFDaM\uFFFDE{s\\x0002p^\uFFFD\uFFFD\\x0018\uFFFD\uFFFD\uFFFD\\x000090BA\\x0003<r\uFFFD^\uFFFDo\uFFFD\uFFFD%\uFFFD\uFFFDx+@\\x001c\uFFFD\uFFFD|\\x000c\uFFFDd\uFFFD\uFFFDlq&\\x001c\uFFFD=\u0329G\uFFFD\uFFFD\\x0016\uFFFD\uFFFD^\uFFFD\uFFFD\uFFFD\uFFFD\\oQ\\x001b|\uFFFD\uFFFDp\uFFFD#\uFFFD\\\uFFFD\uFFFD\uFFFD\u0609"
+						},
+						{
+							"id": "84",
+							"uri": "https://selecdepol.fr/sitemap.xml",
+							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "BC8FLyxCnaz6LEIUhymbMQnsMx5r7q2pSFNki6IO0G4-1789636170",
+							"otherinfo": "\\x0004/\\x0005/,B\uFFFD\uFFFD\uFFFD,B\\x0014\uFFFD)\uFFFD1\t\uFFFD3\\x001ek\uEB69HSd\uFFFD\uFFFD\\x000e\uFFFDn>\u05FF=\uFFFD~\uFFFD\uFFFD"
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
+					"otherinfo": "<p>\\x001c\\x0016\\x0010OA\\x001f\uFFFD\\x0019\\x001aN^\uFFFD]\\x0004\uFFFD\uFFFDl\uFFFD\uFFFD\\x0011o\uFFFD\uFFFD\uFFFDw\uFFFD\uFFFD\uFFFD^\uFFFD\uFFFD\uFFFD\uFFFD\u05FD</p>",
+					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "319",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-12",
+					"alert": "CSP: Header & Meta",
+					"name": "CSP: Header & Meta",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>The message contained both CSP specified via header and via Meta tag. It was not possible to union these policies in order to perform an analysis. Therefore, they have been evaluated individually.</p>",
+					"instances":[ 
+						{
+							"id": "16",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "13",
+							"uri": "https://selecdepol.fr/robots.txt",
+							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "12",
+							"uri": "https://selecdepol.fr/sitemap.xml",
+							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "8"
+				},
+				{
+					"pluginid": "10109",
+					"alertRef": "10109",
+					"alert": "Modern Web Application",
+					"name": "Modern Web Application",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Client Spider may well be more effective than the standard one.</p>",
+					"instances":[ 
+						{
+							"id": "44",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script nonce=\"UGjXJMB2SbV839NsSONzyp\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'G0QI8OZD1ks57OP.pCQfqxwpFD8i_t6jSZWnl0hXWig-1789636170-1.2.1.1-pn8D_KbPUBQ17SQFMyQwGtv1eFaTScQwFz7pCRpHrB3c4OySPOuXt.gqkETDJa8T',cITimeS: '1789636170',cN: 'UGjXJMB2SbV839NsSONzyp',cRay: 'a3c6f8f368accb9d',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'precursor_interstitial',cUPMDTk:\"/?__cf_chl_tk=R7_SqbEGpGwULf8X.RiFJGWLl2Ha.D1xC.Z7q44E9HM-1789636170-1.0.1.1-QSqeWjM20..Brp8E2SoJAMVRQRH1CC_JpgfqgmjmOAI\",cvId: '3',cZone: 'selecdepol.fr',fa:\"/?__cf_chl_f_tk=R7_SqbEGpGwULf8X.RiFJGWLl2Ha.D1xC.Z7q44E9HM-1789636170-1.0.1.1-QSqeWjM20..Brp8E2SoJAMVRQRH1CC_JpgfqgmjmOAI\",md: 'fKr3Ix5AIywoAn2Sr7KJ_UsPXnNHC5ZgxJ5nRGto9BM-1789636170-1.2.1.1-Ozx06Z2NRoC0qYm6PK1kDepigyIeh0x7sLVfiePOgcb56QOv2ZvkpIqvOusHwT64MMOSuOoUaoR0NSYV9_nFoohE_Z9obrpdkB3q9eY7f.eVaehjCNpZT9L1ho_uAKEQZCkerFcEh6N6AQ1k0clStAcKIxmS1I4JpD2bPYBQyu8o8yj09fAzX2lNTJbky.EUirpia1NX7Zz7UYfDYmbosi8QMWdFuY_vtmGWBZuUPfaziiROxtAxkdg_TeR9n.dIhq3APjxsPGks4J5akN61NM7wi10Bh8KqP_9_Vqizrilb0jBEHYBETWt3LJ0_aj4BHD9Z5jUUDzdLppeoTE.pyaSywnYAGzwCVlVCYK83Oy09DqehlSXhugaRqmpGFv9qPuouUy.T8fpA0Ln4pM.Fy88dtocKe7gIUWAnQF_oLmvdmmillUuKRJNOJolLSaB3_cuf_7TqNOx3TAIBZEs0RGj5zSfCbmPmhoer2jXIuhVH27QvI5g3ppCtXwmNCA.j7eStuAYcNntaWVEUDH7D0.doFLNIeJCp5mxI0RLHl3aekIsCDdBV7EUe_sMG4xwdhOV4TUwHR_gcxcbCpa21sc_37mo3Rn57ZBh2vAkuXO0p3yUDkBseig8iuDq0HGGHbcNYgxPw6BwinwDZiDG3Dd8PIs_W6bXiJ9TNTFJsjekSpIIz1OFclkAhjmQPsbvwKSBsa1L30cs9dPrZndLXrUGLgydXE98PXgOHlS7njTYeDg.D56J4vtVW8iB_0chLVeeMamWWl5jxncylRmVSwTJ7uQuB80iiMEVfev7rcoFnL4_mpwsoRaqBxbwQCD5DZN0Rcz9J6TAVtR_gKnfNFVLbukNV.nKtagcge3HeTu2uif22lzmDwC38FqR9QpnmGsvbFfQOnpwWMtkWFL4FGQ',mdrd: '',pi: true,pp: {r: 'a3c6f8f368accb9d',t: btoa(String(1789636170))},};var a = document.createElement('script');a.nonce = 'UGjXJMB2SbV839NsSONzyp';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/precursor_interstitial/v1?ray=a3c6f8f368accb9d';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/?__cf_chl_rt_tk=R7_SqbEGpGwULf8X.RiFJGWLl2Ha.D1xC.Z7q44E9HM-1789636170-1.0.1.1-QSqeWjM20..Brp8E2SoJAMVRQRH1CC_JpgfqgmjmOAI\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "45",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script nonce=\"XLKFuddaU8FzSxx8cuQS4u\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'lhhpo6eUwDICr6Rs7K_RDIMPc7JuVMmJ_Q9yYwCWmVA-1789636170-1.2.1.1-Q2yI0xelQDFT7JmZSHafHqRqLUCY8.EhmfcNOq8CllosssnlQXv_Y6i5ALcviPY_',cITimeS: '1789636170',cN: 'XLKFuddaU8FzSxx8cuQS4u',cRay: 'a3c6f8f2fab5e5db',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'precursor_interstitial',cUPMDTk:\"/?__cf_chl_tk=X_BszkZ5b..tGIFCUAEPEka3z0ey.RBuIvLFUtLvYvQ-1789636170-1.0.1.1-UgYLElHKOz_yZg3tWgqSVJl1m5CjDoEKDqYQXZF0r9k\",cvId: '3',cZone: 'selecdepol.fr',fa:\"/?__cf_chl_f_tk=X_BszkZ5b..tGIFCUAEPEka3z0ey.RBuIvLFUtLvYvQ-1789636170-1.0.1.1-UgYLElHKOz_yZg3tWgqSVJl1m5CjDoEKDqYQXZF0r9k\",md: 'va_MwOQKYuVz3w9lqAEYFc9nQXISYMNDnG5zNivQPSw-1789636170-1.2.1.1-z5PbexHA4zrOr9q3VWD9gbb_LcwbMJKzMq_WU29e4k10sCG3yaHTv2kGEjdEJKpgzGDpO1FescDssEXq7rEaoEnXX8pi_oo.Q7T9Md9IkOpoYucM_JhjR_.6wky.f231PlXZs3zmNpWKNo9yzvHVV0G2JeMxIy601LiVES3M0HWy5jGmY08x4dE2ucC5Bc9M9iZ20l7QkmNt8DptAsEOZx1jrQPLfgJrRru7IicwRqR.P3rtqYXo0S4pGOoAXI0rB.SqObrJIobbRnWsUDT.ydk20e56c2z7M4cZD_4bCe6lrTteOrUbSzF8wGhgpi7MLqypaP8sqWOerHpHnJsPuzy4OUckrTvHXwt9i_6RjmudQSyjNTKU973NNswQ6QjIqGhLCvaGbpqu03yPp8.19nvV0TW64CNCFHt4k0QvRgUJAvvlx7jqUde8tNVvozXQAwQM7kJU8lxEyWh2k_K3Y9U00N92.MgYf5Wc9dmgWoAQbDWodEmFYsQHQgS2ttrGLsnZIxY_5oQnJCKNVhILf_lsX_pClY7FZriY_nF_SzBkwMoPeHsncc2mTCBmpjl4UCwgBYdWCPV2L9b6t1hV4ETq1zZihT6FuWBDruecZeosDneN0lflXIYHdOLmlLwQBNthXXsOthUkY6fEXpApIbftBQP_U3M3bqlzdz.6cFeD7lbeT8SG0jpRZQ36d9YF7Qh37Jkb_APaNan9idscOIFc.zg7zk2XQEH7feAFBAIRZAwWrrAB0NckFAmqCE6Mrjv2ZYOWLYptJiVAj82uApc1sYOyYXO8lQsJcUUjMKcKMWnuzSUkadzQSG.kBFDfahxpsZkDCLcg8MxSqJqtAWm2gLvYSRPneG5ncBZUWRjOP36USGfn6H.n9R3zgAwbH7dPZehB5BpG1.McGxrUZRvIq.mKoEVuDlz7sqiEBjXKTsdY.VjjNu65PtYeBeNRtG1mDPP6_sFE2wsnLDgAMdkjyVcAnoXMdWBI0FDYIqWJDfdxK39vomFMcocMKqHJS40ZUQpvebe4H7UIWAVctTV5hNnYeEG5MWAwF36brhY',mdrd: '',pi: true,pp: {r: 'a3c6f8f2fab5e5db',t: btoa(String(1789636170))},};var a = document.createElement('script');a.nonce = 'XLKFuddaU8FzSxx8cuQS4u';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/precursor_interstitial/v1?ray=a3c6f8f2fab5e5db';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/?__cf_chl_rt_tk=X_BszkZ5b..tGIFCUAEPEka3z0ey.RBuIvLFUtLvYvQ-1789636170-1.0.1.1-UgYLElHKOz_yZg3tWgqSVJl1m5CjDoEKDqYQXZF0r9k\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "46",
+							"uri": "https://selecdepol.fr/robots.txt",
+							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script nonce=\"lXyvaRxHPOVgzFDtTnm6zK\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'WTK3_nFwpqTAlxGqUbo..j_r26Bbe00IiQKCJRjoJy0-1789636170-1.2.1.1-A.fhlZ9x6n3ltvt0jPHPowq9_NODWZcYgfO0px_.pF3hNM9neO_bKU4zDPoo_3HY',cITimeS: '1789636170',cN: 'lXyvaRxHPOVgzFDtTnm6zK',cRay: 'a3c6f8f36c5ef83f',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'precursor_interstitial',cUPMDTk:\"/robots.txt?__cf_chl_tk=X6t2JvB5bMnpUn6ebiUwZvHbuKQ_KgOyQqPI.FbbeSU-1789636170-1.0.1.1-y.6XDhMfRN0mgUzxf7yOBWAKjhWXcQRcA8vklXYlm4Q\",cvId: '3',cZone: 'selecdepol.fr',fa:\"/robots.txt?__cf_chl_f_tk=X6t2JvB5bMnpUn6ebiUwZvHbuKQ_KgOyQqPI.FbbeSU-1789636170-1.0.1.1-y.6XDhMfRN0mgUzxf7yOBWAKjhWXcQRcA8vklXYlm4Q\",md: 'oCiBcpVII9PrlhzoAhkalLjfKIwD88_O99p1T4JJoTM-1789636170-1.2.1.1-0Vkbe.51pSuc5UluYWLLxF11auUtiA4SH2hC.c.HmpxJwPWoPbY.QVwfv_4MLBj9DuFMixHxggcJCMQrzCXvCT_flR9drQryyAJGOpXyK4wHzVY3oyVVxQONyJ1UjbFPNbsyq3S1O.aSOQB.HEX6ogui9X8i.hZv31MEUR0L_m3Qg4xWodZ_ijVI_7NTlcYmVOsYP9Pi0LCsmF5zr_hx_xEzkVdoFSxmCDr_HpG5PDoBjD3voDy5JDZdYZrEww.lTMuI440zPHDL_Eb6pFdvhAD1akJFml5AYKsFAG1cFb77d_DxTFGdF.38Y4I9Eiy4KxoESeQg5fu.l80qsR.bQMd.q.FWbJ5R363dZWKEVCtDnZ3mfJjJg4HgweQnQeHDIt9A4w66ZDuJG.Db_BW.HbQC0F1B5T30z6rnYbeoUfda_q42r.f0wde5MIEZ3Jp_3gR2g9tDTuQWyJNkGtedMxCAO.45Wi52H7TQqyIsulFY4aAAEUL6B8kYZXX3hFYCmiqg2uFEvJT.Oo1gVUqAtwlBYEo.FH25Ii4zTIdFAmf7Z0W138S1Kq5WD_BZJ_MH5E8mwU5ENlAeMqFx4v6B6sQWmLwe1hq9I7137hC2226VBEWxvE3tmnorxh4wCkQML6tK_RWotE_b7e3jYrcjygTSb..7wMVQPCtFZvqHf1JxaePKZURiaLQmCkTEQedAtTJiv0.uqToG7H.Y3N1tWS5RgcBQUKRPAXVZt9FhOhmfsfD6p18d22LxLSgt2QzfG9_ElgEF0A_295Mpio3kMsi2rjuKmbnsgEL9dZPZ60PYZ6yir1LgXZIx3hhFwvfIl1eG.kGkacDt17IX0PGzl0BaPqyqoKWvZFHIkii7vcqonIcKCaWilE5agpOvblfAqiTeEl1ci665_nGU5fI4Iw',mdrd: '',pi: true,pp: {r: 'a3c6f8f36c5ef83f',t: btoa(String(1789636170))},};var a = document.createElement('script');a.nonce = 'lXyvaRxHPOVgzFDtTnm6zK';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/precursor_interstitial/v1?ray=a3c6f8f36c5ef83f';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/robots.txt?__cf_chl_rt_tk=X6t2JvB5bMnpUn6ebiUwZvHbuKQ_KgOyQqPI.FbbeSU-1789636170-1.0.1.1-y.6XDhMfRN0mgUzxf7yOBWAKjhWXcQRcA8vklXYlm4Q\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "47",
+							"uri": "https://selecdepol.fr/sitemap.xml",
+							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script nonce=\"fT0ZUyfgkgTsnwfk5vIbwl\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'HbZtCmHT3O4nTHlL80Vp.qsu8zeTFoczQIvGYeEN_Vs-1789636170-1.2.1.1-UjYlLQG2HSErkMSAMBo1rCE87ZdO8ovGij5kyj_6qeuqRQE_XCxQffJlbVuCtocF',cITimeS: '1789636170',cN: 'fT0ZUyfgkgTsnwfk5vIbwl',cRay: 'a3c6f8f35c827815',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'precursor_interstitial',cUPMDTk:\"/sitemap.xml?__cf_chl_tk=iZk8OPGwCrJn5Vtr.kQS7C3Xcwh6C47780gvdQ8BS1Q-1789636170-1.0.1.1-guV0qnwaIHinEjaH1BAe5.8GqcdWVElw1UHub5k9RI4\",cvId: '3',cZone: 'selecdepol.fr',fa:\"/sitemap.xml?__cf_chl_f_tk=iZk8OPGwCrJn5Vtr.kQS7C3Xcwh6C47780gvdQ8BS1Q-1789636170-1.0.1.1-guV0qnwaIHinEjaH1BAe5.8GqcdWVElw1UHub5k9RI4\",md: 'koGIQIgmg7rI0.ZGHzMp5dKZU11MBIYs_Ir7.QjSgRU-1789636170-1.2.1.1-qhYKV7eb1n3gVk9q_otPPKXrkFe9pzy.xi1If89tdUo_C4MC4kcQ2eUHWCxVf5XcvwBqv1uj8VqV.98QNCx.kdEGvOuBGQ90Xti_l.MU.MnxLBxVF0rufShTUuxWX.pMQkpSdvwhbsNgmAdV6yWrOM6GR4qh7jN9SKkh1F1soKsQ2SuSHa2yauykm0HUULiccmlxw02cPMJgrSIhjHtF5BfN3CV9bypnPhmiSMt2K7nFSUj4X1FOR41A1XusMn13YQ6T4O_TeTMG33Hs_5R_Lp6WzSgBQZxAkPn_9OIeQ_WrbjVIJbxM8yTBWReeOLNuIO_NheNAa7w9bBe.XSFA18U1e8J5ehlDqpmWUHSyUlstIWI8HOw9K1cN_ITzCQ3W49jhEPSsGjtWLELFsTdGeChJVgCD8JGnVN09Ld3RrJzaKjEk9dmsZAi2glF.tyKoEy2thpp2bejG5FgWnfTDxVBnanegSawy5eXkNs1M7DLGgl4Is3.jz0GzqGyBYzH9QBeLlCSRDF3rq5Zf9SSi2mUix53s2ce_Jke9MUOSuoMm1oG0nSrXOpDYPPCsjGuYANDp.BbNeWy3iZPCu4FBaBtoA1ugvsaTkOP5ahiFYC0c30CgcKm3qI.KoJzR_o2eSYLLJ.AgDnClWyANKUeoPeAbi3fbYiWJIEF5bLrp_xttXuQ.jwyGwYcIzsvLOQPK8I5RoL0okMt7fN4_rBlwsdDI6twoKQvg4.2AdJVXQ5v1HadaTR9pqXm.horvloyf5iHkkZLsXA1yWZxGnZdcy7.UJO21l8u.TguJdE_ggu8i6.N9q0IH77wHQs4bB0RIGA8vllu4B0yB8UcPHc1byEo3CCcDmX.QW96lDRhHSFLf5gmFs0Cz2Dw21FrcyG6pFtNavWUMAdLS2csZsT16iQ',mdrd: '',pi: true,pp: {r: 'a3c6f8f35c827815',t: btoa(String(1789636170))},};var a = document.createElement('script');a.nonce = 'fT0ZUyfgkgTsnwfk5vIbwl';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/precursor_interstitial/v1?ray=a3c6f8f35c827815';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/sitemap.xml?__cf_chl_rt_tk=iZk8OPGwCrJn5Vtr.kQS7C3Xcwh6C47780gvdQ8BS1Q-1789636170-1.0.1.1-guV0qnwaIHinEjaH1BAe5.8GqcdWVElw1UHub5k9RI4\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>This is an informational alert and so no changes are required.</p>",
+					"otherinfo": "<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>",
+					"reference": "",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "8"
+				},
+				{
+					"pluginid": "10049",
+					"alertRef": "10049-1",
+					"alert": "Non-Storable Content",
+					"name": "Non-Storable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
+					"instances":[ 
+						{
+							"id": "106",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "403",
+							"otherinfo": ""
+						},
+						{
+							"id": "111",
+							"uri": "https://selecdepol.fr/robots.txt",
+							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "403",
+							"otherinfo": ""
+						},
+						{
+							"id": "90",
+							"uri": "https://selecdepol.fr/sitemap.xml",
+							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "403",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
+					"cweid": "524",
+					"wascid": "13",
+					"sourceid": "8"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-3",
+					"alert": "Sec-Fetch-Dest Header is Missing",
+					"name": "Sec-Fetch-Dest Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
+					"instances":[ 
+						{
+							"id": "96",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "104",
+							"uri": "https://selecdepol.fr/robots.txt",
+							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "87",
+							"uri": "https://selecdepol.fr/sitemap.xml",
+							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Dest</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "8"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-2",
+					"alert": "Sec-Fetch-Mode Header is Missing",
+					"name": "Sec-Fetch-Mode Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
+					"instances":[ 
+						{
+							"id": "94",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "99",
+							"uri": "https://selecdepol.fr/robots.txt",
+							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "86",
+							"uri": "https://selecdepol.fr/sitemap.xml",
+							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Mode</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "8"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-1",
+					"alert": "Sec-Fetch-Site Header is Missing",
+					"name": "Sec-Fetch-Site Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
+					"instances":[ 
+						{
+							"id": "93",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "97",
+							"uri": "https://selecdepol.fr/robots.txt",
+							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "85",
+							"uri": "https://selecdepol.fr/sitemap.xml",
+							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Site</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "8"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-4",
+					"alert": "Sec-Fetch-User Header is Missing",
+					"name": "Sec-Fetch-User Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
+					"instances":[ 
+						{
+							"id": "98",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "107",
+							"uri": "https://selecdepol.fr/robots.txt",
+							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "88",
+							"uri": "https://selecdepol.fr/sitemap.xml",
+							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "8"
+				},
+				{
+					"pluginid": "10112",
+					"alertRef": "10112",
+					"alert": "Session Management Response Identified",
+					"name": "Session Management Response Identified",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.</p>",
+					"instances":[ 
+						{
+							"id": "105",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "__cf_bm",
+							"otherinfo": "cookie:__cf_bm"
+						},
+						{
+							"id": "110",
+							"uri": "https://selecdepol.fr/robots.txt",
+							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "__cf_bm",
+							"otherinfo": "cookie:__cf_bm"
+						},
+						{
+							"id": "89",
+							"uri": "https://selecdepol.fr/sitemap.xml",
+							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "__cf_bm",
+							"otherinfo": "cookie:__cf_bm"
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
+					"otherinfo": "<p>cookie:__cf_bm</p>",
+					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/</p>",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "8"
+				}
+			]
+		}
+	],
+	"sequences":[
+	]
+
+}
