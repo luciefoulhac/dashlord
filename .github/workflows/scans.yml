@@ -194,12 +194,13 @@ jobs:
 
       - name: Wappalyzer scan
         if: ${{ matrix.sites.tools.wappalyzer }}
-        uses: "socialgouv/wappalyzer-action@master"
         timeout-minutes: 10
         continue-on-error: true
-        with:
-          url: "${{ matrix.sites.url }}"
-          output: scans/wappalyzer.json
+        run: |
+          git clone --depth 1 https://github.com/SocialGouv/wappalyzer-action.git /tmp/wappalyzer-action
+          cd /tmp/wappalyzer-action
+          yarn install
+          node src/scan "${{ matrix.sites.url }}" > "${{ github.workspace }}/scans/wappalyzer.json"
 
       - name: ZAP Scan
         if: ${{ matrix.sites.tools.zap }}
