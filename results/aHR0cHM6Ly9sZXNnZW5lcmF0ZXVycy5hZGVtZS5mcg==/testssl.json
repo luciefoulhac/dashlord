@@ -360,7 +360,7 @@
               "ip"           : "lesgenerateurs.ademe.fr/104.18.1.202",
               "port"         : "443",
               "severity"     : "MEDIUM",
-              "finding"      : "expires < 60 days (35)"
+              "finding"      : "expires < 60 days (34)"
           }
 ,         {
               "id"           : "cert_notBefore <hostCert#1>",
@@ -654,7 +654,7 @@
               "ip"           : "lesgenerateurs.ademe.fr/104.18.1.202",
               "port"         : "443",
               "severity"     : "MEDIUM",
-              "finding"      : "expires < 60 days (35)"
+              "finding"      : "expires < 60 days (34)"
           }
 ,         {
               "id"           : "cert_notBefore <hostCert#2>",
@@ -857,7 +857,7 @@
               "ip"           : "lesgenerateurs.ademe.fr/104.18.1.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789641280"
+              "finding"      : "1789648699"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -865,7 +865,7 @@
               "port"         : "443",
               "severity"     : "MEDIUM",
               "cwe"          : "CWE-212",
-              "finding"      : "set-cookie: __cf_bm=.m7jqdbXLCZuO0GoDldlbrd9q0cmFmLKzx7pvKqD2qc-1789641280.9146986-1.0.1.1-GCa52.rnB.RMjrp3Z7g9xytF5uNoriMwmAPoVEk_faVirkT8Xix6k53geTPVRGv5a6cznGuRjoX3sfFK_0Xd9eeHB7_XqPvOtzouIdTsxt8fQq6T_o46D.j78qVCd.6i; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 11:04:40 GMT (check if it's your IP address or e.g. a cluster IP)"
+              "finding"      : "set-cookie: __cf_bm=e9jQhsoIfUbskp9j7Cikj8CxOhgr74kPFK4VT5DcgHk-1789648699.297983-1.0.1.1-oibEIf0g.0LDmSpo9axeDShe46epOCPOA7UFQwxZGA3W0IkW5M0MFFwcK.laDIZE70U6iWi_5BFeXy73ozfVbxrTUB.B2ZSgS_fd2DTpLB1rmNJRwO.r0FzmgR50UEOL; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 13:08:19 GMT (check if it's your IP address or e.g. a cluster IP)"
           }
 ,         {
               "id"           : "HSTS",
@@ -935,7 +935,7 @@
               "ip"           : "lesgenerateurs.ademe.fr/104.18.1.202",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'none'; script-src 'nonce-3OTRFlStW4byNDgdpgm90H' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
+              "finding"      : "default-src 'none'; script-src 'nonce-zbP8T7XsSuYGiTTmFBfjNZ' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
           }
 ,         {
               "id"           : "Permissions-Policy",
@@ -1686,7 +1686,7 @@
               "ip"           : "lesgenerateurs.ademe.fr/104.18.0.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -1826,7 +1826,7 @@
               "ip"           : "lesgenerateurs.ademe.fr/104.18.0.202",
               "port"         : "443",
               "severity"     : "MEDIUM",
-              "finding"      : "expires < 60 days (35)"
+              "finding"      : "expires < 60 days (34)"
           }
 ,         {
               "id"           : "cert_notBefore <hostCert#1>",
@@ -2120,7 +2120,7 @@
               "ip"           : "lesgenerateurs.ademe.fr/104.18.0.202",
               "port"         : "443",
               "severity"     : "MEDIUM",
-              "finding"      : "expires < 60 days (35)"
+              "finding"      : "expires < 60 days (34)"
           }
 ,         {
               "id"           : "cert_notBefore <hostCert#2>",
@@ -2323,7 +2323,7 @@
               "ip"           : "lesgenerateurs.ademe.fr/104.18.0.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789641322"
+              "finding"      : "1789648739"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -2331,7 +2331,7 @@
               "port"         : "443",
               "severity"     : "MEDIUM",
               "cwe"          : "CWE-212",
-              "finding"      : "set-cookie: __cf_bm=gC19UN_zDM2IN3gUt3xS4ZqeuC0gpLeJiXINUgqNsdI-1789641322.6766384-1.0.1.1-fFU.uqcAgOm_GXjvR2wj16PMVmzJUjyvLp8gZ04JzM27Peq2ZcJMvDt7UNDV95G6wffI3mjzMSZie3ULvvoRDCWbzxotoFKMuaQi7m_bySe6.wv5G7cIFJlhRrvKiZx3; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 11:05:22 GMT (check if it's your IP address or e.g. a cluster IP)"
+              "finding"      : "set-cookie: __cf_bm=MeSTlViP.POqV97hROSrG1XWcySeaaMv2pFBi1jKpcQ-1789648739.8229575-1.0.1.1-n5n_yHKYq3lz8Twt9n8js_8XJkzGtW7_Gguqy.gVFDUH7h3IPVOmk.NjgRenuTfhWKH7rQa_dsq.Q0ANM2AQ9f9BuSf7_SZsfGVO.VBUyVnhrXo7RJ.4s40fgx2OLcVo; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 13:08:59 GMT (check if it's your IP address or e.g. a cluster IP)"
           }
 ,         {
               "id"           : "HSTS",
@@ -2401,7 +2401,7 @@
               "ip"           : "lesgenerateurs.ademe.fr/104.18.0.202",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'none'; script-src 'nonce-u8rEocCFK9UO0IHTdmke3d' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
+              "finding"      : "default-src 'none'; script-src 'nonce-SoMZebT1MQWwrNPCeQMYZD' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
           }
 ,         {
               "id"           : "Permissions-Policy",
@@ -2943,6 +2943,6 @@
               "ip"           : "lesgenerateurs.ademe.fr/104.18.0.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "85"
+              "finding"      : "82"
           }
 ]
