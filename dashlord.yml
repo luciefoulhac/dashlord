@@ -9,7 +9,7 @@ operator:
   name: ADEME
 tools:
   "404": true
-  screenshot: true
+  screenshot: false
   lighthouse: true
   wappalyzer: true
   http: true
@@ -32,36 +32,97 @@ columns: # pour masquer des colonnes
   zap: false
 urls:
   - url: https://pfe-det.ademe.fr
+  tags:
+    - PHP
   - url: https://renovfriches.ademe.fr
+  tags:
+    - PHP
   - url: https://selecdepol.fr
+  tags:
+    - Drupal
   - url: https://ecosystore.ademe.fr
+  tags:
+    - PHP
   - url: https://www.eve-transport-logistique.fr
+  tags:
+    - Wordpress
   - url: https://cee-remove.ademe.fr
+  tags:
+    - Wordpress
   - url: https://experimentationsurbaines.ademe.fr
+  tags:
+    - Wordpress
   - url: https://avelo.ademe.fr
+  tags:
+    - Wordpress
   - url: https://employeursprocovoiturage.ademe.fr
+  tags:
+    - Wordpress
   - url: https://calanques-de-marseille.ademe.fr
+  tags:
+    - Wordpress
   - url: https://lesgenerateurs.ademe.fr
+  tags:
+    - Wordpress
   - url: https://www.fresquedusol.com
+  tags:
+    - Wordpress
   - url: https://economie-circulaire.ademe.fr
+  tags:
+    - Drupal
   - url: https://www.ecolabeltoolbox.com
+  tags:
+    - PHP
   - url: https://audit-energie.ademe.fr
+  tags:
+    - PHP
   - url: https://inventairepcb.ademe.fr
+  tags:
+    - PHP
   - url: https://affichage-environnemental.ademe.fr
+  tags:
+    - Drupal
   - url: https://veille-internationale.ademe.fr
+  tags:
+    - PHP
   - url: https://carlabelling.ademe.fr
+  tags:
+    - PHP
   - url: https://evenementresponsable.ademe.fr
+  tags:
+    - PHP
   - url: https://communication-responsable.ademe.fr
+  tags:
+    - PHP
   - url: https://infos.ademe.fr
+  tags:
+    - PHP
   - url: https://www.territoires-climat.ademe.fr
+  tags:
+    - PHP
   - url: http://www.enrchoix.idf.ademe.fr
+  tags:
+    - PHP
   - url: https://carnetadapt.org
+  tags:
+    - PHP
   - url: https://ecrains.ademe.fr
+  tags:
+    - Drupal
   - url: http://recherche.ademe.fr
+  tags:
+    - PHP
   - url: https://www.onpe.org
+  tags:
+    - PHP
   - url: https://filieres-rep.ademe.fr
+  tags:
+    - Drupal
   - url: https://www.bilans-ges.ademe.fr
+  tags:
+    - PHP
   - url: https://wattris.ademe.fr
-  - url: https://int-mvpdrupal9.ademe-cloud.fr
+  tags:
+    - Autre
   
   
