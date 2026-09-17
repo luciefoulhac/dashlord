@@ -1,13 +1,12 @@
-title: Mon DashLord
-description: Audit technique des sites web
-entity: Mon organisation
-footer: Powered by DashLord
-marianne: false
+title: DashLord de la Ruche Numérique
+description: Bonnes pratiques techniques de la Ruche Numérique de l'ADEME
+entity: ADEME
+footer: Powered by SocialGouv
+marianne: true
 seo: false
-
 tools:
   "404": true
-  screenshot: false
+  screenshot: true
   nmap: true
   zap: true
   wappalyzer: true
@@ -17,16 +16,51 @@ tools:
   thirdparties: true
   nuclei: true
   updownio: false
-  dependabot: false
-  codescan: false
+  dependabot: true
+  codescan: true
   stats: false
   declaration-a11y: true
   ecoindex: true
   dsfr: true
-  betagouv: false
-
-columns:
+  betagouv: true
+columns: # pour masquer des colonnes
   zap: false
-
+updownioStatusPage: https://updown.io/status_pages
+updownioRecipients:
+  - email:123456
+  - email:789987
 urls:
+  - url: https://pfe-det.ademe.fr
+  - url: https://renovfriches.ademe.fr
   - url: https://selecdepol.fr
+  - url: https://ecosystore.ademe.fr
+  - url: https://www.eve-transport-logistique.fr
+  - url: https://cee-remove.ademe.fr
+  - url: https://experimentationsurbaines.ademe.fr
+  - url: https://avelo.ademe.fr
+  - url: https://employeursprocovoiturage.ademe.fr
+  - url: https://calanques-de-marseille.ademe.fr
+  - url: https://lesgenerateurs.ademe.fr
+  - url: https://www.fresquedusol.com
+  - url: https://economie-circulaire.ademe.fr
+  - url: https://www.ecolabeltoolbox.com
+  - url: https://audit-energie.ademe.fr
+  - url: https://inventairepcb.ademe.fr
+  - url: https://affichage-environnemental.ademe.fr
+  - url: https://veille-internationale.ademe.fr
+  - url: https://carlabelling.ademe.fr
+  - url: https://evenementresponsable.ademe.fr
+  - url: https://communication-responsable.ademe.fr
+  - url: https://infos.ademe.fr
+  - url: https://www.territoires-climat.ademe.fr
+  - url: http://www.enrchoix.idf.ademe.fr
+  - url: https://carnetadapt.org
+  - url: https://ecrains.ademe.fr
+  - url: http://recherche.ademe.fr
+  - url: https://www.onpe.org
+  - url: https://filieres-rep.ademe.fr
+  - url: https://www.bilans-ges.ademe.fr
+  - url: https://wattris.ademe.fr
+  - url: https://int-mvpdrupal9.ademe-cloud.fr
+  
+  
