@@ -9,7 +9,7 @@
     "testsPassed": 8,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 17 Sep 2026 11:19:47 GMT",
+      "date": "Thu, 17 Sep 2026 13:05:10 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
@@ -17,7 +17,7 @@
       "content-language": "fr",
       "content-security-policy": "frame-ancestors 'self';",
       "set-cookie": [
-        "__cf_bm=Q34knQg2l4Z45SEU.Xssp4svXGLMDzsogAscqL7eddI-1789643987.1898675-1.0.1.1-FX_6BB0AUFPhIHVxJx5ltDPHvtJpRCNG9VJLp43bibaIxsAf3CPW99bqxRsyddKgKEfMfQxZYFEk4r7QW71Dqxl3nTJSqXS8K0BRkNUKe9cp_J7kxKIrjnJdnMsbPMcx; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 11:49:47 GMT"
+        "__cf_bm=0pDGu96tFcEEOud.nHatd6.KZG_HLBeRRVHxEzraeXQ-1789650310.4393764-1.0.1.1-zgVq_nObY9owog_YvxzATS95FHEylRyB5iUT.dTumr_douWJVjA97UDYTzo31q4poS_C7LN.NYp24vWDzGJBZ9wAkcueT5EXBz...MXhImoSO.DTcwicPABC.TeZXYyo; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 13:35:10 GMT"
       ],
       "expires": "Sun, 19 Nov 1978 05:00:00 GMT",
       "last-modified": "Wed, 16 Sep 2026 09:48:56 GMT",
@@ -31,7 +31,7 @@
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1; mode=block",
       "cf-cache-status": "DYNAMIC",
-      "cf-ray": "a3c7b7c7ea5ef36e-IAD"
+      "cf-ray": "a3c852283d29ae14-IAD"
     }
   },
   "tests": {
@@ -70,7 +70,7 @@
       "data": {
         "__cf_bm": {
           "domain": "ademe.fr",
-          "expires": "2026-09-17T11:49:47.000Z",
+          "expires": "2026-09-17T13:35:10.000Z",
           "httponly": true,
           "path": "/",
           "port": null,

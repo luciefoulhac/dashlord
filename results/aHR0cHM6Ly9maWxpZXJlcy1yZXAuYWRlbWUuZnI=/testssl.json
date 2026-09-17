@@ -850,14 +850,14 @@
               "ip"           : "filieres-rep.ademe.fr/104.18.1.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "filieres-rep.ademe.fr/104.18.1.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789644009"
+              "finding"      : "1789650332"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -865,7 +865,7 @@
               "port"         : "443",
               "severity"     : "MEDIUM",
               "cwe"          : "CWE-212",
-              "finding"      : "set-cookie: __cf_bm=K.d__0pIJ3m08Jaipq6kLTjv_QugQunuvYbCfD6jbQs-1789644009.2861354-1.0.1.1-kSgXBt6fOIX.YnkD5UOhldGdkoxVP4q_wQ88xoXSfgHN2Ba0hpD_FpJcuLTWSTRLojc6.qzcNF_CaGdAFYABL7VbCvxxn9w.N7rE7bWT4Ao.OWnDe8vNHNf0dmWixB8g; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 11:50:09 GMT (check if it's your IP address or e.g. a cluster IP)"
+              "finding"      : "set-cookie: __cf_bm=TeecqV8RJkr9ZAdpXItnIxDYQ1z49_lJhsxAPHq.TR0-1789650332.452922-1.0.1.1-Y0gOdRJEwdKAvQ8spF.J3dcspQDJ_vIsuWhLT9Bvbsg0EcFXAa4ksvsxbWF5RPB_Nx6.X80Ox2317bs9lgiterPLNxnDtPmxupDYuUQULtrK1sW.svXGmsR8yRGXqXDu; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 13:35:32 GMT (check if it's your IP address or e.g. a cluster IP)"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -2323,14 +2323,14 @@
               "ip"           : "filieres-rep.ademe.fr/104.18.0.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "filieres-rep.ademe.fr/104.18.0.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789644053"
+              "finding"      : "1789650374"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -2338,7 +2338,7 @@
               "port"         : "443",
               "severity"     : "MEDIUM",
               "cwe"          : "CWE-212",
-              "finding"      : "set-cookie: __cf_bm=zvUEhJ5ebgl3BGsp9Dx4.x1KDVpPHno_LcbkUbsIM8Q-1789644053.021087-1.0.1.1-LyFNIJxVCgiJpHWM0HZwASxDYo53SazOnxXFbUZPxgaBXqVduIHDAOG0zznfl24JHVM5fuxHhTNhfZkFqP5LEUBBw1AVD1JNaB5Yv43yXoOXvP8QgwS6VSsCesSYAKK.; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 11:50:53 GMT (check if it's your IP address or e.g. a cluster IP)"
+              "finding"      : "set-cookie: __cf_bm=z16OTJJZ7_pzOOonttT7B35XWkvoKwKwWxbQdMznSlY-1789650374.4299254-1.0.1.1-eN18yswphzceqVrTmjpEaBSxVtpbR5Pgujh2LLfT6f.6Q0wNq8KLZXXuUYjOCJkRtfN8SQzTZmtkHPf3J92263EGyzbwQEF3R49zCVvZT4Hngqa4kKKDTGNHOLttqcxt; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 13:36:14 GMT (check if it's your IP address or e.g. a cluster IP)"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -2957,6 +2957,6 @@
               "ip"           : "filieres-rep.ademe.fr/104.18.0.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "89"
+              "finding"      : "86"
           }
 ]
