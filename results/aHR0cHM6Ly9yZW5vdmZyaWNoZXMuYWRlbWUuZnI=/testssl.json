@@ -857,7 +857,7 @@
               "ip"           : "renovfriches.ademe.fr/104.18.1.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789654479"
+              "finding"      : "1789655587"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -865,7 +865,7 @@
               "port"         : "443",
               "severity"     : "MEDIUM",
               "cwe"          : "CWE-212",
-              "finding"      : "set-cookie: __cf_bm=2CqjCibEF1MtgygkAGSOHmre4ulHqAE7XsS4q0c1bqY-1789654479.379808-1.0.1.1-jKed9hg0Kp.p3o.0PkeslDXiko8u0ZRJZOwjKXES6se0_OEYseGW913ZJHPEFpYsyK5_24M51oquOlw88upGQGuQ7xZMKyR1Qa3SHztrhS7lX3wo.23qyKi5anyeKBOF; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 14:44:39 GMT (check if it's your IP address or e.g. a cluster IP)"
+              "finding"      : "set-cookie: __cf_bm=5uSDtyth32qCoYBOU4aIqdfPL0V.0MGkPG4YKnXl2Rg-1789655587.7135744-1.0.1.1-4TmFv6p4AoaLtZxcMidTDyNPlrxh84b1qiTb5tDzBGfHwmLPSqqhpwiNOZCb0wHn5WZ4Yl4oTbmxg1yjae6IKMUcml40.GE1pGgzX4QSdVW4wesgCANSUYUfe9jmnQex; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 15:03:07 GMT (check if it's your IP address or e.g. a cluster IP)"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -2330,7 +2330,7 @@
               "ip"           : "renovfriches.ademe.fr/104.18.0.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789654523"
+              "finding"      : "1789655631"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -2338,7 +2338,7 @@
               "port"         : "443",
               "severity"     : "MEDIUM",
               "cwe"          : "CWE-212",
-              "finding"      : "set-cookie: __cf_bm=sSK6H7cQG1HtMPWf4o3mn6FUv9hvlTUyZHquuRMUEu0-1789654522.9972324-1.0.1.1-rs7jh.lUr7QqZtYXegglsqVK9s2eUT1mcKxQEgx2Wm0g6mhO6MAckQBK39F6woIhHfkE3mHPhZjdZYmgN.3hFkUa6LgBUzh5UbNAcrRJJyWxr4NKpURJ__UuSlBzlAUn; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 14:45:23 GMT (check if it's your IP address or e.g. a cluster IP)"
+              "finding"      : "set-cookie: __cf_bm=2Yc04bC1.b02_NJTICrPzi5x59D.47Ybqes0pQ8ry1w-1789655631.3146827-1.0.1.1-TXinQgQnhDXFWed3eIQZr38lUR95thIUYi8RaRBCKyJO5AeNxUJynQVVXKQ3sC20q99JXrD.0WHppJzHDn74M8MUTbFPBgi3ykBaj5lyBqdwml.tKty2WweSiTNVMQgl; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 15:03:51 GMT (check if it's your IP address or e.g. a cluster IP)"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -2957,6 +2957,6 @@
               "ip"           : "renovfriches.ademe.fr/104.18.0.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "90"
+              "finding"      : "88"
           }
 ]
