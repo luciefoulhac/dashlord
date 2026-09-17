@@ -1,8 +1,8 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Thu, 17 Sept 2026 09:31:30",
-	"created": "2026-09-17T09:31:30.927811233Z",
+	"@generated": "Thu, 17 Sept 2026 10:14:15",
+	"created": "2026-09-17T10:14:15.662421935Z",
 	"insights":[
 		{
 			"level": "Info",
@@ -35,14 +35,6 @@
 			"key": "insight.endpoint.total",
 			"description": "Count of total endpoints",
 			"statistic": "2"
-		},
-		{
-			"level": "Info",
-			"reason": "Informational",
-			"site": "https://selecdepol.fr",
-			"key": "insight.response.slow",
-			"description": "Percentage of slow responses",
-			"statistic": "25"
 		}
 	],
 	"site":[ 
@@ -63,14 +55,24 @@
 					"desc": "<p>The Content Security Policy fails to define one of the directives that has no fallback. Missing/excluding them is the same as allowing anything.</p>",
 					"instances":[ 
 						{
-							"id": "17",
+							"id": "23",
 							"uri": "https://selecdepol.fr",
 							"nodeName": "https:\/\/selecdepol.fr",
 							"method": "GET",
 							"param": "content-security-policy",
 							"attack": "",
-							"evidence": "default-src 'none'; script-src 'nonce-VtImIvMQQJoV9C4KU8RSIL' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"evidence": "default-src 'none'; script-src 'nonce-SMgw0PTxpAwk8kWZwC88ZZ' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
 							"otherinfo": "The directive(s): form-action is/are among the directives that do not fallback to default-src."
+						},
+						{
+							"id": "0",
+							"uri": "https://selecdepol.fr/robots.txt",
+							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-BKkIqnfn4TC1yQPMJTOHXi' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src."
 						},
 						{
 							"id": "1",
@@ -79,18 +81,18 @@
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'none'; script-src 'nonce-5CALVzNnnoptP2fHxErCsX' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"evidence": "default-src 'none'; script-src 'nonce-GmWHo6CHe0N8Ccg3Pbpro0' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
 							"otherinfo": "The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src."
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": true,
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>The directive(s): form-action is/are among the directives that do not fallback to default-src.</p>",
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10055",
@@ -103,23 +105,23 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
+							"id": "10",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'none'; script-src 'nonce-SMgw0PTxpAwk8kWZwC88ZZ' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"otherinfo": "script-src includes unsafe-eval."
+						},
+						{
 							"id": "9",
 							"uri": "https://selecdepol.fr",
 							"nodeName": "https:\/\/selecdepol.fr",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'none'; script-src 'nonce-VtImIvMQQJoV9C4KU8RSIL' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
-							"otherinfo": "script-src includes unsafe-eval."
-						},
-						{
-							"id": "13",
-							"uri": "https://selecdepol.fr",
-							"nodeName": "https:\/\/selecdepol.fr",
-							"method": "GET",
-							"param": "Content-Security-Policy",
-							"attack": "",
-							"evidence": "default-src 'none'; script-src 'nonce-hthrgFxTLQDtljNz3xvkp0' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"evidence": "default-src 'none'; script-src 'nonce-tM0PXfBuDtUXoFczTA8asv' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
 							"otherinfo": "script-src includes unsafe-eval."
 						},
 						{
@@ -129,17 +131,17 @@
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'none'; script-src 'nonce-aI48NTDmWka2dxsmThRqrt' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"evidence": "default-src 'none'; script-src 'nonce-BKkIqnfn4TC1yQPMJTOHXi' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
 							"otherinfo": "script-src includes unsafe-eval."
 						},
 						{
-							"id": "10",
+							"id": "11",
 							"uri": "https://selecdepol.fr/sitemap.xml",
 							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'none'; script-src 'nonce-5CALVzNnnoptP2fHxErCsX' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"evidence": "default-src 'none'; script-src 'nonce-GmWHo6CHe0N8Ccg3Pbpro0' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
 							"otherinfo": "script-src includes unsafe-eval."
 						}
 					],
@@ -150,7 +152,7 @@
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10055",
@@ -169,7 +171,7 @@
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'none'; script-src 'nonce-VtImIvMQQJoV9C4KU8RSIL' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"evidence": "default-src 'none'; script-src 'nonce-SMgw0PTxpAwk8kWZwC88ZZ' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
 							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
@@ -179,7 +181,7 @@
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'none'; script-src 'nonce-hthrgFxTLQDtljNz3xvkp0' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"evidence": "default-src 'none'; script-src 'nonce-tM0PXfBuDtUXoFczTA8asv' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
 							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
@@ -189,7 +191,7 @@
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'none'; script-src 'nonce-aI48NTDmWka2dxsmThRqrt' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"evidence": "default-src 'none'; script-src 'nonce-BKkIqnfn4TC1yQPMJTOHXi' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
 							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
@@ -199,7 +201,7 @@
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'none'; script-src 'nonce-5CALVzNnnoptP2fHxErCsX' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+							"evidence": "default-src 'none'; script-src 'nonce-GmWHo6CHe0N8Ccg3Pbpro0' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
 							"otherinfo": "style-src includes unsafe-inline."
 						}
 					],
@@ -210,7 +212,7 @@
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10054",
@@ -223,7 +225,7 @@
 					"desc": "<p>A cookie has been set with its SameSite attribute set to \"none\", which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
 					"instances":[ 
 						{
-							"id": "43",
+							"id": "41",
 							"uri": "https://selecdepol.fr",
 							"nodeName": "https:\/\/selecdepol.fr",
 							"method": "GET",
@@ -253,7 +255,7 @@
 					"desc": "<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
 					"instances":[ 
 						{
-							"id": "41",
+							"id": "40",
 							"uri": "https://selecdepol.fr",
 							"nodeName": "https:\/\/selecdepol.fr",
 							"method": "GET",
@@ -273,7 +275,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "40",
+							"id": "43",
 							"uri": "https://selecdepol.fr/sitemap.xml",
 							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
 							"method": "GET",
@@ -290,7 +292,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10035",
@@ -303,7 +305,7 @@
 					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
 					"instances":[ 
 						{
-							"id": "51",
+							"id": "48",
 							"uri": "https://selecdepol.fr",
 							"nodeName": "https:\/\/selecdepol.fr",
 							"method": "GET",
@@ -313,7 +315,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "50",
+							"id": "51",
 							"uri": "https://selecdepol.fr/robots.txt",
 							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
 							"method": "GET",
@@ -323,7 +325,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "48",
+							"id": "49",
 							"uri": "https://selecdepol.fr/sitemap.xml",
 							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
 							"method": "GET",
@@ -340,7 +342,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10096",
@@ -353,64 +355,64 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server. - Unix</p>",
 					"instances":[ 
 						{
-							"id": "54",
+							"id": "56",
 							"uri": "https://selecdepol.fr",
 							"nodeName": "https:\/\/selecdepol.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1789637488",
-							"otherinfo": "1789637488, which evaluates to: 2026-09-17 09:31:28."
+							"evidence": "1789640053",
+							"otherinfo": "1789640053, which evaluates to: 2026-09-17 10:14:13."
 						},
 						{
-							"id": "52",
+							"id": "55",
 							"uri": "https://selecdepol.fr",
 							"nodeName": "https:\/\/selecdepol.fr",
 							"method": "GET",
 							"param": "set-cookie",
 							"attack": "",
-							"evidence": "1789637488",
-							"otherinfo": "1789637488, which evaluates to: 2026-09-17 09:31:28."
+							"evidence": "1789640053",
+							"otherinfo": "1789640053, which evaluates to: 2026-09-17 10:14:13."
 						},
 						{
-							"id": "55",
+							"id": "57",
+							"uri": "https://selecdepol.fr/robots.txt",
+							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1789640053",
+							"otherinfo": "1789640053, which evaluates to: 2026-09-17 10:14:13."
+						},
+						{
+							"id": "53",
 							"uri": "https://selecdepol.fr/robots.txt",
 							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
 							"method": "GET",
 							"param": "set-cookie",
 							"attack": "",
-							"evidence": "1789637488",
-							"otherinfo": "1789637488, which evaluates to: 2026-09-17 09:31:28."
+							"evidence": "1789640053",
+							"otherinfo": "1789640053, which evaluates to: 2026-09-17 10:14:13."
 						},
 						{
-							"id": "56",
-							"uri": "https://selecdepol.fr/sitemap.xml",
-							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1789637488",
-							"otherinfo": "1789637488, which evaluates to: 2026-09-17 09:31:28."
-						},
-						{
-							"id": "53",
+							"id": "52",
 							"uri": "https://selecdepol.fr/sitemap.xml",
 							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
 							"method": "GET",
 							"param": "set-cookie",
 							"attack": "",
-							"evidence": "1789637488",
-							"otherinfo": "1789637488, which evaluates to: 2026-09-17 09:31:28."
+							"evidence": "1789640053",
+							"otherinfo": "1789640053, which evaluates to: 2026-09-17 10:14:13."
 						}
 					],
 					"count": "5",
 					"systemic": true,
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1789637488, which evaluates to: 2026-09-17 09:31:28.</p>",
+					"otherinfo": "<p>1789640053, which evaluates to: 2026-09-17 10:14:13.</p>",
 					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
 					"cweid": "497",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10094",
@@ -423,54 +425,54 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
+							"id": "85",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "4hx3oeOZy5vReeM6AuQDZiuUEVBHDk54zVqdbklzH6I-1789640053",
+							"otherinfo": "\uFFFD\\x001cw\uFFFD\uFFFD\u02DB\uFFFDy\uFFFD:\\x0002\uFFFD\\x0003f+\uFFFD\\x0011PG\\x000eNx\uFFFDZ\uFFFDnIs\\x001f\uFFFD>\u05FF=\uFFFD4\uFFFD"
+						},
+						{
+							"id": "105",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "cqbhKVAepBtgsGGitHbitEHHXf6ffTbRG0yWR34p_WM-1789640053",
+							"otherinfo": "r\uFFFD\uFFFD)P\\x001e\uFFFD\\x001b`\uFFFDa\uFFFD\uFFFDv\uFFFDA\uFFFD]\uFFFD\uFFFD}6\uFFFD\\x001bL\uFFFDG~)\uFFFDc>\u05FF=\uFFFD4\uFFFD"
+						},
+						{
 							"id": "84",
-							"uri": "https://selecdepol.fr",
-							"nodeName": "https:\/\/selecdepol.fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Ppu53OntsY7gPSPZBxtcDaFUFX3NWLy9xU4e6Wimg64-1789637488",
-							"otherinfo": ">\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD=#\uFFFD\\x0007\\x001b\\\r\uFFFDT\\x0015}\uFFFDX\uFFFD\uFFFD\uFFFDN\\x001e\uFFFDh\uFFFD\uFFFD\uFFFD>\u05FF=\uFFFD~\uFFFD\uFFFD"
-						},
-						{
-							"id": "92",
-							"uri": "https://selecdepol.fr",
-							"nodeName": "https:\/\/selecdepol.fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "mX8ZUJFBvvcqPGCk1zWfSMKTxGcQOH",
-							"otherinfo": "\uFFFD\\x0019P\uFFFDA\uFFFD\uFFFD*<`\uFFFD\uFFFD5\uFFFDH\u0093\uFFFDg\\x00108"
-						},
-						{
-							"id": "91",
 							"uri": "https://selecdepol.fr/robots.txt",
 							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "x61sOFJjtJu4D4GrLYm1PrPItzs9YR9K1iQFRJniGHo-1789637488",
-							"otherinfo": "\u01EDl8Rc\uFFFD\uFFFD\uFFFD\\x000f\uFFFD\uFFFD-\uFFFD\uFFFD>\uFFFD\u0237;=a\\x001fJ\uFFFD$\\x0005D\uFFFD\uFFFD\\x0018z>\u05FF=\uFFFD~\uFFFD\uFFFD"
+							"evidence": "qQYnRssCqPouIf8jiFpvNFKrmRGqUTRSJYpw9gXy2bY-1789640053",
+							"otherinfo": "\uFFFD\\x0006'F\uFFFD\\x0002\uFFFD\uFFFD.!\uFFFD#\uFFFDZo4R\uFFFD\uFFFD\\x0011\uFFFDQ4R%\uFFFDp\uFFFD\\x0005\uFFFD\u0676>\u05FF=\uFFFD4\uFFFD"
 						},
 						{
-							"id": "96",
+							"id": "86",
 							"uri": "https://selecdepol.fr/sitemap.xml",
 							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "MteAJqQbtvMtpDjJCF7bKj3cNdXGmNzrVFclzcAiXuY-1789637488",
-							"otherinfo": "2\u05C0&\uFFFD\\x001b\uFFFD\uFFFD-\uFFFD8\uFFFD\\x0008^\uFFFD*=\uFFFD5\uFFFD\u0198\uFFFD\uFFFDTW%\uFFFD\uFFFD\"^\uFFFD>\u05FF=\uFFFD~\uFFFD\uFFFD"
+							"evidence": "1-YRAAXRdu2c8SFRrzdWLe_Om6GNMUEh9oJHTpOVhIVE8HPLu8UTEsBlmMlk6R5SFOAEK2",
+							"otherinfo": "\uFFFD\uFFFD\\x0011\\x0000\\x0005\uFFFDv\uFFFD\uFFFD!Q\uFFFD7V-\uFFFD\u039B\uFFFD\uFFFD1A!\uFFFD\uFFFDGN\uFFFD\uFFFD\uFFFD\uFFFDD\uFFFDs\u02FB\uFFFD\\x0013\\x0012\uFFFDe\uFFFD\uFFFDd\uFFFD\\x001eR\\x0014\uFFFD\\x0004+"
 						}
 					],
 					"count": "4",
 					"systemic": false,
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>>\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD=#\uFFFD\\x0007\\x001b\\\r\uFFFDT\\x0015}\uFFFDX\uFFFD\uFFFD\uFFFDN\\x001e\uFFFDh\uFFFD\uFFFD\uFFFD>\u05FF=\uFFFD~\uFFFD\uFFFD</p>",
+					"otherinfo": "<p>\uFFFD\\x001cw\uFFFD\uFFFD\u02DB\uFFFDy\uFFFD:\\x0002\uFFFD\\x0003f+\uFFFD\\x0011PG\\x000eNx\uFFFDZ\uFFFDnIs\\x001f\uFFFD>\u05FF=\uFFFD4\uFFFD</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "319",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10055",
@@ -483,7 +485,7 @@
 					"desc": "<p>The message contained both CSP specified via header and via Meta tag. It was not possible to union these policies in order to perform an analysis. Therefore, they have been evaluated individually.</p>",
 					"instances":[ 
 						{
-							"id": "11",
+							"id": "13",
 							"uri": "https://selecdepol.fr",
 							"nodeName": "https:\/\/selecdepol.fr",
 							"method": "GET",
@@ -493,7 +495,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "16",
+							"id": "12",
 							"uri": "https://selecdepol.fr/robots.txt",
 							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
 							"method": "GET",
@@ -503,7 +505,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "15",
+							"id": "14",
 							"uri": "https://selecdepol.fr/sitemap.xml",
 							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
 							"method": "GET",
@@ -520,7 +522,7 @@
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10109",
@@ -533,33 +535,33 @@
 					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Client Spider may well be more effective than the standard one.</p>",
 					"instances":[ 
 						{
-							"id": "46",
-							"uri": "https://selecdepol.fr",
-							"nodeName": "https:\/\/selecdepol.fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script nonce=\"VtImIvMQQJoV9C4KU8RSIL\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'pZgacIg7Usan2qOLLlMpLjezX3Wjbz3FMEXh5qjKiDk-1789637488-1.2.1.1-U5bf96eRLlJF.OAPt58.TXIV0lSlqTsjP3zQ9elTWQTXUF2ZxH1VcSC4Kp.c40by',cITimeS: '1789637488',cN: 'VtImIvMQQJoV9C4KU8RSIL',cRay: 'a3c7191f483ba227',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'precursor_interstitial',cUPMDTk:\"/?__cf_chl_tk=2ehx9mMCpdqqEP5idF.ue.ca1TsapDMY_xWcAcDJnSs-1789637488-1.0.1.1-heIxgDcLxQiJaQe1rnheznDk9xOZlyvSrW2lPE9BMZs\",cvId: '3',cZone: 'selecdepol.fr',fa:\"/?__cf_chl_f_tk=2ehx9mMCpdqqEP5idF.ue.ca1TsapDMY_xWcAcDJnSs-1789637488-1.0.1.1-heIxgDcLxQiJaQe1rnheznDk9xOZlyvSrW2lPE9BMZs\",md: 'OtDVAU6sR9tJMSfmHCRpt.GYprUjNkTM6nFtV29Y4Vs-1789637488-1.2.1.1-Y.kVFErIsH0t6lK8J3rA6U6VLJLzZPwwOVQwntLGEkd.FPRw3HRCJGhLgSvcyKuQW1JttWU9rIFNCk.sutA1gyOhUOWGcU5EJ1Sxi_avAI5E6_9zqq4Bvq3LomIceX9TGUe402xSQXAvAgCBTucFbQqGH.oM0Z.R5AcMafXHIxtkX796.P1Jq7PbN.ZmPXskORDpKNyrYN0yJ79EHLaNozKWCZFs7YlML3XcOaujhH0iipVo4agccUXuyCQRCNtD1O7nXQN7hLNVHlKK_rzbFchA_yx2Po4wT6kP9MtqIppxW.g6o3r8vzkwHCnFAwg4tsGWx1tSexA6PbnGrUxbclxZE9bKMGNnSM65uoD.NvIXXnYdwihYtTpY1OxMUATC_krmb77wPSmOKfQli_It.ub18IjkYsnXpB7z5Y8bRpsRiAZHnFg9ZwZ6aA5X29d7.g97n78uC.JbABowH07vMMDW1nxdPvd7r4yt3ZmWETC7ATBvhdLTAKrNSLc1sPjaxaJnk9eSueLuva8XC.8HMMKn3hXieuC4j3cQJOhvUcUuppx0rNF45nkMpPuem65dzViF3SNrzQVxXPr6AeKx41zkge57C4KNyQILWpLJ62R2QpVvIj7SG725alnv0zytpOc3pXGKAEI7uCP2uyRU2hd6UxCiMbCHdyPiZrZH9EadZJe4.O.osxy.BjVLIW5O_PbpohxpQHGYRMxxaA8KkfZBdo1j_BP9VEcOUuJRNuM_qZGcNTuTljN3m2xSpXUPH9zAQ.K3Tfs4suInA3t_jE3AEn6GHE1PmshzBwESAO7jz_Ka55_GmxvUouv7qlI_6JgnKwpCPCZFtO5m8hx232wf5Z0Cqsaykzz5hn1aMFB8Bes9HF8jxQGfIiogQrJDShBPcz77zGQoinzNi8zwBg',mdrd: '',pi: true,pp: {r: 'a3c7191f483ba227',t: btoa(String(1789637488))},};var a = document.createElement('script');a.nonce = 'VtImIvMQQJoV9C4KU8RSIL';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/precursor_interstitial/v1?ray=a3c7191f483ba227';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/?__cf_chl_rt_tk=2ehx9mMCpdqqEP5idF.ue.ca1TsapDMY_xWcAcDJnSs-1789637488-1.0.1.1-heIxgDcLxQiJaQe1rnheznDk9xOZlyvSrW2lPE9BMZs\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
-							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
-						},
-						{
 							"id": "44",
 							"uri": "https://selecdepol.fr",
 							"nodeName": "https:\/\/selecdepol.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script nonce=\"hthrgFxTLQDtljNz3xvkp0\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'vlnYreO48_WPb9Dec6sjoqniQyZ44kAd4sUCclUgUFc-1789637488-1.2.1.1-TtBhirFT9_YkMZoYgE0SRdZmXdIJawS0xoNM1XgqZElznW2QNNWiWyRKxXlUD5no',cITimeS: '1789637488',cN: 'hthrgFxTLQDtljNz3xvkp0',cRay: 'a3c7191edef8e02b',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'precursor_interstitial',cUPMDTk:\"/?__cf_chl_tk=Brhq6.EhRAudx9tQRePOD8gr4DNPqYUyGOkkGspVzLI-1789637488-1.0.1.1-.q9m.GuferQO7jK2Wz650.BdDbBlgL4oBXGimzTvAvY\",cvId: '3',cZone: 'selecdepol.fr',fa:\"/?__cf_chl_f_tk=Brhq6.EhRAudx9tQRePOD8gr4DNPqYUyGOkkGspVzLI-1789637488-1.0.1.1-.q9m.GuferQO7jK2Wz650.BdDbBlgL4oBXGimzTvAvY\",md: 'cCyNOzsmOaNHfYzyRbgqd.aC8xO6xnMrOzjNYP5EOCQ-1789637488-1.2.1.1-YMh0ulmWYIREn32M_yeHhowBpFIg2e8ZcqltomfuXfU6BKlX3BNdmOqqwk8ISraJ98V3UdMWKKMxv80lPPHu11y6ThZoemwpl2rp5iZKsjGq.UL6cVkoWuqFwB8bl_HVdqPXsJKDkmJoXUt_zfIGcAIGWGn23UqOMt7F.yt6YcLfETuEC07G5oVqjwkDE5HHFkE__eBSdgCtQzXStsxkksw1A4_Or.bo2p.4VHPfgzUdXeLi6QrMUQG2WJbfIsO.Fjjo1kx9eVP3xQpyfSlx9cZMvJywDDZkW8ZYfnDbpfdcpGCR3xrlPT51xepmrW3RUa_Eg8EsiiSEoufYdfoBFY5mknnanoE78adZAC45OAdY3ZOPsIH1eBBFq3QqtGyh7RAytgs07g5DD6kfLQ.welwCfyrbYbNeGNCD7eE_pfiZiPXquFUBXrIV8EtfRKLzdIpZKVy5.Yk8TBFcc23KMKgbMDwVBmzOoId.pbdsNM.MBN3I1aCor.eNfvv3bht2eBu0UanaTjIw3D0GM7_Q67R.z8EzPQAWRHNrOTDwmwwGi4..gQOyTymila5Df1a7FjTBshNW5vjU_n9L6n_VYIW4wWXmUeR6H0.3UUbC26TfsPUZPmybFunChsbjhFScoxew4Q4_mbvQv7sbhPoNN8OTjDWAMJ9MLq8B3MpRiku8vtWUOy2epvSANmSCeAji6wFmEdO6A65pLyYAoXbvOeEgdNvbw1yQKC1fU5928S2CfQdD9GixLOh9ok7kIb2M1fAV02rhjoPGlxek1CuND0NOTueyG4cqTWbQSiqQ.3O6hnIHlSeBN5fGpeIYjp74OF0QzP5hoygvDBK0h0f5Zs7RGknJWjnzRWHdcozW5_s8bzgMs8JCwy3eICOU_p8LNKn2sJQWP9AacIeScS3U_RbsrjUNNgL7WEDM2T1lfoMcUQw_ic9VbdyPH_fBhaDRX6zY0jSRxQOZhSK4bgzHHwXTfT7OJxoEY3TCZCcweLoWkFiefpYHs5CIG0jTtH53Z0fowIcYt28n2Rl8tGATfGATRml71iD4rSwUC6GkhKo',mdrd: '',pi: true,pp: {r: 'a3c7191edef8e02b',t: btoa(String(1789637488))},};var a = document.createElement('script');a.nonce = 'hthrgFxTLQDtljNz3xvkp0';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/precursor_interstitial/v1?ray=a3c7191edef8e02b';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/?__cf_chl_rt_tk=Brhq6.EhRAudx9tQRePOD8gr4DNPqYUyGOkkGspVzLI-1789637488-1.0.1.1-.q9m.GuferQO7jK2Wz650.BdDbBlgL4oBXGimzTvAvY\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"evidence": "<script nonce=\"SMgw0PTxpAwk8kWZwC88ZZ\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'QAJEd6MuDpW6vLBjoDE1DYhER_F14tqgt95zmnrVx9c-1789640053-1.2.1.1-vylITmJ9iZZ8dtg6bhhwNJm7v3ttbqIG53UhHf8YEFOeGnSZ4VixWwXoP5QEH0EH',cITimeS: '1789640053',cN: 'SMgw0PTxpAwk8kWZwC88ZZ',cRay: 'a3c757bbcad1369b',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'precursor_interstitial',cUPMDTk:\"/?__cf_chl_tk=rHKOVK8ldzXVANF7uyzwndMvePyjg3yXPUxtj.FsH0Q-1789640053-1.0.1.1-.S35BU9pEGOdJrhIw6Z5EVUm4B_4v9LWvpY0DfsnCX4\",cvId: '3',cZone: 'selecdepol.fr',fa:\"/?__cf_chl_f_tk=rHKOVK8ldzXVANF7uyzwndMvePyjg3yXPUxtj.FsH0Q-1789640053-1.0.1.1-.S35BU9pEGOdJrhIw6Z5EVUm4B_4v9LWvpY0DfsnCX4\",md: '.BNPzz.Ml3kCwDRLCt27S8kDKucRXq6I7k1Zcm0Ti6c-1789640053-1.2.1.1-236yDTWEss_8DM4j5xc7wakg8KcTT6FdCLfQh4Ky4H2YVEsMbAT8B2bc4ucBIZpkN_ppaEOan8fvTyvNjhVeNIbAtu2CxJGomTjbOfy0kGUr4b3KIOMVUEX1Qirly3vrvchzg2StavhyeVXEQj9vVQQ97H46qjt0UnmHgzKDccyCXClkDy5lPxo7fdf2yulfDka3ELMhuH5fHpCHclEeQxCfHuQ9alu4rTzv7fKA23sEz6toGRH5X.tsTpmIF7vofxK8R5fO6Ppm5h8YHV3yQLq3irpubyvocvAl.CSeUo8hWxY7CQjaq_DOkrLs8_B0I4oPmjegzFwI7VzSL3YkD2MDjSsP1iSwoz1Fk.eDm5K.9rP.XV4Wxg0LuYYUt64blpMkv.CI5vI8S0h07VJ2jh5nJg14ZlgO7JNqtu8Q8DVaCJyCNa0tnB8VVlvIDFRx224vqFL4_7UHUd76gw9yd698q2NfBOAyFbGt28G0mnHoxNkfMBsmPlxKrrMGXQpTvH3YWV0717zfRPeb0yNRQJ1oNS5cu9tA6gZicjasjwFhcSQgsqktK27r6EQmBSgCXSPPeB.B1oUSoWmesBfoJUnJLUwlbqzAexKCv6IX2CLjYWNOMUUarvU_uaKSaEfXOp2UAFbus4Inh_a61cgo5G8ixbvRhmc56roghNsaCKvg9pY9p3GjuMbFIsh5aTHoN94NOd7Jv9vMBITL22l4SexK41gRAY5ljaO5ZH.OcDqhaT457Eq.xQQyoWaZCyf7FRa6USnZavDbf6pOAkXdK7pkVuK_0wXcR5jZ4xp5wK96TCsPY7MyjfuJTlwetkIZ0xZqWQJKo1k.sedU5HWmHp2WhNm_.fzBI1aAt_v6BrJbhGoTkz4N4w0eDZ977cYs_ntXplCFy3v7DJWFHPgJOw',mdrd: '',pi: true,pp: {r: 'a3c757bbcad1369b',t: btoa(String(1789640053))},};var a = document.createElement('script');a.nonce = 'SMgw0PTxpAwk8kWZwC88ZZ';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/precursor_interstitial/v1?ray=a3c757bbcad1369b';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/?__cf_chl_rt_tk=rHKOVK8ldzXVANF7uyzwndMvePyjg3yXPUxtj.FsH0Q-1789640053-1.0.1.1-.S35BU9pEGOdJrhIw6Z5EVUm4B_4v9LWvpY0DfsnCX4\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
 							"id": "47",
+							"uri": "https://selecdepol.fr",
+							"nodeName": "https:\/\/selecdepol.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script nonce=\"tM0PXfBuDtUXoFczTA8asv\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'p1A3Ub3Yhlnz24inrRJxwE1rUE46GaDmFEXWGtqZOKg-1789640053-1.2.1.1-Swo1Ar20F.E4W7zmPnmQz9gEnF_qbnOkuq3tVuQ89WVbYx7Fpi0Ls5p87obmzkd5',cITimeS: '1789640053',cN: 'tM0PXfBuDtUXoFczTA8asv',cRay: 'a3c757bb5f4ed658',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'precursor_interstitial',cUPMDTk:\"/?__cf_chl_tk=.sEhQXa3p8yANQS4t0SJCCsZ_AsPTbepibDKWLLiPpE-1789640053-1.0.1.1-mn1IzT52bjxRhuqwqymTAbrMC.a9v1lM3Z2dkVmgBeg\",cvId: '3',cZone: 'selecdepol.fr',fa:\"/?__cf_chl_f_tk=.sEhQXa3p8yANQS4t0SJCCsZ_AsPTbepibDKWLLiPpE-1789640053-1.0.1.1-mn1IzT52bjxRhuqwqymTAbrMC.a9v1lM3Z2dkVmgBeg\",md: 'eZhGKi8bzgOX._kfablfGsqdij__gepeCfokCudffw8-1789640053-1.2.1.1-X45vx6oLd9Ys3_0Q0oGVtIcsjp7ubFbkqJNPI9Agz1kILKRYa58telB.M5VoXTt9m71EcXwAE_eWMMUvZ0OpuQvUL_a5EyfzpqIkJoycTdQBPQe_JXoI3gGksaHRxbJLRwv_CkBMQauZMFsMB..ZtbQ3ANxbWYUMR5z8Q03.rTe.SupftcSsGohrLLu7OtGyG1nE_oNnc9pF.7cIsTta31.Pp.PpcXAsOJkAhBEmi637YADl16F_PFD_dtTpUzTi.17JF6BhToE54Ge4pQ4KAgrRI9kd46KZUglbf0Oa_Uq3soUdvCxvYAisSNj_wJxoCnIVRtTNLhlPr4MFwf0j6TeADgcdsMaveYO153HPfz3AgqQ4obF5eoDOkVITCsUJJVKlzuEcD6bRod2KYHzYrxx8ox1lcsQJgHxGJ2Kd.oiMh6_LCM44PpQHjPoBNwIDaz6viKH1iYAOV12ua8PSV0QSDDAFjYuhX71MP5uJQlSGvgsZdO2G.FUNvbve5pjtYTGj4bMkECJJt.GfVtxmZWK8I3Lwu5wytusWGFNx0w_szNrKJ_Yv3MAi9w_LsyNXtSlvNRwJ_ksGSc9Tn6MMKbGrw_mCx0EfdnbCNurVsnglFT.JdbCTXxR8_FIHtM1kG2xQYEheJ9b54VI130bccU4t.SRG22HhPFvNfPq7ITvgp2kuZagl6qhzYxzM4.xj5FzzMQ81QhTFKkr.EURNURuQa1xKW6uudAlAmLCU54IP6HrrGuNPVUyXwPtOt2NJTIeuHv0TPDGv1GEIbL1IqR9girK4tTn_6QD9ArT8U60Vvef4RyXdZjCmxD3VJN9QiSdLliUNwojkSDiqcwxi8e_Dcx9Y3ZUdBiB0WPmlqYjs6zbS58jm1kekdEuZN5nNGGXJH0vPFq8o6SGRygRd8qDsssSwvKqP.8trOGQU9quhPrOd87FydfPNP3BLw0VGmcvsTzY_SMJvKWfaWReouBDgK6Qn.j6Mm20wzTxZXgUlUQHv9VssomEMIRtaVT96X8.Ix4MryuHzy2wm4ddXYHp1QbJJgtC8pjLmrxEesKA',mdrd: '',pi: true,pp: {r: 'a3c757bb5f4ed658',t: btoa(String(1789640053))},};var a = document.createElement('script');a.nonce = 'tM0PXfBuDtUXoFczTA8asv';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/precursor_interstitial/v1?ray=a3c757bb5f4ed658';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/?__cf_chl_rt_tk=.sEhQXa3p8yANQS4t0SJCCsZ_AsPTbepibDKWLLiPpE-1789640053-1.0.1.1-mn1IzT52bjxRhuqwqymTAbrMC.a9v1lM3Z2dkVmgBeg\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						},
+						{
+							"id": "46",
 							"uri": "https://selecdepol.fr/robots.txt",
 							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script nonce=\"aI48NTDmWka2dxsmThRqrt\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: '.hurXxfMGGwakYbeLjMmvEATn8n.96lfgP_cYENohX4-1789637488-1.2.1.1-Hd5Oj03i8lcHM.mFlHzJrvgfjYv13wK27NVqqB9ViHUvjDT.YEVrTA_uBV1v4W9g',cITimeS: '1789637488',cN: 'aI48NTDmWka2dxsmThRqrt',cRay: 'a3c7191f68179d1c',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'precursor_interstitial',cUPMDTk:\"/robots.txt?__cf_chl_tk=SGAKkIrMmNoKk4u9x9HtwUB53He3U3DTfTITsp61AVU-1789637488-1.0.1.1-sae3rGSLKtMCK8_NuhinCqVv_EZoWp3dQSpyN5saszg\",cvId: '3',cZone: 'selecdepol.fr',fa:\"/robots.txt?__cf_chl_f_tk=SGAKkIrMmNoKk4u9x9HtwUB53He3U3DTfTITsp61AVU-1789637488-1.0.1.1-sae3rGSLKtMCK8_NuhinCqVv_EZoWp3dQSpyN5saszg\",md: 'ErQ1Rfxuie7VMQ4zx82CkhJzt9IOVLjYpHGsfVUSny4-1789637488-1.2.1.1-3i4N7k716jiBN9Dr16kyLttZlnFGqdqZflONbaEpM_Pn7O2Kjj0eLvXKxHSSrtaMgm.MeAzCjFDVxcJ9htVwtnll6aaSmi15rPUOLcx9YAXD1y83S2RaGBfFPL9xZ7haonc.MbUZYXodC6gRiqWBmVTif26jCrxfIXbrv6RI7aHVhObQTWUTroF8PXeudDcm4hRwOu16zdGFN4MaY3JtwPvP5HOY_UxbpdPL6g2HNuggjgg9uBtimyPxryq57xt7NKOExe8fnQl9v8OD75F3F.z6FOFaQKA8rSrMA4SzUZi4L9tBJeDHJMFMGRTYIs4YL7KJ.g.N1m8luGz_Gue0jEiJqWqSPpS70cFDwV_SvIpa36GGGzb6Ips1sT9TrTMToZ8OlcxgWTXhx.NWp49rm2DI9uSOpDnWSDm1gZMP49aMeNIOGJW9mEgu98VwgO4U6L3E9AM2ihbxguCvk7BtqSjPF244yjPR5kpRcrnmtKNAbk3w.q4zbY2zkajYPfSpH8QmQ2dRxHWJ6rkvaBy.kEBhJG2fxcIPNQmCXJpDmA2B7Fnf44LxfFDJDrcF0bgEZ5KzkrseHiI9KUMy5zh0QLbDqU8errwE2HWTxMyqVsT7DGmD69qioGewoNqdRgtBTPt_FrAtMBbwG5WFzqmrYa7CqTL1KHLV5QOC.86hvcfcXhCWWuKzNU_1FfTq98W0zkc5SDeO08mPLm2p0GraHJpP.Xx8bC5JrecHBgn.CmVqfQVKv6oOF6EXqH62tp.W2_FBefpKmVaNnFiAUjvcxCn3Ngm.769i8ae6EwLsBBnYEYLfL4Ic_dtvr0N49DS8F.nrHOymNifCetJ7SLpNKSm6acvEebJk_IYeCd1VLERcchS6KTf0TWRW4otu7jRDt2FN77Wf5jtoRvrXFF76NQzXkAEgMyg9uQ6KRt73UWA',mdrd: '',pi: true,pp: {r: 'a3c7191f68179d1c',t: btoa(String(1789637488))},};var a = document.createElement('script');a.nonce = 'aI48NTDmWka2dxsmThRqrt';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/precursor_interstitial/v1?ray=a3c7191f68179d1c';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/robots.txt?__cf_chl_rt_tk=SGAKkIrMmNoKk4u9x9HtwUB53He3U3DTfTITsp61AVU-1789637488-1.0.1.1-sae3rGSLKtMCK8_NuhinCqVv_EZoWp3dQSpyN5saszg\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"evidence": "<script nonce=\"BKkIqnfn4TC1yQPMJTOHXi\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: '8HvlV6THOd7dynfS0p1UzyML15uvIKvsYa7sJtfdUko-1789640053-1.2.1.1-lvdikKeGMl97ZOLD5RKCFvz9PwKbsIZRgJM1Yn8bCOz.miue582m13Z.0OhsKYj2',cITimeS: '1789640053',cN: 'BKkIqnfn4TC1yQPMJTOHXi',cRay: 'a3c757bbc879d6e9',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'precursor_interstitial',cUPMDTk:\"/robots.txt?__cf_chl_tk=gWnJ1Q9oPXxJFaQtT8pUmErOe_IXNpscPmoOSFtK5CQ-1789640053-1.0.1.1-Z2rsix4vaYzcsz0jRwYsWeMD3PugW.IIwWGgtkoddmQ\",cvId: '3',cZone: 'selecdepol.fr',fa:\"/robots.txt?__cf_chl_f_tk=gWnJ1Q9oPXxJFaQtT8pUmErOe_IXNpscPmoOSFtK5CQ-1789640053-1.0.1.1-Z2rsix4vaYzcsz0jRwYsWeMD3PugW.IIwWGgtkoddmQ\",md: 'OzOOAJsipVZL.3BFUI7E2odXbRBEMu9SKo5kP42fmwU-1789640053-1.2.1.1-iAx6pOjqAAzUQISSjqLO2WTdGVPQI9wy_2Q9NrySMHiN6w745fqimTfN.yypnY0e2oLYw8pOVAHF51pqKYNxOgljm40R5zJzvB6UekDHrJ82HbiYMJhjZbCE5XPEROb3ZJOfKpHyoKTRHCXvVU8fubewVL61RpV1cnWe_a4JXusi_5ZxKHvRcEFprewCv.AimEYjwCCCiNNw02PMrTaj8sbsbwnOqF8uRS.wAm0fYEXz4HrqJXOfCIRlXuX6ZlQtpkz_ixlNRvUSQIWett1CPo29OZY3xWZaTw1K4AKu_n3nPKno6xmC9fXjJ4RvrvjTvoacerM0_k1RVhCt0t.bKX_voc9Hthfi2Fkkp7o3PD9Jm29retUPS4RSOwrBllcg5620tcU5RfPOrZN6dDSCoDLDiEcu7iQF6LcEj.tmBId4OYzEU9DOvrBViItF74BMDofSMKkHnarlP5kIE23TQ7A0gqqUophu32zq0.9bWzrpKxFDs4L7noI9tByx0kKtxg.Lica_f_Kbq.CMDgFGR0IvVhH8NcGSnc2W9wrO0paqi2JsRoJjQL9uSSyP_gMtGfrnUVHRahsmZySgIpKfbj0Kcik1k5qkNC4rLsb8_x0xM.wNo46xNzkIV.C6V0Kd39.5H9slKh.r_KlNxi834_XUL42QRW2g8kHlH2gM4RRLzWzlswagvLtC7uKyNytyRk3nLqygqBEwX6h28B4pIGwpZE1MR6E.lVLjqF1uwqgnw7R8YUqN5_KAkgrcHChrv5fFXLZ_L.LAIDDvB4.JRptv4ReBk2BocQ.Z6AarDnE5hc_Tl9S1_0P.Lf6Ln9.Z51X2c_qqAziKMWZBr2hXS3VEFcbDF.NqFyJWyjeZywmqyxphxx2bnH23yZaByuaIT1RcTBQY5gsY8JIMwfYDtbAMlIVjvun6ANN44ff3ykU',mdrd: '',pi: true,pp: {r: 'a3c757bbc879d6e9',t: btoa(String(1789640053))},};var a = document.createElement('script');a.nonce = 'BKkIqnfn4TC1yQPMJTOHXi';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/precursor_interstitial/v1?ray=a3c757bbc879d6e9';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/robots.txt?__cf_chl_rt_tk=gWnJ1Q9oPXxJFaQtT8pUmErOe_IXNpscPmoOSFtK5CQ-1789640053-1.0.1.1-Z2rsix4vaYzcsz0jRwYsWeMD3PugW.IIwWGgtkoddmQ\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
@@ -569,7 +571,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script nonce=\"5CALVzNnnoptP2fHxErCsX\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'EDKQp9xNAJUmboNG52bKDsaLi0f9t8ds2Befz4ftyFc-1789637488-1.2.1.1-m_ZHg9czO8MsG84yBOEj9iiOfepGMBJZ5fP_l1rj_BSBGMc87l.62w2rpHAlxJ72',cITimeS: '1789637488',cN: '5CALVzNnnoptP2fHxErCsX',cRay: 'a3c7191f685321a3',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'precursor_interstitial',cUPMDTk:\"/sitemap.xml?__cf_chl_tk=ImCdk6nOq4JVPFJmAgFL41MhYp.ij8JN_1_gR0rM_io-1789637488-1.0.1.1-d5QDrpZkdvGs5l830mjLsZHKx88lEf6ONrTzGMctLVA\",cvId: '3',cZone: 'selecdepol.fr',fa:\"/sitemap.xml?__cf_chl_f_tk=ImCdk6nOq4JVPFJmAgFL41MhYp.ij8JN_1_gR0rM_io-1789637488-1.0.1.1-d5QDrpZkdvGs5l830mjLsZHKx88lEf6ONrTzGMctLVA\",md: 'P31YJEIG3PPrw8Exag.UiVvej7OxRbasG6HJj0TDC2g-1789637488-1.2.1.1-D1AT1Ef958DzhV9mbGcgk7G665.CAWiaV5MaVB_RbrH_p8S23_Zn32HeNIQiiAnxVMhlq8GPBRs2aWw5hyanxUchUuu4IcJoNrTWqBcKrVzrAW2p4VfWMzMzyG8IcrBDlGfNvyrVBODCh0OjJZQZgvhJscRSEcRv.NMsUeAVf9BuO1OR3BamGtmW8yY.DEgx6hqJl2o0bwH8dBSLRF8KGK3QXGncUUBC63UgYomarlu9VnMTUeuYRzRYOaSymlprDD84IFWpaAGn4RDsjYnd8OO_lvrAmhJxPGXBixKzv8ZP4hZwWzzLqGcKLrE6dBhWv3bQBdQutLVkH19tjkyxpDhAphe8BuSmGhzq3y_qtzxwIDjP7pw6IQw616u.J_derQO2yRcCX49f_vmxFeF4opkalRiz.K8NsSc.diNibTvJarOQfi63Dp2uDJiCjJFCfbZGPZ_QPSO2iC5.aSC7WUStDcvIj.aC.OeQSQRUfQEnShhedygeQvxusR_5rcsk9fwY.0oY13.b6pWQzUQ2ohe_8Cx_9R6EYqVq_RJAH8PtBrPLmlpBQVwIN6v4s.JtPHTMZGRijYTe5LYpBWXGQGpdmvJM4QgCgKE1IwrtF44z66q5FuHOlKaAGLtWkQriZfa7T.PGYwUOYUQleQgap4DrJsJPT9fF3Vd67ioB_MUm716K5BxQeYBPfC5bmXi82qtWPQljJCT.iJhwg2HTIZvJi6uEgy9VDTsI3WwIgYMj2OtaiB8FL3YCYMb6fF0qRAdq1VISU92HFw33IIFCmRE7e0rHNix7UwClRr_7fSr9EpR.GTTEl.E72r0kJ3lYtGQNkSKX2rO9REus92s_LJ48AvLPOSfB3tJJdLy7DyOZv84sf3QtroCqakXPnF8T_ixo8_9ULYt.oSS7teHDVctkcnkyY01D4P30pXT_VPE',mdrd: '',pi: true,pp: {r: 'a3c7191f685321a3',t: btoa(String(1789637488))},};var a = document.createElement('script');a.nonce = '5CALVzNnnoptP2fHxErCsX';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/precursor_interstitial/v1?ray=a3c7191f685321a3';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/sitemap.xml?__cf_chl_rt_tk=ImCdk6nOq4JVPFJmAgFL41MhYp.ij8JN_1_gR0rM_io-1789637488-1.0.1.1-d5QDrpZkdvGs5l830mjLsZHKx88lEf6ONrTzGMctLVA\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
+							"evidence": "<script nonce=\"GmWHo6CHe0N8Ccg3Pbpro0\">(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'kMc.aKP8K.Ld9G_3HRE2xNpn2XAr38yDguhk0P6ZfH8-1789640053-1.2.1.1-4KmW0Z1GadjxuUMnRzQF5Z9pQn_GkLu9ql2FsYQEIEuFbqILEWwD8pnQ20chp7w4',cITimeS: '1789640053',cN: 'GmWHo6CHe0N8Ccg3Pbpro0',cRay: 'a3c757bbcdf6d6eb',cTplB: '0',cTplC:0,cTplO:0,cTplV:5,cType: 'precursor_interstitial',cUPMDTk:\"/sitemap.xml?__cf_chl_tk=h75SclxUoG0t2Fbb2T5lfPT.FUifn0gerqkSoMh6Fpo-1789640053-1.0.1.1-8GoXbvYrXwxLgnO_cNeYjbySpE8eTE00IPvIGc9SgGE\",cvId: '3',cZone: 'selecdepol.fr',fa:\"/sitemap.xml?__cf_chl_f_tk=h75SclxUoG0t2Fbb2T5lfPT.FUifn0gerqkSoMh6Fpo-1789640053-1.0.1.1-8GoXbvYrXwxLgnO_cNeYjbySpE8eTE00IPvIGc9SgGE\",md: 'Wuh6c7sB2LcMU56g4R8qHet8JOqMRarT3j1Td9Uo9sc-1789640053-1.2.1.1-f2VL3Uzb0GrB_J1k2m_GMVUdsARqcOHIt9lsrVjz5._K_7Nlv9Uu0SdZC.HX1asVp_kEIQoIHLWup1ZDhgJiIDw6hnYYKXF7PaUuKIuXlOEfxJuP.x4lz4mg.dkqUgATNw7rRiIuPqejn4vw57Btlc44CftQkijZYq_.J_PsmCmYHRVe_5euDDPxM8HeD6JR455YLncTgvle.Omfk_iWLk4bE.wp1iqVb2LYkyt.lgbxeODjZPTwQ.h.CpRN32rppxXZFC.t.ULKNsFqQzQCX19f8pMRKt3eJBouhbvpCFTWZywJf63oZM._o2U0atEPjFWFbDBGeCK_GDP_TrLiz_bs7Lt1NB00Cdx_IPWuPce0d2W2V1.OESPNCycRQNdn97OJ8r6otCaCcFpMbrc52WGlpZDN3sxrrZCarQUAhGT44mA.xyqUcMJAHTI1VMZpRzQRZ8dQHrPg2AUgKHjGeCciMLaaylmPPNeZYJAigDF9DJItJa87fXuOMZe.M5zjXRb6uCDeHqq3NuJ26tDK5ubStZkQQAYp9Wjw9ZnbkOsHkAZETsRB2JiFoS_z4wi7REn6_l8bhFY18W6tzomdjd0x9_oCGQ55bYYM6FP4F5sg4GpOcKL8tafwFRmAwSw0_6k973K2YiY29EAvidAoZPTX49BDLFLX.ly2ppIRGgwZMKnfq0VSx1RrzVLrjLJR7G5fgw7RMGtsH6FamZf5B6fLkZzcDQeDrQofjDfZVw52bA1WmSZSLq4bnl5x0fPO19lCC40odeBAHCbPfFDbuBjzvZffd2roHjQevCS6tbm3PLnUOOvGMbqh2BVHEvmbn84eaHo6YT4II6HKlfEA2rbg0KaULGoyNq4xXsHzKSBuDfXiHAA9ZtIFfijVcHVKiZ0BG.0_PIcUMRSUAuOrSJTKIdyQbswqCuCX4USvdR0',mdrd: '',pi: true,pp: {r: 'a3c757bbcdf6d6eb',t: btoa(String(1789640053))},};var a = document.createElement('script');a.nonce = 'GmWHo6CHe0N8Ccg3Pbpro0';a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/precursor_interstitial/v1?ray=a3c757bbcdf6d6eb';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,\"/sitemap.xml?__cf_chl_rt_tk=h75SclxUoG0t2Fbb2T5lfPT.FUifn0gerqkSoMh6Fpo-1789640053-1.0.1.1-8GoXbvYrXwxLgnO_cNeYjbySpE8eTE00IPvIGc9SgGE\"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
@@ -580,7 +582,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "6"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10049",
@@ -593,7 +595,7 @@
 					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
 					"instances":[ 
 						{
-							"id": "90",
+							"id": "102",
 							"uri": "https://selecdepol.fr",
 							"nodeName": "https:\/\/selecdepol.fr",
 							"method": "GET",
@@ -603,7 +605,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "107",
+							"id": "104",
 							"uri": "https://selecdepol.fr/robots.txt",
 							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
 							"method": "GET",
@@ -613,7 +615,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "111",
+							"id": "103",
 							"uri": "https://selecdepol.fr/sitemap.xml",
 							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
 							"method": "GET",
@@ -630,7 +632,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "90005",
@@ -643,7 +645,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "87",
+							"id": "93",
 							"uri": "https://selecdepol.fr",
 							"nodeName": "https:\/\/selecdepol.fr",
 							"method": "GET",
@@ -663,7 +665,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "101",
+							"id": "92",
 							"uri": "https://selecdepol.fr/sitemap.xml",
 							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
 							"method": "GET",
@@ -680,7 +682,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "90005",
@@ -693,7 +695,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "86",
+							"id": "91",
 							"uri": "https://selecdepol.fr",
 							"nodeName": "https:\/\/selecdepol.fr",
 							"method": "GET",
@@ -703,7 +705,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "95",
+							"id": "96",
 							"uri": "https://selecdepol.fr/robots.txt",
 							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
 							"method": "GET",
@@ -713,7 +715,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "100",
+							"id": "90",
 							"uri": "https://selecdepol.fr/sitemap.xml",
 							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
 							"method": "GET",
@@ -730,7 +732,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "90005",
@@ -743,7 +745,7 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "85",
+							"id": "87",
 							"uri": "https://selecdepol.fr",
 							"nodeName": "https:\/\/selecdepol.fr",
 							"method": "GET",
@@ -753,7 +755,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "93",
+							"id": "88",
 							"uri": "https://selecdepol.fr/robots.txt",
 							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
 							"method": "GET",
@@ -763,7 +765,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "98",
+							"id": "89",
 							"uri": "https://selecdepol.fr/sitemap.xml",
 							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
 							"method": "GET",
@@ -780,7 +782,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "90005",
@@ -793,7 +795,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "88",
+							"id": "94",
 							"uri": "https://selecdepol.fr",
 							"nodeName": "https:\/\/selecdepol.fr",
 							"method": "GET",
@@ -803,7 +805,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "99",
+							"id": "98",
 							"uri": "https://selecdepol.fr/robots.txt",
 							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
 							"method": "GET",
@@ -813,7 +815,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "105",
+							"id": "95",
 							"uri": "https://selecdepol.fr/sitemap.xml",
 							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
 							"method": "GET",
@@ -830,7 +832,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10112",
@@ -843,7 +845,7 @@
 					"desc": "<p>The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.</p>",
 					"instances":[ 
 						{
-							"id": "89",
+							"id": "100",
 							"uri": "https://selecdepol.fr",
 							"nodeName": "https:\/\/selecdepol.fr",
 							"method": "GET",
@@ -853,7 +855,7 @@
 							"otherinfo": "cookie:__cf_bm"
 						},
 						{
-							"id": "104",
+							"id": "101",
 							"uri": "https://selecdepol.fr/robots.txt",
 							"nodeName": "https:\/\/selecdepol.fr\/robots.txt",
 							"method": "GET",
@@ -863,7 +865,7 @@
 							"otherinfo": "cookie:__cf_bm"
 						},
 						{
-							"id": "109",
+							"id": "99",
 							"uri": "https://selecdepol.fr/sitemap.xml",
 							"nodeName": "https:\/\/selecdepol.fr\/sitemap.xml",
 							"method": "GET",
@@ -880,7 +882,7 @@
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "8"
 				}
 			]
 		}
