@@ -857,7 +857,7 @@
               "ip"           : "pfe-det.ademe.fr/104.18.1.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789647725"
+              "finding"      : "1789648062"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -865,7 +865,7 @@
               "port"         : "443",
               "severity"     : "MEDIUM",
               "cwe"          : "CWE-212",
-              "finding"      : "set-cookie: __cf_bm=QwFJFOgHW96tUUbjRAeOU4dwQFh9S8FP5j_Maq2wYco-1789647724.6576736-1.0.1.1-OcfwFAHEouYz79wHP0GBEIGgIDPOZmgjyMb2mH5n3Zi.5eRwuIucL6l9cPKVfxL1er37pxsefPg7DBJjooxq99jjIc.jfl6V82iwfrZpMQaV3BoSK6Eh6hDsUY4o7C75; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 12:52:05 GMT (check if it's your IP address or e.g. a cluster IP)"
+              "finding"      : "set-cookie: __cf_bm=po8BbQmepYgudCYvrlvkSoPLfiNvsox7eIVwrgmcz1Q-1789648062.4336483-1.0.1.1-ZRHmmFVUq7xe7MoxZC.sTwzgIY7tW92mb_JynHjy.l9U2SXmBfAQdvtWc12Mfb2h3MpgdPviQTedy5iTm4cSszUWzS26sXQvmzMHzzTImz4nAvZQ8JpxixVXeGtoeFHe; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 12:57:42 GMT (check if it's your IP address or e.g. a cluster IP)"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -2330,7 +2330,7 @@
               "ip"           : "pfe-det.ademe.fr/104.18.0.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789647767"
+              "finding"      : "1789648106"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -2338,7 +2338,7 @@
               "port"         : "443",
               "severity"     : "MEDIUM",
               "cwe"          : "CWE-212",
-              "finding"      : "set-cookie: __cf_bm=s6891X4_nan_2r4CO.uXHw7ltypv_jwQr0LSpIAVqW4-1789647767.1088586-1.0.1.1-18xPOaddo5tHuif2fdKurJm1pp80SjKLJLHmDCKSkEQcBjk96kryDs2zA807mcxvNLKlT4gBQpLN6__dVmZNrT9uYpl1p4iVqS4h8wckgaMXPsZ5_2vVtxMZO.QrADN9; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 12:52:47 GMT (check if it's your IP address or e.g. a cluster IP)"
+              "finding"      : "set-cookie: __cf_bm=QSc2laoM7sYZcV_9vWlW3Yq59_8n0tR_915lFuXfs0M-1789648106.3270948-1.0.1.1-_7mJZtadnqIjwR7HoPECPp3egjFSxKmgAkBm44oCpohRv03sysL8DemRJh7rO7Ts81cvpLtfp7DOQ7DGjbnQvHr5bYngUChwAjF5bDJJ4ulYpZwPcK9N7hXJCjY9m1ll; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 12:58:26 GMT (check if it's your IP address or e.g. a cluster IP)"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -2957,6 +2957,6 @@
               "ip"           : "pfe-det.ademe.fr/104.18.0.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "88"
+              "finding"      : "90"
           }
 ]
