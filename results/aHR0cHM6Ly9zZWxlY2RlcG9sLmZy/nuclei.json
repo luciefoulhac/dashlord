@@ -32,9 +32,9 @@
       "type": "dns",
       "host": "selecdepol.fr",
       "matched-at": "selecdepol.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 56519\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;selecdepol.fr.\tIN\t NS\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 56519\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;selecdepol.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nselecdepol.fr.\t86400\tIN\tNS\tace.ns.cloudflare.com.\nselecdepol.fr.\t86400\tIN\tNS\tdavina.ns.cloudflare.com.\n",
-      "timestamp": "2026-09-17T09:12:04.429012744Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 7759\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;selecdepol.fr.\tIN\t NS\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 7759\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;selecdepol.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nselecdepol.fr.\t21600\tIN\tNS\tdavina.ns.cloudflare.com.\nselecdepol.fr.\t21600\tIN\tNS\tace.ns.cloudflare.com.\n",
+      "timestamp": "2026-09-17T09:34:19.891581534Z",
       "matcher-status": true
     }
   ]
