@@ -857,7 +857,7 @@
               "ip"           : "www.bilans-ges.ademe.fr/104.18.0.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789649892"
+              "finding"      : "1789658764"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -865,7 +865,7 @@
               "port"         : "443",
               "severity"     : "MEDIUM",
               "cwe"          : "CWE-212",
-              "finding"      : "set-cookie: __cf_bm=YpoCcyHZkf62DBb3HJfSznhPbRDOmm42L_nupiWagU0-1789649892.6967175-1.0.1.1-imvp.FLWOUKDpGlWiYCiEGy8Hy0eUmG6nKThd0vWxuO28_0Z7V9wXvtTsL9HRW3TJgQecI5XUgcZiGfzaIwCVh1CtrIHZbxQ7mAmwckw.GcCUyNC7oROz5QkNFJCt7TD; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 13:28:12 GMT (check if it's your IP address or e.g. a cluster IP)"
+              "finding"      : "set-cookie: __cf_bm=Prr.dP3eqJCVIEEjsu_59PV6GZ6Bh59tG6hEE_RDy5Y-1789658764.8072975-1.0.1.1-D1kQzIXG_l4f_vYRjuRCLma1PjSgyn8fRDW_pyfijtX0KDp4zwKnDYMhM14wwN_KSKrnqawyuYmAq9qpE2Ty.D_yS62qWYjPsPsgpO0YzWBkzwn4kJu1LWbzIBCJBU4K; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 15:56:04 GMT (check if it's your IP address or e.g. a cluster IP)"
           }
 ,         {
               "id"           : "HSTS",
@@ -2274,7 +2274,7 @@
               "ip"           : "www.bilans-ges.ademe.fr/104.18.1.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789649932"
+              "finding"      : "1789658802"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -2282,7 +2282,7 @@
               "port"         : "443",
               "severity"     : "MEDIUM",
               "cwe"          : "CWE-212",
-              "finding"      : "set-cookie: __cf_bm=Acnpf7.r1mXN0t1eAK7Q37r.1k.OeJvYMJ1f9Q0HO10-1789649932.7713666-1.0.1.1-15ruNvR3vewlfPGktEbRjMHTYvkA_8dSnnqvxFwFENKHaY_43Uh1CKplNclYopcq52M0xEdy1ISaEdDkd.4921zKVS70lEdHn8xeSnTpkLd7ThSK191sAy.v_PD3cJW0; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 13:28:52 GMT (check if it's your IP address or e.g. a cluster IP)"
+              "finding"      : "set-cookie: __cf_bm=CBV8l9UjIee.1FPi28PO4rAKzwtmDWoLTQnFlUnAkf4-1789658802.4888673-1.0.1.1-z7GTGGZ8edOzlF5pjIq98LPUcSHDq77Yuz7BjRl9TYM2nK1hvTrCLGIolz1rWoXuGes2ZKZ2XtLIgWtxP5ywMc.a632Y2OUonEFl3FKpMf2F6aJWcceRKLDBSvzg1C.h; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 15:56:42 GMT (check if it's your IP address or e.g. a cluster IP)"
           }
 ,         {
               "id"           : "HSTS",
@@ -2845,6 +2845,6 @@
               "ip"           : "www.bilans-ges.ademe.fr/104.18.1.202",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "80"
+              "finding"      : "76"
           }
 ]
