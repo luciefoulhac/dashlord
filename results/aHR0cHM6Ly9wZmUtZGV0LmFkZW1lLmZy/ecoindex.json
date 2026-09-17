@@ -1,0 +1,17 @@
+[
+    {
+        "width": 1920,
+        "height": 1080,
+        "url": "https://pfe-det.ademe.fr",
+        "size": 1946.19,
+        "nodes": 321,
+        "requests": 31,
+        "grade": "C",
+        "score": 70.0,
+        "ges": 1.6,
+        "water": 2.4,
+        "ecoindex_version": "5.4.2",
+        "date": "2026-09-17 10:13:20.778558",
+        "page_type": null
+    }
+]
