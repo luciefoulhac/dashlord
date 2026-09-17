@@ -220,7 +220,7 @@
               "ip"           : "selecdepol.fr/104.18.15.178",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -857,7 +857,7 @@
               "ip"           : "selecdepol.fr/104.18.15.178",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789654515"
+              "finding"      : "1789655031"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -865,7 +865,7 @@
               "port"         : "443",
               "severity"     : "MEDIUM",
               "cwe"          : "CWE-212",
-              "finding"      : "set-cookie: __cf_bm=ty9ANW4DTkmY6kAXXp7ebWCPpbS3cCxzf9nd1L3pCFw-1789654515.2588184-1.0.1.1-ffnGVBIK4L0p9uA2VikLmhXjJVkwqWkOptKPFKbtII5hNviCReUZ_tcJlCo6Ux7yrXSK2yCDhd9ueOt_nVglh8Y1NOho4n0gGY1esm9f9WbN9Ym9NgcHBX4uoc_0eogP; HttpOnly; SameSite=None; Secure; Path=/; Domain=selecdepol.fr; Expires=Thu, 17 Sep 2026 14:45:15 GMT (check if it's your IP address or e.g. a cluster IP)"
+              "finding"      : "set-cookie: __cf_bm=i9a1i3JaDRbHxB6UzknvNjq6jj67atkasdw1xPheEqk-1789655031.5186555-1.0.1.1-RM9P_P9N0XSguiKhpOIoV4kIejE_3beRJExMosNczDuuEPvrdLkDcGYnbCjdspTlvZmg3CfbefeJsM3euJMCLVFkt1ovmng6HtB84KszlqlpM0GRTExtp94kBnZYfVvf; HttpOnly; SameSite=None; Secure; Path=/; Domain=selecdepol.fr; Expires=Thu, 17 Sep 2026 14:53:51 GMT (check if it's your IP address or e.g. a cluster IP)"
           }
 ,         {
               "id"           : "HSTS",
@@ -935,7 +935,7 @@
               "ip"           : "selecdepol.fr/104.18.15.178",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'none'; script-src 'nonce-uZnfYNby3FMrsLEVCXXLG6' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
+              "finding"      : "default-src 'none'; script-src 'nonce-zSJDNYbGrU3y4vxAqCVb0O' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
           }
 ,         {
               "id"           : "Permissions-Policy",
@@ -2323,7 +2323,7 @@
               "ip"           : "selecdepol.fr/104.18.14.178",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789654557"
+              "finding"      : "1789655072"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -2331,7 +2331,7 @@
               "port"         : "443",
               "severity"     : "MEDIUM",
               "cwe"          : "CWE-212",
-              "finding"      : "set-cookie: __cf_bm=foUFpyZKsYHtj_G8Xqq_Jo1Hv3QJFE.23GDTJj4.lgc-1789654557.0067928-1.0.1.1-2xBL832Zgme8JYEtAdmn7C5qxPpE0sWFaKqSG_ggAcG3LmhkNe3kYCahBMVgTQE9ee4bHJqR8gdl6lX5N1UC8VMAQ83D3yoMU69dHwPyhftvm_4BmQxdDj5WM1y9GYm5; HttpOnly; SameSite=None; Secure; Path=/; Domain=selecdepol.fr; Expires=Thu, 17 Sep 2026 14:45:57 GMT (check if it's your IP address or e.g. a cluster IP)"
+              "finding"      : "set-cookie: __cf_bm=FOz8vvsUnf_OV58OWJwGbVYf5CbVa2_IpoziWQxsp6I-1789655072.6538851-1.0.1.1-LwnRE6NRB97JW.sr0AMxNynFkivDPobMHni36C8HjzJMZR5xUceax71dNk9khsdEE9BXZ5A81dJNeppiIWIQDhxAjBdni9Gbb9z7dKVLng9BPsLTsTAKQh0AGSqGGU4h; HttpOnly; SameSite=None; Secure; Path=/; Domain=selecdepol.fr; Expires=Thu, 17 Sep 2026 14:54:32 GMT (check if it's your IP address or e.g. a cluster IP)"
           }
 ,         {
               "id"           : "HSTS",
@@ -2401,7 +2401,7 @@
               "ip"           : "selecdepol.fr/104.18.14.178",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'none'; script-src 'nonce-XcePPhkJbchLhTdKxdSehS' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
+              "finding"      : "default-src 'none'; script-src 'nonce-MurklPa4f97TQ4RRmE9xWR' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
           }
 ,         {
               "id"           : "Permissions-Policy",
@@ -2943,6 +2943,6 @@
               "ip"           : "selecdepol.fr/104.18.14.178",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "85"
+              "finding"      : "84"
           }
 ]
