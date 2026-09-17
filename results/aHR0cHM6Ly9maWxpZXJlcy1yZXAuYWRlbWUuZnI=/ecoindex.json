@@ -1,0 +1,17 @@
+[
+    {
+        "width": 1920,
+        "height": 1080,
+        "url": "https://filieres-rep.ademe.fr",
+        "size": 1745.455,
+        "nodes": 633,
+        "requests": 65,
+        "grade": "D",
+        "score": 51.0,
+        "ges": 1.98,
+        "water": 2.97,
+        "ecoindex_version": "5.4.2",
+        "date": "2026-09-17 11:06:30.684048",
+        "page_type": null
+    }
+]
