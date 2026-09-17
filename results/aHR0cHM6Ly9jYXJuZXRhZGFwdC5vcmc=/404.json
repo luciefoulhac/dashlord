@@ -1,0 +1,24 @@
+{
+  "links": [
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "carnetadapt.org",
+        "port": null,
+        "hostname": "carnetadapt.org",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/",
+        "path": "/",
+        "href": "https://carnetadapt.org/"
+      },
+      "link": "https://carnetadapt.org/",
+      "line": "--2026-09-17 10:59:13--  https://carnetadapt.org/",
+      "broken": false
+    }
+  ],
+  "broken": []
+}
