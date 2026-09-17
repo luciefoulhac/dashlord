@@ -213,7 +213,7 @@
               "ip"           : "carnetadapt.org/104.18.8.101",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "sessionresumption_ID",
@@ -360,7 +360,7 @@
               "ip"           : "carnetadapt.org/104.18.8.101",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "70 >= 60 days"
+              "finding"      : "69 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore <hostCert#1>",
@@ -654,7 +654,7 @@
               "ip"           : "carnetadapt.org/104.18.8.101",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "70 >= 60 days"
+              "finding"      : "69 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore <hostCert#2>",
@@ -857,7 +857,7 @@
               "ip"           : "carnetadapt.org/104.18.8.101",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789653924"
+              "finding"      : "1789657135"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -865,7 +865,7 @@
               "port"         : "443",
               "severity"     : "MEDIUM",
               "cwe"          : "CWE-212",
-              "finding"      : "set-cookie: __cf_bm=O0dwFyAlRqJsa22DGIq4nciHeXqz6XzJeLAuUSG1r90-1789653924.349099-1.0.1.1-hbN9x_QIIhaWrBAQq3XI54v52BtyxjCfzUHYeRCF3DmW0Qn3VGWBjAwtXtN3DeYkC8PwtGhqyjYYHMuNn9PNTb3iRPMah__o00HKP9saiVD5C27I35sA9tK0gFv_i8_M; HttpOnly; SameSite=None; Secure; Path=/; Domain=carnetadapt.org; Expires=Thu, 17 Sep 2026 14:35:24 GMT (check if it's your IP address or e.g. a cluster IP)"
+              "finding"      : "set-cookie: __cf_bm=hLaay2cWspJbGDubXvT1Xx.kd6Bs43Ld_ExVZkMIBx8-1789657135.2959166-1.0.1.1-nu2NqEiVuMg5vCmnVXu6Gw.oxyCX6l01w_0xQyGD1SqH8D4UajkE49_SkItSipCfO_VttccT2Cn59YN.e52QKvpPbG_pSoM4hp6kNXsziSMexaafWA.OcPfe0aelOkkj; HttpOnly; SameSite=None; Secure; Path=/; Domain=carnetadapt.org; Expires=Thu, 17 Sep 2026 15:28:55 GMT (check if it's your IP address or e.g. a cluster IP)"
           }
 ,         {
               "id"           : "HSTS",
@@ -935,7 +935,7 @@
               "ip"           : "carnetadapt.org/104.18.8.101",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'none'; script-src 'nonce-2q7iFJYwNDRp8RCdzVYr6i' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
+              "finding"      : "default-src 'none'; script-src 'nonce-4QEJZQBAcOsp2MpBpPSKV5' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
           }
 ,         {
               "id"           : "Permissions-Policy",
@@ -1826,7 +1826,7 @@
               "ip"           : "carnetadapt.org/104.18.9.101",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "70 >= 60 days"
+              "finding"      : "69 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore <hostCert#1>",
@@ -2120,7 +2120,7 @@
               "ip"           : "carnetadapt.org/104.18.9.101",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "70 >= 60 days"
+              "finding"      : "69 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore <hostCert#2>",
@@ -2323,7 +2323,7 @@
               "ip"           : "carnetadapt.org/104.18.9.101",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789653964"
+              "finding"      : "1789657177"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -2331,7 +2331,7 @@
               "port"         : "443",
               "severity"     : "MEDIUM",
               "cwe"          : "CWE-212",
-              "finding"      : "set-cookie: __cf_bm=QALsh9kO4ZX1fM.Z3g7oquelGwV4rogqzVy6n6KEMmg-1789653964.625366-1.0.1.1-Xsx9t5Lumwsouo9YiSZS2pivwR6ldWwX97LBpiIx7WkaloWeuD86jvg7Kq9nUTW.Y_BHu10gLSfJd80W2jusCQg_ORoRyvIXA4vjmTUvnQf4T2tkIrlXn9g1cRIIvkx8; HttpOnly; SameSite=None; Secure; Path=/; Domain=carnetadapt.org; Expires=Thu, 17 Sep 2026 14:36:04 GMT (check if it's your IP address or e.g. a cluster IP)"
+              "finding"      : "set-cookie: __cf_bm=aY2H3qU.eSrebHbjOBEDznKtQeI.TpHtHW7aoto426M-1789657177.4404354-1.0.1.1-6B018ATzqFn9L1iJXzdJaSBobZ4S.rDdw1NOXDUQbh7Lvmc6g7YOJpeYb6WP7z1DAxTeCq9unXZdPL.gtgGi_QeIsStXYixRCFmRhA.TqMEQ6gj4h1B0WEZXSeL75MmJ; HttpOnly; SameSite=None; Secure; Path=/; Domain=carnetadapt.org; Expires=Thu, 17 Sep 2026 15:29:37 GMT (check if it's your IP address or e.g. a cluster IP)"
           }
 ,         {
               "id"           : "HSTS",
@@ -2401,7 +2401,7 @@
               "ip"           : "carnetadapt.org/104.18.9.101",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'none'; script-src 'nonce-batfAl9dqhf5YXhENbcldJ' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
+              "finding"      : "default-src 'none'; script-src 'nonce-1GgF4r3xfV439aL9WETZDt' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
           }
 ,         {
               "id"           : "Permissions-Policy",
@@ -2943,6 +2943,6 @@
               "ip"           : "carnetadapt.org/104.18.9.101",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "83"
+              "finding"      : "85"
           }
 ]
