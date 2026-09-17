@@ -1,0 +1,3067 @@
+{
+	"@programName": "ZAP",
+	"@version": "2.17.0",
+	"@generated": "Thu, 17 Sept 2026 10:51:16",
+	"created": "2026-09-17T10:51:16.054331749Z",
+	"insights":[
+		{
+			"level": "Low",
+			"reason": "Warning",
+			"site": "",
+			"key": "insight.log.warn",
+			"description": "ZAP warnings logged - see the zap.log file for details",
+			"statistic": "2"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr",
+			"key": "insight.code.2xx",
+			"description": "Percentage of responses with status code 2xx",
+			"statistic": "90"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr",
+			"key": "insight.code.3xx",
+			"description": "Percentage of responses with status code 3xx",
+			"statistic": "4"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr",
+			"key": "insight.code.4xx",
+			"description": "Percentage of responses with status code 4xx",
+			"statistic": "4"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr",
+			"key": "insight.endpoint.ctype.application/javascript",
+			"description": "Percentage of endpoints with content type application/javascript",
+			"statistic": "1"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr",
+			"key": "insight.endpoint.ctype.image/png",
+			"description": "Percentage of endpoints with content type image/png",
+			"statistic": "4"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr",
+			"key": "insight.endpoint.ctype.text/css",
+			"description": "Percentage of endpoints with content type text/css",
+			"statistic": "33"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr",
+			"key": "insight.endpoint.ctype.text/html",
+			"description": "Percentage of endpoints with content type text/html",
+			"statistic": "33"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr",
+			"key": "insight.endpoint.ctype.text/javascript",
+			"description": "Percentage of endpoints with content type text/javascript",
+			"statistic": "25"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr",
+			"key": "insight.endpoint.ctype.text/plain",
+			"description": "Percentage of endpoints with content type text/plain",
+			"statistic": "1"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr",
+			"key": "insight.endpoint.method.GET",
+			"description": "Percentage of endpoints with method GET",
+			"statistic": "93"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr",
+			"key": "insight.endpoint.method.POST",
+			"description": "Percentage of endpoints with method POST",
+			"statistic": "6"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr",
+			"key": "insight.endpoint.total",
+			"description": "Count of total endpoints",
+			"statistic": "63"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr",
+			"key": "insight.response.slow",
+			"description": "Percentage of slow responses",
+			"statistic": "93"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr.",
+			"key": "insight.code.2xx",
+			"description": "Percentage of responses with status code 2xx",
+			"statistic": "88"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr.",
+			"key": "insight.code.3xx",
+			"description": "Percentage of responses with status code 3xx",
+			"statistic": "5"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr.",
+			"key": "insight.code.4xx",
+			"description": "Percentage of responses with status code 4xx",
+			"statistic": "5"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr.",
+			"key": "insight.endpoint.ctype.application/javascript",
+			"description": "Percentage of endpoints with content type application/javascript",
+			"statistic": "2"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr.",
+			"key": "insight.endpoint.ctype.image/png",
+			"description": "Percentage of endpoints with content type image/png",
+			"statistic": "8"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr.",
+			"key": "insight.endpoint.ctype.text/css",
+			"description": "Percentage of endpoints with content type text/css",
+			"statistic": "30"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr.",
+			"key": "insight.endpoint.ctype.text/html",
+			"description": "Percentage of endpoints with content type text/html",
+			"statistic": "50"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr.",
+			"key": "insight.endpoint.ctype.text/javascript",
+			"description": "Percentage of endpoints with content type text/javascript",
+			"statistic": "8"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr.",
+			"key": "insight.endpoint.method.GET",
+			"description": "Percentage of endpoints with method GET",
+			"statistic": "91"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr.",
+			"key": "insight.endpoint.method.POST",
+			"description": "Percentage of endpoints with method POST",
+			"statistic": "8"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr.",
+			"key": "insight.endpoint.total",
+			"description": "Count of total endpoints",
+			"statistic": "36"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://evenementresponsable.ademe.fr.",
+			"key": "insight.response.slow",
+			"description": "Percentage of slow responses",
+			"statistic": "88"
+		}
+	],
+	"site":[ 
+		{
+			"@name": "https://evenementresponsable.ademe.fr.",
+			"@host": "evenementresponsable.ademe.fr.",
+			"@port": "443",
+			"@ssl": "true",
+			"alerts": [ 
+				{
+					"pluginid": "10038",
+					"alertRef": "10038-1",
+					"alert": "Content Security Policy (CSP) Header Not Set",
+					"name": "Content Security Policy (CSP) Header Not Set",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"id": "215",
+							"uri": "https://evenementresponsable.ademe.fr./cdn-cgi/l/email-protection",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/cdn-cgi\/l\/email-protection",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "244"
+				},
+				{
+					"pluginid": "10044",
+					"alertRef": "10044-1",
+					"alert": "Big Redirect Detected (Potential Sensitive Information Leak)",
+					"name": "Big Redirect Detected (Potential Sensitive Information Leak)",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The server has responded with a redirect that seems to provide a large response. This may indicate that although the server sent a redirect it also responded with body content (which may include sensitive details, PII, etc.).</p>",
+					"instances":[ 
+						{
+							"id": "220",
+							"uri": "https://evenementresponsable.ademe.fr./login",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/login ()(_token,email,password,remember)",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "Location header URI length: 44 [https://evenementresponsable.ademe.fr./login].\nPredicted response size: 344.\nResponse Body Length: 422."
+						},
+						{
+							"id": "236",
+							"uri": "https://evenementresponsable.ademe.fr./password/email",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/password\/email ()(_token,email)",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "Location header URI length: 53 [https://evenementresponsable.ademe.fr./password/reset].\nPredicted response size: 353.\nResponse Body Length: 458."
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>",
+					"otherinfo": "<p>Location header URI length: 44 [https://evenementresponsable.ademe.fr./login].</p><p>Predicted response size: 344.</p><p>Response Body Length: 422.</p>",
+					"reference": "",
+					"cweid": "201",
+					"wascid": "13",
+					"sourceid": "264"
+				},
+				{
+					"pluginid": "10054",
+					"alertRef": "10054-1",
+					"alert": "Cookie without SameSite Attribute",
+					"name": "Cookie without SameSite Attribute",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
+					"instances":[ 
+						{
+							"id": "201",
+							"uri": "https://evenementresponsable.ademe.fr./",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						},
+						{
+							"id": "207",
+							"uri": "https://evenementresponsable.ademe.fr./a-propos-ademe",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/a-propos-ademe",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						},
+						{
+							"id": "205",
+							"uri": "https://evenementresponsable.ademe.fr./accessibilite",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/accessibilite",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						},
+						{
+							"id": "203",
+							"uri": "https://evenementresponsable.ademe.fr./mentions-legales",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/mentions-legales",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						},
+						{
+							"id": "209",
+							"uri": "https://evenementresponsable.ademe.fr./politique-cookies",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/politique-cookies",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</p>",
+					"cweid": "1275",
+					"wascid": "13",
+					"sourceid": "205"
+				},
+				{
+					"pluginid": "110009",
+					"alertRef": "110009",
+					"alert": "Full Path Disclosure",
+					"name": "Full Path Disclosure",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>The full path of files which might be sensitive has been exposed to the client.</p>",
+					"instances":[ 
+						{
+							"id": "226",
+							"uri": "https://evenementresponsable.ademe.fr./www.youronlinechoices.com",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/www.youronlinechoices.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "/lib/",
+							"otherinfo": ""
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "<p>Disable directory browsing in your web server. Refer to the web server documentation.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://owasp.org/www-community/attacks/Full_Path_Disclosure</p>",
+					"cweid": "209",
+					"wascid": "13",
+					"sourceid": "275"
+				},
+				{
+					"pluginid": "10063",
+					"alertRef": "10063-1",
+					"alert": "Permissions Policy Header Not Set",
+					"name": "Permissions Policy Header Not Set",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
+					"instances":[ 
+						{
+							"id": "217",
+							"uri": "https://evenementresponsable.ademe.fr./cdn-cgi/l/email-protection",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/cdn-cgi\/l\/email-protection",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "219",
+							"uri": "https://evenementresponsable.ademe.fr./cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/cdn-cgi\/scripts\/5c5dd728\/cloudflare-static\/email-decode.min.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "244"
+				},
+				{
+					"pluginid": "10035",
+					"alertRef": "10035-1",
+					"alert": "Strict-Transport-Security Header Not Set",
+					"name": "Strict-Transport-Security Header Not Set",
+					"riskcode": "1",
+					"confidence": "3",
+					"riskdesc": "Low (High)",
+					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
+					"instances":[ 
+						{
+							"id": "216",
+							"uri": "https://evenementresponsable.ademe.fr./cdn-cgi/l/email-protection",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/cdn-cgi\/l\/email-protection",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "218",
+							"uri": "https://evenementresponsable.ademe.fr./cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/cdn-cgi\/scripts\/5c5dd728\/cloudflare-static\/email-decode.min.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "222",
+							"uri": "https://evenementresponsable.ademe.fr./cdn-cgi/styles/cf.errors.css",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/cdn-cgi\/styles\/cf.errors.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "224",
+							"uri": "https://evenementresponsable.ademe.fr./cdn-cgi/styles/cf.errors.ie.css",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/cdn-cgi\/styles\/cf.errors.ie.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
+					"cweid": "319",
+					"wascid": "15",
+					"sourceid": "244"
+				},
+				{
+					"pluginid": "10096",
+					"alertRef": "10096",
+					"alert": "Timestamp Disclosure - Unix",
+					"name": "Timestamp Disclosure - Unix",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>A timestamp was disclosed by the application/web server. - Unix</p>",
+					"instances":[ 
+						{
+							"id": "202",
+							"uri": "https://evenementresponsable.ademe.fr./",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789642267",
+							"otherinfo": "1789642267, which evaluates to: 2026-09-17 10:51:07."
+						},
+						{
+							"id": "208",
+							"uri": "https://evenementresponsable.ademe.fr./a-propos-ademe",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/a-propos-ademe",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789642268",
+							"otherinfo": "1789642268, which evaluates to: 2026-09-17 10:51:08."
+						},
+						{
+							"id": "206",
+							"uri": "https://evenementresponsable.ademe.fr./accessibilite",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/accessibilite",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789642268",
+							"otherinfo": "1789642268, which evaluates to: 2026-09-17 10:51:08."
+						},
+						{
+							"id": "204",
+							"uri": "https://evenementresponsable.ademe.fr./mentions-legales",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/mentions-legales",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789642268",
+							"otherinfo": "1789642268, which evaluates to: 2026-09-17 10:51:08."
+						},
+						{
+							"id": "210",
+							"uri": "https://evenementresponsable.ademe.fr./politique-cookies",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/politique-cookies",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789642268",
+							"otherinfo": "1789642268, which evaluates to: 2026-09-17 10:51:08."
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
+					"otherinfo": "<p>1789642267, which evaluates to: 2026-09-17 10:51:07.</p>",
+					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
+					"cweid": "497",
+					"wascid": "13",
+					"sourceid": "205"
+				},
+				{
+					"pluginid": "10021",
+					"alertRef": "10021",
+					"alert": "X-Content-Type-Options Header Missing",
+					"name": "X-Content-Type-Options Header Missing",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
+					"instances":[ 
+						{
+							"id": "223",
+							"uri": "https://evenementresponsable.ademe.fr./cdn-cgi/styles/cf.errors.css",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/cdn-cgi\/styles\/cf.errors.css",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"id": "225",
+							"uri": "https://evenementresponsable.ademe.fr./cdn-cgi/styles/cf.errors.ie.css",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/cdn-cgi\/styles\/cf.errors.ie.css",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>",
+					"otherinfo": "<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At \"High\" threshold this scan rule will not alert on client or server error responses.</p>",
+					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p><p>https://owasp.org/www-community/Security_Headers</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "266"
+				},
+				{
+					"pluginid": "10111",
+					"alertRef": "10111",
+					"alert": "Authentication Request Identified",
+					"name": "Authentication Request Identified",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>The given request has been identified as an authentication request. The 'Other Info' field contains a set of key=value lines which identify any relevant fields. If the request is in a context which has an Authentication Method set to \"Auto-Detect\" then this rule will change the authentication to match the request identified.</p>",
+					"instances":[ 
+						{
+							"id": "221",
+							"uri": "https://evenementresponsable.ademe.fr./login",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/login ()(_token,email,password,remember)",
+							"method": "POST",
+							"param": "email",
+							"attack": "",
+							"evidence": "password",
+							"otherinfo": "userParam=email\nuserValue=zaproxy@example.com\npasswordParam=password\nreferer=https://evenementresponsable.ademe.fr./login\ncsrfToken=_token"
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
+					"otherinfo": "<p>userParam=email</p><p>userValue=zaproxy@example.com</p><p>passwordParam=password</p><p>referer=https://evenementresponsable.ademe.fr./login</p><p>csrfToken=_token</p>",
+					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/</p>",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "264"
+				},
+				{
+					"pluginid": "10031",
+					"alertRef": "10031",
+					"alert": "User Controllable HTML Element Attribute (Potential XSS)",
+					"name": "User Controllable HTML Element Attribute (Potential XSS)",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
+					"instances":[ 
+						{
+							"id": "235",
+							"uri": "https://evenementresponsable.ademe.fr./onboarding/event/create",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/onboarding\/event\/create ()(_token,address,city,department,event_end,event_hebergement,event_internet,event_name,event_prints,event_restauration,event_start,event_type,one_day,only_address,postal_code,region)",
+							"method": "POST",
+							"param": "_token",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://evenementresponsable.ademe.fr./onboarding/event/create\n\nappears to include user input in:\na(n) [meta] tag [content] attribute\n\nThe user input found was:\n_token=fLMZGf9fCypKVg3QXBHGS8xm2RTkD2ES07wMgC5K\n\nThe user-controlled value was:\nflmzgf9fcypkvg3qxbhgs8xm2rtkd2es07wmgc5k"
+						},
+						{
+							"id": "234",
+							"uri": "https://evenementresponsable.ademe.fr./onboarding/event/create",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/onboarding\/event\/create ()(_token,address,city,department,event_end,event_hebergement,event_internet,event_name,event_prints,event_restauration,event_start,event_type,one_day,only_address,postal_code,region)",
+							"method": "POST",
+							"param": "event_hebergement",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://evenementresponsable.ademe.fr./onboarding/event/create\n\nappears to include user input in:\na(n) [meta] tag [content] attribute\n\nThe user input found was:\nevent_hebergement=1\n\nThe user-controlled value was:\nwidth=device-width, initial-scale=1"
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://evenementresponsable.ademe.fr./onboarding/event/create</p><p></p><p>appears to include user input in:</p><p>a(n) [meta] tag [content] attribute</p><p></p><p>The user input found was:</p><p>_token=fLMZGf9fCypKVg3QXBHGS8xm2RTkD2ES07wMgC5K</p><p></p><p>The user-controlled value was:</p><p>flmzgf9fcypkvg3qxbhgs8xm2rtkd2es07wmgc5k</p>",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
+					"cweid": "20",
+					"wascid": "20",
+					"sourceid": "282"
+				}
+			]
+		},
+		{
+			"@name": "https://evenementresponsable.ademe.fr",
+			"@host": "evenementresponsable.ademe.fr",
+			"@port": "443",
+			"@ssl": "true",
+			"alerts": [ 
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-13",
+					"alert": "CSP: Failure to Define Directive with No Fallback",
+					"name": "CSP: Failure to Define Directive with No Fallback",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>The Content Security Policy fails to define one of the directives that has no fallback. Missing/excluding them is the same as allowing anything.</p>",
+					"instances":[ 
+						{
+							"id": "5",
+							"uri": "https://evenementresponsable.ademe.fr",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr",
+							"method": "GET",
+							"param": "content-security-policy",
+							"attack": "",
+							"evidence": "frame-ancestors 'self' prod-adere.direct.prod.ademe-scw.fr evenementresponsable.ademe.fr;",
+							"otherinfo": "The directive(s): form-action is/are among the directives that do not fallback to default-src."
+						},
+						{
+							"id": "6",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "content-security-policy",
+							"attack": "",
+							"evidence": "frame-ancestors 'self' prod-adere.direct.prod.ademe-scw.fr evenementresponsable.ademe.fr;",
+							"otherinfo": "The directive(s): form-action is/are among the directives that do not fallback to default-src."
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>The directive(s): form-action is/are among the directives that do not fallback to default-src.</p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-4",
+					"alert": "CSP: Wildcard Directive",
+					"name": "CSP: Wildcard Directive",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"id": "9",
+							"uri": "https://evenementresponsable.ademe.fr",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr",
+							"method": "GET",
+							"param": "content-security-policy",
+							"attack": "",
+							"evidence": "frame-ancestors 'self' prod-adere.direct.prod.ademe-scw.fr evenementresponsable.ademe.fr;",
+							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined:\nscript-src, style-src, img-src, connect-src, frame-src, font-src, media-src, object-src, manifest-src, worker-src"
+						},
+						{
+							"id": "8",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "content-security-policy",
+							"attack": "",
+							"evidence": "frame-ancestors 'self' prod-adere.direct.prod.ademe-scw.fr evenementresponsable.ademe.fr;",
+							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined:\nscript-src, style-src, img-src, connect-src, frame-src, font-src, media-src, object-src, manifest-src, worker-src"
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined:</p><p>script-src, style-src, img-src, connect-src, frame-src, font-src, media-src, object-src, manifest-src, worker-src</p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-5",
+					"alert": "CSP: script-src unsafe-inline",
+					"name": "CSP: script-src unsafe-inline",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"id": "10",
+							"uri": "https://evenementresponsable.ademe.fr",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr",
+							"method": "GET",
+							"param": "content-security-policy",
+							"attack": "",
+							"evidence": "frame-ancestors 'self' prod-adere.direct.prod.ademe-scw.fr evenementresponsable.ademe.fr;",
+							"otherinfo": "script-src includes unsafe-inline."
+						},
+						{
+							"id": "11",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "content-security-policy",
+							"attack": "",
+							"evidence": "frame-ancestors 'self' prod-adere.direct.prod.ademe-scw.fr evenementresponsable.ademe.fr;",
+							"otherinfo": "script-src includes unsafe-inline."
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>script-src includes unsafe-inline.</p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-6",
+					"alert": "CSP: style-src unsafe-inline",
+					"name": "CSP: style-src unsafe-inline",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"id": "13",
+							"uri": "https://evenementresponsable.ademe.fr",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr",
+							"method": "GET",
+							"param": "content-security-policy",
+							"attack": "",
+							"evidence": "frame-ancestors 'self' prod-adere.direct.prod.ademe-scw.fr evenementresponsable.ademe.fr;",
+							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"id": "14",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "content-security-policy",
+							"attack": "",
+							"evidence": "frame-ancestors 'self' prod-adere.direct.prod.ademe-scw.fr evenementresponsable.ademe.fr;",
+							"otherinfo": "style-src includes unsafe-inline."
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>style-src includes unsafe-inline.</p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10038",
+					"alertRef": "10038-1",
+					"alert": "Content Security Policy (CSP) Header Not Set",
+					"name": "Content Security Policy (CSP) Header Not Set",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"id": "215",
+							"uri": "https://evenementresponsable.ademe.fr./cdn-cgi/l/email-protection",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/cdn-cgi\/l\/email-protection",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "171",
+							"uri": "https://evenementresponsable.ademe.fr/cdn-cgi/l/email-protection",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/cdn-cgi\/l\/email-protection",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "244"
+				},
+				{
+					"pluginid": "10098",
+					"alertRef": "10098",
+					"alert": "Cross-Domain Misconfiguration",
+					"name": "Cross-Domain Misconfiguration",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "<p>Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server.</p>",
+					"instances":[ 
+						{
+							"id": "21",
+							"uri": "https://evenementresponsable.ademe.fr",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "access-control-allow-origin: *",
+							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
+						},
+						{
+							"id": "7",
+							"uri": "https://evenementresponsable.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "access-control-allow-origin: *",
+							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
+						},
+						{
+							"id": "20",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "access-control-allow-origin: *",
+							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
+						},
+						{
+							"id": "61",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/vendor/backpack/crud/src/resources/assets/css/common.css",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/vendor\/backpack\/crud\/src\/resources\/assets\/css\/common.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "access-control-allow-origin: *",
+							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
+						}
+					],
+					"count": "4",
+					"systemic": true,
+					"solution": "<p>Ensure that sensitive data is not available in an unauthenticated manner (using IP address white-listing, for instance).</p><p>Configure the \"Access-Control-Allow-Origin\" HTTP header to a more restrictive set of domains, or remove all CORS headers entirely, to allow the web browser to enforce the Same Origin Policy (SOP) in a more restrictive manner.</p>",
+					"otherinfo": "<p>The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing.</p>",
+					"reference": "<p>https://vulncat.fortify.com/en/detail?category=HTML5&subcategory=Overly%20Permissive%20CORS%20Policy</p>",
+					"cweid": "264",
+					"wascid": "14",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90003",
+					"alertRef": "90003",
+					"alert": "Sub Resource Integrity Attribute Missing",
+					"name": "Sub Resource Integrity Attribute Missing",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content.</p>",
+					"instances":[ 
+						{
+							"id": "26",
+							"uri": "https://evenementresponsable.ademe.fr",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://cdntag.tarteaucitron.io/load.js?domain=evenementresponsable.ademe.fr&amp;uuid=2df1000bf385655312abede8e30421664e7d594e\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"id": "111",
+							"uri": "https://evenementresponsable.ademe.fr/",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://cdntag.tarteaucitron.io/load.js?domain=evenementresponsable.ademe.fr&amp;uuid=2df1000bf385655312abede8e30421664e7d594e\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"id": "101",
+							"uri": "https://evenementresponsable.ademe.fr/onboarding",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/onboarding",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://cdntag.tarteaucitron.io/load.js?domain=evenementresponsable.ademe.fr&amp;uuid=2df1000bf385655312abede8e30421664e7d594e\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"id": "32",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"id": "33",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Subresource_Integrity</p>",
+					"cweid": "345",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10044",
+					"alertRef": "10044-1",
+					"alert": "Big Redirect Detected (Potential Sensitive Information Leak)",
+					"name": "Big Redirect Detected (Potential Sensitive Information Leak)",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The server has responded with a redirect that seems to provide a large response. This may indicate that although the server sent a redirect it also responded with body content (which may include sensitive details, PII, etc.).</p>",
+					"instances":[ 
+						{
+							"id": "220",
+							"uri": "https://evenementresponsable.ademe.fr./login",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/login ()(_token,email,password,remember)",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "Location header URI length: 44 [https://evenementresponsable.ademe.fr./login].\nPredicted response size: 344.\nResponse Body Length: 422."
+						},
+						{
+							"id": "236",
+							"uri": "https://evenementresponsable.ademe.fr./password/email",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/password\/email ()(_token,email)",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "Location header URI length: 53 [https://evenementresponsable.ademe.fr./password/reset].\nPredicted response size: 353.\nResponse Body Length: 458."
+						},
+						{
+							"id": "174",
+							"uri": "https://evenementresponsable.ademe.fr/login",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/login ()(_token,email,password,remember)",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "Location header URI length: 43 [https://evenementresponsable.ademe.fr/login].\nPredicted response size: 343.\nResponse Body Length: 418."
+						},
+						{
+							"id": "186",
+							"uri": "https://evenementresponsable.ademe.fr/password/email",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/password\/email ()(_token,email)",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "Location header URI length: 52 [https://evenementresponsable.ademe.fr/password/reset].\nPredicted response size: 352.\nResponse Body Length: 454."
+						},
+						{
+							"id": "197",
+							"uri": "https://evenementresponsable.ademe.fr/register",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/register ()(_token,cgu_collect_data,cgu_confirm,email,password,password_confirmation)",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "Location header URI length: 46 [https://evenementresponsable.ademe.fr/register].\nPredicted response size: 346.\nResponse Body Length: 430."
+						}
+					],
+					"count": "5",
+					"systemic": false,
+					"solution": "<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>",
+					"otherinfo": "<p>Location header URI length: 44 [https://evenementresponsable.ademe.fr./login].</p><p>Predicted response size: 344.</p><p>Response Body Length: 422.</p>",
+					"reference": "",
+					"cweid": "201",
+					"wascid": "13",
+					"sourceid": "264"
+				},
+				{
+					"pluginid": "10010",
+					"alertRef": "10010",
+					"alert": "Cookie No HttpOnly Flag",
+					"name": "Cookie No HttpOnly Flag",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>",
+					"instances":[ 
+						{
+							"id": "15",
+							"uri": "https://evenementresponsable.ademe.fr",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr",
+							"method": "GET",
+							"param": "XSRF-TOKEN",
+							"attack": "",
+							"evidence": "Set-Cookie: XSRF-TOKEN",
+							"otherinfo": ""
+						},
+						{
+							"id": "105",
+							"uri": "https://evenementresponsable.ademe.fr/",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/",
+							"method": "GET",
+							"param": "XSRF-TOKEN",
+							"attack": "",
+							"evidence": "Set-Cookie: XSRF-TOKEN",
+							"otherinfo": ""
+						},
+						{
+							"id": "115",
+							"uri": "https://evenementresponsable.ademe.fr/a-propos-ademe",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/a-propos-ademe",
+							"method": "GET",
+							"param": "XSRF-TOKEN",
+							"attack": "",
+							"evidence": "Set-Cookie: XSRF-TOKEN",
+							"otherinfo": ""
+						},
+						{
+							"id": "128",
+							"uri": "https://evenementresponsable.ademe.fr/login",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/login",
+							"method": "GET",
+							"param": "XSRF-TOKEN",
+							"attack": "",
+							"evidence": "Set-Cookie: XSRF-TOKEN",
+							"otherinfo": ""
+						},
+						{
+							"id": "97",
+							"uri": "https://evenementresponsable.ademe.fr/onboarding",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/onboarding",
+							"method": "GET",
+							"param": "XSRF-TOKEN",
+							"attack": "",
+							"evidence": "Set-Cookie: XSRF-TOKEN",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Ensure that the HttpOnly flag is set for all cookies.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
+					"cweid": "1004",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10054",
+					"alertRef": "10054-2",
+					"alert": "Cookie with SameSite Attribute None",
+					"name": "Cookie with SameSite Attribute None",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set with its SameSite attribute set to \"none\", which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
+					"instances":[ 
+						{
+							"id": "19",
+							"uri": "https://evenementresponsable.ademe.fr",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</p>",
+					"cweid": "1275",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10054",
+					"alertRef": "10054-1",
+					"alert": "Cookie without SameSite Attribute",
+					"name": "Cookie without SameSite Attribute",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
+					"instances":[ 
+						{
+							"id": "80",
+							"uri": "https://evenementresponsable.ademe.fr",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						},
+						{
+							"id": "201",
+							"uri": "https://evenementresponsable.ademe.fr./",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						},
+						{
+							"id": "207",
+							"uri": "https://evenementresponsable.ademe.fr./a-propos-ademe",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/a-propos-ademe",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						},
+						{
+							"id": "205",
+							"uri": "https://evenementresponsable.ademe.fr./accessibilite",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/accessibilite",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						},
+						{
+							"id": "203",
+							"uri": "https://evenementresponsable.ademe.fr./mentions-legales",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/mentions-legales",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						},
+						{
+							"id": "209",
+							"uri": "https://evenementresponsable.ademe.fr./politique-cookies",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/politique-cookies",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						},
+						{
+							"id": "4",
+							"uri": "https://evenementresponsable.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						},
+						{
+							"id": "18",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						},
+						{
+							"id": "199",
+							"uri": "https://evenementresponsable.ademe.fr/register",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/register ()(_token,cgu_collect_data,cgu_confirm,email,password,password_confirmation)",
+							"method": "POST",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "set-cookie: __cf_bm",
+							"otherinfo": ""
+						}
+					],
+					"count": "9",
+					"systemic": true,
+					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</p>",
+					"cweid": "1275",
+					"wascid": "13",
+					"sourceid": "58"
+				},
+				{
+					"pluginid": "10017",
+					"alertRef": "10017",
+					"alert": "Cross-Domain JavaScript Source File Inclusion",
+					"name": "Cross-Domain JavaScript Source File Inclusion",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The page includes one or more script files from a third-party domain.</p>",
+					"instances":[ 
+						{
+							"id": "22",
+							"uri": "https://evenementresponsable.ademe.fr",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr",
+							"method": "GET",
+							"param": "https://cdntag.tarteaucitron.io/load.js?domain=evenementresponsable.ademe.fr&uuid=2df1000bf385655312abede8e30421664e7d594e",
+							"attack": "",
+							"evidence": "<script src=\"https://cdntag.tarteaucitron.io/load.js?domain=evenementresponsable.ademe.fr&amp;uuid=2df1000bf385655312abede8e30421664e7d594e\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"id": "107",
+							"uri": "https://evenementresponsable.ademe.fr/",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/",
+							"method": "GET",
+							"param": "https://cdntag.tarteaucitron.io/load.js?domain=evenementresponsable.ademe.fr&uuid=2df1000bf385655312abede8e30421664e7d594e",
+							"attack": "",
+							"evidence": "<script src=\"https://cdntag.tarteaucitron.io/load.js?domain=evenementresponsable.ademe.fr&amp;uuid=2df1000bf385655312abede8e30421664e7d594e\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"id": "98",
+							"uri": "https://evenementresponsable.ademe.fr/onboarding",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/onboarding",
+							"method": "GET",
+							"param": "https://cdntag.tarteaucitron.io/load.js?domain=evenementresponsable.ademe.fr&uuid=2df1000bf385655312abede8e30421664e7d594e",
+							"attack": "",
+							"evidence": "<script src=\"https://cdntag.tarteaucitron.io/load.js?domain=evenementresponsable.ademe.fr&amp;uuid=2df1000bf385655312abede8e30421664e7d594e\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"id": "23",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js",
+							"attack": "",
+							"evidence": "<script src=\"https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"id": "24",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "https://oss.maxcdn.com/respond/1.4.2/respond.min.js",
+							"attack": "",
+							"evidence": "<script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
+					"otherinfo": "",
+					"reference": "",
+					"cweid": "829",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90004",
+					"alertRef": "90004-2",
+					"alert": "Cross-Origin-Embedder-Policy Header Missing or Invalid",
+					"name": "Cross-Origin-Embedder-Policy Header Missing or Invalid",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
+					"instances":[ 
+						{
+							"id": "59",
+							"uri": "https://evenementresponsable.ademe.fr",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "117",
+							"uri": "https://evenementresponsable.ademe.fr/",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "125",
+							"uri": "https://evenementresponsable.ademe.fr/a-propos-ademe",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/a-propos-ademe",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "137",
+							"uri": "https://evenementresponsable.ademe.fr/login",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/login",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "108",
+							"uri": "https://evenementresponsable.ademe.fr/onboarding",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/onboarding",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": false,
+					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Embedder-Policy header appropriately, and that it sets the Cross-Origin-Embedder-Policy header to 'require-corp' for documents.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Embedder-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-embedder-policy).</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
+					"cweid": "693",
+					"wascid": "14",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90004",
+					"alertRef": "90004-3",
+					"alert": "Cross-Origin-Opener-Policy Header Missing or Invalid",
+					"name": "Cross-Origin-Opener-Policy Header Missing or Invalid",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>Cross-Origin-Opener-Policy header is a response header that allows a site to control if others included documents share the same browsing context. Sharing the same browsing context with untrusted documents might lead to data leak.</p>",
+					"instances":[ 
+						{
+							"id": "60",
+							"uri": "https://evenementresponsable.ademe.fr",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr",
+							"method": "GET",
+							"param": "Cross-Origin-Opener-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "118",
+							"uri": "https://evenementresponsable.ademe.fr/",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/",
+							"method": "GET",
+							"param": "Cross-Origin-Opener-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "126",
+							"uri": "https://evenementresponsable.ademe.fr/a-propos-ademe",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/a-propos-ademe",
+							"method": "GET",
+							"param": "Cross-Origin-Opener-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "138",
+							"uri": "https://evenementresponsable.ademe.fr/login",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/login",
+							"method": "GET",
+							"param": "Cross-Origin-Opener-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "109",
+							"uri": "https://evenementresponsable.ademe.fr/onboarding",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/onboarding",
+							"method": "GET",
+							"param": "Cross-Origin-Opener-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": false,
+					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Opener-Policy header appropriately, and that it sets the Cross-Origin-Opener-Policy header to 'same-origin' for documents.</p><p>'same-origin-allow-popups' is considered as less secured and should be avoided.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Opener-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-opener-policy).</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Opener-Policy</p>",
+					"cweid": "693",
+					"wascid": "14",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "110009",
+					"alertRef": "110009",
+					"alert": "Full Path Disclosure",
+					"name": "Full Path Disclosure",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>The full path of files which might be sensitive has been exposed to the client.</p>",
+					"instances":[ 
+						{
+							"id": "226",
+							"uri": "https://evenementresponsable.ademe.fr./www.youronlinechoices.com",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/www.youronlinechoices.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "/lib/",
+							"otherinfo": ""
+						},
+						{
+							"id": "41",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "/lib/",
+							"otherinfo": ""
+						},
+						{
+							"id": "185",
+							"uri": "https://evenementresponsable.ademe.fr/www.youronlinechoices.com",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/www.youronlinechoices.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "/lib/",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Disable directory browsing in your web server. Refer to the web server documentation.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://owasp.org/www-community/attacks/Full_Path_Disclosure</p>",
+					"cweid": "209",
+					"wascid": "13",
+					"sourceid": "275"
+				},
+				{
+					"pluginid": "10063",
+					"alertRef": "10063-1",
+					"alert": "Permissions Policy Header Not Set",
+					"name": "Permissions Policy Header Not Set",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
+					"instances":[ 
+						{
+							"id": "217",
+							"uri": "https://evenementresponsable.ademe.fr./cdn-cgi/l/email-protection",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/cdn-cgi\/l\/email-protection",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "219",
+							"uri": "https://evenementresponsable.ademe.fr./cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/cdn-cgi\/scripts\/5c5dd728\/cloudflare-static\/email-decode.min.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "173",
+							"uri": "https://evenementresponsable.ademe.fr/cdn-cgi/l/email-protection",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/cdn-cgi\/l\/email-protection",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "177",
+							"uri": "https://evenementresponsable.ademe.fr/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/cdn-cgi\/scripts\/5c5dd728\/cloudflare-static\/email-decode.min.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "244"
+				},
+				{
+					"pluginid": "10037",
+					"alertRef": "10037",
+					"alert": "Server Leaks Information via \"X-Powered-By\" HTTP Response Header Field(s)",
+					"name": "Server Leaks Information via \"X-Powered-By\" HTTP Response Header Field(s)",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The web/application server is leaking information via one or more \"X-Powered-By\" HTTP response headers. Access to such information may facilitate attackers identifying other frameworks/components your web application is reliant upon and the vulnerabilities such components may be subject to.</p>",
+					"instances":[ 
+						{
+							"id": "28",
+							"uri": "https://evenementresponsable.ademe.fr",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "x-powered-by: PHP/8.4.24",
+							"otherinfo": ""
+						},
+						{
+							"id": "112",
+							"uri": "https://evenementresponsable.ademe.fr/",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "x-powered-by: PHP/8.4.24",
+							"otherinfo": ""
+						},
+						{
+							"id": "122",
+							"uri": "https://evenementresponsable.ademe.fr/a-propos-ademe",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/a-propos-ademe",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "x-powered-by: PHP/8.4.24",
+							"otherinfo": ""
+						},
+						{
+							"id": "102",
+							"uri": "https://evenementresponsable.ademe.fr/onboarding",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/onboarding",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "x-powered-by: PHP/8.4.24",
+							"otherinfo": ""
+						},
+						{
+							"id": "35",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "x-powered-by: PHP/8.4.24",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress \"X-Powered-By\" headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework</p><p>https://www.troyhunt.com/shhh-dont-let-your-response-headers/</p>",
+					"cweid": "497",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10035",
+					"alertRef": "10035-1",
+					"alert": "Strict-Transport-Security Header Not Set",
+					"name": "Strict-Transport-Security Header Not Set",
+					"riskcode": "1",
+					"confidence": "3",
+					"riskdesc": "Low (High)",
+					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
+					"instances":[ 
+						{
+							"id": "216",
+							"uri": "https://evenementresponsable.ademe.fr./cdn-cgi/l/email-protection",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/cdn-cgi\/l\/email-protection",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "218",
+							"uri": "https://evenementresponsable.ademe.fr./cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/cdn-cgi\/scripts\/5c5dd728\/cloudflare-static\/email-decode.min.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "222",
+							"uri": "https://evenementresponsable.ademe.fr./cdn-cgi/styles/cf.errors.css",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/cdn-cgi\/styles\/cf.errors.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "224",
+							"uri": "https://evenementresponsable.ademe.fr./cdn-cgi/styles/cf.errors.ie.css",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/cdn-cgi\/styles\/cf.errors.ie.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "172",
+							"uri": "https://evenementresponsable.ademe.fr/cdn-cgi/l/email-protection",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/cdn-cgi\/l\/email-protection",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "176",
+							"uri": "https://evenementresponsable.ademe.fr/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/cdn-cgi\/scripts\/5c5dd728\/cloudflare-static\/email-decode.min.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "189",
+							"uri": "https://evenementresponsable.ademe.fr/cdn-cgi/styles/cf.errors.css",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/cdn-cgi\/styles\/cf.errors.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "191",
+							"uri": "https://evenementresponsable.ademe.fr/cdn-cgi/styles/cf.errors.ie.css",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/cdn-cgi\/styles\/cf.errors.ie.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "8",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
+					"cweid": "319",
+					"wascid": "15",
+					"sourceid": "244"
+				},
+				{
+					"pluginid": "10096",
+					"alertRef": "10096",
+					"alert": "Timestamp Disclosure - Unix",
+					"name": "Timestamp Disclosure - Unix",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>A timestamp was disclosed by the application/web server. - Unix</p>",
+					"instances":[ 
+						{
+							"id": "27",
+							"uri": "https://evenementresponsable.ademe.fr",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789642262",
+							"otherinfo": "1789642262, which evaluates to: 2026-09-17 10:51:02."
+						},
+						{
+							"id": "86",
+							"uri": "https://evenementresponsable.ademe.fr",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789642264",
+							"otherinfo": "1789642264, which evaluates to: 2026-09-17 10:51:04."
+						},
+						{
+							"id": "202",
+							"uri": "https://evenementresponsable.ademe.fr./",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789642267",
+							"otherinfo": "1789642267, which evaluates to: 2026-09-17 10:51:07."
+						},
+						{
+							"id": "208",
+							"uri": "https://evenementresponsable.ademe.fr./a-propos-ademe",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/a-propos-ademe",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789642268",
+							"otherinfo": "1789642268, which evaluates to: 2026-09-17 10:51:08."
+						},
+						{
+							"id": "206",
+							"uri": "https://evenementresponsable.ademe.fr./accessibilite",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/accessibilite",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789642268",
+							"otherinfo": "1789642268, which evaluates to: 2026-09-17 10:51:08."
+						},
+						{
+							"id": "204",
+							"uri": "https://evenementresponsable.ademe.fr./mentions-legales",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/mentions-legales",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789642268",
+							"otherinfo": "1789642268, which evaluates to: 2026-09-17 10:51:08."
+						},
+						{
+							"id": "210",
+							"uri": "https://evenementresponsable.ademe.fr./politique-cookies",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/politique-cookies",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789642268",
+							"otherinfo": "1789642268, which evaluates to: 2026-09-17 10:51:08."
+						},
+						{
+							"id": "12",
+							"uri": "https://evenementresponsable.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789642264",
+							"otherinfo": "1789642264, which evaluates to: 2026-09-17 10:51:04."
+						},
+						{
+							"id": "34",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789642264",
+							"otherinfo": "1789642264, which evaluates to: 2026-09-17 10:51:04."
+						},
+						{
+							"id": "200",
+							"uri": "https://evenementresponsable.ademe.fr/register",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/register ()(_token,cgu_collect_data,cgu_confirm,email,password,password_confirmation)",
+							"method": "POST",
+							"param": "set-cookie",
+							"attack": "",
+							"evidence": "1789642268",
+							"otherinfo": "1789642268, which evaluates to: 2026-09-17 10:51:08."
+						}
+					],
+					"count": "10",
+					"systemic": true,
+					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
+					"otherinfo": "<p>1789642262, which evaluates to: 2026-09-17 10:51:02.</p>",
+					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
+					"cweid": "497",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10021",
+					"alertRef": "10021",
+					"alert": "X-Content-Type-Options Header Missing",
+					"name": "X-Content-Type-Options Header Missing",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
+					"instances":[ 
+						{
+							"id": "223",
+							"uri": "https://evenementresponsable.ademe.fr./cdn-cgi/styles/cf.errors.css",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/cdn-cgi\/styles\/cf.errors.css",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"id": "225",
+							"uri": "https://evenementresponsable.ademe.fr./cdn-cgi/styles/cf.errors.ie.css",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/cdn-cgi\/styles\/cf.errors.ie.css",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"id": "190",
+							"uri": "https://evenementresponsable.ademe.fr/cdn-cgi/styles/cf.errors.css",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/cdn-cgi\/styles\/cf.errors.css",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"id": "192",
+							"uri": "https://evenementresponsable.ademe.fr/cdn-cgi/styles/cf.errors.ie.css",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/cdn-cgi\/styles\/cf.errors.ie.css",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>",
+					"otherinfo": "<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At \"High\" threshold this scan rule will not alert on client or server error responses.</p>",
+					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p><p>https://owasp.org/www-community/Security_Headers</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "266"
+				},
+				{
+					"pluginid": "10111",
+					"alertRef": "10111",
+					"alert": "Authentication Request Identified",
+					"name": "Authentication Request Identified",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>The given request has been identified as an authentication request. The 'Other Info' field contains a set of key=value lines which identify any relevant fields. If the request is in a context which has an Authentication Method set to \"Auto-Detect\" then this rule will change the authentication to match the request identified.</p>",
+					"instances":[ 
+						{
+							"id": "221",
+							"uri": "https://evenementresponsable.ademe.fr./login",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/login ()(_token,email,password,remember)",
+							"method": "POST",
+							"param": "email",
+							"attack": "",
+							"evidence": "password",
+							"otherinfo": "userParam=email\nuserValue=zaproxy@example.com\npasswordParam=password\nreferer=https://evenementresponsable.ademe.fr./login\ncsrfToken=_token"
+						},
+						{
+							"id": "175",
+							"uri": "https://evenementresponsable.ademe.fr/login",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/login ()(_token,email,password,remember)",
+							"method": "POST",
+							"param": "email",
+							"attack": "",
+							"evidence": "password",
+							"otherinfo": "userParam=email\nuserValue=zaproxy@example.com\npasswordParam=password\nreferer=https://evenementresponsable.ademe.fr/login\ncsrfToken=_token"
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
+					"otherinfo": "<p>userParam=email</p><p>userValue=zaproxy@example.com</p><p>passwordParam=password</p><p>referer=https://evenementresponsable.ademe.fr./login</p><p>csrfToken=_token</p>",
+					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/</p>",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "264"
+				},
+				{
+					"pluginid": "10094",
+					"alertRef": "10094-3",
+					"alert": "Base64 Disclosure",
+					"name": "Base64 Disclosure",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
+					"instances":[ 
+						{
+							"id": "56",
+							"uri": "https://evenementresponsable.ademe.fr",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eyJpdiI6IldOMTVFQnpLV2w1SDEzd1pLOHhZSEE9PSIsInZhbHVlIjoiQlEvbHYwWGo3bnVMdGVFY3JYM2pGTFl3L24wN0JBS2pYbnFwQnpoeW41V1VLNWxuOHdBdjY0QlVWVzB4Y0s4WmJBOUFsa1o1enl1Y254STZXNzF6V2VaVlF2Y2JyM3lxWHdYSnY4QXNVdU82S1A1dk5sM0NHektsaG1lR0ZTRy8iLCJtYWMiOiI3MWZjMjMzNGExMjY2NzFlOTE5MzY3ZjliODllNmFmMzFmMzE2OWZiMDNlNmZhODdmMzJkODkxOWUyOTBiZDAxIiwidGFnIjoiIn0",
+							"otherinfo": "{\"iv\":\"WN15EBzKWl5H13wZK8xYHA==\",\"value\":\"BQ/lv0Xj7nuLteEcrX3jFLYw/n07BAKjXnqpBzhyn5WUK5ln8wAv64BUVW0xcK8ZbA9AlkZ5zyucnxI6W71zWeZVQvcbr3yqXwXJv8AsUuO6KP5vNl3CGzKlhmeGFSG/\",\"mac\":\"71fc2334a126671e919367f9b89e6af31f3169fb03e6fa87f32d8919e290bd01\",\"tag\":\"\"}"
+						},
+						{
+							"id": "88",
+							"uri": "https://evenementresponsable.ademe.fr",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eyJpdiI6ImcxYXUxemU5OWVwdUY3UUczeHpCNGc9PSIsInZhbHVlIjoic0xONURjeWJLODFnVWVwZzMzcEdtSGRTK29MWDdvM1dRaWgvNVM1Y0FaeE1SbUIrM2NlV0M2VW5FN01NRzA4ZFpta2FnQTNCQ3BkSm11OG9Mb2tVdXJ4ZzlCSVFrRUd5RDIxK2kwRzNlZDU3eHBBQi9KS1dnbnFCM0t5YVN1OUciLCJtYWMiOiI2YTI1Yzg0MjViZjI0NWQ0ZjZmYmVlMWI0MjI1Yzc1OTc4NDQxZTJkOGYzZGZlNWYzYTBjZjBmNmZkYWU5YWM2IiwidGFnIjoiIn0",
+							"otherinfo": "{\"iv\":\"g1au1ze99epuF7QG3xzB4g==\",\"value\":\"sLN5DcybK81gUepg33pGmHdS+oLX7o3WQih/5S5cAZxMRmB+3ceWC6UnE7MMG08dZmkagA3BCpdJmu8oLokUurxg9BIQkEGyD21+i0G3ed57xpAB/JKWgnqB3KyaSu9G\",\"mac\":\"6a25c8425bf245d4f6fbee1b4225c75978441e2d8f3dfe5f3a0cf0f6fdae9ac6\",\"tag\":\"\"}"
+						},
+						{
+							"id": "113",
+							"uri": "https://evenementresponsable.ademe.fr/",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eyJpdiI6IlBDWGVPZHlQNnRpZkZjNWtiN0FMb1E9PSIsInZhbHVlIjoiZ2NWeEh2WFN4a3lOZ2NZUFpVVHo1M2xOSkJ4b05NYXN1R3Y0Wjgwdk9iUjB6SXBaMVZ1WHNObmJGczQ3WWF2enZQbmJxWWlHWHRXZkhzNFhrZzA2d043UXJzeDJjWjhZZmVXeFRSZjdIWDRjaWI4Y0lQYWpWUFpCRlVaLzFjWkIiLCJtYWMiOiI3YjcyYjQyYjlhODEyYmJjMTZhYWFhMTJjNzYwZjU3YzUxZDA0ZmRlZDgyMWFlNmZlZjNiZmNiMmE0YTRlNWUwIiwidGFnIjoiIn0",
+							"otherinfo": "{\"iv\":\"PCXeOdyP6tifFc5kb7ALoQ==\",\"value\":\"gcVxHvXSxkyNgcYPZUTz53lNJBxoNMasuGv4Z80vObR0zIpZ1VuXsNnbFs47YavzvPnbqYiGXtWfHs4Xkg06wN7Qrsx2cZ8YfeWxTRf7HX4cib8cIPajVPZBFUZ/1cZB\",\"mac\":\"7b72b42b9a812bbc16aaaa12c760f57c51d04fded821ae6fef3bfcb2a4a4e5e0\",\"tag\":\"\"}"
+						},
+						{
+							"id": "123",
+							"uri": "https://evenementresponsable.ademe.fr/a-propos-ademe",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/a-propos-ademe",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eyJpdiI6ImlJMTE2d0VvN0JvdldXNy9JZ3lsYUE9PSIsInZhbHVlIjoiY2xzVU5RUEgyWEJ4a0ljU0tkUjVjSG9XVFM1QVkzK3JaZ1NwQmp6dEFubUlGWmlxc1htYTNFT0pXazFSdmpoZ0M0Wm12Z1NmcGpZeDJUcFlSVDZ5ZGU4Q0R6RzhVN2lyZlNOV2FSNEdSZ2lDYjBSVmdSWlNEZVZXWlVzTklES2ciLCJtYWMiOiIxOTFlMzQ1NGRhOGVhYTI5NmM2MjkxZjgzNDg0ZWEyNjYwN2I1NjMzNjE3OTMwOTk1OTY2ZjRhZDc5ODM3MDA3IiwidGFnIjoiIn0",
+							"otherinfo": "{\"iv\":\"iI116wEo7BovWW7/IgylaA==\",\"value\":\"clsUNQPH2XBxkIcSKdR5cHoWTS5AY3+rZgSpBjztAnmIFZiqsXma3EOJWk1RvjhgC4ZmvgSfpjYx2TpYRT6yde8CDzG8U7irfSNWaR4GRgiCb0RVgRZSDeVWZUsNIDKg\",\"mac\":\"191e3454da8eaa296c6291f83484ea26607b5633617930995966f4ad79837007\",\"tag\":\"\"}"
+						},
+						{
+							"id": "148",
+							"uri": "https://evenementresponsable.ademe.fr/conditions-generales-utilisation",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/conditions-generales-utilisation",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eyJpdiI6IkFZazJad0p4cmlGYmJLOVhUUnhQUUE9PSIsInZhbHVlIjoiQStDazZzWnZ0M0pSNkU1TmR4Mkp6UFhsNU9obzJkTXR0OStRUWZxdXNDaGhzTldZOWZ3YW9GMDZkeUwybk1hZDBGT0FwMUJMaVFlSHNSSEtibThTU3VMWVJaeEhQdFRLbXNvY1NJSTR3enNBK3J5Q09JeXRYQ2IzK0V0ZUVrZ1oiLCJtYWMiOiJiMmE4YjQ4MTk3N2ZlMmIxYzNmNTdhZDNhNzYzMjFjMjRhMzJhMTY0MzU3N2U5OGQ5ZWJjNGFkZWE0ZDI4NTBlIiwidGFnIjoiIn0",
+							"otherinfo": "{\"iv\":\"AYk2ZwJxriFbbK9XTRxPQA==\",\"value\":\"A+Ck6sZvt3JR6E5Ndx2JzPXl5Oho2dMtt9+QQfqusChhsNWY9fwaoF06dyL2nMad0FOAp1BLiQeHsRHKbm8SSuLYRZxHPtTKmsocSII4wzsA+ryCOIytXCb3+EteEkgZ\",\"mac\":\"b2a8b481977fe2b1c3f57ad3a76321c24a32a1643577e98d9ebc4adea4d2850e\",\"tag\":\"\"}"
+						},
+						{
+							"id": "135",
+							"uri": "https://evenementresponsable.ademe.fr/login",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/login",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eyJpdiI6Im1lUjQ4SFhlV3YxSTNTc0lxUzBIL2c9PSIsInZhbHVlIjoiZGdyZm80aS9SRVNZK1c4S1NUcjZBMU1veTJsUFlpMHZ5THdQL29jcTl6YlJ2MG92b3M3KzNWVCttUnlweXhPOVlrcUZzVDRGaFdRMzF4bHU5R1FEOTFoVTdsLzI5N1RmbkQ2OFBNRjJuOHY5ZWM3UzB2NEVxS29UTWthQVRTMVUiLCJtYWMiOiJkOWFiOWQxYTM0ZDY1MjIwMjk4YzJmMWNhYjk2YzM3NTBmYmRjMmIwNGU1ZTk1YzI5YmJlYzkyZmQ3ZDQ5ZjMwIiwidGFnIjoiIn0",
+							"otherinfo": "{\"iv\":\"meR48HXeWv1I3SsIqS0H/g==\",\"value\":\"dgrfo4i/RESY+W8KSTr6A1Moy2lPYi0vyLwP/ocq9zbRv0ovos7+3VT+mRypyxO9YkqFsT4FhWQ31xlu9GQD91hU7l/297TfnD68PMF2n8v9ec7S0v4EqKoTMkaATS1U\",\"mac\":\"d9ab9d1a34d65220298c2f1cab96c3750fbdc2b04e5e95c29bbec92fd7d49f30\",\"tag\":\"\"}"
+						},
+						{
+							"id": "104",
+							"uri": "https://evenementresponsable.ademe.fr/onboarding",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/onboarding",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eyJpdiI6Ikp4UHhIZ1dJTEZkR00wTzlkc1NLS1E9PSIsInZhbHVlIjoiNHVodDJDZ210eUZhSnJaWUdjTVNudjlacHNDRUgrMkRRU2hzb0RWR2hXb0NEbWtLTXRvbVMrQmcxcWhLU3FkT3FZNHFWbTNadHVMT3VYa3N1NGlUbUFVRVV6NTVFak16ZmliM2twWWJzOFdLd0pzYllteVJMTjdKL2E3WnVER2giLCJtYWMiOiJjMjgzM2IyMTNiOWNkODJiNTdiNTIxMGI5NTIwMTliMzY1MjMzYzVhMjIzYTczMmQ1Yzg1OGYxYzE3OTg5ZGM3IiwidGFnIjoiIn0",
+							"otherinfo": "{\"iv\":\"JxPxHgWILFdGM0O9dsSKKQ==\",\"value\":\"4uht2CgmtyFaJrZYGcMSnv9ZpsCEH+2DQShsoDVGhWoCDmkKMtomS+Bg1qhKSqdOqY4qVm3ZtuLOuXksu4iTmAUEUz55EjMzfib3kpYbs8WKwJsbYmyRLN7J/a7ZuDGh\",\"mac\":\"c2833b213b9cd82b57b5210b952019b365233c5a223a732d5c858f1c17989dc7\",\"tag\":\"\"}"
+						},
+						{
+							"id": "49",
+							"uri": "https://evenementresponsable.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1-HhTrQNsVGF5Cq_2Nt50VIRzvEzzZt5DzYwjuyBzuEjTkb0f067jQ0rc0PWyCiRdrUpl165TAErSq5aZPCFMoIUuS",
+							"otherinfo": "\uFFFD\uFFFD\uFFFDN\uFFFD\r\uFFFDQ\uFFFD\uFFFD*\uFFFD\uFFFD\uFFFDy\uFFFDR\\x0011\uFFFD\uFFFD3\u035By\\x000f60\uFFFD\uFFFD\uFFFD\uFFFD#NF\uFFFDN\uFFFD\uFFFD\r+sC\uFFFD\uFFFD(\uFFFDv\uFFFD)\uFFFD^\uFFFDL\\x0001+J\uFFFDZd\uFFFD\uFFFD2\uFFFD\\x0014\uFFFD"
+						},
+						{
+							"id": "36",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "zCME_RFfUhIq7cl6kooZmmWkHCiksQEtSZsI5mnlfOX",
+							"otherinfo": "\uFFFD#\\x0004\uFFFD\\x0011_R\\x0012*\uFFFD\uFFFDz\uFFFD\uFFFD\\x0019\uFFFDe\uFFFD\\x001c(\uFFFD\uFFFD\\x0001-I\uFFFD\\x0008\uFFFDi\uFFFD|\uFFFD"
+						},
+						{
+							"id": "95",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/unpkg.com/@digitallyhappy/backstrap@0.5.1/dist/css/legacy.css",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/unpkg.com\/@digitallyhappy\/backstrap@0.5.1\/dist\/css\/legacy.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+							"otherinfo": "GIF89a\\x0001\\x0000\\x0001\\x0000\uFFFD\\x0000\\x0000\\x0000\\x0000\\x0000\uFFFD\uFFFD\uFFFD!\uFFFD\\x0004\\x0001\\x0000\\x0000\\x0000\\x0000,\\x0000\\x0000\\x0000\\x0000\\x0001\\x0000\\x0001\\x0000\\x0000\\x0002\\x0001D\\x0000;"
+						},
+						{
+							"id": "99",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/unpkg.com/noty@3.2.0-beta-deprecated/lib/noty.min.js",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/unpkg.com\/noty@3.2.0-beta-deprecated\/lib\/noty.min.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "com/stefanpenner/es6-promise/master/LICENSE",
+							"otherinfo": "r\uFFFD\uFFFD\uFFFD\u05DFjz^\uFFFDw\uFFFD\uFFFD\uFFFD:\uFFFD\uFFFD\uFFFD+\\x001e\uFFFDf\uFFFD\uFFFD\uFFFD\uFFFD,\uFFFD\uFFFD5!"
+						},
+						{
+							"id": "66",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/vendor/backpack/theme-coreuiv2/resources/assets/css/source-sans-pro.css",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/vendor\/backpack\/theme-coreuiv2\/resources\/assets\/css\/source-sans-pro.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "/source-sans-pro/SourceSans3-ExtraLight",
+							"otherinfo": "\uFFFD\uFFFD.\uFFFD\u01FE\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD*.\uFFFD\u01D2j{7\uFFFDLm\uFFFD\uFFFD\uFFFD\\x001b"
+						}
+					],
+					"count": "12",
+					"systemic": false,
+					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
+					"otherinfo": "<p>{\"iv\":\"WN15EBzKWl5H13wZK8xYHA==\",\"value\":\"BQ/lv0Xj7nuLteEcrX3jFLYw/n07BAKjXnqpBzhyn5WUK5ln8wAv64BUVW0xcK8ZbA9AlkZ5zyucnxI6W71zWeZVQvcbr3yqXwXJv8AsUuO6KP5vNl3CGzKlhmeGFSG/\",\"mac\":\"71fc2334a126671e919367f9b89e6af31f3169fb03e6fa87f32d8919e290bd01\",\"tag\":\"\"}</p>",
+					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "319",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10027",
+					"alertRef": "10027",
+					"alert": "Information Disclosure - Suspicious Comments",
+					"name": "Information Disclosure - Suspicious Comments",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response appears to contain suspicious comments which may help an attacker.</p>",
+					"instances":[ 
+						{
+							"id": "30",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "// get alerts from the alert bag",
+							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected 5 times, the first in likely comment: \"// get alerts from the alert bag\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"id": "29",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "// when the user is beeing redirecte",
+							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected in likely comment: \"// when the user is beeing redirected by persistent table, that happens before this event triggers.\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"id": "178",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/unpkg.com/@coreui/coreui@2.1.16/dist/js/coreui.js",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/unpkg.com\/@coreui\/coreui@2.1.16\/dist\/js\/coreui.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "// Nashorn ~ JDK8 bug",
+							"otherinfo": "The following pattern was used: \\bBUG\\b and was detected 5 times, the first in likely comment: \"// Nashorn ~ JDK8 bug\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"id": "181",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/unpkg.com/@coreui/coreui@2.1.16/dist/js/coreui.js",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/unpkg.com\/@coreui\/coreui@2.1.16\/dist\/js\/coreui.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "// ToDo: Add smooth transit",
+							"otherinfo": "The following pattern was used: \\bTODO\\b and was detected 2 times, the first in likely comment: \"// ToDo: Add smooth transition\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"id": "182",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/unpkg.com/@coreui/coreui@2.1.16/dist/js/coreui.js",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/unpkg.com\/@coreui\/coreui@2.1.16\/dist\/js\/coreui.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "ative `Array#slice` where it's possible",
+							"otherinfo": "The following pattern was used: \\bWHERE\\b and was detected in likely comment: \"// inline `ArraySpeciesCreate` for usage native `Array#slice` where it's possible\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"id": "179",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/unpkg.com/@coreui/coreui@2.1.16/dist/js/coreui.js",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/unpkg.com\/@coreui\/coreui@2.1.16\/dist\/js\/coreui.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eQA) when trying to debug it.",
+							"otherinfo": "The following pattern was used: \\bDEBUG\\b and was detected in likely comment: \"// causes a crash (https://pastebin.com/N21QzeQA) when trying to debug it.\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"id": "180",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/unpkg.com/@coreui/coreui@2.1.16/dist/js/coreui.js",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/unpkg.com\/@coreui\/coreui@2.1.16\/dist\/js\/coreui.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "uring group, copied from es5-shim's String#s",
+							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected 6 times, the first in likely comment: \"// nonparticipating capturing group, copied from es5-shim's String#split patch.\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"id": "196",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/unpkg.com/esri-leaflet-geocoder@2.3.2/dist/esri-leaflet-geocoder-debug.js",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/unpkg.com\/esri-leaflet-geocoder@2.3.2\/dist\/esri-leaflet-geocoder-debug.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "// TODO: this is too greedy",
+							"otherinfo": "The following pattern was used: \\bTODO\\b and was detected in likely comment: \"// TODO: this is too greedy and should not \"clear\"\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"id": "194",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/unpkg.com/esri-leaflet-geocoder@2.3.2/dist/esri-leaflet-geocoder-debug.js",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/unpkg.com\/esri-leaflet-geocoder@2.3.2\/dist\/esri-leaflet-geocoder-debug.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "// clear query parameters for the ",
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in likely comment: \"// clear query parameters for the next search\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"id": "195",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/unpkg.com/esri-leaflet-geocoder@2.3.2/dist/esri-leaflet-geocoder-debug.js",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/unpkg.com\/esri-leaflet-geocoder@2.3.2\/dist\/esri-leaflet-geocoder-debug.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "ns offset (distance from top of suggestions ",
+							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected 2 times, the first in likely comment: \"//  - suggestions offset (distance from top of suggestions to top of control)\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"id": "193",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/unpkg.com/esri-leaflet-geocoder@2.3.2/dist/esri-leaflet-geocoder-debug.js",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/unpkg.com\/esri-leaflet-geocoder@2.3.2\/dist\/esri-leaflet-geocoder-debug.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "ri-leaflet-geocoder-debug.js.map",
+							"otherinfo": "The following pattern was used: \\bDEBUG\\b and was detected in likely comment: \"//# esri-leaflet-geocoder-debug.js.map\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"id": "232",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/unpkg.com/esri-leaflet@2.3.3/dist/esri-leaflet-debug.js",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/unpkg.com\/esri-leaflet@2.3.3\/dist\/esri-leaflet-debug.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "// @TODO: force return catal",
+							"otherinfo": "The following pattern was used: \\bTODO\\b and was detected 2 times, the first in likely comment: \"// @TODO: force return catalog items too?\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"id": "231",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/unpkg.com/esri-leaflet@2.3.3/dist/esri-leaflet-debug.js",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/unpkg.com\/esri-leaflet@2.3.3\/dist\/esri-leaflet-debug.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "// ported from terraformer.js http",
+							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected 19 times, the first in likely comment: \"// ported from terraformer.js https://github.com/Esri/Terraformer/blob/master/terraformer.js#L504-L519\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"id": "227",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/unpkg.com/esri-leaflet@2.3.3/dist/esri-leaflet-debug.js",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/unpkg.com\/esri-leaflet@2.3.3\/dist\/esri-leaflet-debug.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "//# esri-leaflet-debug.js.map",
+							"otherinfo": "The following pattern was used: \\bDEBUG\\b and was detected in likely comment: \"//# esri-leaflet-debug.js.map\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"id": "229",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/unpkg.com/esri-leaflet@2.3.3/dist/esri-leaflet-debug.js",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/unpkg.com\/esri-leaflet@2.3.3\/dist\/esri-leaflet-debug.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "e way to zoom 22 in select regions",
+							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in likely comment: \"// Esri World Imagery is cached all the way to zoom 22 in select regions\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"id": "230",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/unpkg.com/esri-leaflet@2.3.3/dist/esri-leaflet-debug.js",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/unpkg.com\/esri-leaflet@2.3.3\/dist\/esri-leaflet-debug.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "h to the url if the user omitted it",
+							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected 5 times, the first in likely comment: \"// add a trailing slash to the url if the user omitted it\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"id": "233",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/unpkg.com/esri-leaflet@2.3.3/dist/esri-leaflet-debug.js",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/unpkg.com\/esri-leaflet@2.3.3\/dist\/esri-leaflet-debug.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "he popup to the map where the mouse was click",
+							"otherinfo": "The following pattern was used: \\bWHERE\\b and was detected 3 times, the first in likely comment: \"// add the popup to the map where the mouse was clicked at\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"id": "228",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/unpkg.com/esri-leaflet@2.3.3/dist/esri-leaflet-debug.js",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/unpkg.com\/esri-leaflet@2.3.3\/dist\/esri-leaflet-debug.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "the envelope of the query geometry intersects",
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in likely comment: \"// Returns a feature if the envelope of the query geometry intersects the index entry for the target geometry\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"id": "184",
+							"uri": "https://evenementresponsable.ademe.fr/www.youronlinechoices.com",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/www.youronlinechoices.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "// get alerts from the alert bag",
+							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected 5 times, the first in likely comment: \"// get alerts from the alert bag\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"id": "183",
+							"uri": "https://evenementresponsable.ademe.fr/www.youronlinechoices.com",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/www.youronlinechoices.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "// when the user is beeing redirecte",
+							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected in likely comment: \"// when the user is beeing redirected by persistent table, that happens before this event triggers.\", see evidence field for the suspicious comment/snippet."
+						}
+					],
+					"count": "20",
+					"systemic": false,
+					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bFROM\\b and was detected 5 times, the first in likely comment: \"// get alerts from the alert bag\", see evidence field for the suspicious comment/snippet.</p>",
+					"reference": "",
+					"cweid": "615",
+					"wascid": "13",
+					"sourceid": "7"
+				},
+				{
+					"pluginid": "90033",
+					"alertRef": "90033",
+					"alert": "Loosely Scoped Cookie",
+					"name": "Loosely Scoped Cookie",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>Cookies can be scoped by domain or path. This check is only concerned with domain scope.The domain scope applied to a cookie determines which domains can access it. For example, a cookie can be scoped strictly to a subdomain e.g. www.nottrusted.com, or loosely scoped to a parent domain e.g. nottrusted.com. In the latter case, any subdomain of nottrusted.com can access the cookie. Loosely scoped cookies are common in mega-applications like google.com and live.com. Cookies set from a subdomain like app.foo.bar are transmitted only to that domain by the browser. However, cookies scoped to a parent-level domain may be transmitted to the parent, or any subdomain of the parent.</p>",
+					"instances":[ 
+						{
+							"id": "17",
+							"uri": "https://evenementresponsable.ademe.fr",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Domain=ademe.fr",
+							"otherinfo": "The origin domain used for comparison was:\nevenementresponsable.ademe.fr\nCookie name: __cf_bm\n"
+						},
+						{
+							"id": "2",
+							"uri": "https://evenementresponsable.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Domain=ademe.fr",
+							"otherinfo": "The origin domain used for comparison was:\nevenementresponsable.ademe.fr\nCookie name: __cf_bm\n"
+						},
+						{
+							"id": "16",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Domain=ademe.fr",
+							"otherinfo": "The origin domain used for comparison was:\nevenementresponsable.ademe.fr\nCookie name: __cf_bm\n"
+						},
+						{
+							"id": "198",
+							"uri": "https://evenementresponsable.ademe.fr/register",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/register ()(_token,cgu_collect_data,cgu_confirm,email,password,password_confirmation)",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "Domain=ademe.fr",
+							"otherinfo": "The origin domain used for comparison was:\nevenementresponsable.ademe.fr\nCookie name: __cf_bm\n"
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>Always scope cookies to a FQDN (Fully Qualified Domain Name).</p>",
+					"otherinfo": "<p>The origin domain used for comparison was:</p><p>evenementresponsable.ademe.fr</p><p>Cookie name: __cf_bm</p><p></p>",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc6265#section-4.1</p><p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p><p>https://code.google.com/archive/p/browsersec/wikis/Part2.wiki</p>",
+					"cweid": "565",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10109",
+					"alertRef": "10109",
+					"alert": "Modern Web Application",
+					"name": "Modern Web Application",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Client Spider may well be more effective than the standard one.</p>",
+					"instances":[ 
+						{
+							"id": "25",
+							"uri": "https://evenementresponsable.ademe.fr",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<noscript>\n        <iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-KPP5K6W\" height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe>\n    </noscript>",
+							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
+						},
+						{
+							"id": "110",
+							"uri": "https://evenementresponsable.ademe.fr/",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<noscript>\n        <iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-KPP5K6W\" height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe>\n    </noscript>",
+							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
+						},
+						{
+							"id": "120",
+							"uri": "https://evenementresponsable.ademe.fr/a-propos-ademe",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/a-propos-ademe",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<noscript>\n        <iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-KPP5K6W\" height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe>\n    </noscript>",
+							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
+						},
+						{
+							"id": "100",
+							"uri": "https://evenementresponsable.ademe.fr/onboarding",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/onboarding",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<noscript>\n        <iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-KPP5K6W\" height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe>\n    </noscript>",
+							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
+						},
+						{
+							"id": "31",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js\"></script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>This is an informational alert and so no changes are required.</p>",
+					"otherinfo": "<p>A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not.</p>",
+					"reference": "",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10049",
+					"alertRef": "10049-1",
+					"alert": "Non-Storable Content",
+					"name": "Non-Storable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
+					"instances":[ 
+						{
+							"id": "58",
+							"uri": "https://evenementresponsable.ademe.fr",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "private",
+							"otherinfo": ""
+						},
+						{
+							"id": "43",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "private",
+							"otherinfo": ""
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
+					"cweid": "524",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10015",
+					"alertRef": "10015",
+					"alert": "Re-examine Cache-control Directives",
+					"name": "Re-examine Cache-control Directives",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
+					"instances":[ 
+						{
+							"id": "3",
+							"uri": "https://evenementresponsable.ademe.fr",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "no-cache, private",
+							"otherinfo": ""
+						},
+						{
+							"id": "103",
+							"uri": "https://evenementresponsable.ademe.fr/",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "no-cache, private",
+							"otherinfo": ""
+						},
+						{
+							"id": "114",
+							"uri": "https://evenementresponsable.ademe.fr/a-propos-ademe",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/a-propos-ademe",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "no-cache, private",
+							"otherinfo": ""
+						},
+						{
+							"id": "96",
+							"uri": "https://evenementresponsable.ademe.fr/onboarding",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/onboarding",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "no-cache, private",
+							"otherinfo": ""
+						},
+						{
+							"id": "1",
+							"uri": "https://evenementresponsable.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
+					"otherinfo": "",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
+					"cweid": "525",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-3",
+					"alert": "Sec-Fetch-Dest Header is Missing",
+					"name": "Sec-Fetch-Dest Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
+					"instances":[ 
+						{
+							"id": "52",
+							"uri": "https://evenementresponsable.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "39",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "46",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/vendor/backpack/theme-coreuiv2/resources/assets/css/coreuiv2.css",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/vendor\/backpack\/theme-coreuiv2\/resources\/assets\/css\/coreuiv2.css",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Dest</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-2",
+					"alert": "Sec-Fetch-Mode Header is Missing",
+					"name": "Sec-Fetch-Mode Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
+					"instances":[ 
+						{
+							"id": "51",
+							"uri": "https://evenementresponsable.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "38",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "45",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/vendor/backpack/theme-coreuiv2/resources/assets/css/coreuiv2.css",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/vendor\/backpack\/theme-coreuiv2\/resources\/assets\/css\/coreuiv2.css",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Mode</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-1",
+					"alert": "Sec-Fetch-Site Header is Missing",
+					"name": "Sec-Fetch-Site Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
+					"instances":[ 
+						{
+							"id": "50",
+							"uri": "https://evenementresponsable.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "37",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "44",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/vendor/backpack/theme-coreuiv2/resources/assets/css/coreuiv2.css",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/vendor\/backpack\/theme-coreuiv2\/resources\/assets\/css\/coreuiv2.css",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Site</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-4",
+					"alert": "Sec-Fetch-User Header is Missing",
+					"name": "Sec-Fetch-User Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
+					"instances":[ 
+						{
+							"id": "53",
+							"uri": "https://evenementresponsable.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "40",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "47",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/vendor/backpack/theme-coreuiv2/resources/assets/css/coreuiv2.css",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/vendor\/backpack\/theme-coreuiv2\/resources\/assets\/css\/coreuiv2.css",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "10112",
+					"alertRef": "10112",
+					"alert": "Session Management Response Identified",
+					"name": "Session Management Response Identified",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.</p>",
+					"instances":[ 
+						{
+							"id": "57",
+							"uri": "https://evenementresponsable.ademe.fr",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr",
+							"method": "GET",
+							"param": "laravel_session",
+							"attack": "",
+							"evidence": "laravel_session",
+							"otherinfo": "cookie:laravel_session\ncookie:__cf_bm\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "116",
+							"uri": "https://evenementresponsable.ademe.fr/",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/",
+							"method": "GET",
+							"param": "laravel_session",
+							"attack": "",
+							"evidence": "laravel_session",
+							"otherinfo": "cookie:laravel_session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "124",
+							"uri": "https://evenementresponsable.ademe.fr/a-propos-ademe",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/a-propos-ademe",
+							"method": "GET",
+							"param": "laravel_session",
+							"attack": "",
+							"evidence": "laravel_session",
+							"otherinfo": "cookie:laravel_session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "165",
+							"uri": "https://evenementresponsable.ademe.fr/accessibilite",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/accessibilite",
+							"method": "GET",
+							"param": "laravel_session",
+							"attack": "",
+							"evidence": "laravel_session",
+							"otherinfo": "cookie:laravel_session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "149",
+							"uri": "https://evenementresponsable.ademe.fr/conditions-generales-utilisation",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/conditions-generales-utilisation",
+							"method": "GET",
+							"param": "laravel_session",
+							"attack": "",
+							"evidence": "laravel_session",
+							"otherinfo": "cookie:laravel_session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "136",
+							"uri": "https://evenementresponsable.ademe.fr/login",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/login",
+							"method": "GET",
+							"param": "laravel_session",
+							"attack": "",
+							"evidence": "laravel_session",
+							"otherinfo": "cookie:laravel_session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "160",
+							"uri": "https://evenementresponsable.ademe.fr/mentions-legales",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/mentions-legales",
+							"method": "GET",
+							"param": "laravel_session",
+							"attack": "",
+							"evidence": "laravel_session",
+							"otherinfo": "cookie:laravel_session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "106",
+							"uri": "https://evenementresponsable.ademe.fr/onboarding",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/onboarding",
+							"method": "GET",
+							"param": "laravel_session",
+							"attack": "",
+							"evidence": "laravel_session",
+							"otherinfo": "cookie:laravel_session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "156",
+							"uri": "https://evenementresponsable.ademe.fr/politique-cookies",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/politique-cookies",
+							"method": "GET",
+							"param": "laravel_session",
+							"attack": "",
+							"evidence": "laravel_session",
+							"otherinfo": "cookie:laravel_session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "54",
+							"uri": "https://evenementresponsable.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "__cf_bm",
+							"otherinfo": "cookie:__cf_bm"
+						},
+						{
+							"id": "42",
+							"uri": "https://evenementresponsable.ademe.fr/sitemap.xml",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/sitemap.xml",
+							"method": "GET",
+							"param": "__cf_bm",
+							"attack": "",
+							"evidence": "__cf_bm",
+							"otherinfo": "cookie:__cf_bm"
+						}
+					],
+					"count": "11",
+					"systemic": false,
+					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
+					"otherinfo": "<p>cookie:laravel_session</p><p>cookie:__cf_bm</p><p>cookie:XSRF-TOKEN</p>",
+					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/</p>",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10049",
+					"alertRef": "10049-3",
+					"alert": "Storable and Cacheable Content",
+					"name": "Storable and Cacheable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
+					"instances":[ 
+						{
+							"id": "55",
+							"uri": "https://evenementresponsable.ademe.fr/robots.txt",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"id": "68",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/cdnjs.cloudflare.com\/ajax\/libs\/noty\/3.1.4\/noty.min.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"id": "62",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/vendor/backpack/crud/src/resources/assets/css/common.css",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/vendor\/backpack\/crud\/src\/resources\/assets\/css\/common.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"id": "48",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/vendor/backpack/theme-coreuiv2/resources/assets/css/coreuiv2.css",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/vendor\/backpack\/theme-coreuiv2\/resources\/assets\/css\/coreuiv2.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"id": "67",
+							"uri": "https://evenementresponsable.ademe.fr/storage/basset/vendor/backpack/theme-coreuiv2/resources/assets/css/source-sans-pro.css",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/storage\/basset\/vendor\/backpack\/theme-coreuiv2\/resources\/assets\/css\/source-sans-pro.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information. If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
+					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
+					"cweid": "524",
+					"wascid": "13",
+					"sourceid": "6"
+				},
+				{
+					"pluginid": "10031",
+					"alertRef": "10031",
+					"alert": "User Controllable HTML Element Attribute (Potential XSS)",
+					"name": "User Controllable HTML Element Attribute (Potential XSS)",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
+					"instances":[ 
+						{
+							"id": "235",
+							"uri": "https://evenementresponsable.ademe.fr./onboarding/event/create",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/onboarding\/event\/create ()(_token,address,city,department,event_end,event_hebergement,event_internet,event_name,event_prints,event_restauration,event_start,event_type,one_day,only_address,postal_code,region)",
+							"method": "POST",
+							"param": "_token",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://evenementresponsable.ademe.fr./onboarding/event/create\n\nappears to include user input in:\na(n) [meta] tag [content] attribute\n\nThe user input found was:\n_token=fLMZGf9fCypKVg3QXBHGS8xm2RTkD2ES07wMgC5K\n\nThe user-controlled value was:\nflmzgf9fcypkvg3qxbhgs8xm2rtkd2es07wmgc5k"
+						},
+						{
+							"id": "234",
+							"uri": "https://evenementresponsable.ademe.fr./onboarding/event/create",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr.\/onboarding\/event\/create ()(_token,address,city,department,event_end,event_hebergement,event_internet,event_name,event_prints,event_restauration,event_start,event_type,one_day,only_address,postal_code,region)",
+							"method": "POST",
+							"param": "event_hebergement",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://evenementresponsable.ademe.fr./onboarding/event/create\n\nappears to include user input in:\na(n) [meta] tag [content] attribute\n\nThe user input found was:\nevent_hebergement=1\n\nThe user-controlled value was:\nwidth=device-width, initial-scale=1"
+						},
+						{
+							"id": "188",
+							"uri": "https://evenementresponsable.ademe.fr/onboarding/event/create",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/onboarding\/event\/create ()(_token,address,city,department,event_end,event_hebergement,event_internet,event_name,event_prints,event_restauration,event_start,event_type,one_day,only_address,postal_code,region)",
+							"method": "POST",
+							"param": "_token",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://evenementresponsable.ademe.fr/onboarding/event/create\n\nappears to include user input in:\na(n) [meta] tag [content] attribute\n\nThe user input found was:\n_token=QCOpWNizXQfGsNP5Ifuy70tT8fmQwE4aa79yjAIo\n\nThe user-controlled value was:\nqcopwnizxqfgsnp5ifuy70tt8fmqwe4aa79yjaio"
+						},
+						{
+							"id": "187",
+							"uri": "https://evenementresponsable.ademe.fr/onboarding/event/create",
+							"nodeName": "https:\/\/evenementresponsable.ademe.fr\/onboarding\/event\/create ()(_token,address,city,department,event_end,event_hebergement,event_internet,event_name,event_prints,event_restauration,event_start,event_type,one_day,only_address,postal_code,region)",
+							"method": "POST",
+							"param": "event_hebergement",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://evenementresponsable.ademe.fr/onboarding/event/create\n\nappears to include user input in:\na(n) [meta] tag [content] attribute\n\nThe user input found was:\nevent_hebergement=1\n\nThe user-controlled value was:\nwidth=device-width, initial-scale=1"
+						}
+					],
+					"count": "4",
+					"systemic": false,
+					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://evenementresponsable.ademe.fr./onboarding/event/create</p><p></p><p>appears to include user input in:</p><p>a(n) [meta] tag [content] attribute</p><p></p><p>The user input found was:</p><p>_token=fLMZGf9fCypKVg3QXBHGS8xm2RTkD2ES07wMgC5K</p><p></p><p>The user-controlled value was:</p><p>flmzgf9fcypkvg3qxbhgs8xm2rtkd2es07wmgc5k</p>",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
+					"cweid": "20",
+					"wascid": "20",
+					"sourceid": "282"
+				}
+			]
+		}
+	],
+	"sequences":[
+	]
+
+}

@@ -1,0 +1,17 @@
+[
+    {
+        "width": 1920,
+        "height": 1080,
+        "url": "https://evenementresponsable.ademe.fr",
+        "size": 722.489,
+        "nodes": 223,
+        "requests": 19,
+        "grade": "A",
+        "score": 82.0,
+        "ges": 1.36,
+        "water": 2.04,
+        "ecoindex_version": "5.4.2",
+        "date": "2026-09-17 10:49:09.945483",
+        "page_type": null
+    }
+]
