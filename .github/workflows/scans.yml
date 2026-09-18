@@ -295,7 +295,7 @@ jobs:
           repositories: ${{ join(matrix.sites.repositories) }}
           output: scans/codescanalerts.json
 
-      - uses: SocialGouv/dashlord-actions/save@v1
+      - uses: SocialGouv/dashlord-actions/save@v1.46.1
         with:
           url: ${{ matrix.sites.url }}
           # only clean up previous stats when all tools runned
