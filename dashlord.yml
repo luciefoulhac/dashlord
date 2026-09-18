@@ -64,10 +64,10 @@ urls:
   #- url: https://lesgenerateurs.ademe.fr
   #  tags:
   #    - Wordpress
-  #- url: https://www.fresquedusol.com
-     title: Fresque du sol
-     category: Technologie
-     betaId: Wordpress
+  - url: https://www.fresquedusol.com
+    title: Fresque du sol
+    category: Technologie
+    betaId: Wordpress
   - url: https://economie-circulaire.ademe.fr
     title: Economie circulaire
     category: Technologie
