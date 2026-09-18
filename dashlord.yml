@@ -69,7 +69,8 @@ urls:
   #    - Wordpress
   - url: https://economie-circulaire.ademe.fr
     title: Economie circulaire
-    category: Drupal
+    category: Technologie
+    betaId: Drupal
   #- url: https://www.ecolabeltoolbox.com
   #  tags:
   #    - PHP
