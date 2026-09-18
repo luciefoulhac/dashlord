@@ -2,9 +2,7 @@
   {
     "404": [],
     "url": "https://economie-circulaire.ademe.fr",
-    "tags": [
-      "Drupal"
-    ],
+    "title": "Economie circulaire",
     "category": "Drupal",
     "http": {
       "scan": {
