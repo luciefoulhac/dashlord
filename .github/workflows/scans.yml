@@ -181,10 +181,10 @@ jobs:
         continue-on-error: true
         with:
           source: "${{ matrix.sites.url }}"
-          type: jpeg
+          #type: jpeg
           destination: screenshot.jpeg
           width: 1280
-          scaleFactor: 0.5
+          #scaleFactor: 0.5
 
       - name: Setup Node.js for Wappalyzer
         if: ${{ matrix.sites.tools.wappalyzer }}
