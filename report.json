@@ -17,13 +17,13 @@
         "testsPassed": 7,
         "testsQuantity": 10,
         "responseHeaders": {
-          "date": "Thu, 17 Sep 2026 14:39:38 GMT",
+          "date": "Fri, 18 Sep 2026 12:23:52 GMT",
           "content-type": "text/html; charset=UTF-8",
           "transfer-encoding": "chunked",
           "connection": "close",
           "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
           "cf-mitigated": "challenge",
-          "content-security-policy": "default-src 'none'; script-src 'nonce-eyUY96p7Bi2HaQuDi1wBr9' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+          "content-security-policy": "default-src 'none'; script-src 'nonce-xLDjzBILJTwSdjyGuiMHct' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
           "server": "cloudflare",
           "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
           "cross-origin-embedder-policy": "require-corp",
@@ -32,13 +32,13 @@
           "origin-agent-cluster": "?1",
           "permissions-policy": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
           "referrer-policy": "same-origin",
-          "server-timing": "chlray;desc=\"a3c8dc877ad5990b\"",
+          "server-timing": "chlray;desc=\"a3d05308f9d308d8\"",
           "x-content-type-options": "nosniff",
           "x-frame-options": "SAMEORIGIN",
           "set-cookie": [
-            "__cf_bm=.1Ec9M5V0WaLbluVuTwVnl8Kf3q5VygNP5vwWo1ZXlA-1789655978.1609674-1.0.1.1-5ZHWlP0GkrIqV6KLMfLS32BEerfQHBU1_c0BT5xfoxDmUwOsnsPEWV.Fpktdu.cjPTfcawQ8KewfvQ7a4PmaFlkFi8uE83sEQumOIPE0iX.zSeAu4ixMl5PCflJuedsT; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 15:09:38 GMT"
+            "__cf_bm=yQ_X9AJt6MlHt6mJxM.pjgGP6g25l23PQsoWEe4jZxA-1789734232.4775808-1.0.1.1-wDslIa6_FHBad3AkCIybns0xBMv3F_T8vdflKXhH27_yxNhxYrFCU4eX9djQmN2jRQTeI4y3XEnwlj_QnrCODvqRvj7QuIlq1iXI_J88zQcxZ_JxfaEYFmV20EV4.Bro; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Fri, 18 Sep 2026 12:53:52 GMT"
           ],
-          "cf-ray": "a3c8dc877ad5990b-IAD"
+          "cf-ray": "a3d05308f9d308d8-LAX"
         }
       },
       "tests": {
@@ -52,7 +52,7 @@
               "'none'"
             ],
             "script-src": [
-              "'nonce-eyuy96p7bi2haqudi1wbr9'",
+              "'nonce-xldjzbiljtwsdjyguimhct'",
               "'unsafe-eval'",
               "https://challenges.cloudflare.com"
             ],
@@ -116,7 +116,7 @@
           "data": {
             "__cf_bm": {
               "domain": "ademe.fr",
-              "expires": "2026-09-17T15:09:38.000Z",
+              "expires": "2026-09-18T12:53:52.000Z",
               "httponly": true,
               "path": "/",
               "port": null,
@@ -416,7 +416,7 @@
         "ip": "economie-circulaire.ademe.fr/104.18.0.202",
         "port": "443",
         "severity": "INFO",
-        "finding": "supported"
+        "finding": "not supported"
       },
       {
         "id": "sessionresumption_ID",
@@ -1060,7 +1060,7 @@
         "ip": "economie-circulaire.ademe.fr/104.18.0.202",
         "port": "443",
         "severity": "INFO",
-        "finding": "1789655998"
+        "finding": "1789734257"
       },
       {
         "id": "ipv4_in_header",
@@ -1068,7 +1068,7 @@
         "port": "443",
         "severity": "MEDIUM",
         "cwe": "CWE-212",
-        "finding": "set-cookie: __cf_bm=BKL9f15JaQLQtbcNOq2wYKIRgU4jIICElzo3hoC4ARk-1789655998.9650927-1.0.1.1-eYiZK9wEXGplW3uTwXbyfGXyInX1GX_8Ld62yA7hTcheaquI4JslG1J2tkUmofOIdHb7ZFJcoI0yittnuqzbKXGz7DN6XihGVe.lxn1nAqseKRDWz0PEjPvJXrUwTxw1; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 15:09:58 GMT (check if it's your IP address or e.g. a cluster IP)"
+        "finding": "set-cookie: __cf_bm=Hoo_3zwgre8_REU.PxnWVILIrQ0gi3v135Yzxfo0ANM-1789734257.1386974-1.0.1.1-W_AMWiknCYVZalrbJFOt.U0xWz5XNJXae6AvXiuPF3dor5k7iP_QpaF5lYXjE5yY_pziuNjO3LW1Er2RseTlEstcxODNwLLuT0nwBDFLQCDeX5XUKLa9yhEwqgJRaFeP; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Fri, 18 Sep 2026 12:54:17 GMT (check if it's your IP address or e.g. a cluster IP)"
       },
       {
         "id": "HSTS",
@@ -1138,7 +1138,7 @@
         "ip": "economie-circulaire.ademe.fr/104.18.0.202",
         "port": "443",
         "severity": "OK",
-        "finding": "default-src 'none'; script-src 'nonce-rp1XIDpR9jz7j0wF4sUjaS' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
+        "finding": "default-src 'none'; script-src 'nonce-jXL8JfW36YyW24R4dVenDy' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
       },
       {
         "id": "Permissions-Policy",
@@ -2526,7 +2526,7 @@
         "ip": "economie-circulaire.ademe.fr/104.18.1.202",
         "port": "443",
         "severity": "INFO",
-        "finding": "1789656040"
+        "finding": "1789734302"
       },
       {
         "id": "ipv4_in_header",
@@ -2534,7 +2534,7 @@
         "port": "443",
         "severity": "MEDIUM",
         "cwe": "CWE-212",
-        "finding": "set-cookie: __cf_bm=7Z7tDk2v7LekLz8.CyMqzLKLtWrox4dtc6DWNuhCCf8-1789656040.8952086-1.0.1.1-6318ZnQUL6LIVyyPK9jkOVLjIToRwtXc5.pAuuKLpuhLlSQeiUm4ROIpI9l8xoEiET5lSduRoZILOixe6BoAwGKtujFNiNKoRoK1dZOq_i0FzvC5SAT8eWC0D1i4I3qe; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Thu, 17 Sep 2026 15:10:40 GMT (check if it's your IP address or e.g. a cluster IP)"
+        "finding": "set-cookie: __cf_bm=TCVZ2qLxmQVe7DlmkXo0s.qdgoyM1OtfG_xm.Fy2a2c-1789734302.9422724-1.0.1.1-_5pcWKgqLd.QJBsSUgMKhINQqrMdft65gqOGl9yt9OuYVUPzCE8BZfMmL11EvjKABwavW9xxMsvOLXNtbtjo1F0N4JuD_ceb4ggOMk79DrhftMZObYJRYqIQ0GwBSkuT; HttpOnly; SameSite=None; Secure; Path=/; Domain=ademe.fr; Expires=Fri, 18 Sep 2026 12:55:02 GMT (check if it's your IP address or e.g. a cluster IP)"
       },
       {
         "id": "HSTS",
@@ -2604,7 +2604,7 @@
         "ip": "economie-circulaire.ademe.fr/104.18.1.202",
         "port": "443",
         "severity": "OK",
-        "finding": "default-src 'none'; script-src 'nonce-jQ46CjYJkXdXHp8vz6mi0u' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
+        "finding": "default-src 'none'; script-src 'nonce-xJuYtazvj710OvEcZjB1c0' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'"
       },
       {
         "id": "Permissions-Policy",
@@ -3146,7 +3146,7 @@
         "ip": "economie-circulaire.ademe.fr/104.18.1.202",
         "port": "443",
         "severity": "INFO",
-        "finding": "85"
+        "finding": "94"
       }
     ],
     "thirdparties": null,
@@ -3237,7 +3237,7 @@
       {
         "requestedUrl": "https://economie-circulaire.ademe.fr/",
         "finalUrl": "https://economie-circulaire.ademe.fr/",
-        "fetchTime": "2026-09-17T14:39:09.275Z",
+        "fetchTime": "2026-09-18T12:23:16.818Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -3248,7 +3248,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.57
+            "score": 0.54
           },
           "accessibility": {
             "title": "Accessibility",
@@ -3300,53 +3300,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 7701,
+            "numericValue": 6180,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 3468,
-                  "firstMeaningfulPaint": 3468,
-                  "largestContentfulPaint": 5833,
-                  "interactive": 7701,
-                  "speedIndex": 6473,
-                  "totalBlockingTime": 217,
-                  "maxPotentialFID": 167,
+                  "firstContentfulPaint": 4211,
+                  "firstMeaningfulPaint": 4211,
+                  "largestContentfulPaint": 7886,
+                  "interactive": 6180,
+                  "speedIndex": 7461,
+                  "totalBlockingTime": 180,
+                  "maxPotentialFID": 182,
                   "cumulativeLayoutShift": 0.005369896888732909,
                   "cumulativeLayoutShiftMainFrame": 0.005369896888732909,
                   "totalCumulativeLayoutShift": 0.005369896888732909,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 274789579,
+                  "observedTimeOriginTs": 181097476,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 274789579,
-                  "observedFirstPaint": 1425,
-                  "observedFirstPaintTs": 276214468,
-                  "observedFirstContentfulPaint": 1425,
-                  "observedFirstContentfulPaintTs": 276214468,
-                  "observedFirstContentfulPaintAllFrames": 1425,
-                  "observedFirstContentfulPaintAllFramesTs": 276214468,
-                  "observedFirstMeaningfulPaint": 1425,
-                  "observedFirstMeaningfulPaintTs": 276214468,
-                  "observedLargestContentfulPaint": 1500,
-                  "observedLargestContentfulPaintTs": 276289319,
-                  "observedLargestContentfulPaintAllFrames": 1500,
-                  "observedLargestContentfulPaintAllFramesTs": 276289319,
-                  "observedTraceEnd": 4704,
-                  "observedTraceEndTs": 279493727,
-                  "observedLoad": 2348,
-                  "observedLoadTs": 277137841,
-                  "observedDomContentLoaded": 5,
-                  "observedDomContentLoadedTs": 274794187,
+                  "observedNavigationStartTs": 181097476,
+                  "observedFirstPaint": 2383,
+                  "observedFirstPaintTs": 183480932,
+                  "observedFirstContentfulPaint": 2383,
+                  "observedFirstContentfulPaintTs": 183480932,
+                  "observedFirstContentfulPaintAllFrames": 2383,
+                  "observedFirstContentfulPaintAllFramesTs": 183480932,
+                  "observedFirstMeaningfulPaint": 2383,
+                  "observedFirstMeaningfulPaintTs": 183480932,
+                  "observedLargestContentfulPaint": 3758,
+                  "observedLargestContentfulPaintTs": 184855050,
+                  "observedLargestContentfulPaintAllFrames": 3758,
+                  "observedLargestContentfulPaintAllFramesTs": 184855050,
+                  "observedTraceEnd": 6046,
+                  "observedTraceEndTs": 187143648,
+                  "observedLoad": 3144,
+                  "observedLoadTs": 184241494,
+                  "observedDomContentLoaded": 4,
+                  "observedDomContentLoadedTs": 181101959,
                   "observedCumulativeLayoutShift": 0.005369896888732909,
                   "observedCumulativeLayoutShiftMainFrame": 0.005369896888732909,
                   "observedTotalCumulativeLayoutShift": 0.005369896888732909,
-                  "observedFirstVisualChange": 1425,
-                  "observedFirstVisualChangeTs": 276214579,
-                  "observedLastVisualChange": 2471,
-                  "observedLastVisualChangeTs": 277260579,
-                  "observedSpeedIndex": 2205,
-                  "observedSpeedIndexTs": 276994180
+                  "observedFirstVisualChange": 2383,
+                  "observedFirstVisualChangeTs": 183480476,
+                  "observedLastVisualChange": 3757,
+                  "observedLastVisualChangeTs": 184854476,
+                  "observedSpeedIndex": 3158,
+                  "observedSpeedIndexTs": 184255328
                 },
                 {
                   "lcpInvalidated": false
@@ -3368,19 +3368,19 @@
                   "numScripts": 13,
                   "numStylesheets": 3,
                   "numFonts": 4,
-                  "numTasks": 1455,
-                  "numTasksOver10ms": 13,
-                  "numTasksOver25ms": 5,
+                  "numTasks": 1579,
+                  "numTasksOver10ms": 12,
+                  "numTasksOver25ms": 4,
                   "numTasksOver50ms": 2,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 3.053000000000001,
-                  "throughput": 55066676.331872456,
-                  "maxRtt": 90.28400000000005,
-                  "maxServerLatency": 319.287,
-                  "totalByteWeight": 949769,
-                  "totalTaskTime": 564.2119999999991,
-                  "mainDocumentTransferSize": 7409
+                  "rtt": 10.785,
+                  "throughput": 10907186.600097474,
+                  "maxRtt": 144.32500000000002,
+                  "maxServerLatency": 137.033,
+                  "totalByteWeight": 949959,
+                  "totalTaskTime": 589.0899999999993,
+                  "mainDocumentTransferSize": 7407
                 }
               ]
             }
@@ -3426,7 +3426,7 @@
       "testsslExpireSoon": null,
       "testsslExpireDate": null,
       "testsslGrade": "A+",
-      "lighthouse_performance": 0.57,
+      "lighthouse_performance": 0.54,
       "lighthouse_performanceGrade": "C",
       "lighthouse_accessibility": 1,
       "lighthouse_accessibilityGrade": "A",
