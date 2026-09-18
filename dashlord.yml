@@ -53,10 +53,8 @@ urls:
   #  tags:
   #    - Wordpress
   - url: https://avelo.ademe.fr
-    title: Avelo
     tags:
       - Wordpress
-    category: Wordpress
   #- url: https://employeursprocovoiturage.ademe.fr
   #  tags:
   #    - Wordpress
