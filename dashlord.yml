@@ -8,17 +8,17 @@ operator:
   logo: https://raw.githubusercontent.com/incubateur-ademe/.github/main/ademe-logo-2022-1.svg
   name: ADEME
 tools:
-  "404": true
-  screenshot: false
+  screenshot: true
   lighthouse: true
-  wappalyzer: true
-  http: true
-  testssl: true
+  wappalyzer: false
   declaration-a11y: true
   declaration-rgpd: true
   sonarcloud: true
   trivy: true
   dsfr: true
+  http: false
+  testssl: false
+  "404": false
   nmap: false
   zap: false
   nuclei: false
@@ -56,9 +56,7 @@ urls:
   #  tags:
   #    - Wordpress
   - url: https://employeursprocovoiturage.ademe.fr
-    title: Employeur pro covoiturage
-    category: Technologie
-    betaId: Wordpress
+    category: Wordpress
   #- url: https://calanques-de-marseille.ademe.fr
   #  tags:
   #    - Wordpress
@@ -70,9 +68,7 @@ urls:
   #  category: Technologie
   #  betaId: Wordpress
   - url: https://economie-circulaire.ademe.fr
-    title: Economie circulaire
-    category: Technologie
-    betaId: Drupal
+    category: Drupal
   #- url: https://www.ecolabeltoolbox.com
   #  title: Ecolab Toolbox
   #  category: Technologie
