@@ -8,9 +8,9 @@ operator:
   logo: https://raw.githubusercontent.com/incubateur-ademe/.github/main/ademe-logo-2022-1.svg
   name: ADEME
 tools:
-  screenshot: true
+  screenshot: false
   lighthouse: true
-  wappalyzer: false
+  wappalyzer: true
   declaration-a11y: true
   declaration-rgpd: true
   sonarcloud: true
@@ -31,97 +31,67 @@ tools:
 columns: # pour masquer des colonnes
   zap: false
 urls:
-  #- url: https://pfe-det.ademe.fr
-  #  tags:
-  #    - PHP
-  #- url: https://renovfriches.ademe.fr
-  #  tags:
-  #    - PHP
-  #- url: https://selecdepol.fr
-  #  tags:
-  #    - Drupal
-  #- url: https://ecosystore.ademe.fr
-  #  tags:
-  #    - PHP
-  #- url: https://www.eve-transport-logistique.fr
-  #  tags:
-  #    - Wordpress
-  #- url: https://cee-remove.ademe.fr
-  #  tags:
-  #    - Wordpress
-  #- url: https://experimentationsurbaines.ademe.fr
-  #  tags:
-  #    - Wordpress
-  #- url: https://avelo.ademe.fr
-  #  tags:
-  #    - Wordpress
+  - url: https://pfe-det.ademe.fr
+    category: PHP
+  - url: https://renovfriches.ademe.fr
+    category: PHP
+  - url: https://selecdepol.fr
+    category: Drupal
+  - url: https://ecosystore.ademe.fr
+    category: PHP
+  - url: https://www.eve-transport-logistique.fr
+    category: Wordpress
+  - url: https://cee-remove.ademe.fr
+    category: Wordpress
+  - url: https://experimentationsurbaines.ademe.fr
+    category: Wordpress
+  - url: https://avelo.ademe.fr
+    category: Wordpress
   - url: https://employeursprocovoiturage.ademe.fr
     category: Wordpress
-  #- url: https://calanques-de-marseille.ademe.fr
-  #  tags:
-  #    - Wordpress
-  #- url: https://lesgenerateurs.ademe.fr
-  #  tags:
-  #    - Wordpress
-  #- url: https://www.fresquedusol.com
-  #  title: Fresque du sol
-  #  category: Technologie
-  #  betaId: Wordpress
+  - url: https://calanques-de-marseille.ademe.fr
+    category: Wordpress
+  - url: https://lesgenerateurs.ademe.fr
+    category: Wordpress
+  - url: https://www.fresquedusol.com
+    title: Fresque du sol
+    category: Wordpress
   - url: https://economie-circulaire.ademe.fr
     category: Drupal
-  #- url: https://www.ecolabeltoolbox.com
-  #  title: Ecolab Toolbox
-  #  category: Technologie
-  #  betaId: PHP
-  #- url: https://audit-energie.ademe.fr
-  #  tags:
-  #    - PHP
-  #- url: https://inventairepcb.ademe.fr
-  #  tags:
-  #    - PHP
-  #- url: https://affichage-environnemental.ademe.fr
-  #  tags:
-  #    - Drupal
-  #- url: https://veille-internationale.ademe.fr
-  #  tags:
-  #    - PHP
-  #- url: https://carlabelling.ademe.fr
-  #  tags:
-  #    - PHP
-  #- url: https://evenementresponsable.ademe.fr
-  #  tags:
-  #    - PHP
-  #- url: https://communication-responsable.ademe.fr
-  #  tags:
-  #    - PHP
-  #- url: https://infos.ademe.fr
-  #  tags:
-  #    - PHP
-  #- url: https://www.territoires-climat.ademe.fr
-  #  tags:
-  #    - PHP
-  #- url: http://www.enrchoix.idf.ademe.fr
-  #  tags:
-  #    - PHP
-  #- url: https://carnetadapt.org
-  #  tags:
-  #    - PHP
-  #- url: https://ecrains.ademe.fr
-  #  tags:
-  #    - Drupal
-  #- url: http://recherche.ademe.fr
-  #  tags:
-  #    - PHP
-  #- url: https://www.onpe.org
-  #  tags:
-  #    - PHP
-  #- url: https://filieres-rep.ademe.fr
-  #  tags:
-  #    - Drupal
-  #- url: https://www.bilans-ges.ademe.fr
-  #  tags:
-  #    - PHP
-  #- url: https://wattris.ademe.fr
-  #  tags:
-  #    - Autre
+  - url: https://www.ecolabeltoolbox.com
+    category: PHP
+  - url: https://audit-energie.ademe.fr
+    category: PHP
+  - url: https://inventairepcb.ademe.fr
+    category: PHP
+  - url: https://affichage-environnemental.ademe.fr
+    category: Drupal
+  - url: https://veille-internationale.ademe.fr
+    category: PHP
+  - url: https://carlabelling.ademe.fr
+    category: PHP
+  - url: https://evenementresponsable.ademe.fr
+    category: PHP
+  - url: https://communication-responsable.ademe.fr
+    category: Drupal
+  - url: https://infos.ademe.fr
+    category: Wordpress
+  - url: https://www.territoires-climat.ademe.fr
+    category: PHP
+  - url: http://www.enrchoix.idf.ademe.fr
+    category: PHP
+  - url: https://carnetadapt.org
+    category: PHP
+  - url: https://ecrains.ademe.fr
+    category: Drupal
+  - url: http://recherche.ademe.fr
+    category: PHP
+  - url: https://www.onpe.org
+    category: Drupal
+  - url: https://filieres-rep.ademe.fr
+    category: Drupal
+  - url: https://www.bilans-ges.ademe.fr
+    category: PHP
+  - url: https://wattris.ademe.fr
+    category: Autre
   
