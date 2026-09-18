@@ -9,18 +9,18 @@
     "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Thu, 17 Sep 2026 14:46:28 GMT",
+      "date": "Fri, 18 Sep 2026 13:30:56 GMT",
       "content-type": "text/html; charset=UTF-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "server": "cloudflare",
       "x-powered-by": "PHP/8.2.33, PleskLin",
       "vary": "User-Agent,Accept-Encoding,Referer",
-      "last-modified": "Thu, 17 Sep 2026 04:02:13 GMT",
+      "last-modified": "Fri, 18 Sep 2026 13:02:13 GMT",
       "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
       "cf-cache-status": "DYNAMIC",
-      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=kqyqplryfTw8Nxd6znJaMtfXh3IxHZYqO7bC8Vbyr5go0gfl2d0Hr1lzFdp12om3jv89YwOq7YdG%2Brpz1NGzb6NMt%2F0ktSItLjCp5xhhTgFG9kII5f%2BMbI0IBGRXf05qQleB\"}]}",
-      "cf-ray": "a3c8e689fdd667f3-SJC",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=uEVrVGfYR%2Fj9OWnGlhsI968XBYP8FFPhezHRY9%2FHcxyHTUO1zWABLaL3HoWkCsYdA0GTq%2B6AoJBu%2BgR%2F87sTBrtzvf2EGmdgnNa1LbTpJoFSV6Lj8i%2Fx37sEOrbshOPCX9vS\"}]}",
+      "cf-ray": "a3d0b547a9f7322f-SEA",
       "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
@@ -44,7 +44,7 @@
       "data": {
         "__cf_bm": {
           "domain": "fresquedusol.com",
-          "expires": "2026-09-17T15:16:27.000Z",
+          "expires": "2026-09-18T14:00:56.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
