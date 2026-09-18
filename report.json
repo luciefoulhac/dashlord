@@ -2,11 +2,9 @@
   {
     "404": [],
     "url": "https://avelo.ademe.fr",
-    "title": "Avelo",
     "tags": [
       "Wordpress"
     ],
-    "category": "Wordpress",
     "http": {
       "scan": {
         "algorithmVersion": 4,
