@@ -52,9 +52,9 @@ urls:
   #- url: https://experimentationsurbaines.ademe.fr
   #  tags:
   #    - Wordpress
-  - url: https://avelo.ademe.fr
-    tags:
-      - Wordpress
+  #- url: https://avelo.ademe.fr
+  #  tags:
+  #    - Wordpress
   #- url: https://employeursprocovoiturage.ademe.fr
   #  tags:
   #    - Wordpress
@@ -67,9 +67,10 @@ urls:
   #- url: https://www.fresquedusol.com
   #  tags:
   #    - Wordpress
-  #- url: https://economie-circulaire.ademe.fr
-  #  tags:
-  #    - Drupal
+  - url: https://economie-circulaire.ademe.fr
+    tags:
+      - Drupal
+    category: Drupal
   #- url: https://www.ecolabeltoolbox.com
   #  tags:
   #    - PHP
