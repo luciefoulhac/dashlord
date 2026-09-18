@@ -71,9 +71,10 @@ urls:
     title: Economie circulaire
     category: Technologie
     betaId: Drupal
-  #- url: https://www.ecolabeltoolbox.com
-  #  tags:
-  #    - PHP
+  - url: https://www.ecolabeltoolbox.com
+    title: Ecolab Toolbox
+    category: Technologie
+    betaId: PHP
   #- url: https://audit-energie.ademe.fr
   #  tags:
   #    - PHP
