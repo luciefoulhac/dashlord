@@ -13,15 +13,12 @@ concurrency:
   cancel-in-progress: true
   group: report
 
-permissions:
-  contents: write
-
 jobs:
   website:
     runs-on: ubuntu-latest
     name: Website
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
@@ -32,26 +29,20 @@ jobs:
 
       # build the report
       - id: dashlord-report
-        uses: SocialGouv/dashlord-actions/report@20b2f87135667b379650473197967515e6ca85b8 # 1.46.1
-
-      # to save the generated report.json as artifact
-      - uses: actions/upload-artifact@v7
+        uses: SocialGouv/dashlord-actions/report@v1
         with:
-          path: report.json
-          name: report
-          if-no-files-found: error
+          base-path: /dashlord # adapt to your repo name
 
       # save full report for history
-      - uses: EndBug/add-and-commit@a94899bca583c204427a224a7af87c02f9b325d5 # v9.1.4
+      - uses: EndBug/add-and-commit@v7
         with:
           add: '["report.json"]'
-          author_name: "incubateur-ademe-admin"
-          author_email: "accelerateurdelatransitionecologique@ademe.fr"
+          default_author: "github_actions"
           message: "chore: report update"
 
       # deploy build to gh-pages
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@d92aa235d04922e8f08b40ce78cc5442fcfbfa2f # 4.8.0
+        uses: JamesIves/github-pages-deploy-action@4.1.9
         with:
           branch: gh-pages
           folder: build
