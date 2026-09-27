@@ -3321,7 +3321,7 @@
       {
         "requestedUrl": "https://pfe-det.ademe.fr/",
         "finalUrl": "https://pfe-det.ademe.fr/",
-        "fetchTime": "2026-09-20T03:42:07.281Z",
+        "fetchTime": "2026-09-27T03:59:19.119Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -3332,7 +3332,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.08
+            "score": 0.05
           },
           "accessibility": {
             "title": "Accessibility",
@@ -3353,7 +3353,7 @@
               "snapshot"
             ],
             "id": "best-practices",
-            "score": 1
+            "score": 0.92
           },
           "seo": {
             "title": "SEO",
@@ -3384,53 +3384,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 12678,
+            "numericValue": 12753,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 7213,
-                  "firstMeaningfulPaint": 7363,
-                  "largestContentfulPaint": 11768,
-                  "interactive": 12678,
-                  "speedIndex": 7976,
-                  "totalBlockingTime": 1622,
-                  "maxPotentialFID": 826,
-                  "cumulativeLayoutShift": 0.8563182101779514,
-                  "cumulativeLayoutShiftMainFrame": 0.8563182101779514,
-                  "totalCumulativeLayoutShift": 0.8563182101779514,
+                  "firstContentfulPaint": 7214,
+                  "firstMeaningfulPaint": 7824,
+                  "largestContentfulPaint": 12607,
+                  "interactive": 12753,
+                  "speedIndex": 10560,
+                  "totalBlockingTime": 2192,
+                  "maxPotentialFID": 1282,
+                  "cumulativeLayoutShift": 0.7143432956271702,
+                  "cumulativeLayoutShiftMainFrame": 0.7143432956271702,
+                  "totalCumulativeLayoutShift": 0.7143432956271702,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 176137609,
+                  "observedTimeOriginTs": 175703175,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 176137609,
-                  "observedFirstPaint": 1891,
-                  "observedFirstPaintTs": 178029049,
-                  "observedFirstContentfulPaint": 1891,
-                  "observedFirstContentfulPaintTs": 178029049,
-                  "observedFirstContentfulPaintAllFrames": 1891,
-                  "observedFirstContentfulPaintAllFramesTs": 178029049,
-                  "observedFirstMeaningfulPaint": 1891,
-                  "observedFirstMeaningfulPaintTs": 178029049,
-                  "observedLargestContentfulPaint": 2316,
-                  "observedLargestContentfulPaintTs": 178453975,
-                  "observedLargestContentfulPaintAllFrames": 2316,
-                  "observedLargestContentfulPaintAllFramesTs": 178453975,
-                  "observedTraceEnd": 5553,
-                  "observedTraceEndTs": 181691066,
-                  "observedLoad": 2171,
-                  "observedLoadTs": 178309059,
-                  "observedDomContentLoaded": 6,
-                  "observedDomContentLoadedTs": 176143634,
-                  "observedCumulativeLayoutShift": 0.8563182101779514,
-                  "observedCumulativeLayoutShiftMainFrame": 0.8563182101779514,
-                  "observedTotalCumulativeLayoutShift": 0.8563182101779514,
-                  "observedFirstVisualChange": 1891,
-                  "observedFirstVisualChangeTs": 178028609,
-                  "observedLastVisualChange": 2316,
-                  "observedLastVisualChangeTs": 178453609,
-                  "observedSpeedIndex": 2237,
-                  "observedSpeedIndexTs": 178374609
+                  "observedNavigationStartTs": 175703175,
+                  "observedFirstPaint": 3060,
+                  "observedFirstPaintTs": 178762911,
+                  "observedFirstContentfulPaint": 3060,
+                  "observedFirstContentfulPaintTs": 178762911,
+                  "observedFirstContentfulPaintAllFrames": 3060,
+                  "observedFirstContentfulPaintAllFramesTs": 178762911,
+                  "observedFirstMeaningfulPaint": 3060,
+                  "observedFirstMeaningfulPaintTs": 178762911,
+                  "observedLargestContentfulPaint": 3693,
+                  "observedLargestContentfulPaintTs": 179396211,
+                  "observedLargestContentfulPaintAllFrames": 3693,
+                  "observedLargestContentfulPaintAllFramesTs": 179396211,
+                  "observedTraceEnd": 6560,
+                  "observedTraceEndTs": 182262998,
+                  "observedLoad": 3520,
+                  "observedLoadTs": 179222805,
+                  "observedDomContentLoaded": 8,
+                  "observedDomContentLoadedTs": 175711452,
+                  "observedCumulativeLayoutShift": 0.7143432956271702,
+                  "observedCumulativeLayoutShiftMainFrame": 0.7143432956271702,
+                  "observedTotalCumulativeLayoutShift": 0.7143432956271702,
+                  "observedFirstVisualChange": 3060,
+                  "observedFirstVisualChangeTs": 178763175,
+                  "observedLastVisualChange": 3693,
+                  "observedLastVisualChangeTs": 179396175,
+                  "observedSpeedIndex": 3547,
+                  "observedSpeedIndexTs": 179250303
                 },
                 {
                   "lcpInvalidated": false
@@ -3448,23 +3448,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 34,
-                  "numScripts": 14,
+                  "numRequests": 38,
+                  "numScripts": 15,
                   "numStylesheets": 2,
                   "numFonts": 3,
-                  "numTasks": 1505,
-                  "numTasksOver10ms": 19,
-                  "numTasksOver25ms": 13,
+                  "numTasks": 1461,
+                  "numTasksOver10ms": 22,
+                  "numTasksOver25ms": 12,
                   "numTasksOver50ms": 4,
-                  "numTasksOver100ms": 3,
-                  "numTasksOver500ms": 0,
+                  "numTasksOver100ms": 2,
+                  "numTasksOver500ms": 2,
                   "rtt": 0,
-                  "throughput": 18274665.13676177,
-                  "maxRtt": 126.9,
-                  "maxServerLatency": 162.591,
-                  "totalByteWeight": 1743965,
-                  "totalTaskTime": 1372.3849999999936,
-                  "mainDocumentTransferSize": 9899
+                  "throughput": 9337916.569870677,
+                  "maxRtt": 117.532,
+                  "maxServerLatency": 319.573,
+                  "totalByteWeight": 1779039,
+                  "totalTaskTime": 1918.7310000000007,
+                  "mainDocumentTransferSize": 10283
                 }
               ]
             }
@@ -3514,11 +3514,11 @@
       "testsslExpireSoon": null,
       "testsslExpireDate": null,
       "testsslGrade": "A+",
-      "lighthouse_performance": 0.08,
+      "lighthouse_performance": 0.05,
       "lighthouse_performanceGrade": "F",
       "lighthouse_accessibility": 0.92,
       "lighthouse_accessibilityGrade": "A",
-      "lighthouse_best-practices": 1,
+      "lighthouse_best-practices": 0.92,
       "lighthouse_best-practicesGrade": "A",
       "lighthouse_seo": 0.77,
       "lighthouse_seoGrade": "B",
@@ -6890,7 +6890,7 @@
       {
         "requestedUrl": "https://renovfriches.ademe.fr/",
         "finalUrl": "https://renovfriches.ademe.fr/",
-        "fetchTime": "2026-09-20T03:48:37.688Z",
+        "fetchTime": "2026-09-27T04:05:36.649Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -6901,7 +6901,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.45
+            "score": 0.3
           },
           "accessibility": {
             "title": "Accessibility",
@@ -6922,7 +6922,7 @@
               "snapshot"
             ],
             "id": "best-practices",
-            "score": 1
+            "score": 0.92
           },
           "seo": {
             "title": "SEO",
@@ -6953,53 +6953,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 8102,
+            "numericValue": 8743,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 3228,
-                  "firstMeaningfulPaint": 3228,
-                  "largestContentfulPaint": 11043,
-                  "interactive": 8102,
-                  "speedIndex": 5389,
-                  "totalBlockingTime": 194,
-                  "maxPotentialFID": 235,
+                  "firstContentfulPaint": 3156,
+                  "firstMeaningfulPaint": 3156,
+                  "largestContentfulPaint": 11194,
+                  "interactive": 8743,
+                  "speedIndex": 8261,
+                  "totalBlockingTime": 547,
+                  "maxPotentialFID": 718,
                   "cumulativeLayoutShift": 0.3740848999023437,
                   "cumulativeLayoutShiftMainFrame": 0.3740848999023437,
                   "totalCumulativeLayoutShift": 0.3740848999023437,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 564555772,
+                  "observedTimeOriginTs": 673008997,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 564555772,
-                  "observedFirstPaint": 1938,
-                  "observedFirstPaintTs": 566493387,
-                  "observedFirstContentfulPaint": 1938,
-                  "observedFirstContentfulPaintTs": 566493387,
-                  "observedFirstContentfulPaintAllFrames": 1938,
-                  "observedFirstContentfulPaintAllFramesTs": 566493387,
-                  "observedFirstMeaningfulPaint": 1938,
-                  "observedFirstMeaningfulPaintTs": 566493387,
-                  "observedLargestContentfulPaint": 2043,
-                  "observedLargestContentfulPaintTs": 566598943,
-                  "observedLargestContentfulPaintAllFrames": 2043,
-                  "observedLargestContentfulPaintAllFramesTs": 566598943,
-                  "observedTraceEnd": 5406,
-                  "observedTraceEndTs": 569961540,
-                  "observedLoad": 2050,
-                  "observedLoadTs": 566605637,
-                  "observedDomContentLoaded": 5,
-                  "observedDomContentLoadedTs": 564560561,
+                  "observedNavigationStartTs": 673008997,
+                  "observedFirstPaint": 1867,
+                  "observedFirstPaintTs": 674876040,
+                  "observedFirstContentfulPaint": 1867,
+                  "observedFirstContentfulPaintTs": 674876040,
+                  "observedFirstContentfulPaintAllFrames": 1867,
+                  "observedFirstContentfulPaintAllFramesTs": 674876040,
+                  "observedFirstMeaningfulPaint": 1867,
+                  "observedFirstMeaningfulPaintTs": 674876040,
+                  "observedLargestContentfulPaint": 1979,
+                  "observedLargestContentfulPaintTs": 674987947,
+                  "observedLargestContentfulPaintAllFrames": 1979,
+                  "observedLargestContentfulPaintAllFramesTs": 674987947,
+                  "observedTraceEnd": 5565,
+                  "observedTraceEndTs": 678573954,
+                  "observedLoad": 2346,
+                  "observedLoadTs": 675354821,
+                  "observedDomContentLoaded": 8,
+                  "observedDomContentLoadedTs": 673016591,
                   "observedCumulativeLayoutShift": 0.3740848999023437,
                   "observedCumulativeLayoutShiftMainFrame": 0.3740848999023437,
                   "observedTotalCumulativeLayoutShift": 0.3740848999023437,
-                  "observedFirstVisualChange": 1938,
-                  "observedFirstVisualChangeTs": 566493772,
-                  "observedLastVisualChange": 2241,
-                  "observedLastVisualChangeTs": 566796772,
-                  "observedSpeedIndex": 2189,
-                  "observedSpeedIndexTs": 566744400
+                  "observedFirstVisualChange": 1867,
+                  "observedFirstVisualChangeTs": 674875997,
+                  "observedLastVisualChange": 2540,
+                  "observedLastVisualChangeTs": 675548997,
+                  "observedSpeedIndex": 2401,
+                  "observedSpeedIndexTs": 675409607
                 },
                 {
                   "lcpInvalidated": false
@@ -7017,23 +7017,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 26,
-                  "numScripts": 11,
+                  "numRequests": 29,
+                  "numScripts": 12,
                   "numStylesheets": 2,
                   "numFonts": 2,
-                  "numTasks": 602,
-                  "numTasksOver10ms": 5,
-                  "numTasksOver25ms": 3,
-                  "numTasksOver50ms": 1,
-                  "numTasksOver100ms": 0,
+                  "numTasks": 617,
+                  "numTasksOver10ms": 11,
+                  "numTasksOver25ms": 4,
+                  "numTasksOver50ms": 3,
+                  "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 17.712,
-                  "throughput": 40609245.16040382,
-                  "maxRtt": 123.172,
-                  "maxServerLatency": 317.708,
-                  "totalByteWeight": 1851752,
-                  "totalTaskTime": 249.91100000000003,
-                  "mainDocumentTransferSize": 4888
+                  "rtt": 8.901,
+                  "throughput": 101103688.22998549,
+                  "maxRtt": 142.62099999999998,
+                  "maxServerLatency": 135.851,
+                  "totalByteWeight": 1882143,
+                  "totalTaskTime": 770.9839999999997,
+                  "mainDocumentTransferSize": 5247
                 }
               ]
             }
@@ -7083,11 +7083,11 @@
       "testsslExpireSoon": null,
       "testsslExpireDate": null,
       "testsslGrade": "A+",
-      "lighthouse_performance": 0.45,
-      "lighthouse_performanceGrade": "D",
+      "lighthouse_performance": 0.3,
+      "lighthouse_performanceGrade": "E",
       "lighthouse_accessibility": 0.93,
       "lighthouse_accessibilityGrade": "A",
-      "lighthouse_best-practices": 1,
+      "lighthouse_best-practices": 0.92,
       "lighthouse_best-practicesGrade": "A",
       "lighthouse_seo": 0.77,
       "lighthouse_seoGrade": "B",
@@ -10317,7 +10317,7 @@
       {
         "requestedUrl": "https://selecdepol.fr/",
         "finalUrl": "https://selecdepol.fr/",
-        "fetchTime": "2026-09-20T03:41:47.715Z",
+        "fetchTime": "2026-09-27T03:58:55.659Z",
         "runWarnings": [
           "The page loaded too slowly to finish within the time limit. Results may be incomplete."
         ],
@@ -10330,7 +10330,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.6
+            "score": 0.58
           },
           "accessibility": {
             "title": "Accessibility",
@@ -10382,53 +10382,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 4620,
+            "numericValue": 4185,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 4620,
-                  "firstMeaningfulPaint": 4620,
-                  "largestContentfulPaint": 9050,
-                  "interactive": 4620,
-                  "speedIndex": 4620,
+                  "firstContentfulPaint": 4185,
+                  "firstMeaningfulPaint": 4185,
+                  "largestContentfulPaint": 8175,
+                  "interactive": 4185,
+                  "speedIndex": 6427,
                   "totalBlockingTime": 0,
                   "maxPotentialFID": 16,
                   "cumulativeLayoutShift": 0.110482234954834,
                   "cumulativeLayoutShiftMainFrame": 0.110482234954834,
                   "totalCumulativeLayoutShift": 0.110482234954834,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 158951480,
+                  "observedTimeOriginTs": 159141542,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 158951480,
-                  "observedFirstPaint": 580,
-                  "observedFirstPaintTs": 159531083,
-                  "observedFirstContentfulPaint": 580,
-                  "observedFirstContentfulPaintTs": 159531083,
-                  "observedFirstContentfulPaintAllFrames": 580,
-                  "observedFirstContentfulPaintAllFramesTs": 159531083,
-                  "observedFirstMeaningfulPaint": 580,
-                  "observedFirstMeaningfulPaintTs": 159531083,
-                  "observedLargestContentfulPaint": 627,
-                  "observedLargestContentfulPaintTs": 159578233,
-                  "observedLargestContentfulPaintAllFrames": 627,
-                  "observedLargestContentfulPaintAllFramesTs": 159578233,
-                  "observedTraceEnd": 42902,
-                  "observedTraceEndTs": 201853095,
-                  "observedLoad": 1027,
-                  "observedLoadTs": 159978556,
+                  "observedNavigationStartTs": 159141542,
+                  "observedFirstPaint": 2623,
+                  "observedFirstPaintTs": 161764662,
+                  "observedFirstContentfulPaint": 2623,
+                  "observedFirstContentfulPaintTs": 161764662,
+                  "observedFirstContentfulPaintAllFrames": 2623,
+                  "observedFirstContentfulPaintAllFramesTs": 161764662,
+                  "observedFirstMeaningfulPaint": 2623,
+                  "observedFirstMeaningfulPaintTs": 161764662,
+                  "observedLargestContentfulPaint": 2666,
+                  "observedLargestContentfulPaintTs": 161807824,
+                  "observedLargestContentfulPaintAllFrames": 2666,
+                  "observedLargestContentfulPaintAllFramesTs": 161807824,
+                  "observedTraceEnd": 43268,
+                  "observedTraceEndTs": 202409937,
+                  "observedLoad": 2876,
+                  "observedLoadTs": 162017902,
                   "observedDomContentLoaded": 1,
-                  "observedDomContentLoadedTs": 158952441,
+                  "observedDomContentLoadedTs": 159142349,
                   "observedCumulativeLayoutShift": 0.110482234954834,
                   "observedCumulativeLayoutShiftMainFrame": 0.110482234954834,
                   "observedTotalCumulativeLayoutShift": 0.110482234954834,
-                  "observedFirstVisualChange": 579,
-                  "observedFirstVisualChangeTs": 159530480,
-                  "observedLastVisualChange": 1247,
-                  "observedLastVisualChangeTs": 160198480,
-                  "observedSpeedIndex": 984,
-                  "observedSpeedIndexTs": 159935230
+                  "observedFirstVisualChange": 2623,
+                  "observedFirstVisualChangeTs": 161764542,
+                  "observedLastVisualChange": 3270,
+                  "observedLastVisualChangeTs": 162411542,
+                  "observedSpeedIndex": 2736,
+                  "observedSpeedIndexTs": 161877110
                 },
                 {
                   "lcpInvalidated": false
@@ -10446,23 +10446,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 48,
-                  "numScripts": 17,
-                  "numStylesheets": 3,
+                  "numRequests": 39,
+                  "numScripts": 10,
+                  "numStylesheets": 2,
                   "numFonts": 4,
-                  "numTasks": 77,
+                  "numTasks": 74,
                   "numTasksOver10ms": 1,
                   "numTasksOver25ms": 0,
                   "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 2.1319999999999997,
-                  "throughput": 66692172.12766687,
-                  "maxRtt": 107.466,
-                  "maxServerLatency": 103.184,
-                  "totalByteWeight": 981894,
-                  "totalTaskTime": 28.48800000000001,
-                  "mainDocumentTransferSize": 3342
+                  "rtt": 86.228,
+                  "throughput": 67134256.96852528,
+                  "maxRtt": 86.228,
+                  "maxServerLatency": 3.428999999999988,
+                  "totalByteWeight": 821564,
+                  "totalTaskTime": 20.578999999999994,
+                  "mainDocumentTransferSize": 3341
                 }
               ]
             }
@@ -10512,7 +10512,7 @@
       "testsslExpireSoon": null,
       "testsslExpireDate": null,
       "testsslGrade": "A+",
-      "lighthouse_performance": 0.6,
+      "lighthouse_performance": 0.58,
       "lighthouse_performanceGrade": "C",
       "lighthouse_accessibility": 0.99,
       "lighthouse_accessibilityGrade": "A",
@@ -13833,7 +13833,7 @@
       {
         "requestedUrl": "https://www.eve-transport-logistique.fr/",
         "finalUrl": "https://www.eve-transport-logistique.fr/",
-        "fetchTime": "2026-09-20T03:44:51.024Z",
+        "fetchTime": "2026-09-27T04:01:59.393Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -13844,7 +13844,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.53
+            "score": 0.4
           },
           "accessibility": {
             "title": "Accessibility",
@@ -13876,7 +13876,7 @@
               "snapshot"
             ],
             "id": "seo",
-            "score": 0.86
+            "score": 0.92
           },
           "pwa": {
             "title": "PWA",
@@ -13896,53 +13896,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 17535,
+            "numericValue": 18151,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 3000,
-                  "firstMeaningfulPaint": 3000,
-                  "largestContentfulPaint": 3856,
-                  "interactive": 17535,
-                  "speedIndex": 12837,
-                  "totalBlockingTime": 269,
-                  "maxPotentialFID": 187,
-                  "cumulativeLayoutShift": 0.18035416030883789,
-                  "cumulativeLayoutShiftMainFrame": 0.18035416030883789,
-                  "totalCumulativeLayoutShift": 0.18035416030883789,
+                  "firstContentfulPaint": 2989,
+                  "firstMeaningfulPaint": 2989,
+                  "largestContentfulPaint": 4005,
+                  "interactive": 18151,
+                  "speedIndex": 9544,
+                  "totalBlockingTime": 995,
+                  "maxPotentialFID": 650,
+                  "cumulativeLayoutShift": 0.09843077596028646,
+                  "cumulativeLayoutShiftMainFrame": 0.09843077596028646,
+                  "totalCumulativeLayoutShift": 0.09843077596028646,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 508742464,
+                  "observedTimeOriginTs": 204853708,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 508742464,
-                  "observedFirstPaint": 2857,
-                  "observedFirstPaintTs": 511599868,
-                  "observedFirstContentfulPaint": 2857,
-                  "observedFirstContentfulPaintTs": 511599868,
-                  "observedFirstContentfulPaintAllFrames": 2857,
-                  "observedFirstContentfulPaintAllFramesTs": 511599868,
-                  "observedFirstMeaningfulPaint": 2874,
-                  "observedFirstMeaningfulPaintTs": 511616717,
-                  "observedLargestContentfulPaint": 2857,
-                  "observedLargestContentfulPaintTs": 511599868,
-                  "observedLargestContentfulPaintAllFrames": 2857,
-                  "observedLargestContentfulPaintAllFramesTs": 511599868,
-                  "observedTraceEnd": 8071,
-                  "observedTraceEndTs": 516813521,
-                  "observedLoad": 5423,
-                  "observedLoadTs": 514165467,
-                  "observedDomContentLoaded": 1,
-                  "observedDomContentLoadedTs": 508743297,
-                  "observedCumulativeLayoutShift": 0.18035416030883789,
-                  "observedCumulativeLayoutShiftMainFrame": 0.18035416030883789,
-                  "observedTotalCumulativeLayoutShift": 0.18035416030883789,
-                  "observedFirstVisualChange": 2857,
-                  "observedFirstVisualChangeTs": 511599464,
-                  "observedLastVisualChange": 5682,
-                  "observedLastVisualChangeTs": 514424464,
-                  "observedSpeedIndex": 4034,
-                  "observedSpeedIndexTs": 512776070
+                  "observedNavigationStartTs": 204853708,
+                  "observedFirstPaint": 1908,
+                  "observedFirstPaintTs": 206761576,
+                  "observedFirstContentfulPaint": 1908,
+                  "observedFirstContentfulPaintTs": 206761576,
+                  "observedFirstContentfulPaintAllFrames": 1908,
+                  "observedFirstContentfulPaintAllFramesTs": 206761576,
+                  "observedFirstMeaningfulPaint": 2007,
+                  "observedFirstMeaningfulPaintTs": 206860794,
+                  "observedLargestContentfulPaint": 1908,
+                  "observedLargestContentfulPaintTs": 206761576,
+                  "observedLargestContentfulPaintAllFrames": 1908,
+                  "observedLargestContentfulPaintAllFramesTs": 206761576,
+                  "observedTraceEnd": 7843,
+                  "observedTraceEndTs": 212696678,
+                  "observedLoad": 3876,
+                  "observedLoadTs": 208729717,
+                  "observedDomContentLoaded": 16,
+                  "observedDomContentLoadedTs": 204869717,
+                  "observedCumulativeLayoutShift": 0.09843077596028646,
+                  "observedCumulativeLayoutShiftMainFrame": 0.09843077596028646,
+                  "observedTotalCumulativeLayoutShift": 0.09843077596028646,
+                  "observedFirstVisualChange": 1908,
+                  "observedFirstVisualChangeTs": 206761708,
+                  "observedLastVisualChange": 3962,
+                  "observedLastVisualChangeTs": 208815708,
+                  "observedSpeedIndex": 2757,
+                  "observedSpeedIndexTs": 207611028
                 },
                 {
                   "lcpInvalidated": false
@@ -13961,22 +13961,22 @@
               "items": [
                 {
                   "numRequests": 158,
-                  "numScripts": 53,
+                  "numScripts": 52,
                   "numStylesheets": 53,
                   "numFonts": 12,
-                  "numTasks": 2759,
-                  "numTasksOver10ms": 20,
-                  "numTasksOver25ms": 6,
-                  "numTasksOver50ms": 2,
-                  "numTasksOver100ms": 0,
+                  "numTasks": 2751,
+                  "numTasksOver10ms": 33,
+                  "numTasksOver25ms": 10,
+                  "numTasksOver50ms": 5,
+                  "numTasksOver100ms": 3,
                   "numTasksOver500ms": 0,
                   "rtt": 0,
-                  "throughput": 9050588.507193059,
-                  "maxRtt": 149.565,
-                  "maxServerLatency": 516.016,
-                  "totalByteWeight": 2616364,
-                  "totalTaskTime": 925.5359999999965,
-                  "mainDocumentTransferSize": 48959
+                  "throughput": 24141702.58035164,
+                  "maxRtt": 114.147,
+                  "maxServerLatency": 480.291,
+                  "totalByteWeight": 2803631,
+                  "totalTaskTime": 1599.5819999999715,
+                  "mainDocumentTransferSize": 48903
                 }
               ]
             }
@@ -14022,13 +14022,13 @@
       "testsslExpireSoon": null,
       "testsslExpireDate": null,
       "testsslGrade": "A+",
-      "lighthouse_performance": 0.53,
-      "lighthouse_performanceGrade": "C",
+      "lighthouse_performance": 0.4,
+      "lighthouse_performanceGrade": "D",
       "lighthouse_accessibility": 0.84,
       "lighthouse_accessibilityGrade": "A",
       "lighthouse_best-practices": 0.83,
       "lighthouse_best-practicesGrade": "B",
-      "lighthouse_seo": 0.86,
+      "lighthouse_seo": 0.92,
       "lighthouse_seoGrade": "A",
       "lighthouse_pwa": 0.4,
       "lighthouse_pwaGrade": "D",
@@ -17273,7 +17273,7 @@
       {
         "requestedUrl": "https://experimentationsurbaines.ademe.fr/",
         "finalUrl": "https://experimentationsurbaines.ademe.fr/",
-        "fetchTime": "2026-09-20T03:47:27.596Z",
+        "fetchTime": "2026-09-27T04:04:11.646Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -17284,7 +17284,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.98
+            "score": 0.52
           },
           "accessibility": {
             "title": "Accessibility",
@@ -17305,7 +17305,7 @@
               "snapshot"
             ],
             "id": "best-practices",
-            "score": 0.92
+            "score": 0.83
           },
           "seo": {
             "title": "SEO",
@@ -17316,7 +17316,7 @@
               "snapshot"
             ],
             "id": "seo",
-            "score": 0.73
+            "score": 0.77
           },
           "pwa": {
             "title": "PWA",
@@ -17326,7 +17326,7 @@
               "navigation"
             ],
             "id": "pwa",
-            "score": 0.5
+            "score": 0.3
           }
         },
         "audits": {
@@ -17336,53 +17336,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 1797,
+            "numericValue": 5215,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1369,
-                  "firstMeaningfulPaint": 1369,
-                  "largestContentfulPaint": 1749,
-                  "interactive": 1797,
-                  "speedIndex": 2229,
-                  "totalBlockingTime": 153,
-                  "maxPotentialFID": 124,
-                  "cumulativeLayoutShift": 0,
-                  "cumulativeLayoutShiftMainFrame": 0,
-                  "totalCumulativeLayoutShift": 0,
+                  "firstContentfulPaint": 1545,
+                  "firstMeaningfulPaint": 1671,
+                  "largestContentfulPaint": 5530,
+                  "interactive": 5215,
+                  "speedIndex": 3276,
+                  "totalBlockingTime": 1233,
+                  "maxPotentialFID": 1424,
+                  "cumulativeLayoutShift": 0.01415940093994141,
+                  "cumulativeLayoutShiftMainFrame": 0.01415940093994141,
+                  "totalCumulativeLayoutShift": 0.01415940093994141,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 277348309,
+                  "observedTimeOriginTs": 139669128,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 277348309,
-                  "observedFirstPaint": 1045,
-                  "observedFirstPaintTs": 278393750,
-                  "observedFirstContentfulPaint": 1045,
-                  "observedFirstContentfulPaintTs": 278393750,
-                  "observedFirstContentfulPaintAllFrames": 1045,
-                  "observedFirstContentfulPaintAllFramesTs": 278393750,
-                  "observedFirstMeaningfulPaint": 1098,
-                  "observedFirstMeaningfulPaintTs": 278446431,
-                  "observedLargestContentfulPaint": 1045,
-                  "observedLargestContentfulPaintTs": 278393750,
-                  "observedLargestContentfulPaintAllFrames": 1045,
-                  "observedLargestContentfulPaintAllFramesTs": 278393750,
-                  "observedTraceEnd": 3509,
-                  "observedTraceEndTs": 280857254,
-                  "observedLoad": 1132,
-                  "observedLoadTs": 278480091,
-                  "observedDomContentLoaded": 6,
-                  "observedDomContentLoadedTs": 277353990,
-                  "observedCumulativeLayoutShift": 0,
-                  "observedCumulativeLayoutShiftMainFrame": 0,
-                  "observedTotalCumulativeLayoutShift": 0,
-                  "observedFirstVisualChange": 1045,
-                  "observedFirstVisualChangeTs": 278393309,
-                  "observedLastVisualChange": 1045,
-                  "observedLastVisualChangeTs": 278393309,
-                  "observedSpeedIndex": 1048,
-                  "observedSpeedIndexTs": 278396608
+                  "observedNavigationStartTs": 139669128,
+                  "observedFirstPaint": 773,
+                  "observedFirstPaintTs": 140442617,
+                  "observedFirstContentfulPaint": 773,
+                  "observedFirstContentfulPaintTs": 140442617,
+                  "observedFirstContentfulPaintAllFrames": 773,
+                  "observedFirstContentfulPaintAllFramesTs": 140442617,
+                  "observedFirstMeaningfulPaint": 773,
+                  "observedFirstMeaningfulPaintTs": 140442617,
+                  "observedLargestContentfulPaint": 1612,
+                  "observedLargestContentfulPaintTs": 141280894,
+                  "observedLargestContentfulPaintAllFrames": 1612,
+                  "observedLargestContentfulPaintAllFramesTs": 141280894,
+                  "observedTraceEnd": 5121,
+                  "observedTraceEndTs": 144789742,
+                  "observedLoad": 1618,
+                  "observedLoadTs": 141287065,
+                  "observedDomContentLoaded": 5,
+                  "observedDomContentLoadedTs": 139674509,
+                  "observedCumulativeLayoutShift": 0.01415940093994141,
+                  "observedCumulativeLayoutShiftMainFrame": 0.01415940093994141,
+                  "observedTotalCumulativeLayoutShift": 0.01415940093994141,
+                  "observedFirstVisualChange": 774,
+                  "observedFirstVisualChangeTs": 140443128,
+                  "observedLastVisualChange": 1628,
+                  "observedLastVisualChangeTs": 141297128,
+                  "observedSpeedIndex": 1043,
+                  "observedSpeedIndexTs": 140712493
                 },
                 {
                   "lcpInvalidated": false
@@ -17400,23 +17400,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 25,
-                  "numScripts": 1,
+                  "numRequests": 36,
+                  "numScripts": 2,
                   "numStylesheets": 2,
-                  "numFonts": 0,
-                  "numTasks": 475,
-                  "numTasksOver10ms": 9,
-                  "numTasksOver25ms": 4,
-                  "numTasksOver50ms": 0,
-                  "numTasksOver100ms": 0,
-                  "numTasksOver500ms": 0,
-                  "rtt": 0.8999999999999999,
-                  "throughput": 1108335.6809715263,
-                  "maxRtt": 0.8999999999999999,
-                  "maxServerLatency": 4.853,
-                  "totalByteWeight": 136374,
-                  "totalTaskTime": 323.4579999999994,
-                  "mainDocumentTransferSize": 17704
+                  "numFonts": 4,
+                  "numTasks": 881,
+                  "numTasksOver10ms": 14,
+                  "numTasksOver25ms": 6,
+                  "numTasksOver50ms": 5,
+                  "numTasksOver100ms": 3,
+                  "numTasksOver500ms": 1,
+                  "rtt": 4.282,
+                  "throughput": 15649419.96541947,
+                  "maxRtt": 4.282,
+                  "maxServerLatency": 8.648,
+                  "totalByteWeight": 680280,
+                  "totalTaskTime": 1358.111999999994,
+                  "mainDocumentTransferSize": 18314
                 }
               ]
             }
@@ -17462,16 +17462,16 @@
       "testsslExpireSoon": null,
       "testsslExpireDate": null,
       "testsslGrade": "A+",
-      "lighthouse_performance": 0.98,
-      "lighthouse_performanceGrade": "A",
+      "lighthouse_performance": 0.52,
+      "lighthouse_performanceGrade": "C",
       "lighthouse_accessibility": 0.86,
       "lighthouse_accessibilityGrade": "A",
-      "lighthouse_best-practices": 0.92,
-      "lighthouse_best-practicesGrade": "A",
-      "lighthouse_seo": 0.73,
+      "lighthouse_best-practices": 0.83,
+      "lighthouse_best-practicesGrade": "B",
+      "lighthouse_seo": 0.77,
       "lighthouse_seoGrade": "B",
-      "lighthouse_pwa": 0.5,
-      "lighthouse_pwaGrade": "D",
+      "lighthouse_pwa": 0.3,
+      "lighthouse_pwaGrade": "E",
       "declaration-a11y": "F",
       "declaration-rgpd-ml": "F",
       "declaration-rgpd-pc": "A",
@@ -20718,7 +20718,7 @@
       {
         "requestedUrl": "https://avelo.ademe.fr/",
         "finalUrl": "https://avelo.ademe.fr/",
-        "fetchTime": "2026-09-20T03:48:23.171Z",
+        "fetchTime": "2026-09-27T04:05:53.409Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -20729,7 +20729,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.98
+            "score": 0.95
           },
           "accessibility": {
             "title": "Accessibility",
@@ -20740,7 +20740,7 @@
               "snapshot"
             ],
             "id": "accessibility",
-            "score": 0.91
+            "score": 0.9
           },
           "best-practices": {
             "title": "Best Practices",
@@ -20750,7 +20750,7 @@
               "snapshot"
             ],
             "id": "best-practices",
-            "score": 0.83
+            "score": 0.92
           },
           "seo": {
             "title": "SEO",
@@ -20761,7 +20761,7 @@
               "snapshot"
             ],
             "id": "seo",
-            "score": 0.85
+            "score": 0.75
           },
           "pwa": {
             "title": "PWA",
@@ -20771,7 +20771,7 @@
               "navigation"
             ],
             "id": "pwa",
-            "score": 0.2
+            "score": 0.3
           }
         },
         "audits": {
@@ -20781,53 +20781,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 931,
+            "numericValue": 934,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 931,
-                  "firstMeaningfulPaint": 931,
-                  "largestContentfulPaint": 2460,
-                  "interactive": 931,
-                  "speedIndex": 1510,
+                  "firstContentfulPaint": 934,
+                  "firstMeaningfulPaint": 934,
+                  "largestContentfulPaint": 2461,
+                  "interactive": 934,
+                  "speedIndex": 4488,
                   "totalBlockingTime": 0,
                   "maxPotentialFID": 16,
-                  "cumulativeLayoutShift": 0.0331620873345269,
-                  "cumulativeLayoutShiftMainFrame": 0.0331620873345269,
-                  "totalCumulativeLayoutShift": 0.0331620873345269,
+                  "cumulativeLayoutShift": 0.039694205390082456,
+                  "cumulativeLayoutShiftMainFrame": 0.039694205390082456,
+                  "totalCumulativeLayoutShift": 0.039694205390082456,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 626395036,
+                  "observedTimeOriginTs": 151366291,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 626395036,
-                  "observedFirstPaint": 690,
-                  "observedFirstPaintTs": 627084551,
-                  "observedFirstContentfulPaint": 690,
-                  "observedFirstContentfulPaintTs": 627084551,
-                  "observedFirstContentfulPaintAllFrames": 690,
-                  "observedFirstContentfulPaintAllFramesTs": 627084551,
-                  "observedFirstMeaningfulPaint": 690,
-                  "observedFirstMeaningfulPaintTs": 627084551,
-                  "observedLargestContentfulPaint": 690,
-                  "observedLargestContentfulPaintTs": 627084551,
-                  "observedLargestContentfulPaintAllFrames": 690,
-                  "observedLargestContentfulPaintAllFramesTs": 627084551,
-                  "observedTraceEnd": 3263,
-                  "observedTraceEndTs": 629658416,
-                  "observedLoad": 934,
-                  "observedLoadTs": 627329157,
-                  "observedDomContentLoaded": 1,
-                  "observedDomContentLoadedTs": 626396433,
-                  "observedCumulativeLayoutShift": 0.0331620873345269,
-                  "observedCumulativeLayoutShiftMainFrame": 0.0331620873345269,
-                  "observedTotalCumulativeLayoutShift": 0.0331620873345269,
-                  "observedFirstVisualChange": 689,
-                  "observedFirstVisualChangeTs": 627084036,
-                  "observedLastVisualChange": 3249,
-                  "observedLastVisualChangeTs": 629644036,
-                  "observedSpeedIndex": 825,
-                  "observedSpeedIndexTs": 627219662
+                  "observedNavigationStartTs": 151366291,
+                  "observedFirstPaint": 2700,
+                  "observedFirstPaintTs": 154066763,
+                  "observedFirstContentfulPaint": 2700,
+                  "observedFirstContentfulPaintTs": 154066763,
+                  "observedFirstContentfulPaintAllFrames": 2700,
+                  "observedFirstContentfulPaintAllFramesTs": 154066763,
+                  "observedFirstMeaningfulPaint": 2700,
+                  "observedFirstMeaningfulPaintTs": 154066763,
+                  "observedLargestContentfulPaint": 2700,
+                  "observedLargestContentfulPaintTs": 154066763,
+                  "observedLargestContentfulPaintAllFrames": 2700,
+                  "observedLargestContentfulPaintAllFramesTs": 154066763,
+                  "observedTraceEnd": 5286,
+                  "observedTraceEndTs": 156652322,
+                  "observedLoad": 2977,
+                  "observedLoadTs": 154343247,
+                  "observedDomContentLoaded": 107,
+                  "observedDomContentLoadedTs": 151473469,
+                  "observedCumulativeLayoutShift": 0.039694205390082456,
+                  "observedCumulativeLayoutShiftMainFrame": 0.039694205390082456,
+                  "observedTotalCumulativeLayoutShift": 0.039694205390082456,
+                  "observedFirstVisualChange": 2700,
+                  "observedFirstVisualChangeTs": 154066291,
+                  "observedLastVisualChange": 5279,
+                  "observedLastVisualChangeTs": 156645291,
+                  "observedSpeedIndex": 2950,
+                  "observedSpeedIndexTs": 154316563
                 },
                 {
                   "lcpInvalidated": false
@@ -20845,23 +20845,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 18,
-                  "numScripts": 9,
+                  "numRequests": 15,
+                  "numScripts": 8,
                   "numStylesheets": 0,
                   "numFonts": 0,
-                  "numTasks": 79,
-                  "numTasksOver10ms": 0,
-                  "numTasksOver25ms": 0,
-                  "numTasksOver50ms": 0,
-                  "numTasksOver100ms": 0,
+                  "numTasks": 70,
+                  "numTasksOver10ms": 2,
+                  "numTasksOver25ms": 1,
+                  "numTasksOver50ms": 1,
+                  "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 0,
-                  "throughput": 185509519.8938465,
-                  "maxRtt": 0,
-                  "maxServerLatency": 15.642,
-                  "totalByteWeight": 737380,
-                  "totalTaskTime": 17.624999999999996,
-                  "mainDocumentTransferSize": 4136
+                  "rtt": 15.856000000000002,
+                  "throughput": 72763934.3266145,
+                  "maxRtt": 15.856000000000002,
+                  "maxServerLatency": 17.240000000000002,
+                  "totalByteWeight": 908373,
+                  "totalTaskTime": 128.93199999999996,
+                  "mainDocumentTransferSize": 4139
                 }
               ]
             }
@@ -20907,15 +20907,15 @@
       "testsslExpireSoon": null,
       "testsslExpireDate": null,
       "testsslGrade": "A-",
-      "lighthouse_performance": 0.98,
+      "lighthouse_performance": 0.95,
       "lighthouse_performanceGrade": "A",
-      "lighthouse_accessibility": 0.91,
+      "lighthouse_accessibility": 0.9,
       "lighthouse_accessibilityGrade": "A",
-      "lighthouse_best-practices": 0.83,
-      "lighthouse_best-practicesGrade": "B",
-      "lighthouse_seo": 0.85,
-      "lighthouse_seoGrade": "A",
-      "lighthouse_pwa": 0.2,
+      "lighthouse_best-practices": 0.92,
+      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_seo": 0.75,
+      "lighthouse_seoGrade": "B",
+      "lighthouse_pwa": 0.3,
       "lighthouse_pwaGrade": "E",
       "declaration-a11y": "F",
       "declaration-rgpd-ml": "F",
@@ -21021,7 +21021,7 @@
       {
         "requestedUrl": "https://employeursprocovoiturage.ademe.fr/",
         "finalUrl": "https://employeursprocovoiturage.ademe.fr/",
-        "fetchTime": "2026-09-20T03:49:28.280Z",
+        "fetchTime": "2026-09-27T04:06:32.790Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -21032,7 +21032,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.98
+            "score": 0.97
           },
           "accessibility": {
             "title": "Accessibility",
@@ -21043,7 +21043,7 @@
               "snapshot"
             ],
             "id": "accessibility",
-            "score": 0.98
+            "score": 0.9
           },
           "best-practices": {
             "title": "Best Practices",
@@ -21053,7 +21053,7 @@
               "snapshot"
             ],
             "id": "best-practices",
-            "score": 1
+            "score": 0.92
           },
           "seo": {
             "title": "SEO",
@@ -21064,7 +21064,7 @@
               "snapshot"
             ],
             "id": "seo",
-            "score": 0.92
+            "score": 0.75
           },
           "pwa": {
             "title": "PWA",
@@ -21084,53 +21084,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 1716,
+            "numericValue": 926,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1716,
-                  "firstMeaningfulPaint": 1716,
-                  "largestContentfulPaint": 2016,
-                  "interactive": 1716,
-                  "speedIndex": 3247,
+                  "firstContentfulPaint": 926,
+                  "firstMeaningfulPaint": 926,
+                  "largestContentfulPaint": 2454,
+                  "interactive": 926,
+                  "speedIndex": 1902,
                   "totalBlockingTime": 0,
                   "maxPotentialFID": 16,
-                  "cumulativeLayoutShift": 0.004221761067708333,
-                  "cumulativeLayoutShiftMainFrame": 0.004221761067708333,
-                  "totalCumulativeLayoutShift": 0.004221761067708333,
+                  "cumulativeLayoutShift": 0.039694205390082456,
+                  "cumulativeLayoutShiftMainFrame": 0.039694205390082456,
+                  "totalCumulativeLayoutShift": 0.039694205390082456,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 189912767,
+                  "observedTimeOriginTs": 329806775,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 189912767,
-                  "observedFirstPaint": 1668,
-                  "observedFirstPaintTs": 191580637,
-                  "observedFirstContentfulPaint": 1668,
-                  "observedFirstContentfulPaintTs": 191580637,
-                  "observedFirstContentfulPaintAllFrames": 1668,
-                  "observedFirstContentfulPaintAllFramesTs": 191580637,
-                  "observedFirstMeaningfulPaint": 1668,
-                  "observedFirstMeaningfulPaintTs": 191580637,
-                  "observedLargestContentfulPaint": 1668,
-                  "observedLargestContentfulPaintTs": 191580637,
-                  "observedLargestContentfulPaintAllFrames": 1668,
-                  "observedLargestContentfulPaintAllFramesTs": 191580637,
-                  "observedTraceEnd": 5105,
-                  "observedTraceEndTs": 195018061,
-                  "observedLoad": 2265,
-                  "observedLoadTs": 192177712,
-                  "observedDomContentLoaded": 1,
-                  "observedDomContentLoadedTs": 189913656,
-                  "observedCumulativeLayoutShift": 0.004221761067708333,
-                  "observedCumulativeLayoutShiftMainFrame": 0.004221761067708333,
-                  "observedTotalCumulativeLayoutShift": 0.004221761067708333,
-                  "observedFirstVisualChange": 1668,
-                  "observedFirstVisualChangeTs": 191580767,
-                  "observedLastVisualChange": 2614,
-                  "observedLastVisualChangeTs": 192526767,
-                  "observedSpeedIndex": 1701,
-                  "observedSpeedIndexTs": 191614051
+                  "observedNavigationStartTs": 329806775,
+                  "observedFirstPaint": 908,
+                  "observedFirstPaintTs": 330714991,
+                  "observedFirstContentfulPaint": 908,
+                  "observedFirstContentfulPaintTs": 330714991,
+                  "observedFirstContentfulPaintAllFrames": 908,
+                  "observedFirstContentfulPaintAllFramesTs": 330714991,
+                  "observedFirstMeaningfulPaint": 908,
+                  "observedFirstMeaningfulPaintTs": 330714991,
+                  "observedLargestContentfulPaint": 908,
+                  "observedLargestContentfulPaintTs": 330714991,
+                  "observedLargestContentfulPaintAllFrames": 908,
+                  "observedLargestContentfulPaintAllFramesTs": 330714991,
+                  "observedTraceEnd": 4648,
+                  "observedTraceEndTs": 334454880,
+                  "observedLoad": 1004,
+                  "observedLoadTs": 330810848,
+                  "observedDomContentLoaded": 15,
+                  "observedDomContentLoadedTs": 329821927,
+                  "observedCumulativeLayoutShift": 0.039694205390082456,
+                  "observedCumulativeLayoutShiftMainFrame": 0.039694205390082456,
+                  "observedTotalCumulativeLayoutShift": 0.039694205390082456,
+                  "observedFirstVisualChange": 908,
+                  "observedFirstVisualChangeTs": 330714775,
+                  "observedLastVisualChange": 3881,
+                  "observedLastVisualChangeTs": 333687775,
+                  "observedSpeedIndex": 1107,
+                  "observedSpeedIndexTs": 330914266
                 },
                 {
                   "lcpInvalidated": false
@@ -21148,23 +21148,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 34,
-                  "numScripts": 2,
-                  "numStylesheets": 6,
-                  "numFonts": 2,
-                  "numTasks": 1332,
-                  "numTasksOver10ms": 3,
-                  "numTasksOver25ms": 1,
+                  "numRequests": 18,
+                  "numScripts": 9,
+                  "numStylesheets": 0,
+                  "numFonts": 0,
+                  "numTasks": 80,
+                  "numTasksOver10ms": 1,
+                  "numTasksOver25ms": 0,
                   "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 11.190999999999999,
-                  "throughput": 17105902.079597447,
-                  "maxRtt": 11.190999999999999,
-                  "maxServerLatency": 515.7479999999999,
-                  "totalByteWeight": 313703,
-                  "totalTaskTime": 144.71900000000122,
-                  "mainDocumentTransferSize": 33002
+                  "rtt": 11.360000000000003,
+                  "throughput": 143279473.8460927,
+                  "maxRtt": 11.360000000000003,
+                  "maxServerLatency": 15.663999999999998,
+                  "totalByteWeight": 999005,
+                  "totalTaskTime": 30.314999999999987,
+                  "mainDocumentTransferSize": 4194
                 }
               ]
             }
@@ -21205,14 +21205,14 @@
       "detected": false
     },
     "summary": {
-      "lighthouse_performance": 0.98,
+      "lighthouse_performance": 0.97,
       "lighthouse_performanceGrade": "A",
-      "lighthouse_accessibility": 0.98,
+      "lighthouse_accessibility": 0.9,
       "lighthouse_accessibilityGrade": "A",
-      "lighthouse_best-practices": 1,
+      "lighthouse_best-practices": 0.92,
       "lighthouse_best-practicesGrade": "A",
-      "lighthouse_seo": 0.92,
-      "lighthouse_seoGrade": "A",
+      "lighthouse_seo": 0.75,
+      "lighthouse_seoGrade": "B",
       "lighthouse_pwa": 0.2,
       "lighthouse_pwaGrade": "E",
       "declaration-a11y": "F",
@@ -24456,7 +24456,7 @@
       {
         "requestedUrl": "https://lesgenerateurs.ademe.fr/",
         "finalUrl": "https://lesgenerateurs.ademe.fr/",
-        "fetchTime": "2026-09-20T03:50:53.749Z",
+        "fetchTime": "2026-09-27T04:08:08.919Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -24467,7 +24467,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.27
+            "score": 0.41
           },
           "accessibility": {
             "title": "Accessibility",
@@ -24488,7 +24488,7 @@
               "snapshot"
             ],
             "id": "best-practices",
-            "score": 1
+            "score": 0.83
           },
           "seo": {
             "title": "SEO",
@@ -24499,7 +24499,7 @@
               "snapshot"
             ],
             "id": "seo",
-            "score": 0.91
+            "score": 0.88
           },
           "pwa": {
             "title": "PWA",
@@ -24509,7 +24509,7 @@
               "navigation"
             ],
             "id": "pwa",
-            "score": 0.4
+            "score": 0.3
           }
         },
         "audits": {
@@ -24519,53 +24519,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 6333,
+            "numericValue": 5799,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 2989,
-                  "firstMeaningfulPaint": 2989,
-                  "largestContentfulPaint": 7344,
-                  "interactive": 6333,
-                  "speedIndex": 10497,
-                  "totalBlockingTime": 975,
-                  "maxPotentialFID": 570,
-                  "cumulativeLayoutShift": 0.3179329198201498,
-                  "cumulativeLayoutShiftMainFrame": 0.3179329198201498,
-                  "totalCumulativeLayoutShift": 0.3180792821248373,
+                  "firstContentfulPaint": 2518,
+                  "firstMeaningfulPaint": 2518,
+                  "largestContentfulPaint": 5953,
+                  "interactive": 5799,
+                  "speedIndex": 8333,
+                  "totalBlockingTime": 1070,
+                  "maxPotentialFID": 925,
+                  "cumulativeLayoutShift": 0,
+                  "cumulativeLayoutShiftMainFrame": 0,
+                  "totalCumulativeLayoutShift": 0,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 143697454,
+                  "observedTimeOriginTs": 147390117,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 143697454,
-                  "observedFirstPaint": 4244,
-                  "observedFirstPaintTs": 147941889,
-                  "observedFirstContentfulPaint": 4244,
-                  "observedFirstContentfulPaintTs": 147941889,
-                  "observedFirstContentfulPaintAllFrames": 4244,
-                  "observedFirstContentfulPaintAllFramesTs": 147941889,
-                  "observedFirstMeaningfulPaint": 4309,
-                  "observedFirstMeaningfulPaintTs": 148006948,
-                  "observedLargestContentfulPaint": 5278,
-                  "observedLargestContentfulPaintTs": 148975493,
-                  "observedLargestContentfulPaintAllFrames": 5278,
-                  "observedLargestContentfulPaintAllFramesTs": 148975493,
-                  "observedTraceEnd": 9385,
-                  "observedTraceEndTs": 153082700,
-                  "observedLoad": 6209,
-                  "observedLoadTs": 149906305,
+                  "observedNavigationStartTs": 147390117,
+                  "observedFirstPaint": 3827,
+                  "observedFirstPaintTs": 151217562,
+                  "observedFirstContentfulPaint": 3827,
+                  "observedFirstContentfulPaintTs": 151217562,
+                  "observedFirstContentfulPaintAllFrames": 3827,
+                  "observedFirstContentfulPaintAllFramesTs": 151217562,
+                  "observedFirstMeaningfulPaint": 3827,
+                  "observedFirstMeaningfulPaintTs": 151217562,
+                  "observedLargestContentfulPaint": 4723,
+                  "observedLargestContentfulPaintTs": 152113507,
+                  "observedLargestContentfulPaintAllFrames": 4723,
+                  "observedLargestContentfulPaintAllFramesTs": 152113507,
+                  "observedTraceEnd": 6905,
+                  "observedTraceEndTs": 154295554,
+                  "observedLoad": 4527,
+                  "observedLoadTs": 151917381,
                   "observedDomContentLoaded": 5,
-                  "observedDomContentLoadedTs": 143702035,
-                  "observedCumulativeLayoutShift": 0.3179329198201498,
-                  "observedCumulativeLayoutShiftMainFrame": 0.3179329198201498,
-                  "observedTotalCumulativeLayoutShift": 0.3180792821248373,
-                  "observedFirstVisualChange": 4244,
-                  "observedFirstVisualChangeTs": 147941454,
-                  "observedLastVisualChange": 6483,
-                  "observedLastVisualChangeTs": 150180454,
-                  "observedSpeedIndex": 5466,
-                  "observedSpeedIndexTs": 149163572
+                  "observedDomContentLoadedTs": 147395163,
+                  "observedCumulativeLayoutShift": 0,
+                  "observedCumulativeLayoutShiftMainFrame": 0,
+                  "observedTotalCumulativeLayoutShift": 0,
+                  "observedFirstVisualChange": 3827,
+                  "observedFirstVisualChangeTs": 151217117,
+                  "observedLastVisualChange": 3827,
+                  "observedLastVisualChangeTs": 151217117,
+                  "observedSpeedIndex": 3830,
+                  "observedSpeedIndexTs": 151220550
                 },
                 {
                   "lcpInvalidated": false
@@ -24583,23 +24583,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 38,
-                  "numScripts": 11,
-                  "numStylesheets": 2,
-                  "numFonts": 2,
-                  "numTasks": 1039,
-                  "numTasksOver10ms": 14,
-                  "numTasksOver25ms": 9,
+                  "numRequests": 43,
+                  "numScripts": 12,
+                  "numStylesheets": 3,
+                  "numFonts": 0,
+                  "numTasks": 777,
+                  "numTasksOver10ms": 8,
+                  "numTasksOver25ms": 6,
                   "numTasksOver50ms": 5,
                   "numTasksOver100ms": 3,
                   "numTasksOver500ms": 0,
-                  "rtt": 10.155999999999999,
-                  "throughput": 10167934.925633593,
-                  "maxRtt": 143.69400000000002,
-                  "maxServerLatency": 744.349,
-                  "totalByteWeight": 1598604,
-                  "totalTaskTime": 951.3239999999975,
-                  "mainDocumentTransferSize": 15371
+                  "rtt": 8.793,
+                  "throughput": 8931642.301000021,
+                  "maxRtt": 145.96400000000003,
+                  "maxServerLatency": 315.532,
+                  "totalByteWeight": 365309,
+                  "totalTaskTime": 1096.7279999999994,
+                  "mainDocumentTransferSize": 15549
                 }
               ]
             }
@@ -24645,16 +24645,16 @@
       "testsslExpireSoon": null,
       "testsslExpireDate": null,
       "testsslGrade": "A+",
-      "lighthouse_performance": 0.27,
-      "lighthouse_performanceGrade": "E",
+      "lighthouse_performance": 0.41,
+      "lighthouse_performanceGrade": "D",
       "lighthouse_accessibility": 0.93,
       "lighthouse_accessibilityGrade": "A",
-      "lighthouse_best-practices": 1,
-      "lighthouse_best-practicesGrade": "A",
-      "lighthouse_seo": 0.91,
+      "lighthouse_best-practices": 0.83,
+      "lighthouse_best-practicesGrade": "B",
+      "lighthouse_seo": 0.88,
       "lighthouse_seoGrade": "A",
-      "lighthouse_pwa": 0.4,
-      "lighthouse_pwaGrade": "D",
+      "lighthouse_pwa": 0.3,
+      "lighthouse_pwaGrade": "E",
       "declaration-a11y": "F",
       "declaration-rgpd-ml": "F",
       "declaration-rgpd-pc": "A",
@@ -27385,7 +27385,7 @@
       {
         "requestedUrl": "https://www.fresquedusol.com/",
         "finalUrl": "https://fresquedusol.com/",
-        "fetchTime": "2026-09-20T04:01:51.646Z",
+        "fetchTime": "2026-09-27T04:19:41.379Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://www.fresquedusol.com/) was redirected to https://fresquedusol.com/. Try testing the second URL directly."
         ],
@@ -27398,7 +27398,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.43
+            "score": 0.53
           },
           "accessibility": {
             "title": "Accessibility",
@@ -27450,53 +27450,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 6649,
+            "numericValue": 5535,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 4689,
-                  "firstMeaningfulPaint": 4689,
-                  "largestContentfulPaint": 5298,
-                  "interactive": 6649,
-                  "speedIndex": 7695,
-                  "totalBlockingTime": 678,
-                  "maxPotentialFID": 995,
-                  "cumulativeLayoutShift": 0.00611572265625,
-                  "cumulativeLayoutShiftMainFrame": 0.00611572265625,
-                  "totalCumulativeLayoutShift": 0.00611572265625,
+                  "firstContentfulPaint": 4028,
+                  "firstMeaningfulPaint": 4028,
+                  "largestContentfulPaint": 4028,
+                  "interactive": 5535,
+                  "speedIndex": 6970,
+                  "totalBlockingTime": 689,
+                  "maxPotentialFID": 908,
+                  "cumulativeLayoutShift": 0.03243315802680121,
+                  "cumulativeLayoutShiftMainFrame": 0.03243315802680121,
+                  "totalCumulativeLayoutShift": 0.03243315802680121,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 874835775,
+                  "observedTimeOriginTs": 853657823,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 874835775,
-                  "observedFirstPaint": 2883,
-                  "observedFirstPaintTs": 877718752,
-                  "observedFirstContentfulPaint": 2883,
-                  "observedFirstContentfulPaintTs": 877718752,
-                  "observedFirstContentfulPaintAllFrames": 2883,
-                  "observedFirstContentfulPaintAllFramesTs": 877718752,
-                  "observedFirstMeaningfulPaint": 2883,
-                  "observedFirstMeaningfulPaintTs": 877718752,
-                  "observedLargestContentfulPaint": 2883,
-                  "observedLargestContentfulPaintTs": 877718752,
-                  "observedLargestContentfulPaintAllFrames": 2883,
-                  "observedLargestContentfulPaintAllFramesTs": 877718752,
-                  "observedTraceEnd": 6098,
-                  "observedTraceEndTs": 880933840,
-                  "observedLoad": 2926,
-                  "observedLoadTs": 877762264,
-                  "observedDomContentLoaded": 8,
-                  "observedDomContentLoadedTs": 874843417,
-                  "observedCumulativeLayoutShift": 0.00611572265625,
-                  "observedCumulativeLayoutShiftMainFrame": 0.00611572265625,
-                  "observedTotalCumulativeLayoutShift": 0.00611572265625,
-                  "observedFirstVisualChange": 2884,
-                  "observedFirstVisualChangeTs": 877719775,
-                  "observedLastVisualChange": 2916,
-                  "observedLastVisualChangeTs": 877751775,
-                  "observedSpeedIndex": 2904,
-                  "observedSpeedIndexTs": 877739631
+                  "observedNavigationStartTs": 853657823,
+                  "observedFirstPaint": 2650,
+                  "observedFirstPaintTs": 856307573,
+                  "observedFirstContentfulPaint": 2650,
+                  "observedFirstContentfulPaintTs": 856307573,
+                  "observedFirstContentfulPaintAllFrames": 2650,
+                  "observedFirstContentfulPaintAllFramesTs": 856307573,
+                  "observedFirstMeaningfulPaint": 2650,
+                  "observedFirstMeaningfulPaintTs": 856307573,
+                  "observedLargestContentfulPaint": 2650,
+                  "observedLargestContentfulPaintTs": 856307573,
+                  "observedLargestContentfulPaintAllFrames": 2650,
+                  "observedLargestContentfulPaintAllFramesTs": 856307573,
+                  "observedTraceEnd": 5872,
+                  "observedTraceEndTs": 859529412,
+                  "observedLoad": 3171,
+                  "observedLoadTs": 856828801,
+                  "observedDomContentLoaded": 7,
+                  "observedDomContentLoadedTs": 853665098,
+                  "observedCumulativeLayoutShift": 0.03243315802680121,
+                  "observedCumulativeLayoutShiftMainFrame": 0.03243315802680121,
+                  "observedTotalCumulativeLayoutShift": 0.03243315802680121,
+                  "observedFirstVisualChange": 2651,
+                  "observedFirstVisualChangeTs": 856308823,
+                  "observedLastVisualChange": 3195,
+                  "observedLastVisualChangeTs": 856852823,
+                  "observedSpeedIndex": 2985,
+                  "observedSpeedIndexTs": 856642626
                 },
                 {
                   "lcpInvalidated": false
@@ -27518,19 +27518,19 @@
                   "numScripts": 2,
                   "numStylesheets": 7,
                   "numFonts": 2,
-                  "numTasks": 889,
-                  "numTasksOver10ms": 10,
+                  "numTasks": 687,
+                  "numTasksOver10ms": 8,
                   "numTasksOver25ms": 5,
-                  "numTasksOver50ms": 2,
-                  "numTasksOver100ms": 1,
+                  "numTasksOver50ms": 3,
+                  "numTasksOver100ms": 2,
                   "numTasksOver500ms": 0,
                   "rtt": 0,
-                  "throughput": 15682647.60847227,
-                  "maxRtt": 0,
-                  "maxServerLatency": 2105.311,
-                  "totalByteWeight": 210055,
-                  "totalTaskTime": 875.3970000000007,
-                  "mainDocumentTransferSize": 23878
+                  "throughput": 7238192.653595294,
+                  "maxRtt": 4.231999999999999,
+                  "maxServerLatency": 1757.219,
+                  "totalByteWeight": 210061,
+                  "totalTaskTime": 871.0880000000003,
+                  "mainDocumentTransferSize": 23940
                 }
               ]
             }
@@ -27580,8 +27580,8 @@
       "testsslExpireSoon": false,
       "testsslExpireDate": "2026-10-31T14:46:00.000Z",
       "testsslGrade": "B",
-      "lighthouse_performance": 0.43,
-      "lighthouse_performanceGrade": "D",
+      "lighthouse_performance": 0.53,
+      "lighthouse_performanceGrade": "C",
       "lighthouse_accessibility": 0.98,
       "lighthouse_accessibilityGrade": "A",
       "lighthouse_best-practices": 0.83,
@@ -27694,7 +27694,7 @@
       {
         "requestedUrl": "https://economie-circulaire.ademe.fr/",
         "finalUrl": "https://economie-circulaire.ademe.fr/",
-        "fetchTime": "2026-09-20T03:52:24.203Z",
+        "fetchTime": "2026-09-27T04:10:43.064Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -27705,7 +27705,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.6
+            "score": 0.97
           },
           "accessibility": {
             "title": "Accessibility",
@@ -27716,7 +27716,7 @@
               "snapshot"
             ],
             "id": "accessibility",
-            "score": 1
+            "score": 0.9
           },
           "best-practices": {
             "title": "Best Practices",
@@ -27726,7 +27726,7 @@
               "snapshot"
             ],
             "id": "best-practices",
-            "score": 1
+            "score": 0.92
           },
           "seo": {
             "title": "SEO",
@@ -27737,7 +27737,7 @@
               "snapshot"
             ],
             "id": "seo",
-            "score": 0.93
+            "score": 0.83
           },
           "pwa": {
             "title": "PWA",
@@ -27747,7 +27747,7 @@
               "navigation"
             ],
             "id": "pwa",
-            "score": 0.3
+            "score": 0.2
           }
         },
         "audits": {
@@ -27757,53 +27757,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 7173,
+            "numericValue": 930,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 3228,
-                  "firstMeaningfulPaint": 3228,
-                  "largestContentfulPaint": 5640,
-                  "interactive": 7173,
-                  "speedIndex": 6522,
-                  "totalBlockingTime": 170,
-                  "maxPotentialFID": 137,
-                  "cumulativeLayoutShift": 0.005369896888732909,
-                  "cumulativeLayoutShiftMainFrame": 0.005369896888732909,
-                  "totalCumulativeLayoutShift": 0.005369896888732909,
+                  "firstContentfulPaint": 930,
+                  "firstMeaningfulPaint": 930,
+                  "largestContentfulPaint": 2459,
+                  "interactive": 930,
+                  "speedIndex": 1774,
+                  "totalBlockingTime": 0,
+                  "maxPotentialFID": 16,
+                  "cumulativeLayoutShift": 0.04431471082899305,
+                  "cumulativeLayoutShiftMainFrame": 0.04431471082899305,
+                  "totalCumulativeLayoutShift": 0.04431471082899305,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 259762241,
+                  "observedTimeOriginTs": 248590418,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 259762241,
-                  "observedFirstPaint": 1809,
-                  "observedFirstPaintTs": 261571083,
-                  "observedFirstContentfulPaint": 1809,
-                  "observedFirstContentfulPaintTs": 261571083,
-                  "observedFirstContentfulPaintAllFrames": 1809,
-                  "observedFirstContentfulPaintAllFramesTs": 261571083,
-                  "observedFirstMeaningfulPaint": 1809,
-                  "observedFirstMeaningfulPaintTs": 261571083,
-                  "observedLargestContentfulPaint": 1857,
-                  "observedLargestContentfulPaintTs": 261619511,
-                  "observedLargestContentfulPaintAllFrames": 1857,
-                  "observedLargestContentfulPaintAllFramesTs": 261619511,
-                  "observedTraceEnd": 4981,
-                  "observedTraceEndTs": 264743729,
-                  "observedLoad": 2635,
-                  "observedLoadTs": 262397587,
-                  "observedDomContentLoaded": 1,
-                  "observedDomContentLoadedTs": 259763027,
-                  "observedCumulativeLayoutShift": 0.005369896888732909,
-                  "observedCumulativeLayoutShiftMainFrame": 0.005369896888732909,
-                  "observedTotalCumulativeLayoutShift": 0.005369896888732909,
-                  "observedFirstVisualChange": 1809,
-                  "observedFirstVisualChangeTs": 261571241,
-                  "observedLastVisualChange": 2806,
-                  "observedLastVisualChangeTs": 262568241,
-                  "observedSpeedIndex": 2550,
-                  "observedSpeedIndexTs": 262312082
+                  "observedNavigationStartTs": 248590418,
+                  "observedFirstPaint": 835,
+                  "observedFirstPaintTs": 249425163,
+                  "observedFirstContentfulPaint": 835,
+                  "observedFirstContentfulPaintTs": 249425163,
+                  "observedFirstContentfulPaintAllFrames": 835,
+                  "observedFirstContentfulPaintAllFramesTs": 249425163,
+                  "observedFirstMeaningfulPaint": 835,
+                  "observedFirstMeaningfulPaintTs": 249425163,
+                  "observedLargestContentfulPaint": 835,
+                  "observedLargestContentfulPaintTs": 249425163,
+                  "observedLargestContentfulPaintAllFrames": 835,
+                  "observedLargestContentfulPaintAllFramesTs": 249425163,
+                  "observedTraceEnd": 3705,
+                  "observedTraceEndTs": 252295788,
+                  "observedLoad": 933,
+                  "observedLoadTs": 249523115,
+                  "observedDomContentLoaded": 8,
+                  "observedDomContentLoadedTs": 248598578,
+                  "observedCumulativeLayoutShift": 0.04431471082899305,
+                  "observedCumulativeLayoutShiftMainFrame": 0.04431471082899305,
+                  "observedTotalCumulativeLayoutShift": 0.04431471082899305,
+                  "observedFirstVisualChange": 835,
+                  "observedFirstVisualChangeTs": 249425418,
+                  "observedLastVisualChange": 3651,
+                  "observedLastVisualChangeTs": 252241418,
+                  "observedSpeedIndex": 1014,
+                  "observedSpeedIndexTs": 249604433
                 },
                 {
                   "lcpInvalidated": false
@@ -27821,23 +27821,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 40,
-                  "numScripts": 13,
-                  "numStylesheets": 3,
-                  "numFonts": 4,
-                  "numTasks": 1421,
-                  "numTasksOver10ms": 9,
-                  "numTasksOver25ms": 3,
-                  "numTasksOver50ms": 2,
+                  "numRequests": 18,
+                  "numScripts": 9,
+                  "numStylesheets": 0,
+                  "numFonts": 0,
+                  "numTasks": 66,
+                  "numTasksOver10ms": 0,
+                  "numTasksOver25ms": 0,
+                  "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 6.266,
-                  "throughput": 37957351.55984327,
-                  "maxRtt": 112.839,
-                  "maxServerLatency": 311.693,
-                  "totalByteWeight": 949849,
-                  "totalTaskTime": 401.55799999999743,
-                  "mainDocumentTransferSize": 7405
+                  "rtt": 0,
+                  "throughput": 227375420.7276259,
+                  "maxRtt": 0,
+                  "maxServerLatency": 15.123999999999999,
+                  "totalByteWeight": 981979,
+                  "totalTaskTime": 24.113,
+                  "mainDocumentTransferSize": 4167
                 }
               ]
             }
@@ -27878,15 +27878,15 @@
       "detected": false
     },
     "summary": {
-      "lighthouse_performance": 0.6,
-      "lighthouse_performanceGrade": "C",
-      "lighthouse_accessibility": 1,
+      "lighthouse_performance": 0.97,
+      "lighthouse_performanceGrade": "A",
+      "lighthouse_accessibility": 0.9,
       "lighthouse_accessibilityGrade": "A",
-      "lighthouse_best-practices": 1,
+      "lighthouse_best-practices": 0.92,
       "lighthouse_best-practicesGrade": "A",
-      "lighthouse_seo": 0.93,
-      "lighthouse_seoGrade": "A",
-      "lighthouse_pwa": 0.3,
+      "lighthouse_seo": 0.83,
+      "lighthouse_seoGrade": "B",
+      "lighthouse_pwa": 0.2,
       "lighthouse_pwaGrade": "E",
       "declaration-a11y": "F",
       "declaration-rgpd-ml": "F",
@@ -31129,7 +31129,7 @@
       {
         "requestedUrl": "https://affichage-environnemental.ademe.fr/",
         "finalUrl": "https://affichage-environnemental.ademe.fr/",
-        "fetchTime": "2026-09-20T03:56:38.908Z",
+        "fetchTime": "2026-09-27T04:13:57.863Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -31192,53 +31192,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 1000,
+            "numericValue": 929,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1000,
-                  "firstMeaningfulPaint": 1000,
-                  "largestContentfulPaint": 2572,
-                  "interactive": 1000,
-                  "speedIndex": 2248,
+                  "firstContentfulPaint": 929,
+                  "firstMeaningfulPaint": 929,
+                  "largestContentfulPaint": 2464,
+                  "interactive": 929,
+                  "speedIndex": 1834,
                   "totalBlockingTime": 0,
                   "maxPotentialFID": 16,
                   "cumulativeLayoutShift": 0.04431471082899305,
                   "cumulativeLayoutShiftMainFrame": 0.04431471082899305,
                   "totalCumulativeLayoutShift": 0.04431471082899305,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 220112601,
+                  "observedTimeOriginTs": 148518478,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 220112601,
-                  "observedFirstPaint": 1146,
-                  "observedFirstPaintTs": 221258117,
-                  "observedFirstContentfulPaint": 1146,
-                  "observedFirstContentfulPaintTs": 221258117,
-                  "observedFirstContentfulPaintAllFrames": 1146,
-                  "observedFirstContentfulPaintAllFramesTs": 221258117,
-                  "observedFirstMeaningfulPaint": 1146,
-                  "observedFirstMeaningfulPaintTs": 221258117,
-                  "observedLargestContentfulPaint": 1146,
-                  "observedLargestContentfulPaintTs": 221258117,
-                  "observedLargestContentfulPaintAllFrames": 1146,
-                  "observedLargestContentfulPaintAllFramesTs": 221258117,
-                  "observedTraceEnd": 4442,
-                  "observedTraceEndTs": 224554718,
-                  "observedLoad": 1323,
-                  "observedLoadTs": 221435699,
-                  "observedDomContentLoaded": 9,
-                  "observedDomContentLoadedTs": 220121809,
+                  "observedNavigationStartTs": 148518478,
+                  "observedFirstPaint": 820,
+                  "observedFirstPaintTs": 149338225,
+                  "observedFirstContentfulPaint": 820,
+                  "observedFirstContentfulPaintTs": 149338225,
+                  "observedFirstContentfulPaintAllFrames": 820,
+                  "observedFirstContentfulPaintAllFramesTs": 149338225,
+                  "observedFirstMeaningfulPaint": 820,
+                  "observedFirstMeaningfulPaintTs": 149338225,
+                  "observedLargestContentfulPaint": 820,
+                  "observedLargestContentfulPaintTs": 149338225,
+                  "observedLargestContentfulPaintAllFrames": 820,
+                  "observedLargestContentfulPaintAllFramesTs": 149338225,
+                  "observedTraceEnd": 3895,
+                  "observedTraceEndTs": 152413898,
+                  "observedLoad": 935,
+                  "observedLoadTs": 149453365,
+                  "observedDomContentLoaded": 13,
+                  "observedDomContentLoadedTs": 148531476,
                   "observedCumulativeLayoutShift": 0.04431471082899305,
                   "observedCumulativeLayoutShiftMainFrame": 0.04431471082899305,
                   "observedTotalCumulativeLayoutShift": 0.04431471082899305,
-                  "observedFirstVisualChange": 1145,
-                  "observedFirstVisualChangeTs": 221257601,
-                  "observedLastVisualChange": 4434,
-                  "observedLastVisualChangeTs": 224546601,
-                  "observedSpeedIndex": 1320,
-                  "observedSpeedIndexTs": 221432695
+                  "observedFirstVisualChange": 916,
+                  "observedFirstVisualChangeTs": 149434478,
+                  "observedLastVisualChange": 3894,
+                  "observedLastVisualChangeTs": 152412478,
+                  "observedSpeedIndex": 1057,
+                  "observedSpeedIndexTs": 149575601
                 },
                 {
                   "lcpInvalidated": false
@@ -31260,19 +31260,19 @@
                   "numScripts": 9,
                   "numStylesheets": 0,
                   "numFonts": 0,
-                  "numTasks": 68,
+                  "numTasks": 65,
                   "numTasksOver10ms": 1,
                   "numTasksOver25ms": 0,
                   "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
                   "rtt": 0,
-                  "throughput": 130141061.54938398,
+                  "throughput": 137325610.9227158,
                   "maxRtt": 0,
-                  "maxServerLatency": 49.951,
-                  "totalByteWeight": 713762,
-                  "totalTaskTime": 20.7,
-                  "mainDocumentTransferSize": 4167
+                  "maxServerLatency": 20.04,
+                  "totalByteWeight": 997922,
+                  "totalTaskTime": 31.36400000000001,
+                  "mainDocumentTransferSize": 4186
                 }
               ]
             }
@@ -34617,32 +34617,11 @@
     "wappalyzer": {
       "urls": {
         "https://evenementresponsable.ademe.fr/": {
-          "status": 200
+          "status": 200,
+          "error": "Navigation timeout of 10000 ms exceeded (https://evenementresponsable.ademe.fr/)"
         }
       },
       "technologies": [
-        {
-          "slug": "firebase",
-          "name": "Firebase",
-          "description": "Firebase is a Google-backed application development software that enables developers to develop iOS, Android and Web apps.",
-          "confidence": 100,
-          "version": "10.10.0",
-          "icon": "Firebase.svg",
-          "website": "https://firebase.google.com",
-          "cpe": "cpe:2.3:a:google:firebase_cloud_messaging:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 34,
-              "slug": "databases",
-              "name": "Databases"
-            },
-            {
-              "id": 47,
-              "slug": "development",
-              "name": "Development"
-            }
-          ]
-        },
         {
           "slug": "php",
           "name": "PHP",
@@ -34660,149 +34639,6 @@
             }
           ],
           "rootPath": true
-        },
-        {
-          "slug": "laravel",
-          "name": "Laravel",
-          "description": "Laravel is a free, open-source PHP web framework.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Laravel.svg",
-          "website": "https://laravel.com",
-          "cpe": "cpe:2.3:a:laravel:laravel:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 18,
-              "slug": "web-frameworks",
-              "name": "Web frameworks"
-            }
-          ],
-          "rootPath": true
-        },
-        {
-          "slug": "animate-css",
-          "name": "Animate.css",
-          "description": "Animate.css is a ready-to-use library collection of CSS3 animation effects.",
-          "confidence": 99,
-          "version": null,
-          "icon": "Animate.css.svg",
-          "website": "https://animate.style",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 66,
-              "slug": "ui-frameworks",
-              "name": "UI frameworks"
-            }
-          ],
-          "rootPath": true
-        },
-        {
-          "slug": "google-tag-manager",
-          "name": "Google Tag Manager",
-          "description": "Google Tag Manager is a tag management system (TMS) that allows you to quickly and easily update measurement codes and related code fragments collectively known as tags on your website or mobile app.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Google Tag Manager.svg",
-          "website": "https://www.google.com/tagmanager",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 42,
-              "slug": "tag-managers",
-              "name": "Tag managers"
-            }
-          ],
-          "rootPath": true
-        },
-        {
-          "slug": "cloudflare-bot-management",
-          "name": "Cloudflare Bot Management",
-          "description": "Cloudflare bot management solution identifies and mitigates automated traffic to protect websites from bad bots.",
-          "confidence": 100,
-          "version": null,
-          "icon": "CloudFlare.svg",
-          "website": "https://www.cloudflare.com/en-gb/products/bot-management/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 16,
-              "slug": "security",
-              "name": "Security"
-            }
-          ],
-          "rootPath": true
-        },
-        {
-          "slug": "microsoft-clarity",
-          "name": "Microsoft Clarity",
-          "description": "Microsoft's Clarity is a analytics tool which provides website usage statistics, session recording, and heatmaps.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Microsoft Clarity.svg",
-          "website": "https://clarity.microsoft.com",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 10,
-              "slug": "analytics",
-              "name": "Analytics"
-            }
-          ],
-          "rootPath": true
-        },
-        {
-          "slug": "microsoft-advertising",
-          "name": "Microsoft Advertising",
-          "description": "Microsoft Advertising is an online advertising platform developed by Microsoft.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Microsoft.svg",
-          "website": "https://ads.microsoft.com",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 36,
-              "slug": "advertising",
-              "name": "Advertising"
-            }
-          ],
-          "rootPath": true
-        },
-        {
-          "slug": "jquery",
-          "name": "jQuery",
-          "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
-          "confidence": 100,
-          "version": "3.7.1",
-          "icon": "jQuery.svg",
-          "website": "https://jquery.com",
-          "cpe": "cpe:2.3:a:jquery:jquery:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            }
-          ],
-          "rootPath": true
-        },
-        {
-          "slug": "recaptcha",
-          "name": "reCAPTCHA",
-          "description": "reCAPTCHA is a free service from Google that helps protect websites from spam and abuse.",
-          "confidence": 100,
-          "version": null,
-          "icon": "reCAPTCHA.svg",
-          "website": "https://www.google.com/recaptcha/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 16,
-              "slug": "security",
-              "name": "Security"
-            }
-          ]
         },
         {
           "slug": "hsts",
@@ -34839,24 +34675,6 @@
             }
           ],
           "rootPath": true
-        },
-        {
-          "slug": "webpack",
-          "name": "Webpack",
-          "description": "Webpack is an open-source JavaScript module bundler.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Webpack.svg",
-          "website": "https://webpack.js.org/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 19,
-              "slug": "miscellaneous",
-              "name": "Miscellaneous"
-            }
-          ],
-          "rootPath": true
         }
       ]
     },
@@ -34866,7 +34684,7 @@
       {
         "requestedUrl": "https://evenementresponsable.ademe.fr/",
         "finalUrl": "https://evenementresponsable.ademe.fr/",
-        "fetchTime": "2026-09-20T04:11:18.858Z",
+        "fetchTime": "2026-09-27T04:24:54.966Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -34877,7 +34695,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.66
+            "score": 0.42
           },
           "accessibility": {
             "title": "Accessibility",
@@ -34898,7 +34716,7 @@
               "snapshot"
             ],
             "id": "best-practices",
-            "score": 0.92
+            "score": 0.83
           },
           "seo": {
             "title": "SEO",
@@ -34929,53 +34747,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 5336,
+            "numericValue": 6161,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 3530,
-                  "firstMeaningfulPaint": 3530,
-                  "largestContentfulPaint": 4950,
-                  "interactive": 5336,
-                  "speedIndex": 6429,
-                  "totalBlockingTime": 79,
-                  "maxPotentialFID": 91,
+                  "firstContentfulPaint": 3121,
+                  "firstMeaningfulPaint": 3121,
+                  "largestContentfulPaint": 6311,
+                  "interactive": 6161,
+                  "speedIndex": 6054,
+                  "totalBlockingTime": 961,
+                  "maxPotentialFID": 791,
                   "cumulativeLayoutShift": 0.001115308973524305,
                   "cumulativeLayoutShiftMainFrame": 0.001115308973524305,
                   "totalCumulativeLayoutShift": 0.001115308973524305,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 987719086,
+                  "observedTimeOriginTs": 614801322,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 987719086,
-                  "observedFirstPaint": 1878,
-                  "observedFirstPaintTs": 989597185,
-                  "observedFirstContentfulPaint": 1878,
-                  "observedFirstContentfulPaintTs": 989597185,
-                  "observedFirstContentfulPaintAllFrames": 1878,
-                  "observedFirstContentfulPaintAllFramesTs": 989597185,
-                  "observedFirstMeaningfulPaint": 1878,
-                  "observedFirstMeaningfulPaintTs": 989597185,
-                  "observedLargestContentfulPaint": 2344,
-                  "observedLargestContentfulPaintTs": 990063099,
-                  "observedLargestContentfulPaintAllFrames": 2344,
-                  "observedLargestContentfulPaintAllFramesTs": 990063099,
-                  "observedTraceEnd": 5245,
-                  "observedTraceEndTs": 992963748,
-                  "observedLoad": 2748,
-                  "observedLoadTs": 990467120,
-                  "observedDomContentLoaded": 1,
-                  "observedDomContentLoadedTs": 987720204,
+                  "observedNavigationStartTs": 614801322,
+                  "observedFirstPaint": 1496,
+                  "observedFirstPaintTs": 616297717,
+                  "observedFirstContentfulPaint": 1496,
+                  "observedFirstContentfulPaintTs": 616297717,
+                  "observedFirstContentfulPaintAllFrames": 1496,
+                  "observedFirstContentfulPaintAllFramesTs": 616297717,
+                  "observedFirstMeaningfulPaint": 1496,
+                  "observedFirstMeaningfulPaintTs": 616297717,
+                  "observedLargestContentfulPaint": 2360,
+                  "observedLargestContentfulPaintTs": 617161803,
+                  "observedLargestContentfulPaintAllFrames": 2360,
+                  "observedLargestContentfulPaintAllFramesTs": 617161803,
+                  "observedTraceEnd": 4488,
+                  "observedTraceEndTs": 619289323,
+                  "observedLoad": 2037,
+                  "observedLoadTs": 616838078,
+                  "observedDomContentLoaded": 10,
+                  "observedDomContentLoadedTs": 614811633,
                   "observedCumulativeLayoutShift": 0.001115308973524305,
                   "observedCumulativeLayoutShiftMainFrame": 0.001115308973524305,
                   "observedTotalCumulativeLayoutShift": 0.001115308973524305,
-                  "observedFirstVisualChange": 1878,
-                  "observedFirstVisualChangeTs": 989597086,
-                  "observedLastVisualChange": 2944,
-                  "observedLastVisualChangeTs": 990663086,
-                  "observedSpeedIndex": 2450,
-                  "observedSpeedIndexTs": 990168934
+                  "observedFirstVisualChange": 1496,
+                  "observedFirstVisualChangeTs": 616297322,
+                  "observedLastVisualChange": 2360,
+                  "observedLastVisualChangeTs": 617161322,
+                  "observedSpeedIndex": 2054,
+                  "observedSpeedIndexTs": 616855679
                 },
                 {
                   "lcpInvalidated": false
@@ -34993,23 +34811,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 19,
-                  "numScripts": 6,
+                  "numRequests": 22,
+                  "numScripts": 7,
                   "numStylesheets": 4,
                   "numFonts": 2,
-                  "numTasks": 687,
-                  "numTasksOver10ms": 6,
-                  "numTasksOver25ms": 2,
-                  "numTasksOver50ms": 0,
-                  "numTasksOver100ms": 0,
+                  "numTasks": 632,
+                  "numTasksOver10ms": 14,
+                  "numTasksOver25ms": 7,
+                  "numTasksOver50ms": 4,
+                  "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 2.697,
-                  "throughput": 5782971.7367325965,
-                  "maxRtt": 143.264,
-                  "maxServerLatency": 596.2439999999999,
-                  "totalByteWeight": 493547,
-                  "totalTaskTime": 231.82099999999943,
-                  "mainDocumentTransferSize": 3714
+                  "rtt": 1.98899999999999,
+                  "throughput": 9233494.853603123,
+                  "maxRtt": 90.25999999999999,
+                  "maxServerLatency": 101.831,
+                  "totalByteWeight": 524169,
+                  "totalTaskTime": 927.482000000001,
+                  "mainDocumentTransferSize": 4070
                 }
               ]
             }
@@ -35056,12 +34874,12 @@
       "testsslExpireSoon": null,
       "testsslExpireDate": null,
       "testsslGrade": "A+",
-      "lighthouse_performance": 0.66,
-      "lighthouse_performanceGrade": "C",
+      "lighthouse_performance": 0.42,
+      "lighthouse_performanceGrade": "D",
       "lighthouse_accessibility": 0.95,
       "lighthouse_accessibilityGrade": "A",
-      "lighthouse_best-practices": 0.92,
-      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_best-practices": 0.83,
+      "lighthouse_best-practicesGrade": "B",
       "lighthouse_seo": 0.87,
       "lighthouse_seoGrade": "A",
       "lighthouse_pwa": 0.3,
@@ -38307,7 +38125,7 @@
       {
         "requestedUrl": "https://infos.ademe.fr/",
         "finalUrl": "https://infos.ademe.fr/",
-        "fetchTime": "2026-09-20T04:06:09.542Z",
+        "fetchTime": "2026-09-27T04:23:57.300Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -38318,7 +38136,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.67
+            "score": 0.98
           },
           "accessibility": {
             "title": "Accessibility",
@@ -38329,7 +38147,7 @@
               "snapshot"
             ],
             "id": "accessibility",
-            "score": 1
+            "score": 0.9
           },
           "best-practices": {
             "title": "Best Practices",
@@ -38339,7 +38157,7 @@
               "snapshot"
             ],
             "id": "best-practices",
-            "score": 1
+            "score": 0.92
           },
           "seo": {
             "title": "SEO",
@@ -38350,7 +38168,7 @@
               "snapshot"
             ],
             "id": "seo",
-            "score": 1
+            "score": 0.83
           },
           "pwa": {
             "title": "PWA",
@@ -38370,53 +38188,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 2403,
+            "numericValue": 908,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1256,
-                  "firstMeaningfulPaint": 1745,
-                  "largestContentfulPaint": 2345,
-                  "interactive": 2403,
-                  "speedIndex": 2369,
-                  "totalBlockingTime": 824,
-                  "maxPotentialFID": 485,
-                  "cumulativeLayoutShift": 0.39576544274224174,
-                  "cumulativeLayoutShiftMainFrame": 0.39576544274224174,
-                  "totalCumulativeLayoutShift": 0.39576544274224174,
+                  "firstContentfulPaint": 908,
+                  "firstMeaningfulPaint": 908,
+                  "largestContentfulPaint": 2427,
+                  "interactive": 908,
+                  "speedIndex": 2060,
+                  "totalBlockingTime": 0,
+                  "maxPotentialFID": 16,
+                  "cumulativeLayoutShift": 0.039694205390082456,
+                  "cumulativeLayoutShiftMainFrame": 0.039694205390082456,
+                  "totalCumulativeLayoutShift": 0.039694205390082456,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 208942127,
+                  "observedTimeOriginTs": 149631677,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 208942127,
-                  "observedFirstPaint": 570,
-                  "observedFirstPaintTs": 209511850,
-                  "observedFirstContentfulPaint": 570,
-                  "observedFirstContentfulPaintTs": 209511850,
-                  "observedFirstContentfulPaintAllFrames": 570,
-                  "observedFirstContentfulPaintAllFramesTs": 209511850,
-                  "observedFirstMeaningfulPaint": 780,
-                  "observedFirstMeaningfulPaintTs": 209722180,
-                  "observedLargestContentfulPaint": 1742,
-                  "observedLargestContentfulPaintTs": 210684394,
-                  "observedLargestContentfulPaintAllFrames": 1742,
-                  "observedLargestContentfulPaintAllFramesTs": 210684394,
-                  "observedTraceEnd": 4540,
-                  "observedTraceEndTs": 213482544,
-                  "observedLoad": 1729,
-                  "observedLoadTs": 210671528,
-                  "observedDomContentLoaded": 10,
-                  "observedDomContentLoadedTs": 208952250,
-                  "observedCumulativeLayoutShift": 0.39576544274224174,
-                  "observedCumulativeLayoutShiftMainFrame": 0.39576544274224174,
-                  "observedTotalCumulativeLayoutShift": 0.39576544274224174,
-                  "observedFirstVisualChange": 570,
-                  "observedFirstVisualChangeTs": 209512127,
-                  "observedLastVisualChange": 1742,
-                  "observedLastVisualChangeTs": 210684127,
-                  "observedSpeedIndex": 1151,
-                  "observedSpeedIndexTs": 210093363
+                  "observedNavigationStartTs": 149631677,
+                  "observedFirstPaint": 1024,
+                  "observedFirstPaintTs": 150655329,
+                  "observedFirstContentfulPaint": 1024,
+                  "observedFirstContentfulPaintTs": 150655329,
+                  "observedFirstContentfulPaintAllFrames": 1024,
+                  "observedFirstContentfulPaintAllFramesTs": 150655329,
+                  "observedFirstMeaningfulPaint": 1024,
+                  "observedFirstMeaningfulPaintTs": 150655329,
+                  "observedLargestContentfulPaint": 1024,
+                  "observedLargestContentfulPaintTs": 150655329,
+                  "observedLargestContentfulPaintAllFrames": 1024,
+                  "observedLargestContentfulPaintAllFramesTs": 150655329,
+                  "observedTraceEnd": 4003,
+                  "observedTraceEndTs": 153634845,
+                  "observedLoad": 1321,
+                  "observedLoadTs": 150952523,
+                  "observedDomContentLoaded": 14,
+                  "observedDomContentLoadedTs": 149645379,
+                  "observedCumulativeLayoutShift": 0.039694205390082456,
+                  "observedCumulativeLayoutShiftMainFrame": 0.039694205390082456,
+                  "observedTotalCumulativeLayoutShift": 0.039694205390082456,
+                  "observedFirstVisualChange": 1024,
+                  "observedFirstVisualChangeTs": 150655677,
+                  "observedLastVisualChange": 3997,
+                  "observedLastVisualChangeTs": 153628677,
+                  "observedSpeedIndex": 1229,
+                  "observedSpeedIndexTs": 150860477
                 },
                 {
                   "lcpInvalidated": false
@@ -38435,22 +38253,22 @@
               "items": [
                 {
                   "numRequests": 18,
-                  "numScripts": 2,
-                  "numStylesheets": 1,
-                  "numFonts": 3,
-                  "numTasks": 923,
-                  "numTasksOver10ms": 11,
-                  "numTasksOver25ms": 7,
-                  "numTasksOver50ms": 2,
-                  "numTasksOver100ms": 2,
+                  "numScripts": 9,
+                  "numStylesheets": 0,
+                  "numFonts": 0,
+                  "numTasks": 57,
+                  "numTasksOver10ms": 1,
+                  "numTasksOver25ms": 0,
+                  "numTasksOver50ms": 0,
+                  "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 1.8791099999999998,
-                  "throughput": 4739479.641517662,
-                  "maxRtt": 1.8791099999999998,
-                  "maxServerLatency": 20.31489,
-                  "totalByteWeight": 229251,
-                  "totalTaskTime": 616.0379999999942,
-                  "mainDocumentTransferSize": 19414
+                  "rtt": 1.7220000000000004,
+                  "throughput": 190556362.2657691,
+                  "maxRtt": 1.7220000000000004,
+                  "maxServerLatency": 15.522999999999996,
+                  "totalByteWeight": 958503,
+                  "totalTaskTime": 31.491000000000007,
+                  "mainDocumentTransferSize": 4139
                 }
               ]
             }
@@ -38496,14 +38314,14 @@
       "testsslExpireSoon": null,
       "testsslExpireDate": null,
       "testsslGrade": "A+",
-      "lighthouse_performance": 0.67,
-      "lighthouse_performanceGrade": "B",
-      "lighthouse_accessibility": 1,
+      "lighthouse_performance": 0.98,
+      "lighthouse_performanceGrade": "A",
+      "lighthouse_accessibility": 0.9,
       "lighthouse_accessibilityGrade": "A",
-      "lighthouse_best-practices": 1,
+      "lighthouse_best-practices": 0.92,
       "lighthouse_best-practicesGrade": "A",
-      "lighthouse_seo": 1,
-      "lighthouse_seoGrade": "A",
+      "lighthouse_seo": 0.83,
+      "lighthouse_seoGrade": "B",
       "lighthouse_pwa": 0.3,
       "lighthouse_pwaGrade": "E",
       "declaration-a11y": "F",
@@ -41748,7 +41566,7 @@
       {
         "requestedUrl": "https://carnetadapt.org/",
         "finalUrl": "https://carnetadapt.org/",
-        "fetchTime": "2026-09-20T04:08:47.698Z",
+        "fetchTime": "2026-09-27T04:27:01.266Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -41759,7 +41577,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.96
+            "score": 0.97
           },
           "accessibility": {
             "title": "Accessibility",
@@ -41811,53 +41629,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 968,
+            "numericValue": 947,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 968,
-                  "firstMeaningfulPaint": 968,
-                  "largestContentfulPaint": 2513,
-                  "interactive": 968,
-                  "speedIndex": 3175,
+                  "firstContentfulPaint": 947,
+                  "firstMeaningfulPaint": 947,
+                  "largestContentfulPaint": 2475,
+                  "interactive": 947,
+                  "speedIndex": 3320,
                   "totalBlockingTime": 0,
                   "maxPotentialFID": 16,
                   "cumulativeLayoutShift": 0.010004340277777777,
                   "cumulativeLayoutShiftMainFrame": 0.010004340277777777,
                   "totalCumulativeLayoutShift": 0.010004340277777777,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 181117664,
+                  "observedTimeOriginTs": 134444090,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 181117664,
-                  "observedFirstPaint": 1944,
-                  "observedFirstPaintTs": 183061869,
-                  "observedFirstContentfulPaint": 1944,
-                  "observedFirstContentfulPaintTs": 183061869,
-                  "observedFirstContentfulPaintAllFrames": 1944,
-                  "observedFirstContentfulPaintAllFramesTs": 183061869,
-                  "observedFirstMeaningfulPaint": 1944,
-                  "observedFirstMeaningfulPaintTs": 183061869,
-                  "observedLargestContentfulPaint": 1944,
-                  "observedLargestContentfulPaintTs": 183061869,
-                  "observedLargestContentfulPaintAllFrames": 1944,
-                  "observedLargestContentfulPaintAllFramesTs": 183061869,
-                  "observedTraceEnd": 4423,
-                  "observedTraceEndTs": 185540820,
-                  "observedLoad": 2111,
-                  "observedLoadTs": 183228490,
-                  "observedDomContentLoaded": 5,
-                  "observedDomContentLoadedTs": 181122854,
+                  "observedNavigationStartTs": 134444090,
+                  "observedFirstPaint": 2066,
+                  "observedFirstPaintTs": 136510016,
+                  "observedFirstContentfulPaint": 2066,
+                  "observedFirstContentfulPaintTs": 136510016,
+                  "observedFirstContentfulPaintAllFrames": 2066,
+                  "observedFirstContentfulPaintAllFramesTs": 136510016,
+                  "observedFirstMeaningfulPaint": 2066,
+                  "observedFirstMeaningfulPaintTs": 136510016,
+                  "observedLargestContentfulPaint": 2066,
+                  "observedLargestContentfulPaintTs": 136510016,
+                  "observedLargestContentfulPaintAllFrames": 2066,
+                  "observedLargestContentfulPaintAllFramesTs": 136510016,
+                  "observedTraceEnd": 4465,
+                  "observedTraceEndTs": 138908658,
+                  "observedLoad": 2156,
+                  "observedLoadTs": 136599939,
+                  "observedDomContentLoaded": 13,
+                  "observedDomContentLoadedTs": 134457428,
                   "observedCumulativeLayoutShift": 0.010004340277777777,
                   "observedCumulativeLayoutShiftMainFrame": 0.010004340277777777,
                   "observedTotalCumulativeLayoutShift": 0.010004340277777777,
-                  "observedFirstVisualChange": 1944,
-                  "observedFirstVisualChangeTs": 183061664,
-                  "observedLastVisualChange": 4410,
-                  "observedLastVisualChangeTs": 185527664,
-                  "observedSpeedIndex": 1997,
-                  "observedSpeedIndexTs": 183114267
+                  "observedFirstVisualChange": 2066,
+                  "observedFirstVisualChangeTs": 136510090,
+                  "observedLastVisualChange": 4452,
+                  "observedLastVisualChangeTs": 138896090,
+                  "observedSpeedIndex": 2110,
+                  "observedSpeedIndexTs": 136554315
                 },
                 {
                   "lcpInvalidated": false
@@ -41875,23 +41693,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 13,
-                  "numScripts": 6,
+                  "numRequests": 16,
+                  "numScripts": 8,
                   "numStylesheets": 0,
                   "numFonts": 0,
-                  "numTasks": 83,
-                  "numTasksOver10ms": 0,
+                  "numTasks": 67,
+                  "numTasksOver10ms": 1,
                   "numTasksOver25ms": 0,
                   "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 14.773,
-                  "throughput": 64834452.59663305,
-                  "maxRtt": 14.773,
-                  "maxServerLatency": 34.227999999999994,
-                  "totalByteWeight": 693555,
-                  "totalTaskTime": 19.13400000000001,
-                  "mainDocumentTransferSize": 4126
+                  "rtt": 13.498000000000001,
+                  "throughput": 125086262.89297137,
+                  "maxRtt": 13.498000000000001,
+                  "maxServerLatency": 23.530000000000005,
+                  "totalByteWeight": 891552,
+                  "totalTaskTime": 27.73,
+                  "mainDocumentTransferSize": 4147
                 }
               ]
             }
@@ -41937,7 +41755,7 @@
       "testsslExpireSoon": null,
       "testsslExpireDate": null,
       "testsslGrade": "A+",
-      "lighthouse_performance": 0.96,
+      "lighthouse_performance": 0.97,
       "lighthouse_performanceGrade": "A",
       "lighthouse_accessibility": 0.9,
       "lighthouse_accessibilityGrade": "A",
@@ -45274,7 +45092,7 @@
       {
         "requestedUrl": "http://recherche.ademe.fr/",
         "finalUrl": "https://recherche.ademe.fr/",
-        "fetchTime": "2026-09-18T15:04:10.031Z",
+        "fetchTime": "2026-09-27T04:36:20.760Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (http://recherche.ademe.fr/) was redirected to https://recherche.ademe.fr/. Try testing the second URL directly."
         ],
@@ -45287,7 +45105,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.57
+            "score": 0.56
           },
           "accessibility": {
             "title": "Accessibility",
@@ -45308,7 +45126,7 @@
               "snapshot"
             ],
             "id": "best-practices",
-            "score": 0.92
+            "score": 0.83
           },
           "seo": {
             "title": "SEO",
@@ -45339,53 +45157,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 5286,
+            "numericValue": 8922,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 3888,
-                  "firstMeaningfulPaint": 4724,
-                  "largestContentfulPaint": 5479,
-                  "interactive": 5286,
-                  "speedIndex": 12345,
-                  "totalBlockingTime": 197,
-                  "maxPotentialFID": 190,
+                  "firstContentfulPaint": 3741,
+                  "firstMeaningfulPaint": 3741,
+                  "largestContentfulPaint": 4446,
+                  "interactive": 8922,
+                  "speedIndex": 8265,
+                  "totalBlockingTime": 298,
+                  "maxPotentialFID": 520,
                   "cumulativeLayoutShift": 0.0199602894253201,
                   "cumulativeLayoutShiftMainFrame": 0.0199602894253201,
                   "totalCumulativeLayoutShift": 0.0199602894253201,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 752832215,
+                  "observedTimeOriginTs": 568944594,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 752832215,
-                  "observedFirstPaint": 2259,
-                  "observedFirstPaintTs": 755091262,
-                  "observedFirstContentfulPaint": 2259,
-                  "observedFirstContentfulPaintTs": 755091262,
-                  "observedFirstContentfulPaintAllFrames": 2259,
-                  "observedFirstContentfulPaintAllFramesTs": 755091262,
-                  "observedFirstMeaningfulPaint": 2359,
-                  "observedFirstMeaningfulPaintTs": 755191252,
-                  "observedLargestContentfulPaint": 2359,
-                  "observedLargestContentfulPaintTs": 755191252,
-                  "observedLargestContentfulPaintAllFrames": 2359,
-                  "observedLargestContentfulPaintAllFramesTs": 755191252,
-                  "observedTraceEnd": 10833,
-                  "observedTraceEndTs": 763665325,
-                  "observedLoad": 8524,
-                  "observedLoadTs": 761356472,
-                  "observedDomContentLoaded": 6,
-                  "observedDomContentLoadedTs": 752837949,
+                  "observedNavigationStartTs": 568944594,
+                  "observedFirstPaint": 1969,
+                  "observedFirstPaintTs": 570914071,
+                  "observedFirstContentfulPaint": 1969,
+                  "observedFirstContentfulPaintTs": 570914071,
+                  "observedFirstContentfulPaintAllFrames": 1969,
+                  "observedFirstContentfulPaintAllFramesTs": 570914071,
+                  "observedFirstMeaningfulPaint": 1969,
+                  "observedFirstMeaningfulPaintTs": 570914071,
+                  "observedLargestContentfulPaint": 1969,
+                  "observedLargestContentfulPaintTs": 570914071,
+                  "observedLargestContentfulPaintAllFrames": 1969,
+                  "observedLargestContentfulPaintAllFramesTs": 570914071,
+                  "observedTraceEnd": 5194,
+                  "observedTraceEndTs": 574138787,
+                  "observedLoad": 2818,
+                  "observedLoadTs": 571762747,
+                  "observedDomContentLoaded": 2,
+                  "observedDomContentLoadedTs": 568946230,
                   "observedCumulativeLayoutShift": 0.0199602894253201,
                   "observedCumulativeLayoutShiftMainFrame": 0.0199602894253201,
                   "observedTotalCumulativeLayoutShift": 0.0199602894253201,
-                  "observedFirstVisualChange": 2259,
-                  "observedFirstVisualChangeTs": 755091215,
-                  "observedLastVisualChange": 9011,
-                  "observedLastVisualChangeTs": 761843215,
-                  "observedSpeedIndex": 7013,
-                  "observedSpeedIndexTs": 759845450
+                  "observedFirstVisualChange": 1969,
+                  "observedFirstVisualChangeTs": 570913594,
+                  "observedLastVisualChange": 3009,
+                  "observedLastVisualChangeTs": 571953594,
+                  "observedSpeedIndex": 2693,
+                  "observedSpeedIndexTs": 571637569
                 },
                 {
                   "lcpInvalidated": false
@@ -45403,23 +45221,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 30,
-                  "numScripts": 9,
+                  "numRequests": 38,
+                  "numScripts": 10,
                   "numStylesheets": 3,
                   "numFonts": 4,
-                  "numTasks": 2376,
-                  "numTasksOver10ms": 13,
-                  "numTasksOver25ms": 4,
-                  "numTasksOver50ms": 2,
-                  "numTasksOver100ms": 0,
+                  "numTasks": 1417,
+                  "numTasksOver10ms": 9,
+                  "numTasksOver25ms": 3,
+                  "numTasksOver50ms": 1,
+                  "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 4.838,
-                  "throughput": 13322937.346329339,
-                  "maxRtt": 148.15000000000055,
-                  "maxServerLatency": 316.865,
-                  "totalByteWeight": 647815,
-                  "totalTaskTime": 606.2119999999993,
-                  "mainDocumentTransferSize": 8845
+                  "rtt": 4.993,
+                  "throughput": 55832178.53100172,
+                  "maxRtt": 147.625,
+                  "maxServerLatency": 137.65900000000002,
+                  "totalByteWeight": 1423829,
+                  "totalTaskTime": 600.5279999999981,
+                  "mainDocumentTransferSize": 9168
                 }
               ]
             }
@@ -45470,12 +45288,12 @@
       "testsslExpireSoon": null,
       "testsslExpireDate": null,
       "testsslGrade": "A+",
-      "lighthouse_performance": 0.57,
+      "lighthouse_performance": 0.56,
       "lighthouse_performanceGrade": "C",
       "lighthouse_accessibility": 0.99,
       "lighthouse_accessibilityGrade": "A",
-      "lighthouse_best-practices": 0.92,
-      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_best-practices": 0.83,
+      "lighthouse_best-practicesGrade": "B",
       "lighthouse_seo": 0.93,
       "lighthouse_seoGrade": "A",
       "lighthouse_pwa": 0.2,
@@ -48612,7 +48430,7 @@
       {
         "requestedUrl": "https://www.onpe.org/",
         "finalUrl": "https://onpe.org/",
-        "fetchTime": "2026-09-20T04:18:03.190Z",
+        "fetchTime": "2026-09-27T04:39:51.065Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://www.onpe.org/) was redirected to https://onpe.org/. Try testing the second URL directly."
         ],
@@ -48677,53 +48495,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 1697,
+            "numericValue": 1678,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1697,
-                  "firstMeaningfulPaint": 1697,
-                  "largestContentfulPaint": 3054,
-                  "interactive": 1697,
-                  "speedIndex": 2400,
+                  "firstContentfulPaint": 1678,
+                  "firstMeaningfulPaint": 1678,
+                  "largestContentfulPaint": 3037,
+                  "interactive": 1678,
+                  "speedIndex": 2336,
                   "totalBlockingTime": 0,
                   "maxPotentialFID": 16,
                   "cumulativeLayoutShift": 0.004918077256944444,
                   "cumulativeLayoutShiftMainFrame": 0.004918077256944444,
                   "totalCumulativeLayoutShift": 0.004918077256944444,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 896150460,
+                  "observedTimeOriginTs": 735890298,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 896150460,
-                  "observedFirstPaint": 1027,
-                  "observedFirstPaintTs": 897177550,
-                  "observedFirstContentfulPaint": 1027,
-                  "observedFirstContentfulPaintTs": 897177550,
-                  "observedFirstContentfulPaintAllFrames": 1027,
-                  "observedFirstContentfulPaintAllFramesTs": 897177550,
-                  "observedFirstMeaningfulPaint": 1027,
-                  "observedFirstMeaningfulPaintTs": 897177550,
-                  "observedLargestContentfulPaint": 1027,
-                  "observedLargestContentfulPaintTs": 897177550,
-                  "observedLargestContentfulPaintAllFrames": 1027,
-                  "observedLargestContentfulPaintAllFramesTs": 897177550,
-                  "observedTraceEnd": 3606,
-                  "observedTraceEndTs": 899756337,
-                  "observedLoad": 1160,
-                  "observedLoadTs": 897310620,
-                  "observedDomContentLoaded": 5,
-                  "observedDomContentLoadedTs": 896155954,
+                  "observedNavigationStartTs": 735890298,
+                  "observedFirstPaint": 1010,
+                  "observedFirstPaintTs": 736899890,
+                  "observedFirstContentfulPaint": 1010,
+                  "observedFirstContentfulPaintTs": 736899890,
+                  "observedFirstContentfulPaintAllFrames": 1010,
+                  "observedFirstContentfulPaintAllFramesTs": 736899890,
+                  "observedFirstMeaningfulPaint": 1010,
+                  "observedFirstMeaningfulPaintTs": 736899890,
+                  "observedLargestContentfulPaint": 1010,
+                  "observedLargestContentfulPaintTs": 736899890,
+                  "observedLargestContentfulPaintAllFrames": 1010,
+                  "observedLargestContentfulPaintAllFramesTs": 736899890,
+                  "observedTraceEnd": 3544,
+                  "observedTraceEndTs": 739434235,
+                  "observedLoad": 1127,
+                  "observedLoadTs": 737017342,
+                  "observedDomContentLoaded": 17,
+                  "observedDomContentLoadedTs": 735907437,
                   "observedCumulativeLayoutShift": 0.004918077256944444,
                   "observedCumulativeLayoutShiftMainFrame": 0.004918077256944444,
                   "observedTotalCumulativeLayoutShift": 0.004918077256944444,
-                  "observedFirstVisualChange": 1027,
-                  "observedFirstVisualChangeTs": 897177460,
-                  "observedLastVisualChange": 3602,
-                  "observedLastVisualChangeTs": 899752460,
-                  "observedSpeedIndex": 1105,
-                  "observedSpeedIndexTs": 897255599
+                  "observedFirstVisualChange": 1009,
+                  "observedFirstVisualChangeTs": 736899298,
+                  "observedLastVisualChange": 3533,
+                  "observedLastVisualChangeTs": 739423298,
+                  "observedSpeedIndex": 1068,
+                  "observedSpeedIndexTs": 736958190
                 },
                 {
                   "lcpInvalidated": false
@@ -48745,19 +48563,19 @@
                   "numScripts": 13,
                   "numStylesheets": 0,
                   "numFonts": 0,
-                  "numTasks": 77,
-                  "numTasksOver10ms": 0,
+                  "numTasks": 72,
+                  "numTasksOver10ms": 1,
                   "numTasksOver25ms": 0,
                   "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 2.4640000000000004,
-                  "throughput": 144326235.8976513,
-                  "maxRtt": 2.8969999999999914,
-                  "maxServerLatency": 14.831000000000001,
-                  "totalByteWeight": 910181,
-                  "totalTaskTime": 17.118000000000002,
-                  "mainDocumentTransferSize": 4112
+                  "rtt": 0,
+                  "throughput": 166427536.23150072,
+                  "maxRtt": 0,
+                  "maxServerLatency": 16.694,
+                  "totalByteWeight": 1179016,
+                  "totalTaskTime": 35.936000000000035,
+                  "mainDocumentTransferSize": 4105
                 }
               ]
             }
@@ -52301,7 +52119,7 @@
       {
         "requestedUrl": "https://filieres-rep.ademe.fr/",
         "finalUrl": "https://filieres-rep.ademe.fr/",
-        "fetchTime": "2026-09-20T04:26:06.230Z",
+        "fetchTime": "2026-09-27T04:45:33.397Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -52312,7 +52130,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.74
+            "score": 0.39
           },
           "accessibility": {
             "title": "Accessibility",
@@ -52333,7 +52151,7 @@
               "snapshot"
             ],
             "id": "best-practices",
-            "score": 0.83
+            "score": 0.75
           },
           "seo": {
             "title": "SEO",
@@ -52364,53 +52182,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 9594,
+            "numericValue": 10469,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 2571,
-                  "firstMeaningfulPaint": 2571,
-                  "largestContentfulPaint": 3321,
-                  "interactive": 9594,
-                  "speedIndex": 7341,
-                  "totalBlockingTime": 38,
-                  "maxPotentialFID": 77,
-                  "cumulativeLayoutShift": 0.08305579969618056,
-                  "cumulativeLayoutShiftMainFrame": 0.08305579969618056,
-                  "totalCumulativeLayoutShift": 0.08305579969618056,
+                  "firstContentfulPaint": 2718,
+                  "firstMeaningfulPaint": 2718,
+                  "largestContentfulPaint": 4818,
+                  "interactive": 10469,
+                  "speedIndex": 8894,
+                  "totalBlockingTime": 654,
+                  "maxPotentialFID": 1183,
+                  "cumulativeLayoutShift": 0.24082313368055555,
+                  "cumulativeLayoutShiftMainFrame": 0.24082313368055555,
+                  "totalCumulativeLayoutShift": 0.24082313368055555,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 743354664,
+                  "observedTimeOriginTs": 792110807,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 743354664,
-                  "observedFirstPaint": 1369,
-                  "observedFirstPaintTs": 744723430,
-                  "observedFirstContentfulPaint": 1369,
-                  "observedFirstContentfulPaintTs": 744723430,
-                  "observedFirstContentfulPaintAllFrames": 1369,
-                  "observedFirstContentfulPaintAllFramesTs": 744723430,
-                  "observedFirstMeaningfulPaint": 1369,
-                  "observedFirstMeaningfulPaintTs": 744723430,
-                  "observedLargestContentfulPaint": 1403,
-                  "observedLargestContentfulPaintTs": 744757758,
-                  "observedLargestContentfulPaintAllFrames": 1403,
-                  "observedLargestContentfulPaintAllFramesTs": 744757758,
-                  "observedTraceEnd": 6279,
-                  "observedTraceEndTs": 749633383,
-                  "observedLoad": 3184,
-                  "observedLoadTs": 746538694,
-                  "observedDomContentLoaded": 1,
-                  "observedDomContentLoadedTs": 743355796,
-                  "observedCumulativeLayoutShift": 0.08305579969618056,
-                  "observedCumulativeLayoutShiftMainFrame": 0.08305579969618056,
-                  "observedTotalCumulativeLayoutShift": 0.08305579969618056,
-                  "observedFirstVisualChange": 1369,
-                  "observedFirstVisualChangeTs": 744723664,
-                  "observedLastVisualChange": 3402,
-                  "observedLastVisualChangeTs": 746756664,
-                  "observedSpeedIndex": 2819,
-                  "observedSpeedIndexTs": 746173209
+                  "observedNavigationStartTs": 792110807,
+                  "observedFirstPaint": 1528,
+                  "observedFirstPaintTs": 793639220,
+                  "observedFirstContentfulPaint": 1528,
+                  "observedFirstContentfulPaintTs": 793639220,
+                  "observedFirstContentfulPaintAllFrames": 1528,
+                  "observedFirstContentfulPaintAllFramesTs": 793639220,
+                  "observedFirstMeaningfulPaint": 1528,
+                  "observedFirstMeaningfulPaintTs": 793639220,
+                  "observedLargestContentfulPaint": 1599,
+                  "observedLargestContentfulPaintTs": 793710178,
+                  "observedLargestContentfulPaintAllFrames": 1599,
+                  "observedLargestContentfulPaintAllFramesTs": 793710178,
+                  "observedTraceEnd": 6116,
+                  "observedTraceEndTs": 798226752,
+                  "observedLoad": 3733,
+                  "observedLoadTs": 795844235,
+                  "observedDomContentLoaded": 13,
+                  "observedDomContentLoadedTs": 792123852,
+                  "observedCumulativeLayoutShift": 0.24082313368055555,
+                  "observedCumulativeLayoutShiftMainFrame": 0.24082313368055555,
+                  "observedTotalCumulativeLayoutShift": 0.24082313368055555,
+                  "observedFirstVisualChange": 1528,
+                  "observedFirstVisualChangeTs": 793638807,
+                  "observedLastVisualChange": 3933,
+                  "observedLastVisualChangeTs": 796043807,
+                  "observedSpeedIndex": 3201,
+                  "observedSpeedIndexTs": 795311890
                 },
                 {
                   "lcpInvalidated": false
@@ -52428,23 +52246,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 65,
-                  "numScripts": 30,
+                  "numRequests": 69,
+                  "numScripts": 31,
                   "numStylesheets": 3,
                   "numFonts": 4,
-                  "numTasks": 2135,
-                  "numTasksOver10ms": 11,
-                  "numTasksOver25ms": 3,
-                  "numTasksOver50ms": 1,
-                  "numTasksOver100ms": 0,
-                  "numTasksOver500ms": 0,
-                  "rtt": 1.4869999999999997,
-                  "throughput": 39581190.641687155,
-                  "maxRtt": 152.04899999999998,
-                  "maxServerLatency": 151.20499999999998,
-                  "totalByteWeight": 1559416,
-                  "totalTaskTime": 509.3099999999935,
-                  "mainDocumentTransferSize": 10700
+                  "numTasks": 1751,
+                  "numTasksOver10ms": 17,
+                  "numTasksOver25ms": 6,
+                  "numTasksOver50ms": 3,
+                  "numTasksOver100ms": 2,
+                  "numTasksOver500ms": 1,
+                  "rtt": 1.0579999999999998,
+                  "throughput": 39833223.40001222,
+                  "maxRtt": 146.09499999999997,
+                  "maxServerLatency": 145.088,
+                  "totalByteWeight": 1608477,
+                  "totalTaskTime": 1314.8530000000035,
+                  "mainDocumentTransferSize": 11022
                 }
               ]
             }
@@ -52491,11 +52309,11 @@
       "testsslExpireSoon": null,
       "testsslExpireDate": null,
       "testsslGrade": "A+",
-      "lighthouse_performance": 0.74,
-      "lighthouse_performanceGrade": "B",
+      "lighthouse_performance": 0.39,
+      "lighthouse_performanceGrade": "D",
       "lighthouse_accessibility": 1,
       "lighthouse_accessibilityGrade": "A",
-      "lighthouse_best-practices": 0.83,
+      "lighthouse_best-practices": 0.75,
       "lighthouse_best-practicesGrade": "B",
       "lighthouse_seo": 1,
       "lighthouse_seoGrade": "A",
@@ -55740,7 +55558,7 @@
       {
         "requestedUrl": "https://www.bilans-ges.ademe.fr/",
         "finalUrl": "https://bilans-ges.ademe.fr/",
-        "fetchTime": "2026-09-20T04:26:31.187Z",
+        "fetchTime": "2026-09-27T04:43:57.058Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://www.bilans-ges.ademe.fr/) was redirected to https://bilans-ges.ademe.fr/. Try testing the second URL directly."
         ],
@@ -55753,7 +55571,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.32
+            "score": 0.14
           },
           "accessibility": {
             "title": "Accessibility",
@@ -55774,7 +55592,7 @@
               "snapshot"
             ],
             "id": "best-practices",
-            "score": 0.83
+            "score": 0.75
           },
           "seo": {
             "title": "SEO",
@@ -55805,53 +55623,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 7443,
+            "numericValue": 8046,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 4766,
-                  "firstMeaningfulPaint": 5181,
-                  "largestContentfulPaint": 37227,
-                  "interactive": 7443,
-                  "speedIndex": 5491,
-                  "totalBlockingTime": 455,
-                  "maxPotentialFID": 214,
+                  "firstContentfulPaint": 4794,
+                  "firstMeaningfulPaint": 5626,
+                  "largestContentfulPaint": 37389,
+                  "interactive": 8046,
+                  "speedIndex": 7641,
+                  "totalBlockingTime": 1545,
+                  "maxPotentialFID": 1066,
                   "cumulativeLayoutShift": 0.540625,
                   "cumulativeLayoutShiftMainFrame": 0.540625,
                   "totalCumulativeLayoutShift": 0.540625,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 927748402,
+                  "observedTimeOriginTs": 463923616,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 927748402,
-                  "observedFirstPaint": 1610,
-                  "observedFirstPaintTs": 929358757,
-                  "observedFirstContentfulPaint": 1610,
-                  "observedFirstContentfulPaintTs": 929358757,
-                  "observedFirstContentfulPaintAllFrames": 1610,
-                  "observedFirstContentfulPaintAllFramesTs": 929358757,
-                  "observedFirstMeaningfulPaint": 1687,
-                  "observedFirstMeaningfulPaintTs": 929435738,
-                  "observedLargestContentfulPaint": 2036,
-                  "observedLargestContentfulPaintTs": 929784494,
-                  "observedLargestContentfulPaintAllFrames": 2036,
-                  "observedLargestContentfulPaintAllFramesTs": 929784494,
-                  "observedTraceEnd": 4467,
-                  "observedTraceEndTs": 932215732,
-                  "observedLoad": 1502,
-                  "observedLoadTs": 929250852,
-                  "observedDomContentLoaded": 2,
-                  "observedDomContentLoadedTs": 927750189,
+                  "observedNavigationStartTs": 463923616,
+                  "observedFirstPaint": 2904,
+                  "observedFirstPaintTs": 466828073,
+                  "observedFirstContentfulPaint": 2904,
+                  "observedFirstContentfulPaintTs": 466828073,
+                  "observedFirstContentfulPaintAllFrames": 2904,
+                  "observedFirstContentfulPaintAllFramesTs": 466828073,
+                  "observedFirstMeaningfulPaint": 2986,
+                  "observedFirstMeaningfulPaintTs": 466909822,
+                  "observedLargestContentfulPaint": 3411,
+                  "observedLargestContentfulPaintTs": 467334750,
+                  "observedLargestContentfulPaintAllFrames": 3411,
+                  "observedLargestContentfulPaintAllFramesTs": 467334750,
+                  "observedTraceEnd": 6078,
+                  "observedTraceEndTs": 470002066,
+                  "observedLoad": 2672,
+                  "observedLoadTs": 466595504,
+                  "observedDomContentLoaded": 11,
+                  "observedDomContentLoadedTs": 463934831,
                   "observedCumulativeLayoutShift": 0.540625,
                   "observedCumulativeLayoutShiftMainFrame": 0.540625,
                   "observedTotalCumulativeLayoutShift": 0.540625,
-                  "observedFirstVisualChange": 1610,
-                  "observedFirstVisualChangeTs": 929358402,
-                  "observedLastVisualChange": 2200,
-                  "observedLastVisualChangeTs": 929948402,
-                  "observedSpeedIndex": 1718,
-                  "observedSpeedIndexTs": 929466846
+                  "observedFirstVisualChange": 2904,
+                  "observedFirstVisualChangeTs": 466827616,
+                  "observedLastVisualChange": 3778,
+                  "observedLastVisualChangeTs": 467701616,
+                  "observedSpeedIndex": 3042,
+                  "observedSpeedIndexTs": 466965920
                 },
                 {
                   "lcpInvalidated": false
@@ -55869,23 +55687,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 53,
-                  "numScripts": 22,
+                  "numRequests": 56,
+                  "numScripts": 23,
                   "numStylesheets": 2,
                   "numFonts": 3,
-                  "numTasks": 1912,
-                  "numTasksOver10ms": 12,
-                  "numTasksOver25ms": 6,
-                  "numTasksOver50ms": 3,
-                  "numTasksOver100ms": 1,
-                  "numTasksOver500ms": 0,
-                  "rtt": 5.780999999999992,
-                  "throughput": 145825412.53326154,
-                  "maxRtt": 86.515,
-                  "maxServerLatency": 314.38599999999997,
-                  "totalByteWeight": 6907926,
-                  "totalTaskTime": 649.8340000000004,
-                  "mainDocumentTransferSize": 12833
+                  "numTasks": 1935,
+                  "numTasksOver10ms": 21,
+                  "numTasksOver25ms": 10,
+                  "numTasksOver50ms": 4,
+                  "numTasksOver100ms": 2,
+                  "numTasksOver500ms": 1,
+                  "rtt": 8.622999999999998,
+                  "throughput": 81140272.44582266,
+                  "maxRtt": 143.39999999999998,
+                  "maxServerLatency": 136.65800000000002,
+                  "totalByteWeight": 6938700,
+                  "totalTaskTime": 1406.7199999999686,
+                  "mainDocumentTransferSize": 13179
                 }
               ]
             }
@@ -55939,11 +55757,11 @@
       "testsslExpireSoon": null,
       "testsslExpireDate": null,
       "testsslGrade": "A+",
-      "lighthouse_performance": 0.32,
-      "lighthouse_performanceGrade": "E",
+      "lighthouse_performance": 0.14,
+      "lighthouse_performanceGrade": "F",
       "lighthouse_accessibility": 1,
       "lighthouse_accessibilityGrade": "A",
-      "lighthouse_best-practices": 0.83,
+      "lighthouse_best-practices": 0.75,
       "lighthouse_best-practicesGrade": "B",
       "lighthouse_seo": 0.82,
       "lighthouse_seoGrade": "B",
@@ -59267,7 +59085,7 @@
       {
         "requestedUrl": "https://wattris.ademe.fr/",
         "finalUrl": "https://wattris.ademe.fr/",
-        "fetchTime": "2026-09-20T04:20:59.930Z",
+        "fetchTime": "2026-09-27T04:42:23.791Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -59278,7 +59096,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.41
+            "score": 0.45
           },
           "accessibility": {
             "title": "Accessibility",
@@ -59289,7 +59107,7 @@
               "snapshot"
             ],
             "id": "accessibility",
-            "score": 0.95
+            "score": 0.94
           },
           "best-practices": {
             "title": "Best Practices",
@@ -59299,7 +59117,7 @@
               "snapshot"
             ],
             "id": "best-practices",
-            "score": 1
+            "score": 0.83
           },
           "seo": {
             "title": "SEO",
@@ -59330,53 +59148,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 8398,
+            "numericValue": 6904,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 2588,
-                  "firstMeaningfulPaint": 2588,
-                  "largestContentfulPaint": 6747,
-                  "interactive": 8398,
-                  "speedIndex": 3526,
-                  "totalBlockingTime": 1289,
-                  "maxPotentialFID": 793,
+                  "firstContentfulPaint": 2672,
+                  "firstMeaningfulPaint": 3088,
+                  "largestContentfulPaint": 5448,
+                  "interactive": 6904,
+                  "speedIndex": 3806,
+                  "totalBlockingTime": 1254,
+                  "maxPotentialFID": 770,
                   "cumulativeLayoutShift": 0,
                   "cumulativeLayoutShiftMainFrame": 0,
                   "totalCumulativeLayoutShift": 0,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 160019194,
+                  "observedTimeOriginTs": 309648801,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 160019194,
-                  "observedFirstPaint": 408,
-                  "observedFirstPaintTs": 160427465,
-                  "observedFirstContentfulPaint": 408,
-                  "observedFirstContentfulPaintTs": 160427465,
-                  "observedFirstContentfulPaintAllFrames": 408,
-                  "observedFirstContentfulPaintAllFramesTs": 160427465,
-                  "observedFirstMeaningfulPaint": 408,
-                  "observedFirstMeaningfulPaintTs": 160427465,
-                  "observedLargestContentfulPaint": 894,
-                  "observedLargestContentfulPaintTs": 160913283,
-                  "observedLargestContentfulPaintAllFrames": 894,
-                  "observedLargestContentfulPaintAllFramesTs": 160913283,
-                  "observedTraceEnd": 3210,
-                  "observedTraceEndTs": 163229170,
-                  "observedLoad": 535,
-                  "observedLoadTs": 160554361,
-                  "observedDomContentLoaded": 5,
-                  "observedDomContentLoadedTs": 160024450,
+                  "observedNavigationStartTs": 309648801,
+                  "observedFirstPaint": 469,
+                  "observedFirstPaintTs": 310117970,
+                  "observedFirstContentfulPaint": 469,
+                  "observedFirstContentfulPaintTs": 310117970,
+                  "observedFirstContentfulPaintAllFrames": 469,
+                  "observedFirstContentfulPaintAllFramesTs": 310117970,
+                  "observedFirstMeaningfulPaint": 469,
+                  "observedFirstMeaningfulPaintTs": 310117970,
+                  "observedLargestContentfulPaint": 469,
+                  "observedLargestContentfulPaintTs": 310117970,
+                  "observedLargestContentfulPaintAllFrames": 469,
+                  "observedLargestContentfulPaintAllFramesTs": 310117970,
+                  "observedTraceEnd": 14926,
+                  "observedTraceEndTs": 324574668,
+                  "observedLoad": 12424,
+                  "observedLoadTs": 322072622,
+                  "observedDomContentLoaded": 9,
+                  "observedDomContentLoadedTs": 309657893,
                   "observedCumulativeLayoutShift": 0,
                   "observedCumulativeLayoutShiftMainFrame": 0,
                   "observedTotalCumulativeLayoutShift": 0,
-                  "observedFirstVisualChange": 408,
-                  "observedFirstVisualChangeTs": 160427194,
-                  "observedLastVisualChange": 1027,
-                  "observedLastVisualChangeTs": 161046194,
-                  "observedSpeedIndex": 671,
-                  "observedSpeedIndexTs": 160689911
+                  "observedFirstVisualChange": 480,
+                  "observedFirstVisualChangeTs": 310128801,
+                  "observedLastVisualChange": 480,
+                  "observedLastVisualChangeTs": 310128801,
+                  "observedSpeedIndex": 526,
+                  "observedSpeedIndexTs": 310174914
                 },
                 {
                   "lcpInvalidated": false
@@ -59394,23 +59212,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 31,
-                  "numScripts": 20,
-                  "numStylesheets": 2,
+                  "numRequests": 30,
+                  "numScripts": 19,
+                  "numStylesheets": 1,
                   "numFonts": 3,
-                  "numTasks": 992,
-                  "numTasksOver10ms": 14,
-                  "numTasksOver25ms": 8,
-                  "numTasksOver50ms": 4,
-                  "numTasksOver100ms": 1,
+                  "numTasks": 1410,
+                  "numTasksOver10ms": 13,
+                  "numTasksOver25ms": 5,
+                  "numTasksOver50ms": 3,
+                  "numTasksOver100ms": 2,
                   "numTasksOver500ms": 0,
-                  "rtt": 6.069000000000001,
-                  "throughput": 76853658.29501279,
-                  "maxRtt": 90.845,
-                  "maxServerLatency": 26.446999999999996,
-                  "totalByteWeight": 969653,
-                  "totalTaskTime": 907.7289999999999,
-                  "mainDocumentTransferSize": 290461
+                  "rtt": 8.178,
+                  "throughput": 76120294.59897853,
+                  "maxRtt": 116.25999999999999,
+                  "maxServerLatency": 38.144999999999996,
+                  "totalByteWeight": 930595,
+                  "totalTaskTime": 1129.3479999999931,
+                  "mainDocumentTransferSize": 290922
                 }
               ]
             }
@@ -59459,12 +59277,12 @@
       "testsslExpireSoon": null,
       "testsslExpireDate": null,
       "testsslGrade": "A+",
-      "lighthouse_performance": 0.41,
+      "lighthouse_performance": 0.45,
       "lighthouse_performanceGrade": "D",
-      "lighthouse_accessibility": 0.95,
+      "lighthouse_accessibility": 0.94,
       "lighthouse_accessibilityGrade": "A",
-      "lighthouse_best-practices": 1,
-      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_best-practices": 0.83,
+      "lighthouse_best-practicesGrade": "B",
       "lighthouse_seo": 0.92,
       "lighthouse_seoGrade": "A",
       "lighthouse_pwa": 0.5,
